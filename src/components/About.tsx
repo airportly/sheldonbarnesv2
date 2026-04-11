@@ -52,7 +52,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                I&apos;ve spent the past several years leading an
+                I&apos;ve spent the past several years leading
                 AI and automation program inside a regulated Fortune 100 enterprise,
                 building a portfolio of seven internal AI products that shipped, scaled,
                 and delivered measurable impact.
