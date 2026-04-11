@@ -181,7 +181,7 @@ export const books: Book[] = [
     description:
       "Between now and 2030, patent protections will expire on drugs generating over $200 billion in annual revenue. This book traces the collision of pharma's greatest financial crisis with the scientific revolution that may be its answer, AI deployed across every stage of how drugs are discovered and developed.",
     longDescription:
-      "The pharmaceutical industry is caught between a financial crisis and a scientific revolution. Between now and 2030, patent protections will expire on drugs generating more than $200 billion in annual revenue — three times the size of the previous patent cliff. At the same time, artificial intelligence is being deployed across every stage of how drugs are discovered and developed. This book traces the collision of those two forces, examines the Prediction Stack framework for understanding where drug discovery fails, and maps the convergence of technology companies, pharmaceutical giants, and venture capital betting hundreds of billions on AI being the answer.",
+      "The pharmaceutical industry is caught between a financial crisis and a scientific revolution. Between now and 2030, patent protections will expire on drugs generating more than $200 billion in annual revenue, three times the size of the previous patent cliff. At the same time, artificial intelligence is being deployed across every stage of how drugs are discovered and developed. This book traces the collision of those two forces, examines the Prediction Stack framework for understanding where drug discovery fails, and maps the convergence of technology companies, pharmaceutical giants, and venture capital betting hundreds of billions on AI being the answer.",
     cover: "/pharma-book-cover.png",
     links: [
       { label: "Amazon", url: "https://amazon.com/dp/B0F2N6PN3L", icon: "amazon" },
@@ -256,7 +256,7 @@ export const books: Book[] = [
       {
         title: "The Prediction Stack",
         description:
-          "A three-layer framework for understanding where prediction fails in drug discovery — at target selection, molecular design, and clinical outcomes — and how AI addresses each layer.",
+          "A three-layer framework for understanding where prediction fails in drug discovery, at target selection, molecular design, and clinical outcomes, and how AI addresses each layer.",
       },
       {
         title: "The Cost of Being Wrong",
@@ -283,9 +283,9 @@ export const books: Book[] = [
     subtitle:
       "The Hidden System Filtering You Out — and How to Beat It",
     description:
-      "The hiring process was redesigned by AI and nobody told the candidates. This field manual pulls back the curtain on Applicant Tracking Systems, algorithmic scoring, and AI-powered screening — then gives you a repeatable system to beat them.",
+      "The hiring process was redesigned by AI and nobody told the candidates. This field manual pulls back the curtain on Applicant Tracking Systems, algorithmic scoring, and AI-powered screening, then gives you a repeatable system to beat them.",
     longDescription:
-      "Something is broken in the way we get hired. Qualified, experienced people are submitting hundreds of applications and hearing nothing back. The problem isn't them — it's a system that was redesigned by artificial intelligence without telling candidates the rules changed. Before a human recruiter ever sees your resume, it passes through software that parses, scores, and filters. If you don't score well enough, you don't get rejected — you simply never appear. This book exposes how that system works, introduces proprietary frameworks for scoring yourself the way the system does, and gives you a complete, repeatable playbook for navigating the modern job market.",
+      "Something is broken in the way we get hired. Qualified, experienced people are submitting hundreds of applications and hearing nothing back. The problem isn't them, it's a system that was redesigned by artificial intelligence without telling candidates the rules changed. Before a human recruiter ever sees your resume, it passes through software that parses, scores, and filters. If you don't score well enough, you don't get rejected — you simply never appear. This book exposes how that system works, introduces proprietary frameworks for scoring yourself the way the system does, and gives you a complete, repeatable playbook for navigating the modern job market.",
     cover: "/hiring-book-cover.png",
     links: [
       { label: "Amazon", url: "https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0G3HQ9CNM", icon: "amazon" },
@@ -362,7 +362,7 @@ export const books: Book[] = [
       {
         title: "Resume Match Score (RMS)",
         description:
-          "A proprietary framework for measuring how well your resume maps to any job description — and how to systematically improve your score.",
+          "A proprietary framework for measuring how well your resume maps to any job description, and how to systematically improve your score.",
       },
       {
         title: "Role Fit Score (RFS)",
@@ -377,7 +377,7 @@ export const books: Book[] = [
       {
         title: "The AI Job Search System",
         description:
-          "A complete, repeatable system for navigating the modern job market — one that works with the technology instead of against it.",
+          "A complete, repeatable system for navigating the modern job market, one that works with the technology instead of against it.",
       },
     ],
     figures: [],

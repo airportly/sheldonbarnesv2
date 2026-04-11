@@ -6,7 +6,7 @@ import ChatWidget from "@/components/ChatWidget";
 export const metadata: Metadata = {
   title: "Contact Sheldon Barnes | Let's Connect",
   description:
-    "Get in touch with Sheldon Barnes — engineering leader, author, and AI strategist. Available for senior leadership roles, speaking, and collaboration.",
+    "Get in touch with Sheldon Barnes, engineering leader, author, and AI strategist. Available for senior leadership roles, speaking, and collaboration.",
   alternates: { canonical: "https://sheldonbarnes.com/contact" },
   openGraph: {
     title: "Contact Sheldon Barnes",

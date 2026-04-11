@@ -64,9 +64,11 @@ export default function About() {
                 insurance.
               </p>
               <p>
-                I write the books I wish someone had handed me, from AI-first
-                engineering leadership to the future of drug discovery to navigating the
-                AI-driven hiring landscape.
+                Software development is being rewritten by AI, and engineering
+                leaders who don&apos;t adapt will be left behind. The pharmaceutical
+                industry is facing a disruption as radical as what AWS did to
+                bookstores or Uber did to taxi cabs. I wrote the books because the playbooks that got us here
+                won&apos;t get us where we&apos;re going.  The future is AI-first development.
               </p>
             </div>
 

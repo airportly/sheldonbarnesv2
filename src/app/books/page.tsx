@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Books by Sheldon Barnes",
     description:
-      "AI-first engineering, drug discovery, and the modern job search — three books for leaders navigating the AI revolution.",
+      "AI-first engineering, drug discovery, and the modern job search. Three books for leaders navigating the AI revolution.",
     url: "https://sheldonbarnes.com/books",
     images: [{ url: "/og/books.jpg", width: 1200, height: 630, alt: "Books by Sheldon Barnes" }],
   },

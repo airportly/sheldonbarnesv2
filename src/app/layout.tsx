@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: "Sheldon Barnes | AI-First Engineering Leader & Author",
   description:
-    "Sheldon Barnes — Senior engineering leader building AI-first teams in regulated enterprises. Author of The Platform Inversion, The $200 Billion Problem, and Why You're Not Getting Hired.",
+    "Sheldon Barnes, senior engineering leader building AI-first teams in regulated enterprises. Author of The Platform Inversion, The $200 Billion Problem, and Why You're Not Getting Hired.",
   alternates: { canonical: BASE },
   icons: {
     icon: [
@@ -89,7 +89,7 @@ const websiteJsonLd = {
   name: "Sheldon Barnes",
   url: "https://sheldonbarnes.com",
   description:
-    "Personal website of Sheldon Barnes — engineering leader, AI strategist, and author.",
+    "Personal website of Sheldon Barnes, engineering leader, AI strategist, and author.",
   author: { "@type": "Person", name: "Sheldon Barnes" },
 };
 

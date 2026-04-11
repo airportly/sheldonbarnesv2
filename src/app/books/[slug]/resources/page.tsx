@@ -44,10 +44,10 @@ export default function BookResourcesPage() {
 
           <div className="mb-12">
             <h1 className="text-4xl font-bold mb-3">
-              {book.title} — <span className="text-primary">Resources</span>
+              {book.title}: <span className="text-primary">Resources</span>
             </h1>
             <p className="text-muted text-lg">
-              Figures, templates, and tools from the book — free for practitioners.
+              Figures, templates, and tools from the book, free for practitioners.
             </p>
           </div>
 
