@@ -57,9 +57,18 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Jamaica Origins */}
+        {/* Jamaica Origins — image LEFT */}
         <Section alt>
           <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/sheldon-jamaica-map.jpeg"
+                alt="Jamaica on the globe"
+                width={400}
+                height={400}
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">
                 Born in <span className="text-primary">Jamaica</span>
@@ -77,31 +86,13 @@ export default function AboutPage() {
                 I go to recharge.
               </p>
             </div>
-            <div className="flex justify-center">
-              <Image
-                src="/sheldon-jamaica-map.jpeg"
-                alt="Jamaica on the globe"
-                width={400}
-                height={400}
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
           </div>
         </Section>
 
-        {/* First Computer */}
+        {/* First Computer — image RIGHT */}
         <Section>
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="flex justify-center md:order-1">
-              <Image
-                src="/sheldon-first-computer.jpg"
-                alt="VTech PreComputer 1000 — Sheldon's first computer"
-                width={450}
-                height={300}
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
-            <div className="md:order-2">
+            <div>
               <h2 className="text-3xl font-bold mb-4">
                 Where It All <span className="text-primary">Started</span>
               </h2>
@@ -119,12 +110,30 @@ export default function AboutPage() {
                 code for the rest of my life.
               </p>
             </div>
+            <div className="flex justify-center">
+              <Image
+                src="/sheldon-first-computer.png"
+                alt="VTech PreComputer 1000 — Sheldon's first computer"
+                width={450}
+                height={300}
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
           </div>
         </Section>
 
-        {/* Dumpster Computer & Computer Club */}
+        {/* Dumpster Computer & Computer Club — image LEFT */}
         <Section alt>
           <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/sheldon-computer-club.jpeg"
+                alt="Sheldon in the high school computer club"
+                width={420}
+                height={320}
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">
                 The Dumpster <span className="text-primary">Computer</span>
@@ -153,19 +162,10 @@ export default function AboutPage() {
                 as I was.
               </p>
             </div>
-            <div className="flex justify-center">
-              <Image
-                src="/sheldon-computer-club.jpeg"
-                alt="Sheldon in the high school computer club"
-                width={420}
-                height={320}
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
           </div>
         </Section>
 
-        {/* Military Service */}
+        {/* Military Service — image RIGHT */}
         <Section>
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -214,24 +214,15 @@ export default function AboutPage() {
                   height={260}
                   className="rounded-xl shadow-lg object-cover w-full h-full"
                 />
-                <div className="col-span-2">
-                  <Image
-                    src="/sheldon-soldier-montage.jpeg"
-                    alt="Sheldon — military deployment montage"
-                    width={420}
-                    height={210}
-                    className="rounded-xl shadow-lg object-cover w-full"
-                  />
-                </div>
               </div>
             </div>
           </div>
         </Section>
 
-        {/* Cycling */}
-        <Section>
+        {/* Cycling — image LEFT */}
+        <Section alt>
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="flex justify-center md:order-1">
+            <div className="flex justify-center">
               <Image
                 src="/sheldon-cycling.jpeg"
                 alt="Sheldon cycling in USA jersey"
@@ -240,7 +231,7 @@ export default function AboutPage() {
                 className="rounded-2xl shadow-xl"
               />
             </div>
-            <div className="md:order-2">
+            <div>
               <h2 className="text-3xl font-bold mb-4">
                 Life on <span className="text-primary">Two Wheels</span>
               </h2>
@@ -274,8 +265,8 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        {/* Learning to Fly */}
-        <Section alt>
+        {/* Learning to Fly — image RIGHT */}
+        <Section>
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-4">
@@ -314,9 +305,18 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        {/* Island Life */}
-        <Section>
+        {/* Island Life — image LEFT */}
+        <Section alt>
           <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="flex justify-center">
+              <Image
+                src="/sheldon-snorkeling.jpeg"
+                alt="Sheldon snorkeling in Jamaica"
+                width={400}
+                height={400}
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">
                 Island <span className="text-secondary">Soul</span>
@@ -333,15 +333,6 @@ export default function AboutPage() {
                 that the best ideas come when you slow down long enough to let
                 the water clear.
               </p>
-            </div>
-            <div className="flex justify-center">
-              <Image
-                src="/sheldon-snorkeling.jpeg"
-                alt="Sheldon snorkeling in Jamaica"
-                width={400}
-                height={400}
-                className="rounded-2xl shadow-xl"
-              />
             </div>
           </div>
         </Section>
