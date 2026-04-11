@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #1a1d1e;
+  --color-foreground: #ededed;
+  --color-primary: #e8701a;
+  --color-primary-light: #f59e4b;
+  --color-secondary: #3b82c6;
+  --color-secondary-light: #60a5fa;
+  --color-surface: #2a2d2e;
+  --color-surface-light: #3a3d3e;
+  --color-muted: #9ca3af;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow-orange {
+  box-shadow: 0 0 20px rgba(232, 112, 26, 0.3), 0 0 60px rgba(232, 112, 26, 0.1);
+}
+.glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 198, 0.3), 0 0 60px rgba(59, 130, 198, 0.1);
+}
+
+/* Section spacing */
+section {
+  scroll-margin-top: 80px;
 }
