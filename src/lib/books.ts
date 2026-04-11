@@ -40,7 +40,7 @@ export const books: Book[] = [
     description:
       "The operating model for senior engineering leaders who need to move beyond coding assistants and build intelligent platforms that compound value. Written for directors, VPs, and staff-plus engineers in regulated industries.",
     longDescription:
-      "Most organizations attempting to become \"AI-first\" are building a portfolio of point solutions when they should be building an intelligent operating platform. Point solutions have a ceiling. Platforms compound. This book provides the complete operating model — roles, artifacts, ceremonies, metrics, and governance structures — for leaders who need to make that transition under real regulatory scrutiny. It is the book Sheldon Barnes wished someone had handed him the day he started running an AI-first program inside a Fortune 100 enterprise.",
+      "Most organizations attempting to become \"AI-first\" are building a portfolio of point solutions when they should be building an intelligent operating platform. Point solutions have a ceiling. Platforms compound. This book provides the complete operating model, including roles, artifacts, ceremonies, metrics, and governance structures, for leaders who need to make that transition under real regulatory scrutiny. It is the book Sheldon Barnes wished someone had handed him the day he started running an AI-first program inside a Fortune 100 enterprise.",
     cover: "/book-cover.png",
     links: [
       { label: "Amazon", url: "https://kdp.amazon.com/amazon-dp-action/us/dualbookshelf.marketplacelink/B0GWW179H6", icon: "amazon" },
@@ -129,7 +129,7 @@ export const books: Book[] = [
       {
         title: "Context is the Product",
         description:
-          "Brand books, design systems, SDKs, API docs, and runbooks are now the highest-leverage investments. The code is the output — the context is the product.",
+          "Brand books, design systems, SDKs, API docs, and runbooks are now the highest-leverage investments. The code is the output, the context is the product.",
       },
       {
         title: "The Eight Principles",
@@ -139,7 +139,7 @@ export const books: Book[] = [
       {
         title: "Agent Briefs",
         description:
-          "Structured artifacts that replace user stories — with intent, constraints, acceptance criteria, linked context, and evaluation hooks that agents can execute without 20 follow-up prompts.",
+          "Structured artifacts that replace user stories, with intent, constraints, acceptance criteria, linked context, and evaluation hooks that agents can execute without 20 follow-up prompts.",
       },
       {
         title: "The Eval Gate",
@@ -179,7 +179,7 @@ export const books: Book[] = [
     subtitle:
       "How AI Is Rewriting Drug Discovery and Closing Pharma's Patent Cliff",
     description:
-      "Between now and 2030, patent protections will expire on drugs generating over $200 billion in annual revenue. This book traces the collision of pharma's greatest financial crisis with the scientific revolution that may be its answer — AI deployed across every stage of how drugs are discovered and developed.",
+      "Between now and 2030, patent protections will expire on drugs generating over $200 billion in annual revenue. This book traces the collision of pharma's greatest financial crisis with the scientific revolution that may be its answer, AI deployed across every stage of how drugs are discovered and developed.",
     longDescription:
       "The pharmaceutical industry is caught between a financial crisis and a scientific revolution. Between now and 2030, patent protections will expire on drugs generating more than $200 billion in annual revenue — three times the size of the previous patent cliff. At the same time, artificial intelligence is being deployed across every stage of how drugs are discovered and developed. This book traces the collision of those two forces, examines the Prediction Stack framework for understanding where drug discovery fails, and maps the convergence of technology companies, pharmaceutical giants, and venture capital betting hundreds of billions on AI being the answer.",
     cover: "/pharma-book-cover.png",
