@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "About", href: "/about" },
-  { label: "Expertise", href: "#expertise" },
+  { label: "Expertise", href: "/#expertise" },
   { label: "Books", href: "/books" },
   { label: "Resources", href: "/books/the-platform-inversion/resources" },
   { label: "Contact", href: "/contact" },

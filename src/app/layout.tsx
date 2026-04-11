@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: "Sheldon Barnes | AI-First Engineering Leader & Author",
   description:
-    "Sheldon Barnes, senior engineering leader building AI-first teams in regulated enterprises. Author of The Platform Inversion, The $200 Billion Problem, and Why You're Not Getting Hired.",
+    "Engineering leader building AI-first teams in regulated enterprises. Published author of three books on AI leadership, drug discovery, and the modern job search.",
   alternates: { canonical: BASE },
   icons: {
     icon: [
