@@ -20,18 +20,29 @@ export async function generateMetadata({
   const book = getBookBySlug(slug);
   if (!book) return {};
 
+  const ogMap: Record<string, string> = {
+    "the-platform-inversion": "/og/book-platform-inversion.jpg",
+    "the-200-billion-problem": "/og/book-200-billion.jpg",
+    "why-youre-not-getting-hired": "/og/book-hiring.jpg",
+  };
+  const ogImage = ogMap[slug] || book.cover;
+  const url = `https://sheldonbarnes.com/books/${slug}`;
+
   return {
     title: `${book.title} by Sheldon Barnes | ${book.subtitle}`,
     description: book.description,
+    alternates: { canonical: url },
     openGraph: {
       title: `${book.title} — Sheldon Barnes`,
       description: book.description,
-      images: [{ url: book.cover }],
+      url,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: book.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: book.title,
       description: book.description,
+      images: [ogImage],
     },
   };
 }

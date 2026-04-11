@@ -7,10 +7,17 @@ export const metadata: Metadata = {
   title: "Contact Sheldon Barnes | Let's Connect",
   description:
     "Get in touch with Sheldon Barnes — engineering leader, author, and AI strategist. Available for senior leadership roles, speaking, and collaboration.",
+  alternates: { canonical: "https://sheldonbarnes.com/contact" },
   openGraph: {
     title: "Contact Sheldon Barnes",
     description:
       "Connect with Sheldon on LinkedIn, email, or Strava.",
+    url: "https://sheldonbarnes.com/contact",
+    images: [{ url: "/og/contact.jpg", width: 1200, height: 630, alt: "Contact Sheldon Barnes" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og/contact.jpg"],
   },
 };
 
