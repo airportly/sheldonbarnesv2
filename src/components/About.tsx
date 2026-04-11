@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const stats = [
   { value: "7+", label: "AI Products Shipped" },
-  { value: "F100", label: "Enterprise Experience" },
+  { value: "Fortune 100", label: "Enterprise Experience" },
   { value: "18mo", label: "Portfolio Built" },
   { value: "2026", label: "Published Author" },
 ];

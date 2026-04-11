@@ -4,9 +4,43 @@ import { motion } from "framer-motion";
 
 const areas = [
   {
-    title: "AI-First Engineering Leadership",
+    title: "People Leadership",
     description:
-      "Building and leading teams where humans direct and agents build. Designing the operating model that makes AI-first delivery sustainable.",
+      "Hiring, mentoring, and retaining high-performing engineers. Setting clear expectations, running effective 1:1s, managing performance with candor, and creating the psychological safety that lets teams take risks and deliver. People don't leave companies, they leave managers. I take that personally.",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+  },
+  {
+    title: "Program Budget & ROI",
+    description:
+      "Owning multi-million dollar program budgets, forecasting inference costs, and translating engineering investment into business outcomes the CFO can defend. Building the financial models that prove AI isn't overhead, it's a value accelerator.",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <line x1="12" y1="1" x2="12" y2="23" />
+        <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+      </svg>
+    ),
+  },
+  {
+    title: "Leading for the Future",
+    description:
+      "The tools, patterns, and expectations of software engineering are changing faster than most organizations can adapt. I stay current on where the industry is headed and make sure my teams are ready before the shift arrives, not after.",
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
+      </svg>
+    ),
+  },
+  {
+    title: "AI-First Engineering",
+    description:
+      "Building and leading teams where humans direct and agents build. Designing the operating model that makes AI-first delivery sustainable across the entire SDLC.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />

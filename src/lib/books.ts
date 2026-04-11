@@ -296,6 +296,7 @@ export const books: Book[] = [
       "The Role Fit Score (RFS) — evaluate if a job is right for you before optimizing for it",
       "How ATS platforms parse, score, and filter your application",
       "AI-assisted resume building and standing out in the AI arms race",
+      "Why uploading your resume and job description to AI produces a generic resume that looks like everyone else's and will score 50% or lower in ATS systems",
       "The complete AI Job Search System — a repeatable playbook",
     ],
     tableOfContents: [
