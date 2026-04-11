@@ -179,9 +179,9 @@ export const books: Book[] = [
     subtitle:
       "How AI Is Rewriting Drug Discovery and Closing Pharma's Patent Cliff",
     description:
-      "Between 2025 and 2030, patent protections will expire on drugs generating over $300 billion in annual revenue. This book traces the collision of pharma's greatest financial crisis with the scientific revolution that may be its answer — AI deployed across every stage of how drugs are discovered and developed.",
+      "Between now and 2030, patent protections will expire on drugs generating over $200 billion in annual revenue. This book traces the collision of pharma's greatest financial crisis with the scientific revolution that may be its answer — AI deployed across every stage of how drugs are discovered and developed.",
     longDescription:
-      "The pharmaceutical industry is caught between a financial crisis and a scientific revolution. Between 2025 and 2030, patent protections will expire on drugs generating more than $300 billion in annual revenue — three times the size of the previous patent cliff. At the same time, artificial intelligence is being deployed across every stage of how drugs are discovered and developed. This book traces the collision of those two forces, examines the Prediction Stack framework for understanding where drug discovery fails, and maps the convergence of technology companies, pharmaceutical giants, and venture capital betting hundreds of billions on AI being the answer.",
+      "The pharmaceutical industry is caught between a financial crisis and a scientific revolution. Between now and 2030, patent protections will expire on drugs generating more than $200 billion in annual revenue — three times the size of the previous patent cliff. At the same time, artificial intelligence is being deployed across every stage of how drugs are discovered and developed. This book traces the collision of those two forces, examines the Prediction Stack framework for understanding where drug discovery fails, and maps the convergence of technology companies, pharmaceutical giants, and venture capital betting hundreds of billions on AI being the answer.",
     cover: "/pharma-book-cover.png",
     links: [
       { label: "Amazon", url: "https://amazon.com/dp/B0F2N6PN3L", icon: "amazon" },
@@ -251,7 +251,7 @@ export const books: Book[] = [
       {
         title: "The Patent Cliff",
         description:
-          "$300+ billion in annual drug revenue loses patent protection between 2025-2030. About 70 blockbusters, each generating over $1B/year. Three times the size of the previous cliff.",
+          "$200+ billion in annual drug revenue loses patent protection between 2025-2030. About 70 blockbusters, each generating over $1B/year. Three times the size of the previous cliff.",
       },
       {
         title: "The Prediction Stack",

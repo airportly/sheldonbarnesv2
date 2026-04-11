@@ -69,7 +69,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
               <p className="text-muted mb-8">
                 Whether you&apos;re hiring, collaborating, or just want to talk about
-                AI-first engineering &mdash; I&apos;d love to hear from you.
+                AI-first engineering, I&apos;d love to hear from you.
               </p>
             </div>
 

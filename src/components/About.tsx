@@ -52,8 +52,8 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                I&apos;ve spent the past several years as a senior director leading an
-                AI and automation program inside a regulated Fortune 100 enterprise &mdash;
+                I&apos;ve spent the past several years leading an
+                AI and automation program inside a regulated Fortune 100 enterprise,
                 building a portfolio of seven internal AI products that shipped, scaled,
                 and delivered measurable impact.
               </p>
@@ -64,7 +64,7 @@ export default function About() {
                 insurance.
               </p>
               <p>
-                I write the books I wish someone had handed me &mdash; from AI-first
+                I write the books I wish someone had handed me, from AI-first
                 engineering leadership to the future of drug discovery to navigating the
                 AI-driven hiring landscape.
               </p>

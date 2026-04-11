@@ -35,7 +35,7 @@ export default function AiAssistant() {
               in practice.
             </p>
             <p>
-              Ask it anything &mdash; about the Platform Inversion thesis, Digital
+              Ask it anything about the Platform Inversion thesis, Digital
               Work Equivalents, the eight principles, my career, or what kind of
               team I want to lead next.
             </p>

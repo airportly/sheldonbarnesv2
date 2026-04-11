@@ -80,8 +80,8 @@ export default function AboutPage() {
                 whether you felt like it or not.
               </p>
               <p className="text-muted leading-relaxed">
-                Growing up on the island shaped how I see the world &mdash;
-                resourceful, direct, and never taking opportunity for granted.
+                Growing up on the island shaped how I see the world.
+                Resourceful, direct, and never taking opportunity for granted.
                 The beaches of Ocho Rios, Kingston, and Negril are still where
                 I go to recharge.
               </p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 Where It All <span className="text-primary">Started</span>
               </h2>
               <p className="text-muted leading-relaxed mb-4">
-                My first computer was a VTech PreComputer 1000 &mdash; a toy
+                My first computer was a VTech PreComputer 1000, a toy
                 with a single-line LCD screen and a full QWERTY keyboard. I
                 learned to type on that machine. I played every educational game
                 it had until the batteries died, replaced them, and kept going.
@@ -147,7 +147,7 @@ export default function AboutPage() {
               <p className="text-muted leading-relaxed mb-4">
                 We taught ourselves to build computers, tear them apart, and
                 put them back together. I discovered Linux, mastered the DOS
-                prompt, and became fluent in UNIX systems &mdash; bash, the
+                prompt, and became fluent in UNIX systems. Bash, the
                 terminal, the command line became my natural habitat. We
                 connected to bulletin board systems like Renegade and read
                 2600. It was the hacker ethos before I knew what to call it:
@@ -157,7 +157,7 @@ export default function AboutPage() {
               <p className="text-muted leading-relaxed">
                 In high school, I joined the computer club, which became my
                 second home. While other kids were on the basketball court, I
-                was in the lab &mdash; writing code, building networks, and
+                was in the lab, writing code, building networks, and
                 learning from a community of people who were just as obsessed
                 as I was.
               </p>
@@ -181,21 +181,21 @@ export default function AboutPage() {
                 The military taught me how to lead under pressure, how to make
                 decisions with incomplete information, and how to take care of
                 the people around you before you take care of yourself. Every
-                leadership principle I practice today &mdash; in engineering, in
-                writing, in life &mdash; traces back to what I learned in
+                leadership principle I practice today, in engineering, in
+                writing, in life, traces back to what I learned in
                 uniform.
               </p>
               <p className="text-muted leading-relaxed">
                 Coming home was its own battle. The transition back to civilian
                 life forced me to confront my mental health in ways I
                 wasn&apos;t prepared for. I learned that the discipline the
-                military gave me could be redirected &mdash; into taking care
+                military gave me could be redirected, into taking care
                 of my mind the way I&apos;d been trained to take care of a
                 mission. Exercise became non-negotiable. Cycling became my
                 therapy. Vacations to Jamaica became how I recharge. And voices
                 like David Goggins on YouTube became the accountability
                 partners who reminded me that the fight doesn&apos;t end when
-                the deployment does &mdash; it just changes terrain.
+                the deployment does, it just changes terrain.
               </p>
             </div>
             <div className="flex justify-center">
@@ -247,7 +247,7 @@ export default function AboutPage() {
                 open road that clears my head and lets the ideas come through.
                 You don&apos;t ride a thousand miles in a year by being
                 motivated. You do it by showing up on the days you don&apos;t
-                feel like it &mdash; which is the same discipline that applies
+                feel like it, which is the same discipline that applies
                 to leadership, to writing, and to life.
               </p>
               <a
@@ -280,7 +280,7 @@ export default function AboutPage() {
                 between you and the ground is a feeling that never gets old.
               </p>
               <p className="text-muted leading-relaxed mb-4">
-                The hardest parts? Learning to use the rudder &mdash; on the
+                The hardest parts? Learning to use the rudder, on the
                 ground and in the air. Landing. Understanding flight patterns
                 and traffic. But the real lesson flying teaches you is focus and
                 trust. Focus on the procedure. Trust your instruments, even when
@@ -288,8 +288,8 @@ export default function AboutPage() {
               </p>
               <p className="text-muted leading-relaxed">
                 That&apos;s a lesson that translates directly to leadership.
-                Build the instruments &mdash; the metrics, the evals, the
-                dashboards &mdash; and then trust them, even when the noise
+                Build the instruments, the metrics, the evals, the
+                dashboards, and then trust them, even when the noise
                 around you is loud.
               </p>
             </div>
@@ -323,7 +323,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-muted leading-relaxed mb-4">
                 No matter how far the career takes me, Jamaica stays in my
-                bones. I go back whenever I can &mdash; to snorkel the reefs, to
+                bones. I go back whenever I can, to snorkel the reefs, to
                 eat jerk chicken on the beach, and to remember where I came
                 from.
               </p>
@@ -355,7 +355,7 @@ export default function AboutPage() {
             <p className="text-muted max-w-xl mx-auto mb-8">
               From a VTech computer in Jamaica, through the deserts of the
               Middle East, to leading AI-first engineering teams at Fortune 100
-              enterprises &mdash; and writing the books I wished someone had
+              enterprises, and writing the books I wished someone had
               handed me along the way.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

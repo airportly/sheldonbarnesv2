@@ -6,7 +6,7 @@ const ideas = [
   {
     title: "The Platform Inversion",
     description:
-      "Point solutions are valuable but they cannot compound. Platforms do. The transition from portfolio to platform is not a technology decision — it is a leadership decision.",
+      "Point solutions are valuable but they cannot compound. Platforms do. The transition from portfolio to platform is not a technology decision, it is a leadership decision.",
     color: "primary",
   },
   {
@@ -18,7 +18,7 @@ const ideas = [
   {
     title: "Context is the Product",
     description:
-      "The brand book, design system, SDK, API docs, and runbooks are now the highest-leverage investments. The code is the output — the context is the product.",
+      "The brand book, design system, SDK, API docs, and runbooks are now the highest-leverage investments. The code is the output, the context is the product.",
     color: "primary",
   },
   {

@@ -77,7 +77,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-muted text-lg max-w-2xl mx-auto">
               Whether you&apos;re hiring, collaborating, booking a speaker, or
-              just want to talk about AI-first engineering &mdash; I&apos;d love
+              just want to talk about AI-first engineering, I&apos;d love
               to hear from you.
             </p>
           </div>

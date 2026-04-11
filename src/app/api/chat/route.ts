@@ -40,10 +40,10 @@ Target audience: Senior directors, VPs, and staff-plus engineers in regulated in
 ## The $200 Billion Problem (Book)
 Full title: "The $200 Billion Problem: How AI Is Rewriting Drug Discovery and Closing Pharma's Patent Cliff"
 
-Central thesis: Between 2025 and 2030, patent protections will expire on drugs generating over $300 billion in annual revenue. AI — deployed across every stage of drug discovery and development — may be the only technology that can close the pipeline gap on the timeline the industry needs.
+Central thesis: Between now and 2030, patent protections will expire on drugs generating over $200 billion in annual revenue. AI — deployed across every stage of drug discovery and development — may be the only technology that can close the pipeline gap on the timeline the industry needs.
 
 The book is organized in five parts:
-1. **The Burning Platform** — The patent cliff crisis: $300B in revenue at risk, the old R&D model failing (12-15 years, $2.6B per drug, 90%+ failure rate)
+1. **The Burning Platform** — The patent cliff crisis: $200B in revenue at risk, the old R&D model failing (12-15 years, $2.6B per drug, 90%+ failure rate)
 2. **The AI Arsenal** — AI across the pipeline: reading biology at scale (AlphaFold, protein language models), designing molecules in silico, digital twin labs, smarter clinical trials, regulatory intelligence
 3. **The Ecosystem** — Platform companies (Recursion, Insilico, Isomorphic Labs), Big Pharma's AI bets (Roche, Novartis, AstraZeneca, Pfizer, J&J), tech giants entering pharma (NVIDIA, Google DeepMind, Anthropic, quantum computing)
 4. **The Human Dimension** — The augmented scientist, ethics of speed, the cost revolution

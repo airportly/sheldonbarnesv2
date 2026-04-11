@@ -49,7 +49,7 @@ export default function Author() {
             </p>
             <p className="text-muted leading-relaxed mb-8">
               His work spans AI-first engineering, platform architecture, agent
-              orchestration, and the application of AI in pharmaceutical R&amp;D —
+              orchestration, and the application of AI in pharmaceutical R&amp;D,
               always grounded in the operating realities of industries where
               compliance is non-negotiable.
             </p>
