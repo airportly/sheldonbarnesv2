@@ -25,7 +25,9 @@ export async function generateMetadata({
     "the-200-billion-problem": "/og/book-200-billion.jpg",
     "why-youre-not-getting-hired": "/og/book-hiring.jpg",
   };
-  const ogImage = ogMap[slug] || book.cover;
+  // Prefer the book's cover image; fall back to older og assets if needed.
+  const ogImage = book.cover || ogMap[slug] || "/og/home.jpg";
+  const ogImageUrl = ogImage.startsWith("http") ? ogImage : `https://sheldonbarnes.com${ogImage}`;
   const url = `https://sheldonbarnes.com/books/${slug}`;
 
   return {
@@ -36,13 +38,13 @@ export async function generateMetadata({
       title: `${book.title} — Sheldon Barnes`,
       description: book.description,
       url,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: book.title }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: book.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: book.title,
       description: book.description,
-      images: [ogImage],
+      images: [ogImageUrl],
     },
   };
 }
