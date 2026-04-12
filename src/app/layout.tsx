@@ -35,7 +35,10 @@ export const metadata: Metadata = {
     type: "website",
     url: BASE,
     siteName: "Sheldon Barnes",
-    images: [{ url: "/og/home.jpg", width: 1200, height: 630, alt: "Sheldon Barnes — Engineering Leader, AI Strategist, Author" }],
+    images: [
+      { url: "/author-photo.jpg", width: 1200, height: 1200, alt: "Sheldon Barnes — author photo" },
+      { url: "/og/home.jpg", width: 1200, height: 630, alt: "Sheldon Barnes — Engineering Leader, AI Strategist, Author" },
+    ],
     locale: "en_US",
   },
   twitter: {
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
     title: "Sheldon Barnes | AI-First Engineering Leader",
     description:
       "Author of The Platform Inversion. Leading AI-first engineering teams in regulated enterprises.",
-    images: ["/og/home.jpg"],
+    images: ["https://sheldonbarnes.com/author-photo.jpg", "/og/home.jpg"],
   },
   robots: {
     index: true,
@@ -178,6 +181,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
+        <meta property="og:image" content="https://sheldonbarnes.com/author-photo.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta name="twitter:image" content="https://sheldonbarnes.com/author-photo.jpg" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-EV8SS4PR5L"
