@@ -5,8 +5,8 @@ date: "2026-04-18"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["pathways", "systems-biology", "ai-drug-discovery", "multi-omics", "kegg", "reactome", "perturb-seq", "digital-twins", "federated-learning", "foundation-models", "pharma", "the-platform-inversion"]
-hero: ""
-heroAlt: "Illustration of the pathway layer in AI drug discovery — layered infrastructure from multi-omics data to federated foundation models to cell and organ digital twins"
+hero: "/ai-drug-discovery-pathway-layer.png"
+heroAlt: "Stack diagram showing the four layers AI drug discovery depends on: a data base layer of genomic, clinical, and experimental data; a pathway layer with cell-type-specific and time-resolved edges; a digital twins and simulation layer with virtual cells and organ-scale models; and AI drug discovery outcomes including target discovery, lead optimization, and in-silico Day Zero success. On the right, a multi-omic foundation model functions as an AlphaFold of pathway state."
 published: true
 ---
 
