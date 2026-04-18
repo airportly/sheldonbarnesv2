@@ -8,6 +8,7 @@ import ChatWidget from "@/components/ChatWidget";
 import MarkdownBody from "@/components/blog/MarkdownBody";
 import RelatedPosts from "@/components/blog/RelatedPosts";
 import ShareButtons from "@/components/blog/ShareButtons";
+import APAPSimulator from "@/components/blog/APAPSimulator";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -233,8 +234,20 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body */}
-          <MarkdownBody source={post.body} />
+          {/* Body — supports {{apap-simulator}} shortcode for inline embeds */}
+          {(() => {
+            const MARKER = "{{apap-simulator}}";
+            if (!post.body.includes(MARKER)) {
+              return <MarkdownBody source={post.body} />;
+            }
+            const segments = post.body.split(MARKER);
+            return segments.map((seg, i) => (
+              <div key={i}>
+                <MarkdownBody source={seg} />
+                {i < segments.length - 1 && <APAPSimulator />}
+              </div>
+            ));
+          })()}
 
           {/* Share */}
           <ShareButtons url={url} title={post.title} />
