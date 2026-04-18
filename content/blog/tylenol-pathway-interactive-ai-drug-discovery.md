@@ -5,8 +5,8 @@ date: "2026-04-19"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["acetaminophen", "tylenol", "pathways", "napqi", "glutathione", "cyp2e1", "ai-drug-discovery", "pharmacology", "liver-toxicity", "nac", "the-platform-inversion"]
-hero: "/table-of-context-drug-discovery.jpeg"
-heroAlt: "Diagram showing the layers of context required for drug discovery — molecular structure, protein binding, ADME profile, toxicity, signaling pathways, and unknown unknowns"
+hero: "/tylenol-liver-pathways.png"
+heroAlt: "Sci-fi blueprint diagram of a liver with three enzymatic pathways — UGT and SULT carrying acetaminophen safely to the kidney for excretion, and CYP2E1 producing toxic NAPQI that is neutralized by a glowing green glutathione buffer shield"
 published: true
 ---
 
