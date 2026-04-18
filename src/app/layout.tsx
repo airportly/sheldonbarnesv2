@@ -176,6 +176,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Sheldon Barnes Blog"
+          href="/feed.xml"
+        />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-EV8SS4PR5L"
