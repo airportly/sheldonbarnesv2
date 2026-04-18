@@ -17,7 +17,7 @@ export default function PostCard({ post }: { post: BlogPost }) {
   return (
     <article className="rounded-2xl bg-surface border border-surface-light overflow-hidden hover:border-primary/40 transition-all group">
       <Link href={`/blog/${post.slug}`} className="block">
-        {post.hero && (
+        {post.hero ? (
           <div className="aspect-[16/9] relative bg-background">
             <Image
               src={post.hero}
@@ -27,7 +27,19 @@ export default function PostCard({ post }: { post: BlogPost }) {
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
             />
           </div>
-        )}
+        ) : post.heroVideo ? (
+          <div className="aspect-[16/9] relative bg-background overflow-hidden">
+            {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+            <video
+              src={post.heroVideo}
+              aria-label={post.heroAlt}
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform"
+              muted
+              playsInline
+              preload="metadata"
+            />
+          </div>
+        ) : null}
       </Link>
 
       <div className="p-6">

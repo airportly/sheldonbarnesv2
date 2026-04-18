@@ -12,13 +12,12 @@ export interface BlogPost {
   tags: string[];
   hero: string;
   heroAlt: string;
+  heroVideo?: string;
   body: string;
   readingMinutes: number;
 }
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
-
-const cache: { posts?: BlogPost[] } = {};
 
 function estimateReadingMinutes(text: string): number {
   const words = text.trim().split(/\s+/).length;
@@ -26,7 +25,6 @@ function estimateReadingMinutes(text: string): number {
 }
 
 export function getAllPosts(): BlogPost[] {
-  if (cache.posts) return cache.posts;
   if (!fs.existsSync(BLOG_DIR)) return [];
 
   const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".md") || f.endsWith(".mdx"));
@@ -47,6 +45,7 @@ export function getAllPosts(): BlogPost[] {
         tags: Array.isArray(data.tags) ? data.tags : [],
         hero: data.hero ?? "",
         heroAlt: data.heroAlt ?? data.title ?? "",
+        heroVideo: data.heroVideo,
         body: content,
         readingMinutes: estimateReadingMinutes(content),
         published: data.published !== false,
@@ -55,7 +54,6 @@ export function getAllPosts(): BlogPost[] {
     .filter((p) => (p as BlogPost & { published: boolean }).published)
     .sort((a, b) => (b.date > a.date ? 1 : -1));
 
-  cache.posts = posts;
   return posts;
 }
 

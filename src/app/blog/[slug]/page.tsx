@@ -26,7 +26,10 @@ export async function generateMetadata({
   if (!post) return {};
 
   const url = `${SITE}/blog/${slug}`;
-  const ogImage = post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`;
+  const fallbackOg = `${SITE}/og/books.jpg`;
+  const ogImage = post.hero
+    ? (post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`)
+    : fallbackOg;
   const category = getCategoryBySlug(post.category);
 
   return {
@@ -46,6 +49,16 @@ export async function generateMetadata({
       section: category?.name,
       tags: post.tags,
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.heroAlt }],
+      ...(post.heroVideo
+        ? {
+            videos: [
+              {
+                url: post.heroVideo.startsWith("http") ? post.heroVideo : `${SITE}${post.heroVideo}`,
+                type: "video/mp4",
+              },
+            ],
+          }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -163,7 +176,22 @@ export default async function BlogPostPage({
           </header>
 
           {/* Hero */}
-          {post.hero && (
+          {post.heroVideo ? (
+            <div className="rounded-2xl overflow-hidden mb-10 border border-surface-light bg-background">
+              <video
+                src={post.heroVideo}
+                poster={post.hero || undefined}
+                aria-label={post.heroAlt}
+                className="w-full h-auto"
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+            </div>
+          ) : post.hero ? (
             <div className="rounded-2xl overflow-hidden mb-10 border border-surface-light">
               <Image
                 src={post.hero}
@@ -174,7 +202,7 @@ export default async function BlogPostPage({
                 priority
               />
             </div>
-          )}
+          ) : null}
 
           {/* Body */}
           <MarkdownBody source={post.body} />
