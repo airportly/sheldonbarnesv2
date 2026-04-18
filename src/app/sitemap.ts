@@ -65,8 +65,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
           thumbnail_loc: thumbnailUrl,
           content_loc: videoUrl,
           publication_date: new Date(p.date + "T12:00:00Z").toISOString(),
-          family_friendly: "YES",
-          tag: p.tags,
         },
       ];
     }
