@@ -5,7 +5,7 @@ date: "2026-04-17"
 author: "Sheldon Barnes"
 category: "industry-analysis"
 tags: ["domain-knowledge", "vertical-ai", "claude", "anthropic", "codex", "ai-strategy", "enterprise-ai", "the-platform-inversion"]
-hero: "/blog/domain-knowledge-ai-moat.png"
+hero: "/domain-knowledge-ai-moat.jpg"
 heroAlt: "Network diagram showing AI at the center connected to professionals across industries — finance, healthcare, law, engineering, education, and culinary — illustrating the vertical specialization of AI products"
 published: true
 ---

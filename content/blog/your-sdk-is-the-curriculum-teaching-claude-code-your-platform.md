@@ -5,7 +5,7 @@ date: "2026-04-15"
 author: "Sheldon Barnes"
 category: "ai-engineering-leadership"
 tags: ["claude-code", "sdk", "design-systems", "brand-guidelines", "ai-first", "sdlc", "developer-experience", "engineering-leadership", "the-platform-inversion"]
-hero: "/blog/sdk-curriculum-claude-code.png"
+hero: "/sdk-curriculum-claude-code.jpeg"
 heroAlt: "Diagram showing how brand guidelines, UX design system, SDK, and requirement documentation feed into a central knowledge base that an AI coding assistant draws on, with the outcome of reducing human handoff gaps and aligning development to design, brand, and requirements"
 published: true
 ---

@@ -78,6 +78,15 @@ export default function MarkdownBody({ source }: { source: string }) {
             );
           },
           hr: () => <hr className="my-10 border-surface-light" />,
+          img: ({ src, alt }) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={typeof src === "string" ? src : ""}
+              alt={alt ?? ""}
+              className="rounded-2xl my-8 w-full h-auto border border-surface-light"
+              loading="lazy"
+            />
+          ),
         }}
       >
         {source}

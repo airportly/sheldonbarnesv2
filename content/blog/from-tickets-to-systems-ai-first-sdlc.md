@@ -5,7 +5,7 @@ date: "2026-04-16"
 author: "Sheldon Barnes"
 category: "ai-engineering-leadership"
 tags: ["ai-first", "sdlc", "claude-code", "chatgpt-codex", "vibe-design", "progressive-delivery", "engineering-leadership", "okrs", "the-platform-inversion"]
-hero: "/blog/ai-first-sdlc.png"
+hero: "/ai-first-sdlc-01.jpeg"
 heroAlt: "Diagram contrasting old ticket-driven SDLC (requirement → break into tasks → implement → test & release) with the new AI-first SDLC (define objective and constraints → AI assists → engineer validates → release with control), and listing six key shifts: OKRs, sprint cadence, standardized requirements, AI-assisted development, progressive delivery, and observability"
 published: true
 ---
@@ -46,6 +46,8 @@ The real opportunity isn't just speed, it's reducing friction across the entire 
 - Higher sprint completion rates because work is clearer
 - Faster time-to-production because less rework is needed
 - Safer releases because patterns are consistent and controlled
+
+![Five outcomes of an AI-first SDLC: improve sprint completion rate through planning and consistent delivery, reduce time to production by mitigating rework and friction, enable AI-assisted development with guardrails and consistency, structure data for insights to improve measurement and learning, and safer and controlled releases using a progressive delivery approach](/ai-first-sdlc-02.jpeg)
 
 ## Speed without sacrificing integrity
 

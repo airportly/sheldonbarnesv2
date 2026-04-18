@@ -5,7 +5,7 @@ date: "2026-04-18"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["ai-drug-discovery", "alphafold", "dark-proteome", "pharma", "longitudinal-data", "the-platform-inversion"]
-hero: "/blog/table-of-context-drug-discovery.png"
+hero: "/table-of-context-drug-discovery.jpeg"
 heroAlt: "Diagram showing the layers of context required for a single drug molecule — molecular structure, protein binding, ADME profile, toxicity, signaling pathways, patient population variance, dark proteome, and unknown unknowns — with a context complexity meter at 92%"
 published: true
 ---
