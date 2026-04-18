@@ -43,12 +43,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ? [{ url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.9 }]
     : [];
 
-  const blogPages: MetadataRoute.Sitemap = posts.map((p) => ({
-    url: `${BASE_URL}/blog/${p.slug}`,
-    lastModified: new Date(p.date + "T12:00:00Z"),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  const blogPages: MetadataRoute.Sitemap = posts.map((p) => {
+    const entry: MetadataRoute.Sitemap[number] = {
+      url: `${BASE_URL}/blog/${p.slug}`,
+      lastModified: new Date(p.date + "T12:00:00Z"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    };
+
+    if (p.heroVideo) {
+      const videoUrl = p.heroVideo.startsWith("http")
+        ? p.heroVideo
+        : `${BASE_URL}${p.heroVideo}`;
+      const thumbnailUrl = p.hero
+        ? (p.hero.startsWith("http") ? p.hero : `${BASE_URL}${p.hero}`)
+        : `${BASE_URL}/og/books.jpg`;
+      entry.videos = [
+        {
+          title: p.title,
+          description: p.description,
+          thumbnail_loc: thumbnailUrl,
+          content_loc: videoUrl,
+          publication_date: new Date(p.date + "T12:00:00Z").toISOString(),
+          family_friendly: "YES",
+          tag: p.tags,
+        },
+      ];
+    }
+
+    return entry;
+  });
 
   // Pagination pages — noindex but still in sitemap is fine; they redirect to /blog if empty
   const paginationPages: MetadataRoute.Sitemap = [];
