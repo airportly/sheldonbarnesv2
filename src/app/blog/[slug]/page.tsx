@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import MarkdownBody from "@/components/blog/MarkdownBody";
 import RelatedPosts from "@/components/blog/RelatedPosts";
+import ShareButtons from "@/components/blog/ShareButtons";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -234,6 +235,9 @@ export default async function BlogPostPage({
 
           {/* Body */}
           <MarkdownBody source={post.body} />
+
+          {/* Share */}
+          <ShareButtons url={url} title={post.title} />
 
           {/* Tags */}
           {post.tags.length > 0 && (
