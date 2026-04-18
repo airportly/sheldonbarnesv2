@@ -70,3 +70,13 @@ Go back up and explore the scenarios. Push the dose past 4g with full GSH and wa
 Then imagine running the same simulation for ten thousand candidate molecules, each with a different pathway profile — some known, most not. That's the job AI drug discovery is trying to do.
 
 The molecule is solved. The biology is not.
+
+## Further reading
+
+Every reaction in this post is annotated in [Reactome](https://reactome.org), the open-source curated human pathway knowledge base. Notice that you need five separate entries to assemble the full Tylenol story — which is exactly the fragmentation problem [The Pathway Layer](/blog/pathway-layer-ai-drug-discovery-roadmap) argues against.
+
+- [Glucuronidation (R-HSA-156588)](https://reactome.org/content/detail/R-HSA-156588) — the blue pathway (~55% of a therapeutic dose, UGT1A6 is the specific isozyme for APAP)
+- [Cytosolic sulfonation of small molecules (R-HSA-156584)](https://reactome.org/content/detail/R-HSA-156584) — the teal pathway (~30%, limited by PAPS availability)
+- [CYP2E1 monooxygenates APAP to NAPQI (R-HSA-9753285)](https://reactome.org/content/detail/R-HSA-9753285) — the canonical annotation of the toxic step
+- [Glutathione conjugation (R-HSA-156590)](https://reactome.org/content/detail/R-HSA-156590) — the rescue reaction (glutathione S-transferase neutralizes NAPQI 1:1)
+- [Glutathione synthesis and recycling (R-HSA-174403)](https://reactome.org/content/detail/R-HSA-174403) — the cycle that NAC therapy feeds to restore depleted GSH
