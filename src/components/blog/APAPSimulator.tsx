@@ -452,19 +452,19 @@ export default function APAPSimulator() {
       {/* Numeric readouts */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
         <Stat
-          label="Glucuronidation"
+          label="Glucuronide"
           value={flux.glucuronidation.toFixed(2) + " g"}
           tone="blue"
           saturated={flux.glucuronidation >= VMAX_UGT - 0.01}
         />
         <Stat
-          label="Sulfation"
+          label="Sulfate"
           value={flux.sulfation.toFixed(2) + " g"}
           tone="teal"
           saturated={flux.sulfation >= VMAX_SULT - 0.01}
         />
         <Stat
-          label="NAPQI produced"
+          label="NAPQI"
           value={flux.napqi.toFixed(2) + " g"}
           tone={flux.napqi > 1 ? "red" : "orange"}
         />
@@ -514,8 +514,8 @@ function Stat({
             ? "text-red-400"
             : "text-emerald-400";
   return (
-    <div className="rounded-lg border border-surface-light bg-background p-3">
-      <div className="text-[10px] font-mono uppercase tracking-widest text-muted mb-1">
+    <div className="rounded-lg border border-surface-light bg-background p-3 min-w-0">
+      <div className="text-[10px] font-mono uppercase tracking-wider text-muted mb-1 truncate">
         {label}
         {saturated && (
           <span className="ml-1 text-yellow-400">· saturated</span>
