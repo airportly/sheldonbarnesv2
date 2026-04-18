@@ -88,7 +88,13 @@ export default async function BlogPostPage({
 
   const category = getCategoryBySlug(post.category);
   const url = `${SITE}/blog/${slug}`;
-  const ogImage = post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`;
+  const fallbackOg = `${SITE}/og/books.jpg`;
+  const ogImage = post.hero
+    ? (post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`)
+    : fallbackOg;
+  const videoUrl = post.heroVideo
+    ? (post.heroVideo.startsWith("http") ? post.heroVideo : `${SITE}${post.heroVideo}`)
+    : null;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -113,6 +119,22 @@ export default async function BlogPostPage({
     keywords: post.tags.join(", "),
   };
 
+  const videoJsonLd = videoUrl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: post.title,
+        description: post.description,
+        thumbnailUrl: [ogImage],
+        uploadDate: post.date,
+        contentUrl: videoUrl,
+        embedUrl: url,
+        publisher: { "@type": "Person", name: post.author, url: SITE },
+        keywords: post.tags.join(", "),
+        ...(category ? { genre: category.name } : {}),
+      }
+    : null;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -136,6 +158,12 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {videoJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

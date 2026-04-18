@@ -5,7 +5,7 @@ date: "2026-04-14"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["nvidia", "gpu", "scientific-visualization", "omniverse", "molecular-dynamics", "ai-drug-discovery", "drug-discovery", "digital-twins", "pharma", "the-platform-inversion"]
-hero: ""
+hero: "/geek-life-scientific-visual-operating-system.png"
 heroAlt: "Animated visualization of a Scientific Visual Operating System for drug discovery — molecular structures, protein interactions, and AI-rendered scientific worlds running in real time"
 heroVideo: "/geek-life-scientific-visual-operating-system.mp4"
 published: true
