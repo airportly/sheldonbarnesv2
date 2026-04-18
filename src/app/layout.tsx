@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   alternates: { canonical: BASE },
   icons: {
     icon: [
+      { url: "/sheldonbarnes-logo.png", type: "image/png" },
       { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/sheldonbarnes-logo.png",
+    shortcut: "/sheldonbarnes-logo.png",
   },
   openGraph: {
     title: "Sheldon Barnes | AI-First Engineering Leader & Author",

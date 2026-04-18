@@ -33,8 +33,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" className="text-xl font-bold tracking-tight text-white">
-          Sheldon Barnes
+        <a href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-white">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/sheldonbarnes-logo.png" alt="" className="h-8 w-auto" aria-hidden="true" />
+          <span>Sheldon Barnes</span>
         </a>
 
         {/* Desktop */}

@@ -2,9 +2,13 @@ export default function Footer() {
   return (
     <footer className="py-8 px-6 border-t border-surface-light">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted">
-          &copy; {new Date().getFullYear()} Sheldon Barnes. All rights reserved.
-        </p>
+        <div className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/sheldonbarnes-logo.png" alt="" className="h-6 w-auto" aria-hidden="true" />
+          <p className="text-sm text-muted">
+            &copy; {new Date().getFullYear()} Sheldon Barnes. All rights reserved.
+          </p>
+        </div>
         <div className="flex items-center gap-6">
           <a
             href="https://linkedin.com/in/sheldonbarnes"
