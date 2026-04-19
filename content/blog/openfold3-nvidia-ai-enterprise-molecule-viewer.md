@@ -7,7 +7,6 @@ category: "ai-drug-discovery"
 tags: ["openfold3", "nvidia", "nvidia-ai-enterprise", "nvidia-nim", "bionemo", "cuda", "gpu-computing", "ai", "artificial-intelligence", "generative-ai", "foundation-models", "enterprise-ai", "pharma", "pharma-ai", "life-sciences", "biotech", "drug-discovery", "ai-drug-discovery", "healthcare-ai", "clinical-research", "protein-folding", "protein-structure-prediction", "protein-viewer", "structural-biology", "alphafold", "proteins", "dna", "rna", "ligands", "molecular-complexes", "mmcif", "mol-star", "scientific-visualization", "scientific-computing", "digital-twins", "voice-ai", "web-speech-api", "accessibility", "the-platform-inversion"]
 hero: "/openfold3-nvidia-ai-enterprise-viewer.jpeg"
 heroAlt: "Ackee-branded molecule viewer showing a protein-DNA complex rendered from an OpenFold3 prediction returned by NVIDIA AI Enterprise, with a voice assistant panel and per-residue walkthrough controls"
-socialImage: "/ackee-logo.jpeg"
 published: true
 ---
 
