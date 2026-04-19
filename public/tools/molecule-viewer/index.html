@@ -1179,6 +1179,20 @@
     } else {
       clearBondsRepr();
     }
+
+    // Mol*'s default click-to-focus moves focus onto the clicked bond when
+    // the user hits a dashed interaction line — which removes the whole
+    // dashed-line visualization (nothing to draw around a bond-only focus).
+    // Restore the last residue focus so the scene stays visually consistent.
+    if (isInteraction && lastFocusedLoci) {
+      setTimeout(() => {
+        try {
+          viewer.plugin.managers.structure.focus.setFromLoci(lastFocusedLoci);
+        } catch (e) {
+          console.warn('[click] focus restore after interaction click failed:', e);
+        }
+      }, 60);
+    }
   }
 
   // Element symbols → spoken-friendly long names, so "N" doesn't come out as
