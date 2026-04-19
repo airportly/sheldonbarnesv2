@@ -499,6 +499,7 @@
       <button id="tour-btn" disabled>Start guided tour</button>
       <button id="narrate-toggle" class="walk-btn">Narration: on</button>
       <button id="atoms-toggle" class="walk-btn">Atoms: off</button>
+      <button id="click-detail-toggle" class="walk-btn">Click info: off</button>
       <div id="walk-btns"></div>
     </div>
 
@@ -514,6 +515,8 @@
         <code>stop tour</code>
         <code>show atoms</code>
         <code>hide atoms</code>
+        <code>click info speak</code>
+        <code>click info off</code>
         <code>hide top nav</code>
         <code>show top nav</code>
         <code>stop listening</code>
@@ -707,6 +710,8 @@
     // reset so the next focus builds a fresh ball-and-stick component.
     atomsRef = null;
     lastFocusedLoci = null;
+    bondsRef = null; // same: bonds highlight lives in the old state tree
+    hideCaption();
     setStatus(`Loading ${entry.file}…`);
     $('status').style.display = '';
 
@@ -990,6 +995,206 @@
   function clearActiveMarkers() {
     document.querySelectorAll('.res-chip.active, .chain-group.active')
       .forEach(el => el.classList.remove('active'));
+  }
+
+  // --- Click-detail mode -------------------------------------------------
+  // Progressive level that governs what happens when the user clicks an atom
+  // in the Mol* canvas. Cycles on button press:
+  //   off   — no custom reaction (Mol*'s built-in highlight still fires)
+  //   name  — caption overlay with element, atom name, residue, chain, pLDDT
+  //   speak — name + TTS narration
+  //   bonds — name + speak + ball-and-stick highlight on atoms within ~2.5Å
+  const CLICK_LEVELS = ['off', 'name', 'speak', 'bonds'];
+  const CLICK_LABELS = {
+    off: 'Click info: off',
+    name: 'Click info: name',
+    speak: 'Click info: speak',
+    bonds: 'Click info: bonds',
+  };
+  let clickLevel = 'off';
+  let clickSub = null;      // Mol* click subscription handle
+  let bondsRef = null;      // state-tree ref for the bonds-highlight component
+  let clickCaptionTimer = null;
+
+  function cycleClickLevel() {
+    const idx = CLICK_LEVELS.indexOf(clickLevel);
+    return setClickLevel(CLICK_LEVELS[(idx + 1) % CLICK_LEVELS.length]);
+  }
+
+  function setClickLevel(level) {
+    if (!CLICK_LEVELS.includes(level)) level = 'off';
+    clickLevel = level;
+    const btn = $('click-detail-toggle');
+    if (btn) btn.textContent = CLICK_LABELS[level];
+    if (level === 'off') {
+      // Clear any lingering bond highlight when turning off.
+      clearBondsRepr();
+      hideCaption();
+    }
+    return { ok: true, reason: `click info: ${level}` };
+  }
+
+  function subscribeClick() {
+    if (clickSub || !viewer?.plugin?.behaviors?.interaction?.click) return;
+    clickSub = viewer.plugin.behaviors.interaction.click.subscribe(handleCanvasClick);
+  }
+
+  function handleCanvasClick(ev) {
+    if (clickLevel === 'off') return;
+    const loci = ev?.current?.loci;
+    if (!loci || loci.kind !== 'element-loci' || !loci.elements?.length) return;
+    const info = extractAtomInfo(loci);
+    if (!info) return;
+
+    const captionText = formatAtomCaption(info);
+    const speechText = formatAtomSpeech(info);
+
+    showCaption(captionText);
+    clearTimeout(clickCaptionTimer);
+    clickCaptionTimer = setTimeout(hideCaption, 5000);
+
+    if (clickLevel === 'speak' || clickLevel === 'bonds') {
+      // Don't talk over the tour narrator; skip TTS if a tour is speaking.
+      if (!tourPlaying && 'speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(speechText);
+        u.rate = 1.05; u.pitch = 1.0;
+        try { speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (_) {}
+      }
+    }
+
+    if (clickLevel === 'bonds') {
+      highlightBonds(info);
+    } else {
+      clearBondsRepr();
+    }
+  }
+
+  // Element symbols → spoken-friendly long names, so "N" doesn't come out as
+  // the letter. Covers the common biomolecular elements plus a few ions.
+  const ELEMENT_SPOKEN = {
+    C: 'carbon', N: 'nitrogen', O: 'oxygen', H: 'hydrogen',
+    S: 'sulfur', P: 'phosphorus', F: 'fluorine', Cl: 'chlorine',
+    Br: 'bromine', I: 'iodine', Fe: 'iron', Zn: 'zinc',
+    Mg: 'magnesium', Ca: 'calcium', Na: 'sodium', K: 'potassium',
+    Cu: 'copper', Mn: 'manganese', Se: 'selenium',
+  };
+
+  function extractAtomInfo(loci) {
+    const first = loci.elements[0];
+    if (!first || !first.unit) return null;
+    const unit = first.unit;
+    const idxs = first.indices;
+    // OrderedSet or Int32Array — both indexable by [0]; OrderedSet also has .min.
+    const i = (typeof idxs?.[0] !== 'undefined')
+      ? idxs[0]
+      : (typeof idxs?.min === 'number' ? idxs.min : null);
+    if (i == null) return null;
+    const eI = unit.elements[i];
+    if (eI == null) return null;
+
+    const h = unit.model.atomicHierarchy;
+    const conf = unit.model.atomicConformation;
+    const val = (col, ix) => col?.value?.(ix);
+
+    const atomName = val(h.atoms?.label_atom_id, eI) || '';
+    const element  = val(h.atoms?.type_symbol, eI) || '';
+    const compId   = val(h.atoms?.label_comp_id, eI) || '';
+    const resIdx   = h.residueAtomSegments?.index?.[eI];
+    const seqNum   = resIdx != null ? val(h.residues?.auth_seq_id, resIdx) : null;
+    const chainIdx = h.chainAtomSegments?.index?.[eI];
+    const chainId  = chainIdx != null ? val(h.chains?.auth_asym_id, chainIdx) : '';
+
+    // pLDDT lives in the B-factor column of the OpenFold3 mmCIF. Accessor
+    // shape varies slightly across Mol* builds — try the usual paths.
+    let plddt = null;
+    const bCol = conf?.B_iso_or_equiv;
+    if (bCol) {
+      if (typeof bCol.value === 'function') plddt = bCol.value(eI);
+      else if (typeof bCol[eI] === 'number') plddt = bCol[eI];
+    }
+
+    const x = conf?.x?.[eI], y = conf?.y?.[eI], z = conf?.z?.[eI];
+    return { atomName, element, compId, seqNum, chainId, plddt, x, y, z, unit, idxInUnit: i };
+  }
+
+  function formatAtomCaption(info) {
+    const el = info.element || '?';
+    const name = info.atomName ? ` (${info.atomName})` : '';
+    const res = info.compId && info.seqNum != null ? ` · ${info.compId}${info.seqNum}` : '';
+    const ch = info.chainId ? ` · chain ${info.chainId}` : '';
+    const pl = info.plddt != null ? ` · pLDDT ${info.plddt.toFixed(0)}` : '';
+    return `${el}${name}${res}${ch}${pl}`;
+  }
+
+  function formatAtomSpeech(info) {
+    const elName = ELEMENT_SPOKEN[info.element] || info.element || 'atom';
+    const resPhrase = info.compId && info.seqNum != null
+      ? ` on ${describeResidue(info.compId)} ${info.seqNum}`
+      : '';
+    const chPhrase = info.chainId ? `, chain ${info.chainId}` : '';
+    return `A ${elName} atom${resPhrase}${chPhrase}.`;
+  }
+
+  // Walk every atom in the loaded structure and return a loci for atoms
+  // within `maxDist` of the given center point. Used by the bonds-level
+  // click detail to visualize the neighborhood of a clicked atom.
+  function findAtomsNear(cx, cy, cz, maxDist) {
+    const structure = getStructure();
+    if (!structure) return null;
+    const r2 = maxDist * maxDist;
+    const lociElements = [];
+    for (const unit of structure.units) {
+      const conf = unit.model.atomicConformation;
+      const hits = [];
+      for (let i = 0, il = unit.elements.length; i < il; i++) {
+        const eI = unit.elements[i];
+        const dx = conf.x[eI] - cx;
+        const dy = conf.y[eI] - cy;
+        const dz = conf.z[eI] - cz;
+        if (dx * dx + dy * dy + dz * dz <= r2) hits.push(i);
+      }
+      if (hits.length) lociElements.push({ unit, indices: new Int32Array(hits) });
+    }
+    if (!lociElements.length) return null;
+    return { kind: 'element-loci', structure, elements: lociElements };
+  }
+
+  async function clearBondsRepr() {
+    if (!bondsRef) return;
+    try {
+      const upd = viewer.plugin.state.data.build();
+      upd.delete(bondsRef);
+      await upd.commit();
+    } catch (e) {
+      console.warn('[bonds] remove failed:', e);
+    }
+    bondsRef = null;
+  }
+
+  async function highlightBonds(info) {
+    await clearBondsRepr();
+    if (info.x == null) return;
+    const loci = findAtomsNear(info.x, info.y, info.z, 2.5);
+    if (!loci) return;
+
+    const struct = viewer.plugin.managers.structure.hierarchy.current.structures[0];
+    if (!struct?.cell) return;
+
+    try {
+      const builder = viewer.plugin.builders.structure;
+      const createFn = builder.tryCreateComponentFromLoci
+        || builder.tryCreateComponentFromSelection;
+      if (!createFn) return;
+      const component = await createFn.call(builder, struct.cell, loci, 'atoms-bonds');
+      if (!component) return;
+      bondsRef = component.cell?.transform?.ref || component?.ref || null;
+      await builder.representation.addRepresentation(component, {
+        type: 'ball-and-stick',
+        color: 'element-symbol',
+      });
+    } catch (e) {
+      console.warn('[bonds] add ball-and-stick failed:', e);
+    }
   }
 
   // --- Atoms mode --------------------------------------------------------
@@ -1425,6 +1630,16 @@
     if (/\b(hide|remove|turn\s+off)\s+(the\s+)?atoms\b/.test(t)) return { type: 'atoms-hide' };
     if (/\b(show|reveal)\s+(the\s+)?(ribbon|cartoon)\b/.test(t)) return { type: 'atoms-hide' };
 
+    // Click-detail level — phrased as natural commands. "click info speak",
+    // "click info off", "click info bonds", etc. Also accepts "click level".
+    const clickLvlMatch = t.match(/\bclick\s+(?:info|level|detail)\s+(off|name|speak|voice|bonds|on)\b/);
+    if (clickLvlMatch) {
+      let lvl = clickLvlMatch[1];
+      if (lvl === 'voice') lvl = 'speak';
+      if (lvl === 'on') lvl = 'name'; // "click info on" → default to name level
+      return { type: 'click-level', level: lvl };
+    }
+
     // Chain command: "focus chain A", "click chain B", bare "chain C".
     const chainMatch = t.match(/\bchain\s+([a-z])\b/);
     if (chainMatch) {
@@ -1508,6 +1723,8 @@
       case 'atoms-show':   return actions.setAtomsOn(true);
       case 'atoms-hide':   return actions.setAtomsOn(false);
       case 'atoms-toggle': return actions.setAtomsOn(!atomsOn);
+
+      case 'click-level':  return setClickLevel(cmd.level);
 
       case 'chrome-hide':
       case 'chrome-show': {
@@ -2140,6 +2357,14 @@
     if (atomsToggle) {
       atomsToggle.onclick = () => actions.setAtomsOn(!atomsOn);
     }
+
+    const clickDetailToggle = $('click-detail-toggle');
+    if (clickDetailToggle) {
+      clickDetailToggle.onclick = () => cycleClickLevel();
+    }
+
+    // Subscribe to Mol*'s click stream once the viewer is ready.
+    subscribeClick();
 
     renderWalkButtons();
 
