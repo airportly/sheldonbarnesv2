@@ -511,6 +511,8 @@
         <code>chain A</code>
         <code>walk through chain A</code>
         <code>stop tour</code>
+        <code>hide top nav</code>
+        <code>show top nav</code>
         <code>stop listening</code>
         <code>rotate right</code>
         <code>rotate up</code>
@@ -1319,6 +1321,19 @@
       return { type: 'stop-listening' };
     }
 
+    // Parent-page chrome toggle — only does anything when embedded in an
+    // iframe. Must precede the focus/show matchers below, which would
+    // otherwise swallow "show nav" as a residue-focus attempt.
+    if (/\b(hide|dismiss|collapse)\s+(the\s+)?(top\s+)?(nav|navigation|header|chrome|branding)\b/.test(t)) {
+      return { type: 'chrome-hide' };
+    }
+    if (/\b(show|reveal|bring\s+back)\s+(the\s+)?(top\s+)?(nav|navigation|header|chrome|branding)\b/.test(t)) {
+      return { type: 'chrome-show' };
+    }
+    if (/\b(go|enter)\s+fullscreen\b|\bfullscreen\b/.test(t)) {
+      return { type: 'chrome-hide' };
+    }
+
     // Chain command: "focus chain A", "click chain B", bare "chain C".
     const chainMatch = t.match(/\bchain\s+([a-z])\b/);
     if (chainMatch) {
@@ -1398,6 +1413,19 @@
       case 'stop-listening':
         voiceStopListening();
         return { ok: true, reason: 'stopped listening' };
+
+      case 'chrome-hide':
+      case 'chrome-show': {
+        // Only meaningful when embedded — standalone page has no parent chrome.
+        if (window.parent === window) {
+          return { ok: false, reason: 'no parent page to toggle' };
+        }
+        const msg = cmd.type === 'chrome-hide'
+          ? 'molecule-viewer:hide-chrome'
+          : 'molecule-viewer:show-chrome';
+        window.parent.postMessage(msg, window.location.origin);
+        return { ok: true, reason: cmd.type === 'chrome-hide' ? 'hiding nav' : 'showing nav' };
+      }
 
       case 'clear':
         $('voice-transcript').textContent = '';
