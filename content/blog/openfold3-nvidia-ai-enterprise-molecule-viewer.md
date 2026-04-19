@@ -5,7 +5,7 @@ date: "2026-04-19"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["openfold3", "nvidia", "nvidia-ai-enterprise", "bionemo", "protein-folding", "structural-biology", "mol-star", "scientific-visualization", "ai-drug-discovery", "accessibility", "the-platform-inversion"]
-hero: "/openfold3-nvidia-ai-enterprise-viewer.png"
+hero: "/openfold3-nvidia-ai-enterprise-viewer.jpeg"
 heroAlt: "Ackee-branded molecule viewer showing a protein-DNA complex rendered from an OpenFold3 prediction returned by NVIDIA AI Enterprise, with a voice assistant panel and per-residue walkthrough controls"
 socialImage: "/ackee-logo.jpeg"
 published: true
