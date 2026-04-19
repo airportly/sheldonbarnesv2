@@ -5,10 +5,10 @@ const PAGE_URL =
   "https://sheldonbarnes.com/tools/ai-voice-guided-molecule-viewer";
 
 const SOCIAL_IMAGE = {
-  url: "/ackee-logo.jpeg",
-  width: 1024,
+  url: "/openfold3-nvidia-ai-enterprise-viewer.jpeg",
+  width: 796,
   height: 1024,
-  alt: "Ackee — the voice-guided molecule viewer mark",
+  alt: "Voice-guided molecule viewer rendering an OpenFold3 protein-DNA complex prediction delivered via NVIDIA AI Enterprise",
   type: "image/jpeg",
 } as const;
 
