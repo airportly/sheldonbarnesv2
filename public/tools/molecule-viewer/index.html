@@ -669,6 +669,16 @@
     } catch (e) {
       console.warn('[granularity] could not switch to element-level:', e);
     }
+
+    // Diagnostic: what does the molstar global expose? If Interval or
+    // OrderedSet are available here, firstUnitIndex will use them directly
+    // instead of the bit-unpack fallback.
+    try {
+      const mol = window.molstar;
+      console.log('[diag] molstar global keys:', mol && Object.keys(mol));
+      if (mol?.Interval) console.log('[diag] molstar.Interval keys:', Object.keys(mol.Interval));
+      if (mol?.OrderedSet) console.log('[diag] molstar.OrderedSet keys:', Object.keys(mol.OrderedSet));
+    } catch (_) {}
   }
 
   async function loadStructure(index) {
@@ -1162,21 +1172,55 @@
     Cu: 'copper', Mn: 'manganese', Se: 'selenium',
   };
 
+  // Scratch buffer reused to unpack Mol*'s packed Interval representation.
+  // Mol* stores singleton/short Intervals as a single JS number by writing
+  // two Int32 halves (start, end) into an ArrayBuffer and reading the same
+  // 8 bytes back as a Float64. We reverse the operation here.
+  const _intervalBuf = new ArrayBuffer(8);
+  const _intervalFloat = new Float64Array(_intervalBuf);
+  const _intervalInt = new Int32Array(_intervalBuf);
+  function unpackPackedInterval(packed) {
+    _intervalFloat[0] = packed;
+    return { start: _intervalInt[0], end: _intervalInt[1] };
+  }
+
   // Pull the first UnitIndex out of a Mol* OrderedSet, whatever internal
-  // shape it takes: Interval ({ start, end }), SortedArray (numeric-indexed
-  // typed array), or the namespaced getAt helper if exposed on the bundle.
+  // shape it takes: Interval ({start,end}), SortedArray (numeric-indexed
+  // typed array), packed-double Interval, or the namespaced getAt helper
+  // if exposed on the bundle.
   function firstUnitIndex(idxs) {
     if (idxs == null) return null;
-    // Interval shape — most common for a single-atom click (length 1).
-    if (typeof idxs.start === 'number') return idxs.start;
-    // SortedArray / Int32Array — numerically indexable.
-    if (typeof idxs[0] === 'number') return idxs[0];
-    // Namespaced helper, if the CDN bundle re-exports it.
-    if (window.molstar?.OrderedSet?.getAt) {
-      try { return window.molstar.OrderedSet.getAt(idxs, 0); } catch (_) {}
+
+    // Object shapes first (avoid hitting number-path on a defined object).
+    if (typeof idxs === 'object') {
+      if (typeof idxs.start === 'number') return idxs.start;    // Interval
+      if (typeof idxs[0] === 'number') return idxs[0];          // SortedArray
+      if (typeof idxs.min === 'number') return idxs.min;
+      const mol = window.molstar;
+      if (mol?.OrderedSet?.getAt) {
+        try { return mol.OrderedSet.getAt(idxs, 0); } catch (_) {}
+      }
+      return null;
     }
-    // Fallback: some OrderedSet representations expose .min.
-    if (typeof idxs.min === 'number') return idxs.min;
+
+    // Primitive number: packed Interval.
+    if (typeof idxs === 'number') {
+      const mol = window.molstar;
+      if (mol?.Interval?.start) {
+        try { return mol.Interval.start(idxs); } catch (_) {}
+      }
+      if (mol?.OrderedSet?.getAt) {
+        try { return mol.OrderedSet.getAt(idxs, 0); } catch (_) {}
+      }
+      // Float64 ↔ (Int32, Int32) bit-pun — the internal packing Mol* uses
+      // when it can cram start/end into a single number.
+      try {
+        const { start, end } = unpackPackedInterval(idxs);
+        // Sanity: start should be a non-negative small int, end >= start.
+        if (Number.isInteger(start) && start >= 0 && end >= start) return start;
+      } catch (_) {}
+    }
+
     return null;
   }
 
