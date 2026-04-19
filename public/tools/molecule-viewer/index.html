@@ -1135,6 +1135,10 @@
                (loci.elements?.length || loci.contacts?.length)) {
       info = extractInteractionInfo(loci);
       isInteraction = !!info;
+    } else if (loci.kind === 'data-loci' && loci.tag === 'interactions' &&
+               loci.elements?.length >= 2) {
+      info = extractInteractionFromDataLoci(loci);
+      isInteraction = !!info;
     } else {
       console.log('[click] unsupported loci kind', loci);
       return;
@@ -1277,7 +1281,13 @@
         'unit.elements length=', unit.elements?.length);
       return null;
     }
+    return extractAtomInfoFromElementIdx(unit, eI);
+  }
 
+  // Extract from a full-structure element index (ElementIndex). Used by
+  // interaction data-loci endpoints, which report the global index directly.
+  function extractAtomInfoFromElementIdx(unit, eI) {
+    if (eI == null) return null;
     const h = unit.model.atomicHierarchy;
     const conf = unit.model.atomicConformation;
     const val = (col, ix) => col?.value?.(ix);
@@ -1300,7 +1310,7 @@
     }
 
     const x = conf?.x?.[eI], y = conf?.y?.[eI], z = conf?.z?.[eI];
-    return { atomName, element, compId, seqNum, chainId, plddt, x, y, z, unit, idxInUnit: i };
+    return { atomName, element, compId, seqNum, chainId, plddt, x, y, z, unit, eI };
   }
 
   function formatAtomCaption(info) {
@@ -1378,6 +1388,56 @@
     const kindName = INTERACTION_KIND_NAMES[kindCode] || 'Interaction';
     if (kindCode != null && !(kindCode in INTERACTION_KIND_NAMES)) {
       console.log('[click] unknown interaction kindCode:', kindCode, contact);
+    }
+
+    return { a, b, kindCode, kindName };
+  }
+
+  // Mol* reports interaction dashed-line clicks as a data-loci whose
+  // `elements` array holds the two endpoint locations. Each endpoint is a
+  // StructureElement.Location-like object: { unit, element } (global index)
+  // or { unit, indexInUnit } (unit-scoped) depending on build.
+  function extractInteractionFromDataLoci(loci) {
+    const list = loci.elements;
+    if (!list || list.length < 2) return null;
+    const [e0, e1] = list;
+
+    const endpoint = (e, label) => {
+      const unit = e.unit;
+      if (!unit) {
+        console.log('[click] interaction ' + label + ' missing unit; keys:',
+          Object.keys(e || {}));
+        return null;
+      }
+      // StructureElement.Location exposes `element` as the global atom index.
+      if (typeof e.element === 'number') {
+        return extractAtomInfoFromElementIdx(unit, e.element);
+      }
+      // Fallback: treat as unit-scoped index.
+      const u = (typeof e.indexInUnit === 'number') ? e.indexInUnit
+              : (typeof e.index === 'number') ? e.index : null;
+      if (u == null) {
+        console.log('[click] interaction ' + label + ' has no usable index; keys:',
+          Object.keys(e || {}));
+        return null;
+      }
+      return extractAtomInfoAt(unit, u);
+    };
+
+    const a = endpoint(e0, 'endpoint A');
+    const b = endpoint(e1, 'endpoint B');
+    if (!a || !b) return null;
+
+    // Mol* stores the interaction type on loci.data. Its shape varies;
+    // log anything unexpected so we can keep the kind-code table current.
+    const d = loci.data || {};
+    const kindCode = d.kind ?? d.type ?? d.interactionKind
+                  ?? d.contactType ?? d.featureType;
+    const kindName = INTERACTION_KIND_NAMES[kindCode] || 'Interaction';
+    if (kindCode == null) {
+      console.log('[click] interaction type not in data; loci.data:', d);
+    } else if (!(kindCode in INTERACTION_KIND_NAMES)) {
+      console.log('[click] unknown interaction kindCode:', kindCode, 'data:', d);
     }
 
     return { a, b, kindCode, kindName };
