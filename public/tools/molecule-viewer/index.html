@@ -657,6 +657,18 @@
     viewer.plugin.canvas3d?.setProps({
       renderer: { backgroundColor: 0x000000 },
     });
+
+    // Drop click/hover granularity to single-atom. Default is 'residue',
+    // which means clicking anywhere on the cartoon expands the selection
+    // (and the loci on the click event) to the entire residue. With
+    // 'element', each atom sphere or bond stick resolves to just that
+    // atom, which is what the Click-info feature wants.
+    try {
+      viewer.plugin.managers.interactivity.setProps({ granularity: 'element' });
+      console.log('[granularity] interactivity set to element');
+    } catch (e) {
+      console.warn('[granularity] could not switch to element-level:', e);
+    }
   }
 
   async function loadStructure(index) {
