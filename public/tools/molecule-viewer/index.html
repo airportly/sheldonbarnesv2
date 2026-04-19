@@ -968,28 +968,13 @@
 
     // Distance from camera to target: scale with residue size, with a floor
     // so very small residues don't collapse the camera onto them.
-    const preferredDist = Math.max(radius * 6, 14);
-
-    // Respect the user's existing zoom: if they're already closer than the
-    // preferred framing distance, keep them there — don't zoom OUT just
-    // because they selected another residue. Only pull back when they were
-    // farther away than the preferred distance.
-    const cpx = snap.position[0] - snap.target[0];
-    const cpy = snap.position[1] - snap.target[1];
-    const cpz = snap.position[2] - snap.target[2];
-    const currentDist = Math.hypot(cpx, cpy, cpz);
-    const viewDist = Math.min(currentDist, preferredDist);
-
-    // Same principle for the camera's orbit radius (the "sphere being
-    // framed" size): never widen it if the user has already tightened in.
-    const preferredRadius = radius * 1.4;
-    const camRadius = Math.min(snap.radius ?? preferredRadius, preferredRadius);
+    const viewDist = Math.max(radius * 6, 14);
 
     cam.setState({
       ...snap,
       position: [center[0] + dx * viewDist, center[1] + dy * viewDist, center[2] + dz * viewDist],
       target:   [center[0], center[1], center[2]],
-      radius:   camRadius,
+      radius:   radius * 1.4,
     }, durationMs);
   }
 
