@@ -1,7 +1,7 @@
 ---
 title: "Inside the Tylenol Pathway: An Interactive Lesson in Why Biology Is Hard"
 description: "Tylenol is one of the most thoroughly mapped drugs in human biology. Watch the safe and toxic pathways branch, saturate, and fail — and see why AI drug discovery needs to see all of it at once."
-date: "2026-04-19"
+date: "2026-04-18"
 author: "Sheldon Barnes"
 category: "ai-drug-discovery"
 tags: ["acetaminophen", "tylenol", "pathways", "napqi", "glutathione", "cyp2e1", "ai-drug-discovery", "pharmacology", "liver-toxicity", "nac", "the-platform-inversion"]
