@@ -1137,18 +1137,42 @@
     Cu: 'copper', Mn: 'manganese', Se: 'selenium',
   };
 
+  // Pull the first UnitIndex out of a Mol* OrderedSet, whatever internal
+  // shape it takes: Interval ({ start, end }), SortedArray (numeric-indexed
+  // typed array), or the namespaced getAt helper if exposed on the bundle.
+  function firstUnitIndex(idxs) {
+    if (idxs == null) return null;
+    // Interval shape — most common for a single-atom click (length 1).
+    if (typeof idxs.start === 'number') return idxs.start;
+    // SortedArray / Int32Array — numerically indexable.
+    if (typeof idxs[0] === 'number') return idxs[0];
+    // Namespaced helper, if the CDN bundle re-exports it.
+    if (window.molstar?.OrderedSet?.getAt) {
+      try { return window.molstar.OrderedSet.getAt(idxs, 0); } catch (_) {}
+    }
+    // Fallback: some OrderedSet representations expose .min.
+    if (typeof idxs.min === 'number') return idxs.min;
+    return null;
+  }
+
   function extractAtomInfo(loci) {
     const first = loci.elements[0];
     if (!first || !first.unit) return null;
     const unit = first.unit;
     const idxs = first.indices;
-    // OrderedSet or Int32Array — both indexable by [0]; OrderedSet also has .min.
-    const i = (typeof idxs?.[0] !== 'undefined')
-      ? idxs[0]
-      : (typeof idxs?.min === 'number' ? idxs.min : null);
-    if (i == null) return null;
+
+    const i = firstUnitIndex(idxs);
+    if (i == null) {
+      console.log('[click] could not read first index from OrderedSet; shape:',
+        typeof idxs, idxs && Object.keys(idxs).slice(0, 6), idxs);
+      return null;
+    }
     const eI = unit.elements[i];
-    if (eI == null) return null;
+    if (eI == null) {
+      console.log('[click] unit.elements[i] is undefined; i=', i,
+        'unit.elements length=', unit.elements?.length);
+      return null;
+    }
 
     const h = unit.model.atomicHierarchy;
     const conf = unit.model.atomicConformation;
