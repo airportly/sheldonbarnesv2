@@ -665,20 +665,9 @@
     // atom, which is what the Click-info feature wants.
     try {
       viewer.plugin.managers.interactivity.setProps({ granularity: 'element' });
-      console.log('[granularity] interactivity set to element');
     } catch (e) {
       console.warn('[granularity] could not switch to element-level:', e);
     }
-
-    // Diagnostic: what does the molstar global expose? If Interval or
-    // OrderedSet are available here, firstUnitIndex will use them directly
-    // instead of the bit-unpack fallback.
-    try {
-      const mol = window.molstar;
-      console.log('[diag] molstar global keys:', mol && Object.keys(mol));
-      if (mol?.Interval) console.log('[diag] molstar.Interval keys:', Object.keys(mol.Interval));
-      if (mol?.OrderedSet) console.log('[diag] molstar.OrderedSet keys:', Object.keys(mol.OrderedSet));
-    } catch (_) {}
   }
 
   async function loadStructure(index) {
@@ -1046,7 +1035,6 @@
   function setClickLevel(level) {
     if (!CLICK_LEVELS.includes(level)) level = 'off';
     clickLevel = level;
-    console.log('[click] level set to', level);
     const btn = $('click-detail-toggle');
     if (btn) btn.textContent = CLICK_LABELS[level];
     if (level === 'off') {
@@ -1059,66 +1047,22 @@
 
   function subscribeClick() {
     if (clickSub) return;
-    const plugin = viewer?.plugin;
-    if (!plugin) {
-      console.warn('[click] no plugin to subscribe to');
+    const behaviorClick = viewer?.plugin?.behaviors?.interaction?.click;
+    if (!behaviorClick?.subscribe) {
+      console.warn('[click] plugin.behaviors.interaction.click unavailable');
       return;
     }
-
-    // Primary path: Mol*'s behaviors.interaction.click subject. Fires with
-    // { current: { loci }, button, modifiers } on canvas clicks.
-    const behaviorClick = plugin.behaviors?.interaction?.click;
-    if (behaviorClick?.subscribe) {
-      try {
-        clickSub = behaviorClick.subscribe((ev) => {
-          console.log('[click] behavior fired', ev);
-          handleCanvasClick(ev);
-        });
-        console.log('[click] subscribed to plugin.behaviors.interaction.click');
-      } catch (e) {
-        console.warn('[click] behaviors subscribe failed:', e);
-      }
-    } else {
-      console.warn('[click] plugin.behaviors.interaction.click unavailable');
-    }
-
-    // Fallback path: DOM click on the viewer div, reading the currently
-    // hovered/highlighted loci from Mol*'s managers. Covers Mol* builds
-    // where the behaviors subject doesn't propagate as expected.
-    const viewerDiv = document.getElementById('viewer');
-    if (viewerDiv) {
-      viewerDiv.addEventListener('click', () => {
-        if (clickLevel === 'off') return;
-        // Tiny delay so Mol*'s internal managers settle after the click.
-        setTimeout(() => {
-          try {
-            // Try highlight manager first (hover), then structure selection.
-            const loci = plugin.managers?.interactivity?.lociHighlights?.providers?.[0]?.loci
-              || plugin.managers?.interactivity?.lociSelects?.providers?.[0]?.loci
-              || null;
-            if (loci && loci.kind === 'element-loci' && loci.elements?.length) {
-              console.log('[click] DOM fallback reading loci', loci);
-              handleCanvasClick({ current: { loci } });
-            } else {
-              console.log('[click] DOM click fired but no loci in managers');
-            }
-          } catch (e) {
-            console.warn('[click] DOM fallback failed:', e);
-          }
-        }, 30);
-      });
-      console.log('[click] DOM fallback listener attached to #viewer');
+    try {
+      clickSub = behaviorClick.subscribe(handleCanvasClick);
+    } catch (e) {
+      console.warn('[click] behaviors subscribe failed:', e);
     }
   }
 
   function handleCanvasClick(ev) {
-    console.log('[click] handleCanvasClick entered, level =', clickLevel);
     if (clickLevel === 'off') return;
     const loci = ev?.current?.loci;
-    if (!loci) {
-      console.log('[click] no loci on event');
-      return;
-    }
+    if (!loci) return;
 
     // Mol* emits different loci shapes depending on what you clicked:
     //   element-loci      — atom spheres, cartoon backbone, surfaces
@@ -1142,14 +1086,9 @@
       info = extractInteractionInfo(loci);
       isInteraction = !!info;
     } else {
-      console.log('[click] unsupported loci kind', loci);
       return;
     }
-    if (!info) {
-      console.log('[click] extraction returned null for loci', loci);
-      return;
-    }
-    console.log(isInteraction ? '[click] interaction info' : '[click] atom info', info);
+    if (!info) return;
 
     const captionText = isInteraction
       ? formatInteractionCaption(info)
@@ -1263,8 +1202,8 @@
     const idxs = first.indices;
     const i = firstUnitIndex(idxs);
     if (i == null) {
-      console.log('[click] could not read first index from OrderedSet; shape:',
-        typeof idxs, idxs && Object.keys(idxs).slice(0, 6), idxs);
+      console.warn('[click] could not read first index from OrderedSet; shape:',
+        typeof idxs, idxs && Object.keys(idxs).slice(0, 6));
       return null;
     }
     return extractAtomInfoAt(first.unit, i);
@@ -1282,7 +1221,7 @@
             : (b.a?.index != null) ? b.a.index
             : null;
     if (!unit || i == null) {
-      console.log('[click] bond has unexpected shape', b);
+      console.warn('[click] bond has unexpected shape', b);
       return null;
     }
     return extractAtomInfoAt(unit, i);
@@ -1292,11 +1231,7 @@
   // element, atom name, residue, chain, pLDDT, and coordinates.
   function extractAtomInfoAt(unit, i) {
     const eI = unit.elements[i];
-    if (eI == null) {
-      console.log('[click] unit.elements[i] is undefined; i=', i,
-        'unit.elements length=', unit.elements?.length);
-      return null;
-    }
+    if (eI == null) return null;
     return extractAtomInfoFromElementIdx(unit, eI);
   }
 
@@ -1391,7 +1326,7 @@
                : null;
 
     if (!unitA || idxA == null || !unitB || idxB == null) {
-      console.log('[click] interaction contact has unexpected shape', contact);
+      console.warn('[click] interaction contact has unexpected shape', contact);
       return null;
     }
 
@@ -1407,11 +1342,8 @@
                    ?? d.kind ?? d.type ?? d.interactionKind
                    ?? d.contactType ?? d.featureType;
     const kindName = INTERACTION_KIND_NAMES[kindCode] || 'Interaction';
-    if (kindCode == null) {
-      console.log('[click] interaction type not found; contact:', contact, 'data:', d);
-    } else if (!(kindCode in INTERACTION_KIND_NAMES)) {
-      console.log('[click] unknown interaction kindCode:', kindCode,
-                  'contact:', contact, 'data:', d);
+    if (kindCode != null && !(kindCode in INTERACTION_KIND_NAMES)) {
+      console.warn('[click] unknown interaction kindCode:', kindCode);
     }
 
     return { a, b, kindCode, kindName };
