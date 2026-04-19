@@ -30,7 +30,12 @@ export default function MarkdownBody({ source }: { source: string }) {
             </h3>
           ),
           p: ({ children }) => (
-            <p className="text-muted leading-relaxed mb-5 text-lg">{children}</p>
+            // Center paragraphs that are just a standalone image or an
+            // anchor-wrapped image, so the max-width'd media sits in the middle
+            // of the reading column rather than flush-left.
+            <p className="text-muted leading-relaxed mb-5 text-lg [&:has(>img)]:text-center [&:has(>a>img)]:text-center">
+              {children}
+            </p>
           ),
           ul: ({ children }) => (
             <ul className="space-y-2 mb-6 pl-6 list-disc text-muted text-lg">
@@ -79,11 +84,13 @@ export default function MarkdownBody({ source }: { source: string }) {
           },
           hr: () => <hr className="my-10 border-surface-light" />,
           img: ({ src, alt }) => (
+            // inline-block + max-width keeps images tight within the reading
+            // column; the parent <p>'s text-center handles horizontal alignment.
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={typeof src === "string" ? src : ""}
               alt={alt ?? ""}
-              className="rounded-2xl my-8 w-full h-auto border border-surface-light"
+              className="inline-block rounded-2xl my-8 w-full max-w-xl h-auto border border-surface-light shadow-lg shadow-black/40"
               loading="lazy"
             />
           ),

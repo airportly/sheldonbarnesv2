@@ -213,7 +213,7 @@ export default async function BlogPostPage({
 
           {/* Hero */}
           {post.heroVideo ? (
-            <div className="rounded-2xl overflow-hidden mb-10 border border-surface-light bg-background">
+            <div className="rounded-2xl overflow-hidden mb-10 mx-auto max-w-2xl border border-surface-light bg-background shadow-xl shadow-black/40">
               <video
                 src={post.heroVideo}
                 poster={post.hero || undefined}
@@ -228,7 +228,7 @@ export default async function BlogPostPage({
               />
             </div>
           ) : post.hero ? (
-            <div className="rounded-2xl overflow-hidden mb-10 border border-surface-light">
+            <div className="rounded-2xl overflow-hidden mb-10 mx-auto max-w-2xl border border-surface-light shadow-xl shadow-black/40">
               <Image
                 src={post.hero}
                 alt={post.heroAlt}
