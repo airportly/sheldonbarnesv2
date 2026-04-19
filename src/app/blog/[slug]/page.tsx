@@ -29,8 +29,11 @@ export async function generateMetadata({
 
   const url = `${SITE}/blog/${slug}`;
   const fallbackOg = `${SITE}/og/books.jpg`;
-  const ogImage = post.hero
-    ? (post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`)
+  // Prefer socialImage (square brand card) over hero (in-post figure); fall
+  // back to the site-wide default when neither is set.
+  const ogSource = post.socialImage || post.hero;
+  const ogImage = ogSource
+    ? (ogSource.startsWith("http") ? ogSource : `${SITE}${ogSource}`)
     : fallbackOg;
   const category = getCategoryBySlug(post.category);
 
@@ -91,8 +94,11 @@ export default async function BlogPostPage({
   const category = getCategoryBySlug(post.category);
   const url = `${SITE}/blog/${slug}`;
   const fallbackOg = `${SITE}/og/books.jpg`;
-  const ogImage = post.hero
-    ? (post.hero.startsWith("http") ? post.hero : `${SITE}${post.hero}`)
+  // Prefer socialImage (square brand card) over hero (in-post figure); fall
+  // back to the site-wide default when neither is set.
+  const ogSource = post.socialImage || post.hero;
+  const ogImage = ogSource
+    ? (ogSource.startsWith("http") ? ogSource : `${SITE}${ogSource}`)
     : fallbackOg;
   const videoUrl = post.heroVideo
     ? (post.heroVideo.startsWith("http") ? post.heroVideo : `${SITE}${post.heroVideo}`)

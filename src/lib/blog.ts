@@ -13,6 +13,10 @@ export interface BlogPost {
   hero: string;
   heroAlt: string;
   heroVideo?: string;
+  // Optional override for og:image / twitter:image. Falls back to `hero` when
+  // unset. Useful when the in-post hero works better as a wide figure and the
+  // social card wants a square brand mark.
+  socialImage?: string;
   body: string;
   readingMinutes: number;
 }
@@ -46,6 +50,7 @@ export function getAllPosts(): BlogPost[] {
         hero: data.hero ?? "",
         heroAlt: data.heroAlt ?? data.title ?? "",
         heroVideo: data.heroVideo,
+        socialImage: data.socialImage,
         body: content,
         readingMinutes: estimateReadingMinutes(content),
         published: data.published !== false,
