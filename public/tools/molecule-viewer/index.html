@@ -498,6 +498,7 @@
     <div id="tour">
       <button id="tour-btn" disabled>Start guided tour</button>
       <button id="narrate-toggle" class="walk-btn">Narration: on</button>
+      <button id="atoms-toggle" class="walk-btn">Atoms: off</button>
       <div id="walk-btns"></div>
     </div>
 
@@ -511,6 +512,8 @@
         <code>chain A</code>
         <code>walk through chain A</code>
         <code>stop tour</code>
+        <code>show atoms</code>
+        <code>hide atoms</code>
         <code>hide top nav</code>
         <code>show top nav</code>
         <code>stop listening</code>
@@ -700,6 +703,10 @@
     // Stop any playing tour — the structure is about to change underneath it.
     if (typeof stopTour === 'function') stopTour();
     _structureCenter = null; // drop cached center from the previous structure
+    // Atom-mode references point into the previous structure's state tree —
+    // reset so the next focus builds a fresh ball-and-stick component.
+    atomsRef = null;
+    lastFocusedLoci = null;
     setStatus(`Loading ${entry.file}…`);
     $('status').style.display = '';
 
@@ -985,14 +992,74 @@
       .forEach(el => el.classList.remove('active'));
   }
 
+  // --- Atoms mode --------------------------------------------------------
+  // When atomsOn is true, the currently focused residue is rendered as
+  // ball-and-stick on top of the base cartoon. Toggle persists across
+  // residue focuses until user turns it off; applyAtomsRepr() is re-called
+  // whenever the focused loci changes so the representation moves with
+  // the user's attention.
+  let atomsOn = false;
+  let atomsRef = null;        // Mol* state-tree ref for our added component
+  let lastFocusedLoci = null; // loci of the most recent single-residue focus
+
+  async function applyAtomsRepr() {
+    // Drop the previous ball-and-stick component (if any) before adding a new
+    // one — otherwise they'd accumulate each time the user focuses a residue.
+    if (atomsRef) {
+      try {
+        const upd = viewer.plugin.state.data.build();
+        upd.delete(atomsRef);
+        await upd.commit();
+      } catch (e) {
+        console.warn('[atoms] remove failed:', e);
+      }
+      atomsRef = null;
+    }
+
+    if (!atomsOn || !lastFocusedLoci) return;
+
+    const struct = viewer.plugin.managers.structure.hierarchy.current.structures[0];
+    if (!struct?.cell) {
+      console.warn('[atoms] no structure loaded');
+      return;
+    }
+
+    // Mol* 4.x exposes tryCreateComponentFromLoci on the structure builder.
+    // Fall back to tryCreateComponentFromSelection if the Loci variant isn't
+    // available on this build — both accept our element-loci shape.
+    try {
+      const builder = viewer.plugin.builders.structure;
+      const createFn = builder.tryCreateComponentFromLoci
+        || builder.tryCreateComponentFromSelection;
+      if (!createFn) {
+        console.warn('[atoms] no component-creation API found on this Mol* build');
+        return;
+      }
+      const component = await createFn.call(builder, struct.cell, lastFocusedLoci, 'atoms-focus');
+      if (!component) {
+        console.warn('[atoms] component creation returned null');
+        return;
+      }
+      atomsRef = component.cell?.transform?.ref || component?.ref || null;
+      await builder.representation.addRepresentation(component, {
+        type: 'ball-and-stick',
+        color: 'element-symbol',
+      });
+    } catch (e) {
+      console.warn('[atoms] add ball-and-stick failed:', e);
+    }
+  }
+
   const actions = {
     focusResidue(compId, seqNum) {
       const hit = findResidue(compId, seqNum);
       if (!hit) return { ok: false, reason: `${compId}${seqNum} not found in structure` };
 
+      lastFocusedLoci = hit.loci;
       const { center, radius } = boundingSphere(hit.points);
       focusFacing(center, radius, 500);
       markActiveChip(compId, seqNum);
+      applyAtomsRepr();
       return { ok: true, reason: `focused ${compId}${seqNum}` };
     },
 
@@ -1000,6 +1067,7 @@
       const hit = findResidue(compId, seqNum);
       if (!hit) return { ok: false, reason: `${compId}${seqNum} not found in structure` };
 
+      lastFocusedLoci = hit.loci;
       const p = viewer.plugin;
       p.managers.structure.focus.setFromLoci(hit.loci);
       p.managers.interactivity.lociSelects.selectOnly({ loci: hit.loci });
@@ -1009,6 +1077,7 @@
       focusFacing(center, radius, 500);
 
       markActiveChip(compId, seqNum);
+      applyAtomsRepr();
       return { ok: true, reason: `clicked ${compId}${seqNum}` };
     },
 
@@ -1020,7 +1089,22 @@
       const { center, radius } = boundingSphere(hit.points);
       p.canvas3d.camera.focus(center, radius * 1.3, 600);
       markActiveChain(chainId);
+      // Chain focus clears single-residue atom repr — showing every atom in
+      // an entire chain is visually overwhelming (and expensive).
+      lastFocusedLoci = null;
+      applyAtomsRepr();
       return { ok: true, reason: `focused chain ${chainId}` };
+    },
+
+    setAtomsOn(on) {
+      atomsOn = !!on;
+      const btn = $('atoms-toggle');
+      if (btn) btn.textContent = `Atoms: ${atomsOn ? 'on' : 'off'}`;
+      applyAtomsRepr();
+      if (atomsOn && !lastFocusedLoci) {
+        return { ok: true, reason: 'atoms on — focus a residue to see them' };
+      }
+      return { ok: true, reason: atomsOn ? 'showing atoms' : 'hiding atoms' };
     },
 
     deselectAll() {
@@ -1334,6 +1418,13 @@
       return { type: 'chrome-hide' };
     }
 
+    // Atom representation toggle — must precede the bare "show/reveal" focus
+    // matcher below so "show atoms" isn't parsed as a residue focus attempt.
+    if (/\btoggle\s+atoms\b/.test(t)) return { type: 'atoms-toggle' };
+    if (/\b(show|reveal|display)\s+(the\s+)?atoms\b/.test(t)) return { type: 'atoms-show' };
+    if (/\b(hide|remove|turn\s+off)\s+(the\s+)?atoms\b/.test(t)) return { type: 'atoms-hide' };
+    if (/\b(show|reveal)\s+(the\s+)?(ribbon|cartoon)\b/.test(t)) return { type: 'atoms-hide' };
+
     // Chain command: "focus chain A", "click chain B", bare "chain C".
     const chainMatch = t.match(/\bchain\s+([a-z])\b/);
     if (chainMatch) {
@@ -1413,6 +1504,10 @@
       case 'stop-listening':
         voiceStopListening();
         return { ok: true, reason: 'stopped listening' };
+
+      case 'atoms-show':   return actions.setAtomsOn(true);
+      case 'atoms-hide':   return actions.setAtomsOn(false);
+      case 'atoms-toggle': return actions.setAtomsOn(!atomsOn);
 
       case 'chrome-hide':
       case 'chrome-show': {
@@ -2040,6 +2135,11 @@
       // user after they muted.
       if (!narrateOn && 'speechSynthesis' in window) speechSynthesis.cancel();
     };
+
+    const atomsToggle = $('atoms-toggle');
+    if (atomsToggle) {
+      atomsToggle.onclick = () => actions.setAtomsOn(!atomsOn);
+    }
 
     renderWalkButtons();
 
