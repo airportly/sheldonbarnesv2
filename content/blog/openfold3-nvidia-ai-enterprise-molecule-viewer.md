@@ -7,6 +7,7 @@ category: "ai-drug-discovery"
 tags: ["openfold3", "nvidia", "nvidia-ai-enterprise", "nvidia-nim", "bionemo", "cuda", "gpu-computing", "ai", "artificial-intelligence", "generative-ai", "foundation-models", "enterprise-ai", "pharma", "pharma-ai", "life-sciences", "biotech", "drug-discovery", "ai-drug-discovery", "healthcare-ai", "clinical-research", "protein-folding", "protein-structure-prediction", "protein-viewer", "structural-biology", "alphafold", "proteins", "dna", "rna", "ligands", "molecular-complexes", "mmcif", "mol-star", "scientific-visualization", "scientific-computing", "digital-twins", "voice-ai", "web-speech-api", "accessibility", "the-platform-inversion"]
 hero: "/openfold3-nvidia-ai-enterprise-viewer.jpeg"
 heroAlt: "Ackee-branded molecule viewer showing a protein-DNA complex rendered from an OpenFold3 prediction returned by NVIDIA AI Enterprise, with a voice assistant panel and per-residue walkthrough controls"
+heroVideo: "/openfold3-nvidia-ai-enterprise-viewer.mp4"
 published: true
 ---
 
@@ -50,6 +51,8 @@ That JSON goes into the browser. The viewer renders it with **Mol\***, the open-
 
 No build step. No install. No login. Just the structure.
 
+[![Hands interacting with the molecule viewer on a tablet, showing a green protein helix bound to a purple-and-orange DNA double helix rendered from an OpenFold3 prediction](/ackee-viewer-lab-people-2.jpeg)](/tools/ai-voice-guided-molecule-viewer)
+
 ## The part that matters: comprehension
 
 Rendering a protein is a 2015 problem. The interesting problem in 2026 is helping someone *understand* what they're looking at.
@@ -61,6 +64,8 @@ You can ignore the voice entirely and use the sidebar. Every residue is a clicka
 This is the part that takes the technology from impressive to *useful*. A structural biologist looking at the same rendering sees a transcription factor bound to its operator, reads the confidence scores, makes inferences about specificity. A medical student sees a protein hugging a piece of DNA, hears the words "positively charged lysines gripping the negatively charged backbone," and — for the first time, maybe — understands what "DNA-binding protein" actually *means*.
 
 That's the accessibility dividend. It's the difference between a capability and a tool.
+
+[![Two researchers collaborating over a tablet in a lab, exploring a protein-DNA structure together on the ackee-branded molecule viewer](/ackee-viewer-lab-people-1.jpeg)](/tools/ai-voice-guided-molecule-viewer)
 
 ## The Scientific Visual OS
 
