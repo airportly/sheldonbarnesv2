@@ -1024,6 +1024,7 @@
   function setClickLevel(level) {
     if (!CLICK_LEVELS.includes(level)) level = 'off';
     clickLevel = level;
+    console.log('[click] level set to', level);
     const btn = $('click-detail-toggle');
     if (btn) btn.textContent = CLICK_LABELS[level];
     if (level === 'off') {
@@ -1035,16 +1036,73 @@
   }
 
   function subscribeClick() {
-    if (clickSub || !viewer?.plugin?.behaviors?.interaction?.click) return;
-    clickSub = viewer.plugin.behaviors.interaction.click.subscribe(handleCanvasClick);
+    if (clickSub) return;
+    const plugin = viewer?.plugin;
+    if (!plugin) {
+      console.warn('[click] no plugin to subscribe to');
+      return;
+    }
+
+    // Primary path: Mol*'s behaviors.interaction.click subject. Fires with
+    // { current: { loci }, button, modifiers } on canvas clicks.
+    const behaviorClick = plugin.behaviors?.interaction?.click;
+    if (behaviorClick?.subscribe) {
+      try {
+        clickSub = behaviorClick.subscribe((ev) => {
+          console.log('[click] behavior fired', ev);
+          handleCanvasClick(ev);
+        });
+        console.log('[click] subscribed to plugin.behaviors.interaction.click');
+      } catch (e) {
+        console.warn('[click] behaviors subscribe failed:', e);
+      }
+    } else {
+      console.warn('[click] plugin.behaviors.interaction.click unavailable');
+    }
+
+    // Fallback path: DOM click on the viewer div, reading the currently
+    // hovered/highlighted loci from Mol*'s managers. Covers Mol* builds
+    // where the behaviors subject doesn't propagate as expected.
+    const viewerDiv = document.getElementById('viewer');
+    if (viewerDiv) {
+      viewerDiv.addEventListener('click', () => {
+        if (clickLevel === 'off') return;
+        // Tiny delay so Mol*'s internal managers settle after the click.
+        setTimeout(() => {
+          try {
+            // Try highlight manager first (hover), then structure selection.
+            const loci = plugin.managers?.interactivity?.lociHighlights?.providers?.[0]?.loci
+              || plugin.managers?.interactivity?.lociSelects?.providers?.[0]?.loci
+              || null;
+            if (loci && loci.kind === 'element-loci' && loci.elements?.length) {
+              console.log('[click] DOM fallback reading loci', loci);
+              handleCanvasClick({ current: { loci } });
+            } else {
+              console.log('[click] DOM click fired but no loci in managers');
+            }
+          } catch (e) {
+            console.warn('[click] DOM fallback failed:', e);
+          }
+        }, 30);
+      });
+      console.log('[click] DOM fallback listener attached to #viewer');
+    }
   }
 
   function handleCanvasClick(ev) {
+    console.log('[click] handleCanvasClick entered, level =', clickLevel);
     if (clickLevel === 'off') return;
     const loci = ev?.current?.loci;
-    if (!loci || loci.kind !== 'element-loci' || !loci.elements?.length) return;
+    if (!loci || loci.kind !== 'element-loci' || !loci.elements?.length) {
+      console.log('[click] loci missing or empty', loci);
+      return;
+    }
     const info = extractAtomInfo(loci);
-    if (!info) return;
+    if (!info) {
+      console.log('[click] extractAtomInfo returned null for loci', loci);
+      return;
+    }
+    console.log('[click] atom info', info);
 
     const captionText = formatAtomCaption(info);
     const speechText = formatAtomSpeech(info);
