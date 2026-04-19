@@ -1093,13 +1093,26 @@
     console.log('[click] handleCanvasClick entered, level =', clickLevel);
     if (clickLevel === 'off') return;
     const loci = ev?.current?.loci;
-    if (!loci || loci.kind !== 'element-loci' || !loci.elements?.length) {
-      console.log('[click] loci missing or empty', loci);
+    if (!loci) {
+      console.log('[click] no loci on event');
       return;
     }
-    const info = extractAtomInfo(loci);
+
+    // Mol* emits different loci shapes depending on what you clicked:
+    //   element-loci — atom spheres, cartoon backbone, surfaces
+    //   bond-loci    — the stick cylinders between two atoms
+    // Both cases route through the same atom-info extractor below.
+    let info = null;
+    if (loci.kind === 'element-loci' && loci.elements?.length) {
+      info = extractAtomInfo(loci);
+    } else if (loci.kind === 'bond-loci' && loci.bonds?.length) {
+      info = extractBondAtomInfo(loci);
+    } else {
+      console.log('[click] unsupported loci kind', loci);
+      return;
+    }
     if (!info) {
-      console.log('[click] extractAtomInfo returned null for loci', loci);
+      console.log('[click] extraction returned null for loci', loci);
       return;
     }
     console.log('[click] atom info', info);
@@ -1158,15 +1171,37 @@
   function extractAtomInfo(loci) {
     const first = loci.elements[0];
     if (!first || !first.unit) return null;
-    const unit = first.unit;
     const idxs = first.indices;
-
     const i = firstUnitIndex(idxs);
     if (i == null) {
       console.log('[click] could not read first index from OrderedSet; shape:',
         typeof idxs, idxs && Object.keys(idxs).slice(0, 6), idxs);
       return null;
     }
+    return extractAtomInfoAt(first.unit, i);
+  }
+
+  // For bond clicks, grab the 'a' endpoint of the first bond as the clicked
+  // atom. The user sees info about one of the two atoms the bond connects —
+  // clicking an atom sphere directly gets the other one.
+  function extractBondAtomInfo(loci) {
+    const b = loci.bonds[0];
+    if (!b) return null;
+    const unit = b.aUnit || b.unitA || b.a?.unit;
+    const i = (b.aIndex != null) ? b.aIndex
+            : (b.indexA != null) ? b.indexA
+            : (b.a?.index != null) ? b.a.index
+            : null;
+    if (!unit || i == null) {
+      console.log('[click] bond has unexpected shape', b);
+      return null;
+    }
+    return extractAtomInfoAt(unit, i);
+  }
+
+  // Shared atom extraction: given a Mol* Unit and a UnitIndex, pull the
+  // element, atom name, residue, chain, pLDDT, and coordinates.
+  function extractAtomInfoAt(unit, i) {
     const eI = unit.elements[i];
     if (eI == null) {
       console.log('[click] unit.elements[i] is undefined; i=', i,
