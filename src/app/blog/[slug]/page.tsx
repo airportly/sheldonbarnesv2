@@ -54,11 +54,14 @@ export async function generateMetadata({
       section: category?.name,
       tags: post.tags,
       images: [{ url: ogImage, width: 1200, height: 630, alt: post.heroAlt }],
-      ...(post.heroVideo
+      ...((post.socialVideo || post.heroVideo)
         ? {
             videos: [
               {
-                url: post.heroVideo.startsWith("http") ? post.heroVideo : `${SITE}${post.heroVideo}`,
+                url: (() => {
+                  const v = post.socialVideo || post.heroVideo!;
+                  return v.startsWith("http") ? v : `${SITE}${v}`;
+                })(),
                 type: "video/mp4",
               },
             ],
@@ -100,8 +103,10 @@ export default async function BlogPostPage({
   const ogImage = ogSource
     ? (ogSource.startsWith("http") ? ogSource : `${SITE}${ogSource}`)
     : fallbackOg;
-  const videoUrl = post.heroVideo
-    ? (post.heroVideo.startsWith("http") ? post.heroVideo : `${SITE}${post.heroVideo}`)
+  // Video reference for JSON-LD: prefer socialVideo (explicit) over heroVideo.
+  const videoSource = post.socialVideo || post.heroVideo;
+  const videoUrl = videoSource
+    ? (videoSource.startsWith("http") ? videoSource : `${SITE}${videoSource}`)
     : null;
 
   const articleJsonLd = {
@@ -198,7 +203,7 @@ export default async function BlogPostPage({
           </div>
 
           {/* Header */}
-          <header className="mb-10">
+          <header className={post.heroVideo ? "mb-6" : "mb-10"}>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               {post.title}
             </h1>
@@ -211,15 +216,14 @@ export default async function BlogPostPage({
             </div>
           </header>
 
-          {/* Hero */}
-          {post.heroVideo ? (
-            <div className="rounded-2xl overflow-hidden mb-10 mx-auto max-w-2xl border border-surface-light bg-background shadow-xl shadow-black/40">
+          {/* Hero — skipped when the post places imagery inline in body */}
+          {post.skipHero ? null : post.heroVideo ? (
+            <div className="rounded-2xl overflow-hidden mb-6 mx-auto max-w-sm border border-surface-light bg-background shadow-xl shadow-black/40">
               <video
                 src={post.heroVideo}
                 poster={post.hero || undefined}
                 aria-label={post.heroAlt}
                 className="w-full h-auto"
-                controls
                 autoPlay
                 muted
                 loop
@@ -228,7 +232,7 @@ export default async function BlogPostPage({
               />
             </div>
           ) : post.hero ? (
-            <div className="rounded-2xl overflow-hidden mb-10 mx-auto max-w-2xl border border-surface-light shadow-xl shadow-black/40">
+            <div className="rounded-2xl overflow-hidden mb-8 mx-auto max-w-sm border border-surface-light shadow-xl shadow-black/40">
               <Image
                 src={post.hero}
                 alt={post.heroAlt}
@@ -240,19 +244,39 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body — supports {{apap-simulator}} shortcode for inline embeds */}
+          {/* Body — supports {{apap-simulator}} and {{viewer-cta}} shortcodes */}
           {(() => {
-            const MARKER = "{{apap-simulator}}";
-            if (!post.body.includes(MARKER)) {
+            const SHORTCODES: Record<string, React.ReactNode> = {
+              "{{apap-simulator}}": <APAPSimulator />,
+              "{{viewer-cta}}": (
+                <div className="my-8 flex justify-center">
+                  <Link
+                    href="/tools/ai-voice-guided-molecule-viewer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-colors shadow-lg shadow-black/30"
+                  >
+                    Try AI Voice-Guided Molecule Viewer
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              ),
+            };
+            const keys = Object.keys(SHORTCODES);
+            if (!keys.some((k) => post.body.includes(k))) {
               return <MarkdownBody source={post.body} />;
             }
-            const segments = post.body.split(MARKER);
-            return segments.map((seg, i) => (
-              <div key={i}>
-                <MarkdownBody source={seg} />
-                {i < segments.length - 1 && <APAPSimulator />}
-              </div>
-            ));
+            // Split on any known shortcode, preserving the delimiters via a
+            // capture group, then render markdown segments and widgets inline.
+            const escape = (s: string) =>
+              s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            const re = new RegExp(`(${keys.map(escape).join("|")})`);
+            const tokens = post.body.split(re);
+            return tokens.map((tok, i) => {
+              const widget = SHORTCODES[tok];
+              if (widget) return <div key={i}>{widget}</div>;
+              return tok ? <MarkdownBody key={i} source={tok} /> : null;
+            });
           })()}
 
           {/* Share */}

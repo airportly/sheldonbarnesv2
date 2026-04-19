@@ -90,7 +90,7 @@ export default function MarkdownBody({ source }: { source: string }) {
             <img
               src={typeof src === "string" ? src : ""}
               alt={alt ?? ""}
-              className="inline-block rounded-2xl my-8 w-full max-w-xl h-auto border border-surface-light shadow-lg shadow-black/40"
+              className="inline-block rounded-2xl my-8 w-full max-w-xs h-auto border border-surface-light shadow-lg shadow-black/40"
               loading="lazy"
             />
           ),

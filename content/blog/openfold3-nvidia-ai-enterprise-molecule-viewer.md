@@ -7,13 +7,18 @@ category: "ai-drug-discovery"
 tags: ["openfold3", "nvidia", "nvidia-ai-enterprise", "nvidia-nim", "bionemo", "cuda", "gpu-computing", "ai", "artificial-intelligence", "generative-ai", "foundation-models", "enterprise-ai", "pharma", "pharma-ai", "life-sciences", "biotech", "drug-discovery", "ai-drug-discovery", "healthcare-ai", "clinical-research", "protein-folding", "protein-structure-prediction", "protein-viewer", "structural-biology", "alphafold", "proteins", "dna", "rna", "ligands", "molecular-complexes", "mmcif", "mol-star", "scientific-visualization", "scientific-computing", "digital-twins", "voice-ai", "web-speech-api", "accessibility", "the-platform-inversion"]
 hero: "/openfold3-nvidia-ai-enterprise-viewer.jpeg"
 heroAlt: "Ackee-branded molecule viewer showing a protein-DNA complex rendered from an OpenFold3 prediction returned by NVIDIA AI Enterprise, with a voice assistant panel and per-residue walkthrough controls"
-heroVideo: "/openfold3-nvidia-ai-enterprise-viewer.mp4"
+socialVideo: "/openfold3-nvidia-ai-enterprise-viewer.mp4"
+skipHero: true
 published: true
 ---
+
+{{viewer-cta}}
 
 You can explore the human genome in a web browser. You can search a chemical structure from your phone. You can spin an astronomical object in a Wikipedia article. But until this week, you couldn't walk through the three-dimensional structure of a folded protein the same way — not without installing PyMOL, learning UCSF Chimera, or holding a PhD in structural biology.
 
 That's the gap I wanted to close.
+
+[![Voice-guided molecule viewer rendering an OpenFold3 protein-DNA complex prediction delivered via NVIDIA AI Enterprise](/openfold3-nvidia-ai-enterprise-viewer.jpeg)](/tools/ai-voice-guided-molecule-viewer)
 
 I built a voice-guided molecule viewer that renders real protein structures in the browser, narrates them like a museum docent, and lets anyone — a curious student, a clinical researcher, a medical writer — ask it questions out loud. The predictions come from **OpenFold3**. The delivery layer is **NVIDIA AI Enterprise**. The glue is a single web page anyone can open.
 
@@ -77,7 +82,9 @@ Pathway simulation comes next. Virtual cell models after that. Each one goes thr
 
 ## Try it
 
-The viewer is live at [/tools/ai-voice-guided-molecule-viewer](/tools/ai-voice-guided-molecule-viewer). Two example complexes are loaded and ready — both folded by OpenFold3, both delivered by NVIDIA AI Enterprise, both rendered in your browser with no login.
+{{viewer-cta}}
+
+Two example complexes are loaded and ready — both folded by OpenFold3, both delivered by NVIDIA AI Enterprise, both rendered in your browser with no login.
 
 Open it on your phone. Click the ackee-fruit logo. Ask it to walk you through chain A.
 

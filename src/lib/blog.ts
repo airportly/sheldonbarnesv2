@@ -17,6 +17,14 @@ export interface BlogPost {
   // unset. Useful when the in-post hero works better as a wide figure and the
   // social card wants a square brand mark.
   socialImage?: string;
+  // Optional video URL for og:video metadata, independent of `heroVideo`.
+  // Falls back to `heroVideo`. Use when you don't want a video at the top of
+  // the post but still want link unfurls to show one.
+  socialVideo?: string;
+  // When true, suppresses the hero block at the top of the post page. The
+  // hero image/video is still used for cards and metadata — just not on the
+  // post itself. Useful when the opening image sits inline in the body.
+  skipHero?: boolean;
   body: string;
   readingMinutes: number;
 }
@@ -51,6 +59,8 @@ export function getAllPosts(): BlogPost[] {
         heroAlt: data.heroAlt ?? data.title ?? "",
         heroVideo: data.heroVideo,
         socialImage: data.socialImage,
+        socialVideo: data.socialVideo,
+        skipHero: data.skipHero === true,
         body: content,
         readingMinutes: estimateReadingMinutes(content),
         published: data.published !== false,
