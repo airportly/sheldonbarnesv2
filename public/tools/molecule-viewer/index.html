@@ -1121,14 +1121,20 @@
     }
 
     // Mol* emits different loci shapes depending on what you clicked:
-    //   element-loci — atom spheres, cartoon backbone, surfaces
-    //   bond-loci    — the stick cylinders between two atoms
-    // Both cases route through the same atom-info extractor below.
+    //   element-loci      — atom spheres, cartoon backbone, surfaces
+    //   bond-loci         — covalent stick cylinders between two atoms
+    //   interactions-loci — the dashed lines showing H-bonds, salt bridges,
+    //                       pi-stacking, etc. that appear when focused
     let info = null;
+    let isInteraction = false;
     if (loci.kind === 'element-loci' && loci.elements?.length) {
       info = extractAtomInfo(loci);
     } else if (loci.kind === 'bond-loci' && loci.bonds?.length) {
       info = extractBondAtomInfo(loci);
+    } else if (loci.kind === 'interactions-loci' &&
+               (loci.elements?.length || loci.contacts?.length)) {
+      info = extractInteractionInfo(loci);
+      isInteraction = !!info;
     } else {
       console.log('[click] unsupported loci kind', loci);
       return;
@@ -1137,10 +1143,14 @@
       console.log('[click] extraction returned null for loci', loci);
       return;
     }
-    console.log('[click] atom info', info);
+    console.log(isInteraction ? '[click] interaction info' : '[click] atom info', info);
 
-    const captionText = formatAtomCaption(info);
-    const speechText = formatAtomSpeech(info);
+    const captionText = isInteraction
+      ? formatInteractionCaption(info)
+      : formatAtomCaption(info);
+    const speechText = isInteraction
+      ? formatInteractionSpeech(info)
+      : formatAtomSpeech(info);
 
     showCaption(captionText);
     clearTimeout(clickCaptionTimer);
@@ -1156,7 +1166,10 @@
     }
 
     if (clickLevel === 'bonds') {
-      highlightBonds(info);
+      // For interaction clicks, center the bond-highlight on the A endpoint —
+      // same neighborhood as clicking atom A directly would show.
+      const centerInfo = isInteraction ? info.a : info;
+      highlightBonds(centerInfo);
     } else {
       clearBondsRepr();
     }
@@ -1306,6 +1319,88 @@
       : '';
     const chPhrase = info.chainId ? `, chain ${info.chainId}` : '';
     return `A ${elName} atom${resPhrase}${chPhrase}.`;
+  }
+
+  // Mol*'s InteractionType enum codes. The exact numeric values aren't
+  // documented on the CDN API, so the unknown fallback just reports
+  // "Interaction" — and we log the code so we can map anything unexpected.
+  const INTERACTION_KIND_NAMES = {
+    0: 'Unknown interaction',
+    1: 'Ionic interaction',
+    2: 'Cation-pi interaction',
+    3: 'Pi-stacking interaction',
+    4: 'Hydrogen bond',
+    5: 'Halogen bond',
+    6: 'Hydrophobic contact',
+    7: 'Metal coordination',
+    8: 'Weak hydrogen bond',
+  };
+
+  // Strip the " — description" tail from the AA_DESC / NT_DESC entries to
+  // get just the residue common name for a one-line narration.
+  function shortResidueName(compId) {
+    const full = AA_DESC[compId] || NT_DESC[compId] || compId;
+    const dash = full.indexOf(' — ');
+    return dash > 0 ? full.slice(0, dash) : full;
+  }
+
+  // Pull both endpoints out of a Mol* interactions-loci. Field names drift
+  // across builds — try the common ones, log the contact shape if none match.
+  function extractInteractionInfo(loci) {
+    const list = loci.elements || loci.contacts || [];
+    const contact = list[0];
+    if (!contact) return null;
+
+    const unitA = contact.unitA || contact.aUnit || contact.a?.unit;
+    const idxA = (contact.indexA != null) ? contact.indexA
+               : (contact.aIndex != null) ? contact.aIndex
+               : (contact.a?.element != null) ? contact.a.element
+               : (contact.a?.index != null) ? contact.a.index
+               : null;
+    const unitB = contact.unitB || contact.bUnit || contact.b?.unit;
+    const idxB = (contact.indexB != null) ? contact.indexB
+               : (contact.bIndex != null) ? contact.bIndex
+               : (contact.b?.element != null) ? contact.b.element
+               : (contact.b?.index != null) ? contact.b.index
+               : null;
+
+    if (!unitA || idxA == null || !unitB || idxB == null) {
+      console.log('[click] interaction contact has unexpected shape', contact);
+      return null;
+    }
+
+    const a = extractAtomInfoAt(unitA, idxA);
+    const b = extractAtomInfoAt(unitB, idxB);
+    if (!a || !b) return null;
+
+    const kindCode = contact.interactionKind ?? contact.type ?? contact.kind
+                   ?? contact.contactType ?? contact.featureType;
+    const kindName = INTERACTION_KIND_NAMES[kindCode] || 'Interaction';
+    if (kindCode != null && !(kindCode in INTERACTION_KIND_NAMES)) {
+      console.log('[click] unknown interaction kindCode:', kindCode, contact);
+    }
+
+    return { a, b, kindCode, kindName };
+  }
+
+  function formatInteractionCaption(info) {
+    const short = (x) => `${x.element}(${x.atomName || '?'}) ${x.compId}${x.seqNum}/${x.chainId}`;
+    return `${info.kindName}: ${short(info.a)} ↔ ${short(info.b)}`;
+  }
+
+  function formatInteractionSpeech(info) {
+    const describe = (x) => {
+      const el = ELEMENT_SPOKEN[x.element] || x.element || 'atom';
+      const res = x.compId && x.seqNum != null
+        ? ` of ${shortResidueName(x.compId)} ${x.seqNum}`
+        : '';
+      return `${el}${res}`;
+    };
+    // "A hydrogen bond between nitrogen of arginine 4 and oxygen of
+    //  deoxyguanosine 3." etc. Capitalize first word for natural cadence.
+    const kindLower = info.kindName.toLowerCase();
+    const kindCap = kindLower.charAt(0).toUpperCase() + kindLower.slice(1);
+    return `${kindCap} between ${describe(info.a)} and ${describe(info.b)}.`;
   }
 
   // Walk every atom in the loaded structure and return a loci for atoms
