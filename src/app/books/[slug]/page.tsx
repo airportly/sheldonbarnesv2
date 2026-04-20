@@ -27,8 +27,8 @@ export async function generateMetadata({
   };
   // Prefer the book's cover image; fall back to older og assets if needed.
   const ogImage = book.cover || ogMap[slug] || "/og/home.jpg";
-  const ogImageUrl = ogImage.startsWith("http") ? ogImage : `https://sheldonbarnes.com${ogImage}`;
-  const url = `https://sheldonbarnes.com/books/${slug}`;
+  const ogImageUrl = ogImage.startsWith("http") ? ogImage : `https://www.sheldonbarnes.com${ogImage}`;
+  const url = `https://www.sheldonbarnes.com/books/${slug}`;
 
   return {
     title: `${book.title} by Sheldon Barnes | ${book.subtitle}`,

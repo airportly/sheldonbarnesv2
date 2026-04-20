@@ -3,7 +3,7 @@ import { books } from "@/lib/books";
 import { getAllPosts, getAllTagsWithCount, POSTS_PER_PAGE } from "@/lib/blog";
 import { categories } from "@/lib/categories";
 
-const BASE_URL = "https://sheldonbarnes.com";
+const BASE_URL = "https://www.sheldonbarnes.com";
 const NOINDEX_THRESHOLD = 3;
 
 export default function sitemap(): MetadataRoute.Sitemap {

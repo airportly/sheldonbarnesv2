@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: "Books by Sheldon Barnes | AI, Pharma, Careers",
   description:
     "Explore books by Sheldon Barnes on AI-first engineering leadership, AI in pharmaceutical R&D, and navigating the AI-driven hiring landscape.",
-  alternates: { canonical: "https://sheldonbarnes.com/books" },
+  alternates: { canonical: "https://www.sheldonbarnes.com/books" },
   openGraph: {
     title: "Books by Sheldon Barnes",
     description:
       "AI-first engineering, drug discovery, and the modern job search. Three books for leaders navigating the AI revolution.",
-    url: "https://sheldonbarnes.com/books",
+    url: "https://www.sheldonbarnes.com/books",
     images: [{ url: "/og/books.jpg", width: 1200, height: 630, alt: "Books by Sheldon Barnes" }],
   },
   twitter: {

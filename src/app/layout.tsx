@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const BASE = "https://sheldonbarnes.com";
+const BASE = "https://www.sheldonbarnes.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
@@ -54,8 +54,8 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sheldon Barnes",
-  url: "https://sheldonbarnes.com",
-  image: "https://sheldonbarnes.com/author-photo.jpg",
+  url: "https://www.sheldonbarnes.com",
+  image: "https://www.sheldonbarnes.com/author-photo.jpg",
   jobTitle: "Senior Engineering Leader",
   description:
     "AI-first engineering leader, author, and veteran. Building and leading AI-first teams in regulated enterprises.",
@@ -85,7 +85,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Sheldon Barnes",
-  url: "https://sheldonbarnes.com",
+  url: "https://www.sheldonbarnes.com",
   description:
     "Personal website of Sheldon Barnes, engineering leader, AI strategist, and author.",
   author: { "@type": "Person", name: "Sheldon Barnes" },
@@ -99,11 +99,11 @@ const booksJsonLd = [
     alternateName:
       "Leading AI-First Engineering Teams from Point Solutions to Intelligent Operating Platforms",
     author: { "@type": "Person", name: "Sheldon Barnes" },
-    url: "https://sheldonbarnes.com/books/the-platform-inversion",
+    url: "https://www.sheldonbarnes.com/books/the-platform-inversion",
     bookFormat: "https://schema.org/EBook",
     datePublished: "2026",
     inLanguage: "en",
-    image: "https://sheldonbarnes.com/book-cover.png",
+    image: "https://www.sheldonbarnes.com/book-cover.png",
     publisher: { "@type": "Organization", name: "Kindle Direct Publishing" },
     offers: {
       "@type": "Offer",
@@ -118,11 +118,11 @@ const booksJsonLd = [
     alternateName:
       "How AI Is Rewriting Drug Discovery and Closing Pharma's Patent Cliff",
     author: { "@type": "Person", name: "Sheldon Barnes" },
-    url: "https://sheldonbarnes.com/books/the-200-billion-problem",
+    url: "https://www.sheldonbarnes.com/books/the-200-billion-problem",
     bookFormat: "https://schema.org/EBook",
     datePublished: "2026",
     inLanguage: "en",
-    image: "https://sheldonbarnes.com/pharma-book-cover.png",
+    image: "https://www.sheldonbarnes.com/pharma-book-cover.png",
     publisher: { "@type": "Organization", name: "Kindle Direct Publishing" },
     offers: [
       {
@@ -144,11 +144,11 @@ const booksJsonLd = [
     alternateName:
       "The Hidden System Filtering You Out — and How to Beat It",
     author: { "@type": "Person", name: "Sheldon Barnes" },
-    url: "https://sheldonbarnes.com/books/why-youre-not-getting-hired",
+    url: "https://www.sheldonbarnes.com/books/why-youre-not-getting-hired",
     bookFormat: "https://schema.org/EBook",
     datePublished: "2026",
     inLanguage: "en",
-    image: "https://sheldonbarnes.com/hiring-book-cover.png",
+    image: "https://www.sheldonbarnes.com/hiring-book-cover.png",
     publisher: { "@type": "Organization", name: "Kindle Direct Publishing" },
     offers: [
       {

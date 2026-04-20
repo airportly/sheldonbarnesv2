@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const SITE = "https://sheldonbarnes.com";
+const SITE = "https://www.sheldonbarnes.com";
 
 function escape(s: string): string {
   return s

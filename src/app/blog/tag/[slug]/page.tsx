@@ -7,7 +7,7 @@ import ChatWidget from "@/components/ChatWidget";
 import PostCard from "@/components/blog/PostCard";
 import { getAllTagsWithCount, getPostsByTag, tagDisplay } from "@/lib/blog";
 
-const SITE = "https://sheldonbarnes.com";
+const SITE = "https://www.sheldonbarnes.com";
 const NOINDEX_THRESHOLD = 3;
 
 export function generateStaticParams() {

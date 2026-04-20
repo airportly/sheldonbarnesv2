@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Viewer from "./Viewer";
 
 const PAGE_URL =
-  "https://sheldonbarnes.com/tools/ai-voice-guided-molecule-viewer";
+  "https://www.sheldonbarnes.com/tools/ai-voice-guided-molecule-viewer";
 
 const SOCIAL_IMAGE = {
   url: "/openfold3-nvidia-ai-enterprise-viewer.jpeg",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "drug discovery",
     "BioNeMo",
   ],
-  authors: [{ name: "Sheldon Barnes", url: "https://sheldonbarnes.com" }],
+  authors: [{ name: "Sheldon Barnes", url: "https://www.sheldonbarnes.com" }],
   creator: "Sheldon Barnes",
   publisher: "Sheldon Barnes",
   alternates: { canonical: PAGE_URL },

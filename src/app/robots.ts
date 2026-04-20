@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sheldonbarnes.com/sitemap.xml",
+    sitemap: "https://www.sheldonbarnes.com/sitemap.xml",
   };
 }

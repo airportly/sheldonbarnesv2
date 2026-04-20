@@ -18,10 +18,10 @@ export async function generateMetadata({
   const book = getBookBySlug(slug);
   if (!book) return {};
 
-  const url = `https://sheldonbarnes.com/books/${slug}/resources`;
+  const url = `https://www.sheldonbarnes.com/books/${slug}/resources`;
   const ogImage = book.cover.startsWith("http")
     ? book.cover
-    : `https://sheldonbarnes.com${book.cover}`;
+    : `https://www.sheldonbarnes.com${book.cover}`;
 
   const description = `Free figures, templates, and frameworks from ${book.title}. Download the toolkit Sheldon Barnes featured in the book.`;
 

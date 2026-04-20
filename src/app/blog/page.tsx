@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   title: "Blog | Sheldon Barnes",
   description:
     "Essays from Sheldon Barnes on AI-first engineering leadership, drug discovery, and the future of work in regulated enterprises.",
-  alternates: { canonical: "https://sheldonbarnes.com/blog" },
+  alternates: { canonical: "https://www.sheldonbarnes.com/blog" },
   openGraph: {
     title: "Blog by Sheldon Barnes",
     description:
       "Essays on AI-first engineering leadership, drug discovery, and the future of work in regulated enterprises.",
-    url: "https://sheldonbarnes.com/blog",
+    url: "https://www.sheldonbarnes.com/blog",
     images: [{ url: "/og/books.jpg", width: 1200, height: 630, alt: "Sheldon Barnes blog" }],
   },
   twitter: {

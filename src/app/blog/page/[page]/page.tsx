@@ -8,7 +8,7 @@ import PostCard from "@/components/blog/PostCard";
 import { getAllPosts, POSTS_PER_PAGE } from "@/lib/blog";
 import { categories } from "@/lib/categories";
 
-const SITE = "https://sheldonbarnes.com";
+const SITE = "https://www.sheldonbarnes.com";
 
 export function generateStaticParams() {
   const posts = getAllPosts();

@@ -8,7 +8,7 @@ import PostCard from "@/components/blog/PostCard";
 import { categories, getCategoryBySlug } from "@/lib/categories";
 import { getPostsByCategory } from "@/lib/blog";
 
-const SITE = "https://sheldonbarnes.com";
+const SITE = "https://www.sheldonbarnes.com";
 const NOINDEX_THRESHOLD = 3;
 
 export function generateStaticParams() {

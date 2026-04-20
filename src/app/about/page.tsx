@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "About Sheldon Barnes | From Jamaica to AI Leadership",
   description:
     "The story behind the books. Born in Jamaica, veteran of Operation Enduring Freedom, cyclist, and AI-first engineering leader.",
-  alternates: { canonical: "https://sheldonbarnes.com/about" },
+  alternates: { canonical: "https://www.sheldonbarnes.com/about" },
   openGraph: {
     title: "About Sheldon Barnes",
     description:
       "From a VTech computer in Jamaica to leading AI-first engineering teams at Fortune 100 enterprises.",
-    url: "https://sheldonbarnes.com/about",
+    url: "https://www.sheldonbarnes.com/about",
     images: [{ url: "/og/about.jpg", width: 1200, height: 630, alt: "About Sheldon Barnes" }],
   },
   twitter: {

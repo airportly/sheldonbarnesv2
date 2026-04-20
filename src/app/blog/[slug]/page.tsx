@@ -12,7 +12,7 @@ import APAPSimulator from "@/components/blog/APAPSimulator";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
-const SITE = "https://sheldonbarnes.com";
+const SITE = "https://www.sheldonbarnes.com";
 
 export function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
