@@ -81,7 +81,7 @@ It's a multi-modal model run twice per listing: once on the prose, once on the p
 
 I started this rollout in Carmel. Every active listing in **46032, 46033, 46074, 46077, 46280, and 46290** has full, deep AI coverage on every photo.
 
-Hamilton County's other markets — **Westfield, Fishers, Noblesville, Zionsville** — are filling in fast and will be at full coverage shortly.
+[Hamilton County](https://www.mycarmelrealty.com/hamilton-county)'s other markets — **[Westfield](https://www.mycarmelrealty.com/westfield), [Fishers](https://www.mycarmelrealty.com/fishers), [Noblesville](https://www.mycarmelrealty.com/noblesville), [Zionsville](https://www.mycarmelrealty.com/zionsville)** — are filling in fast and will be at full coverage shortly.
 
 ## Why I built it this way
 
