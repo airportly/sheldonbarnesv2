@@ -218,7 +218,7 @@ export default async function BlogPostPage({
 
           {/* Hero — skipped when the post places imagery inline in body */}
           {post.skipHero ? null : post.heroVideo ? (
-            <div className="rounded-2xl overflow-hidden mb-6 mx-auto max-w-sm border border-surface-light bg-background shadow-xl shadow-black/40">
+            <div className="rounded-2xl overflow-hidden mb-6 mx-auto max-w-2xl border border-surface-light bg-background shadow-xl shadow-black/40">
               <video
                 src={post.heroVideo}
                 poster={post.hero || undefined}
