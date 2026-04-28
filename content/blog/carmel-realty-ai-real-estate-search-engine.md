@@ -1,6 +1,6 @@
 ---
 title: "Search the Way You'd Describe a Home: Carmel Realty's AI Search Engine"
-description: "I built an AI search bar that reads plain English. Type 'updated kitchen with a chef's island, in Carmel, under $1M' and the system translates it — instantly — into the exact filters that surface matching homes across Hamilton County. No dropdowns. No bracket syntax. Just sentences."
+description: "I built an AI-powered natural-language search bar for real estate that makes property hunting dramatically faster. Type 'updated kitchen with a chef's island, in Carmel, under $1M' and matching homes from across Hamilton County surface in seconds. No dropdowns. No bracket syntax. Just sentences."
 date: "2026-04-27"
 author: "Sheldon Barnes"
 category: "industry-analysis"
@@ -11,7 +11,7 @@ heroVideo: "/carmel-realty-ai-real-estate-search-engine.mov"
 published: true
 ---
 
-I just launched something I've wanted for a long time: a search bar that reads plain English.
+I just launched something I've wanted for a long time: an **AI-powered natural-language search bar** for real estate that makes property hunting dramatically faster. Type how you'd describe a home, and matching listings surface in seconds.
 
 Not `minPrice=600000 maxPrice=900000 beds≥4`. Not a maze of dropdowns. Just type what you actually want.
 
