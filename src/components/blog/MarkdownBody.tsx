@@ -1,17 +1,17 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 export default function MarkdownBody({ source }: { source: string }) {
   return (
     <div className="prose prose-invert max-w-none">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        rehypePlugins={[
-          rehypeSlug,
-          [rehypeAutolinkHeadings, { behavior: "wrap" }],
-        ]}
+        // rehypeSlug stays so heading IDs exist for any future #anchor jumps;
+        // rehype-autolink-headings was removed because it wrapped every
+        // heading's text in a self-link, making them look like clickable
+        // links that go nowhere.
+        rehypePlugins={[rehypeSlug]}
         components={{
           h2: ({ children, ...props }) => (
             <h2
