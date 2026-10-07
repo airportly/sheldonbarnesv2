@@ -18,9 +18,9 @@ My [circuit map](/blog/immigration-bond-circuit-split-map-and-data) shows where 
 
 ## How to read it
 
-Select an underlined phrase in the statute, or one of the arguments listed beneath it. The panel that opens sorts every opinion by the reading it adopted: blue for a bond hearing under 1226(a), orange for mandatory detention under 1225(b)(2)(A). Each entry says, in one sentence, what that opinion did with the point, and "Show the court's words" opens the passage itself with a link to the page of the court's PDF where it appears.
+Pick a provision from the tabs, then tap any underlined phrase. A reader pops up with the circuits across the top. Tap a circuit to see what its majority did with that phrase, and switch to the dissent where there is one. The small dots under each circuit show at a glance which opinions spoke to the point: blue for the bond reading under 1226(a), orange for mandatory detention under 1225(b)(2)(A). Arrow keys step through the circuits, and the menu at the top switches to another phrase without closing the reader.
 
-Each opinion gets one of two labels on each point. **Relies on it** means the opinion used the point to support its own conclusion. **Answers it** means the opinion mainly rebutted the other side's use of the point. The grid at the bottom shows all 21 opinions against all 14 arguments at once; select any dot to jump to that passage.
+Each opinion gets one of two labels. **Relies on it** means the opinion used the point to support its own conclusion. **Answers the other side** means it mainly rebutted the other side's use of the point. Every entry shows the court's own words, with a link to that page of the court's PDF. The grid tab shows all 21 opinions against all 14 arguments at once; tap any dot to open it.
 
 {{statute-map}}
 
