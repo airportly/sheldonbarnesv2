@@ -74,7 +74,7 @@ The Court has not yet set a briefing schedule. I will keep this map and these ch
 
 ## Sources and method
 
-Circuit decisions link to each court's own website and to Justia; the Supreme Court materials link to the docket for No. 26-104 and the October 1, 2026 order list. Westlaw citations will be added.
+Circuit decisions link to each court's own website and to Justia; the Supreme Court materials link to the docket for No. 26-104 and the October 1, 2026 order list. Each case and each quotation carries a Bluebook citation, with pin cites checked against the Westlaw versions of the opinions.
 
 Detention, book in, and release data come from ICE's detention statistics, as archived and compiled by the [Deportation Data Project](https://deportationdata.org/data/processed/ice.html) and [TRAC](https://tracreports.org/immigration/quickfacts/). Bond hearing counts come from [TRAC's bond hearing tool](https://tracreports.org/phptools/immigration/bond/). The no jurisdiction series is my analysis of [EOIR records published by the Deportation Data Project](https://deportationdata.org/data/processed/eoir.html). Habeas counts are tallied from the [ProPublica Habeas Tracker](https://projects.propublica.org/habeas-tracker) and cross checked against [TRAC](https://tracreports.org/reports/773/). Border data come from CBP, with monthly figures compiled by [WOLA Border Oversight](https://www.wola.org/border-oversight/). Appearance figures come from EOIR's FY2016 Statistics Yearbook, [GAO-25-106867](https://www.gao.gov/products/gao-25-106867), and Eagly and Shafer.
 

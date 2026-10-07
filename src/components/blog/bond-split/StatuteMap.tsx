@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import raw from "@/data/bond-split/statute-map.json";
+import Cite, { type CiteSegments } from "./Cite";
 
 /**
  * Statute map for the INA 235(b) versus 236(a) bond split.
@@ -24,7 +25,7 @@ interface Segment { t: string; topics?: string[] }
 interface Provision { id: string; cite: string; ina: string; title: string; segments: Segment[]; note?: string }
 interface Topic { id: string; group: "text" | "beyond"; label: string; short: string; question: string }
 interface Opinion { id: string; circuit: string; part: Part; judge: string; side: Side; case: string; pdf: string | null }
-interface Annotation { op: string; topic: string; status: Status; summary: string | null; quote: string | null; page: number | null }
+interface Annotation { op: string; topic: string; status: Status; summary: string | null; quote: string | null; page: number | null; cite?: CiteSegments | null }
 
 const D = raw as unknown as { provisions: Provision[]; topics: Topic[]; opinions: Opinion[]; annotations: Annotation[] };
 const TOPICS: Record<string, Topic> = Object.fromEntries(D.topics.map((t) => [t.id, t]));
@@ -396,17 +397,18 @@ function Reader({
                       &ldquo;{a.quote}&rdquo;
                     </blockquote>
                   )}
-                  <p className="text-[11px] text-muted mt-2">
-                    <em>{op.case}</em>
-                    {href && (
-                      <>
-                        {" · "}
-                        <a href={href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-primary">
-                          Open the opinion{a.page ? ` at p. ${a.page}` : ""}
-                        </a>
-                      </>
-                    )}
-                  </p>
+                  {a.cite && (
+                    <p className="text-[11px] sm:text-xs text-muted mt-2 leading-relaxed">
+                      <Cite segs={a.cite} />
+                    </p>
+                  )}
+                  {href && (
+                    <p className="text-[11px] text-muted mt-1">
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-primary">
+                        Open the court&apos;s slip opinion{a.page ? ` at PDF p. ${a.page}` : ""}
+                      </a>
+                    </p>
+                  )}
                 </>
               )}
             </motion.div>

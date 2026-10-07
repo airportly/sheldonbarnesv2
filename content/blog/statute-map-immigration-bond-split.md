@@ -44,7 +44,7 @@ The map also shows where the debate is thin. The purpose argument, that IIRIRA m
 
 ## Method and sources
 
-All quotations come from the slip opinions published on each court of appeals' own website, linked from every entry. Every quotation was checked word for word against the opinion text and against the part of the opinion it is attributed to; omitted citations are marked with an ellipsis. Page references are to the page of the court's PDF, not the Federal Reporter. The Ninth Circuit's opinion begins with a staff prepared syllabus, which is not part of the opinion and is never quoted here.
+All quotations come from the slip opinions published on each court of appeals' own website, linked from every entry. Every quotation was checked word for word against the opinion text and against the part of the opinion it is attributed to; omitted citations are marked with an ellipsis. Each quotation carries a Bluebook citation with a pin cite, matched against the Westlaw version of the opinion: Federal Reporter pages for nine circuits, and Westlaw star pages for the Third and Fourth Circuits, which are not yet in the reporter. Tap Copy to grab any citation. The Ninth Circuit's opinion begins with a staff prepared syllabus, which is not part of the opinion and is never quoted here.
 
 The one sentence summaries and the labels are my own classification after reading each passage in context, and a second full review checked every summary against the opinion. Reasonable readers could label a few close calls differently, especially where an opinion both answers the other side and builds its own point from the same passage. If you think I have one wrong, [tell me](/contact) and I will look at it again.
 
