@@ -11,6 +11,7 @@ import ShareButtons from "@/components/blog/ShareButtons";
 import APAPSimulator from "@/components/blog/APAPSimulator";
 import CircuitExplorer from "@/components/blog/bond-split/CircuitExplorer";
 import BondCharts from "@/components/blog/bond-split/BondCharts";
+import StatuteMap from "@/components/blog/bond-split/StatuteMap";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -246,12 +247,13 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}} and {{bond-data}} shortcodes */}
+          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}}, {{bond-data}} and {{statute-map}} shortcodes */}
           {(() => {
             const SHORTCODES: Record<string, React.ReactNode> = {
               "{{apap-simulator}}": <APAPSimulator />,
               "{{circuit-map}}": <CircuitExplorer />,
               "{{bond-data}}": <BondCharts />,
+              "{{statute-map}}": <StatuteMap />,
               "{{viewer-cta}}": (
                 <div className="my-8 flex justify-center">
                   <Link
