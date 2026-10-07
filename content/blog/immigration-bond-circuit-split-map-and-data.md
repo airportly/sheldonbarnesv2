@@ -34,6 +34,8 @@ The judges were not close to unanimous. Seven of the nine decisions for the deta
 
 The Court chose the Second Circuit's April 28 decision in *Barbosa da Cunha v. Freden* as its vehicle. The government had asked for something else. Its petition urged the Court to hold this case and take the Sixth Circuit's *Lopez-Campos v. Raycraft* (now *Putra v. Lopez-Campos*, No. 25-1415) instead, because that case also presents a due process question. The Court granted the Second Circuit case, which presents only the statutory question. The government's Sixth Circuit petition and the detainees' Fifth Circuit petition (*Buenrostro-Mendez v. Blanche*, No. 26-43) were distributed for the same conference and show no action since, which is consistent with the Court holding them for this case, though neither docket says so.
 
+To see how each court read the statute itself, phrase by phrase and in the judges' own words, see the companion [statute map](/blog/statute-map-immigration-bond-split).
+
 ## What the numbers show
 
 {{bond-data}}
