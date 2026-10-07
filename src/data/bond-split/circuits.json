@@ -1,0 +1,667 @@
+{
+ "asOf": "2026-10-07",
+ "circuits": [
+  {
+   "circuit": "1",
+   "outcome": "bond",
+   "caption": "José Arnulfo Guerrero Orellana, Petitioner, Appellee, v. Antone Moniz, Superintendent, Plymouth County Correctional Facility; David J. Venturella, Acting Director, U.S. Immigration and Customs Enforcement; Markwayne Mullin, Secretary of the U.S. Department of Homeland Security; Todd Blanche, U.S. Attorney General; David Wesling, Acting Field Office Director; Daren K. Margolin, Director, Executive Office for Immigration Review, Respondents, Appellants",
+   "shortName": "Guerrero Orellana v. Moniz",
+   "docket": "Nos. 25-2152, 26-1094",
+   "citation": "2026 WL 2352042 (1st Cir. Aug. 13, 2026)",
+   "date": "2026-08-13",
+   "published": true,
+   "panel": [
+    "Montecalvo",
+    "Lynch",
+    "Dunlap"
+   ],
+   "author": "Montecalvo",
+   "dissent": "Dunlap: the better reading is that every noncitizen present without admission is an applicant for admission covered by 1225(b)(2)(A), so mandatory detention applies; he expects the Supreme Court to resolve the debate.",
+   "concurrence": null,
+   "holding": "A class of noncitizens in New England who entered without inspection and were arrested in the interior are not \"seeking admission\" under 1225(b)(2)(A), so their detention is governed by 1226(a) and they are eligible for bond hearings. The court affirmed the district court's class judgment.",
+   "rehearing": "No rehearing petition or order located; Justia docket was last refreshed before the opinion issued, so status is unverified.",
+   "links": {
+    "court": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/25-2152P-01A.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca1/25-2152/25-2152-2026-08-13.html"
+   },
+   "westlaw": null,
+   "label": [
+    905,
+    95
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Montecalvo",
+     "text": "Because we conclude that the term \"seeking admission\" means seeking lawful entry, and Guerrero Orellana already entered the country unlawfully, we hold that he is not \"seeking admission.\""
+    },
+    "dissent": {
+     "by": "Dunlap",
+     "text": "The role of the judiciary, however, is not to determine policy but to interpret the law."
+    }
+   }
+  },
+  {
+   "circuit": "2",
+   "outcome": "bond",
+   "caption": "Ricardo Aparecido Barbosa da Cunha, Petitioner-Appellee, v. Joseph E. Freden, Deputy Field Office Director, U.S. Immigration and Customs Enforcement, Respondent-Appellant",
+   "shortName": "Barbosa da Cunha v. Freden",
+   "docket": "No. 25-3141-pr",
+   "citation": "175 F.4th 61 (2d Cir. 2026)",
+   "date": "2026-04-28",
+   "published": true,
+   "panel": [
+    "Cabranes",
+    "Bianco",
+    "Nathan"
+   ],
+   "author": "Bianco",
+   "dissent": null,
+   "concurrence": "Cabranes (concurring in the judgment and opinion of the Court): joins fully and writes to stress that the government's reading would mean five administrations and fifteen Congresses missed a mandate to detain millions.",
+   "holding": "A noncitizen who entered without inspection about twenty years earlier and was arrested in the interior is not \"seeking admission,\" so 1226(a), not 1225(b)(2)(A), governs his detention and he may be released on bond. The court added that constitutional avoidance would support the same result even if the statute were ambiguous.",
+   "rehearing": "No rehearing sought; the government went directly to the Supreme Court. Certiorari granted October 1, 2026 as Rhoney v. Barbosa da Cunha, No. 26-104.",
+   "links": {
+    "court": "https://ww3.ca2.uscourts.gov/decisions/OPN/25-3141_complete_opn.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca2/25-3141/25-3141-2026-04-28.html"
+   },
+   "westlaw": null,
+   "label": [
+    848,
+    150
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Bianco",
+     "text": "The government's interpretation of Section 1225(b)(2)(A) would send a seismic shock through our immigration detention system and society, straining our already overcrowded detention infrastructure, incarcerating millions, separating families, and disrupting communities."
+    },
+    "concurrence": {
+     "by": "Cabranes",
+     "text": "In the meantime, fifteen Congresses stood silently by as five presidents ignored the plain text of the statute."
+    }
+   }
+  },
+  {
+   "circuit": "3",
+   "outcome": "bond",
+   "caption": "Gabriel Antonio Buele Morocho v. Warden Philadelphia FDC; Acting Director Philadelphia Field Office Immigration and Customs Enforcement; Secretary U.S. Department of Homeland Security; et al., Appellants (consolidated with Wanderson Lopes De Andrade v. Director Philadelphia Field Office Immigration and Customs Enforcement; Warden Philadelphia FDC, Appellants)",
+   "shortName": "Buele Morocho v. Warden Philadelphia FDC",
+   "docket": "Nos. 26-1150, 26-1454",
+   "citation": "2026 WL 2546223 (3d Cir. Aug. 28, 2026)",
+   "date": "2026-08-28",
+   "published": true,
+   "panel": [
+    "Shwartz",
+    "Mascott",
+    "McKee"
+   ],
+   "author": "Shwartz",
+   "dissent": "Mascott: everyone present without admission is an applicant seeking admission, and the majority's reading treats border crossers who evade inspection better than those who present at a port of entry.",
+   "concurrence": null,
+   "holding": "Two long-term residents who entered without inspection were not \"seeking admission\" when arrested, so 1225(b)(2)(A) did not authorize holding them without bond. The court also held that detaining them without a bond hearing violated procedural due process, and affirmed the release orders.",
+   "rehearing": "No rehearing petition or order located; unverified.",
+   "links": {
+    "court": "https://www2.ca3.uscourts.gov/opinarch/261150p.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca3/26-1150/26-1150-2026-08-28.html"
+   },
+   "westlaw": null,
+   "label": [
+    815,
+    218
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Shwartz",
+     "text": "Given the limited number of beds Congress mandated to accommodate the increased number of criminal noncitizens subject to removal without corresponding increases for noncriminal noncitizens, we are skeptical IIRIRA also mandated detention of, by Congress's count, millions of other noncitizens who had entered the country without admission."
+    },
+    "dissent": {
+     "by": "Mascott",
+     "text": "For what purpose have Petitioners been deemed \"applicants for admission\" if not to fall within applicant instructions and requirements contained within § 1225 itself?"
+    }
+   }
+  },
+  {
+   "circuit": "4",
+   "outcome": "bond",
+   "caption": "Oscar Enrique Lopez Garcia, Petitioner-Appellee, v. Robert Guadian, in his official capacity as Director of the Washington Field Office of U.S. Immigration and Customs Enforcement; Markwayne Mullin, Secretary of the U.S. Department of Homeland Security; Todd Blanche, Attorney General of the United States, Respondents-Appellants (consolidated with Juan Jose Rivera v. Robert Guadian, et al., No. 25-7050)",
+   "shortName": "Lopez Garcia v. Guadian",
+   "docket": "Nos. 25-7044, 25-7050",
+   "citation": null,
+   "date": "2026-09-10",
+   "published": true,
+   "panel": [
+    "Rushing",
+    "Berner",
+    "Keenan (Senior Circuit Judge)"
+   ],
+   "author": "Berner",
+   "dissent": "Rushing: the statute's text, context, and history show 1225(b)(2)(A) requires DHS to detain noncitizens present without lawful admission during removal proceedings.",
+   "concurrence": null,
+   "holding": "Noncitizens who have lived in the United States for years after entering without inspection are governed by 1226, not 1225, and so are entitled to bond hearings. The court affirmed the habeas grants.",
+   "rehearing": "No rehearing petition or order located; unverified.",
+   "links": {
+    "court": "https://www.ca4.uscourts.gov/opinions/257044.P.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca4/25-7044/25-7044-2026-09-10.html"
+   },
+   "westlaw": null,
+   "label": [
+    790,
+    322
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Berner",
+     "text": "If we were to agree with the Government's construction, we would need to conclude that, in passing IIRIRA thirty years ago, Congress intended to direct the single largest mass detention of human beings in our nation's history."
+    },
+    "dissent": {
+     "by": "Rushing",
+     "text": "The sentence, \"Tomatoes and cucumbers shall be deemed vegetables\" does not define the term \"vegetables.\""
+    }
+   }
+  },
+  {
+   "circuit": "5",
+   "outcome": "mandatory",
+   "caption": "Victor Buenrostro-Mendez, Petitioner-Appellee, versus Pamela Bondi, U.S. Attorney General; Kristi Noem, Secretary, U.S. Department of Homeland Security; Todd M. Lyons, Acting Director, ICE; et al., Respondents-Appellants (consolidated with Jose Padron Covarrubias v. Miguel Vergara, et al., No. 25-40701)",
+   "shortName": "Buenrostro-Mendez v. Bondi",
+   "docket": "Nos. 25-20496, 25-40701",
+   "citation": "166 F.4th 494 (5th Cir. 2026)",
+   "date": "2026-02-06",
+   "published": true,
+   "panel": [
+    "Jones",
+    "Duncan",
+    "Douglas"
+   ],
+   "author": "Jones",
+   "dissent": "Douglas: IIRIRA meant to equalize treatment, not to mandate detention of some two million people, and for thirty years no one read it that way; 1225(b)(2)(A) is limited to those seeking entry.",
+   "concurrence": null,
+   "holding": "Noncitizens who entered illegally years ago remain \"applicants for admission\" and are subject to mandatory detention under 1225(b)(2)(A) without a bond hearing, wherever they are arrested. The court reversed the district courts' habeas grants.",
+   "rehearing": "Rehearing denied April 9, 2026 (per Supreme Court docket No. 26-43; whether panel or en banc not confirmed). Detainees petitioned for certiorari July 2, 2026 as Buenrostro-Mendez v. Blanche, No. 26-43, distributed for the September 28, 2026 conference and not acted on as of October 7, 2026.",
+   "links": {
+    "court": "https://www.ca5.uscourts.gov/opinions/pub/25/25-20496-CV0.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca5/25-20496/25-20496-2026-02-06.html"
+   },
+   "westlaw": null,
+   "label": [
+    440,
+    470
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Jones",
+     "text": "Years of consistent practice cannot vindicate an interpretation that is inconsistent with a statute's plain text."
+    },
+    "dissent": {
+     "by": "Douglas",
+     "text": "In sum, the government's proposed reading of the statute would mean that, for purposes of immigration detention, the border is now everywhere."
+    }
+   }
+  },
+  {
+   "circuit": "6",
+   "outcome": "bond",
+   "caption": "Juan Manuel Lopez-Campos (25-1965); Juan Carlos Sanchez Alvarez (25-1969); Jose Daniel Contreras-Cervantes, et al. (25-1978); Jesus Jose Pizarro Reyes (25-1982), Petitioners-Appellees, v. Kevin Raycraft, Immigration and Customs Enforcement, Acting Director of Detroit Field Office, Enforcement and Removal Operations; Markwayne Mullin, Secretary of U.S. Department of Homeland Security; et al., Respondents-Appellants",
+   "shortName": "Lopez-Campos v. Raycraft",
+   "docket": "Nos. 25-1965, 25-1969, 25-1978, 25-1982",
+   "citation": "175 F.4th 713 (6th Cir. 2026)",
+   "date": "2026-05-11",
+   "published": true,
+   "panel": [
+    "Cole",
+    "Clay",
+    "Murphy"
+   ],
+   "author": "Clay",
+   "dissent": "Murphy: noncitizens present after an illegal entry are applicants for admission who are seeking admission, so 1225(b)(2)(A) mandates detention; the majority's reading undercuts IIRIRA's goal of ending better treatment for those who evade inspection.",
+   "concurrence": null,
+   "holding": "Noncitizens living in the interior who have not affirmatively sought lawful entry are not covered by 1225(b)(2)(A); 1226 governs and they are entitled to individualized bond hearings. The court also upheld the district courts' rulings that detaining them without a bond hearing violated due process.",
+   "rehearing": "No en banc petition located. Government petitioned for certiorari June 22, 2026, now captioned Putra v. Lopez-Campos, No. 25-1415 (originally Raycraft v. Lopez-Campos); distributed for the September 28, 2026 conference and not acted on as of October 7, 2026.",
+   "links": {
+    "court": "https://www.opn.ca6.uscourts.gov/opinions.pdf/26a0139p-06.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca6/25-1965/25-1965-2026-05-11.html"
+   },
+   "westlaw": null,
+   "label": [
+    690,
+    262
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Clay",
+     "text": "To ignore this important detail is like declaring that every single high school senior is an applicant to college because they are eligible to submit an application."
+    },
+    "dissent": {
+     "by": "Murphy",
+     "text": "And under the plain meaning of \"applicant,\" we must treat them as seeking the thing that they are deemed to be applying for."
+    }
+   }
+  },
+  {
+   "circuit": "7",
+   "outcome": "bond",
+   "caption": "Jaciel Cirrus Rojas, Petitioner-Appellant, v. Samuel Olson, Field Office Director, Chicago Field Office, Immigration and Customs Enforcement, and Scott Smith, Jail Administrator, Dodge County Jail, Respondents-Appellees",
+   "shortName": "Cirrus Rojas v. Olson",
+   "docket": "No. 25-3127",
+   "citation": "183 F.4th 909 (7th Cir. 2026)",
+   "date": "2026-07-30",
+   "published": true,
+   "panel": [
+    "Sykes",
+    "Jackson-Akiwumi",
+    "Kolar"
+   ],
+   "author": "Kolar",
+   "dissent": "Sykes: adopts Judge Murphy's Sixth Circuit dissent; because 1225(a)(1) deems all unadmitted noncitizens applicants for admission, the government's reading of 1225(b)(2)(A) is more persuasive.",
+   "concurrence": null,
+   "holding": "A noncitizen who entered without inspection in 2018 and was arrested in the interior is not \"seeking admission,\" so 1226(a) governs and he is eligible for a bond hearing. The court reversed the district court's denial of habeas relief and remanded.",
+   "rehearing": "No rehearing petition or order located; unverified.",
+   "links": {
+    "court": "https://media.ca7.uscourts.gov/cgi-bin/OpinionsWeb/processWebInputExternal.pl?Submit=Display&Path=Y2026/D07-30/C:25-3127:J:Sykes:dis:T:fnOp:N:3583247:S:0",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca7/25-3127/25-3127-2026-07-30.html"
+   },
+   "westlaw": null,
+   "label": [
+    612,
+    232
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Kolar",
+     "text": "The student is an applicant for admission precisely because they are seeking admission; Cirrus Rojas is an \"applicant for admission\" only because the statute deems him so."
+    },
+    "dissent": {
+     "by": "Sykes",
+     "text": "Today, any alien who \"arrives\" or is \"present\" in the United States without admission is deemed an \"applicant for admission\" and is treated as though he never entered the country at all."
+    }
+   }
+  },
+  {
+   "circuit": "8",
+   "outcome": "mandatory",
+   "caption": "Joaquin Herrera Avila, Petitioner-Appellee, v. Pamela Bondi, Attorney General; Markwayne Mullin, Secretary, U.S. Department of Homeland Security; Todd M. Lyons, Acting Director of Immigration and Customs Enforcement; et al., Respondents-Appellants",
+   "shortName": "Herrera Avila v. Bondi",
+   "docket": "No. 25-3248",
+   "citation": "170 F.4th 1128 (8th Cir. 2026)",
+   "date": "2026-03-25",
+   "published": true,
+   "panel": [
+    "Shepherd",
+    "Erickson",
+    "Grasz"
+   ],
+   "author": "Shepherd",
+   "dissent": "Erickson: \"seeking admission\" requires an affirmative act, and the majority's reading lacks textual support, ignores statutory context, and breaks with practice across five administrations.",
+   "concurrence": null,
+   "holding": "Unadmitted noncitizens physically present in the United States are applicants \"seeking admission\" under 1225(b)(2)(A) and must be detained without bond during removal proceedings. The court reversed the district court's habeas grant and remanded.",
+   "rehearing": "Panel rehearing and rehearing en banc reportedly denied June 17, 2026 (CLINIC summary); not confirmed from a court record.",
+   "links": {
+    "court": "https://ecf.ca8.uscourts.gov/opndir/26/03/253248P.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca8/25-3248/25-3248-2026-03-25.html"
+   },
+   "westlaw": null,
+   "label": [
+    492,
+    200
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Shepherd",
+     "text": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases \"applicant for admission\" and \"seeking admission\" are the same."
+    },
+    "dissent": {
+     "by": "Erickson",
+     "text": "To get to its desired result, the court uses the statutory definition to deem Avila an \"applicant for admission,\" and then turns around and uses the ordinary meaning of the same phrase to find he is also \"seeking admission\" when he is not."
+    }
+   }
+  },
+  {
+   "circuit": "9",
+   "outcome": "bond",
+   "caption": "Ramon Rodriguez Vazquez, on behalf of himself as an individual and on behalf of others similarly situated, Plaintiff-Appellee, v. Drew Bostock, Seattle Field Office Director, Enforcement and Removal Operations, ICE; Bruce Scott, Warden, Northwest ICE Processing Center; Markwayne Mullin, Secretary, DHS; et al., Defendants-Appellants",
+   "shortName": "Rodriguez Vazquez v. Bostock",
+   "docket": "No. 25-6842",
+   "citation": "183 F.4th 1160 (9th Cir. 2026)",
+   "date": "2026-07-30",
+   "published": true,
+   "panel": [
+    "McKeown",
+    "Bea",
+    "Bress"
+   ],
+   "author": "Bress",
+   "dissent": "Bea: noncitizens deemed applicants for admission are necessarily seeking admission, so 1225(b)(2)(A) mandates their detention.",
+   "concurrence": null,
+   "holding": "Noncitizens present without admission who are arrested in the interior are not subject to mandatory detention under 1225(b)(2)(A), which is best read to cover people entering at the border; their detention falls under 1226(a), which allows bond. The court affirmed summary judgment for a class of detainees in Western Washington.",
+   "rehearing": "No rehearing petition or order located; unverified.",
+   "links": {
+    "court": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/07/30/25-6842.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca9/25-6842/25-6842-2026-07-30.html"
+   },
+   "westlaw": null,
+   "label": [
+    150,
+    250
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Bress",
+     "text": "And we are aided by the further common-sense intuition that a change of this magnitude would likely not have gone unnoticed and unobserved in the nearly thirty years since it was allegedly put into place."
+    },
+    "dissent": {
+     "by": "Bea",
+     "text": "It strains belief that Congress would go to the trouble of \"deeming\" a group of aliens \"applicants for admission\" if it did not intend for that group of aliens to assume any of the characteristics of the plain meaning of those words."
+    }
+   }
+  },
+  {
+   "circuit": "10",
+   "outcome": "bond",
+   "caption": "Rigoberto Santillan Quiroz, Petitioner-Appellant, v. Markwayne Mullin; Todd Blanche; Joshua Johnson; Scarlet Grant, Respondents-Appellees",
+   "shortName": "Santillan Quiroz v. Mullin",
+   "docket": "No. 26-6019",
+   "citation": "180 F.4th 1226 (10th Cir. 2026)",
+   "date": "2026-06-30",
+   "published": true,
+   "panel": [
+    "Bacharach",
+    "Ebel",
+    "Federico"
+   ],
+   "author": "Federico",
+   "dissent": null,
+   "concurrence": null,
+   "holding": "1225(b)(2)(A) applies to noncitizens seeking admission at the border, not to those detained in the interior, so the petitioner is held under 1226(a) and is entitled to a bond hearing. Constitutional avoidance supported this reading; the court reversed and remanded with instructions to grant the petition.",
+   "rehearing": "No rehearing petition shown; mandate issued July 22, 2026 (habeasdockets.org docket summary).",
+   "links": {
+    "court": "https://www.ca10.uscourts.gov/sites/ca10/files/opinions/010111461009.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca10/26-6019/26-6019-2026-06-30.html"
+   },
+   "westlaw": null,
+   "label": [
+    340,
+    300
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Federico",
+     "text": "\"Deemed\" is a single word, tucked away in a definitional provision that says nothing on its face about detention. . . . Yet that one word supposedly upends the country's system of immigration detention by mandating the bondless detention of millions."
+    }
+   }
+  },
+  {
+   "circuit": "11",
+   "outcome": "bond",
+   "caption": "Fidencio Hernandez Alvarez, Petitioner-Appellee, versus Warden, Federal Detention Center Miami; Miami Field Office Director, ICE Enforcement and Removal Operations; et al., Respondents-Appellants (consolidated with Ismael Cerro Perez v. Assistant Field Office Director, Krome North Service Processing Center, et al., No. 25-14075)",
+   "shortName": "Hernandez Alvarez v. Warden, Federal Detention Center Miami",
+   "docket": "Nos. 25-14065, 25-14075",
+   "citation": "175 F.4th 1258 (11th Cir. 2026)",
+   "date": "2026-05-06",
+   "published": true,
+   "panel": [
+    "Rosenbaum",
+    "Lagoa",
+    "Marcus"
+   ],
+   "author": "Marcus",
+   "dissent": "Lagoa: the majority concedes \"applicant for admission\" and \"seeking admission\" are ordinarily synonymous, and she would follow the Fifth and Eighth Circuits in applying mandatory detention.",
+   "concurrence": null,
+   "holding": "1225(b)(2)(A) reaches only noncitizens actively pursuing lawful entry, so noncitizens arrested in the interior after entering without inspection are detained under 1226(a) and are entitled to bond hearings. The court affirmed habeas relief in both consolidated appeals.",
+   "rehearing": "A judge withheld the mandate May 13, 2026. The government filed a petition for hearing en banc asking the court to vacate the panel decision (SG's July 2026 cert petition in No. 26-104 says it was pending, citing No. 25-14075). No ruling on it located; current status unverified.",
+   "links": {
+    "court": "https://media.ca11.uscourts.gov/opinions/pub/files/202514065.pdf",
+    "courtlistener": null,
+    "justia": "https://law.justia.com/cases/federal/appellate-courts/ca11/25-14065/25-14065-2026-05-06.html"
+   },
+   "westlaw": null,
+   "label": [
+    740,
+    455
+   ],
+   "quotes": {
+    "majority": {
+     "by": "Marcus",
+     "text": "We do not hold that Congress is without the power to authorize the detention of unadmitted aliens who are simply present in the country. That question is not before us. We hold only that Congress has not done so under the provisions found in the INA."
+    },
+    "dissent": {
+     "by": "Lagoa",
+     "text": "If a person whom Congress has deemed an applicant for admission is not seeking admission, it is hard to know what Congress thought it was deeming him to be."
+    }
+   }
+  },
+  {
+   "circuit": "DC",
+   "outcome": "none",
+   "caption": null,
+   "shortName": null,
+   "docket": null,
+   "citation": null,
+   "date": null,
+   "published": null,
+   "panel": [],
+   "author": null,
+   "dissent": null,
+   "concurrence": null,
+   "holding": "No D.C. Circuit decision on this question located.",
+   "rehearing": null,
+   "links": {
+    "court": null,
+    "courtlistener": null,
+    "justia": null
+   },
+   "notes": "The Fourth Circuit (Sept. 10, 2026) said the debate had reached \"every numbered\" court of appeals, and no source reviewed (CRS report, CLINIC tracker, SG petition, circuit opinions) mentions a D.C. Circuit ruling. This is an absence of evidence, not a docket search of the D.C. Circuit.",
+   "westlaw": null,
+   "label": [
+    880,
+    268
+   ],
+   "quotes": null
+  }
+ ],
+ "scotus": {
+  "caseName": "Rhoney v. Barbosa da Cunha",
+  "docket": "26-104",
+  "fullCaption": "Philip L. Rhoney, Acting Field Office Director, Buffalo Field Office, U.S. Immigration and Customs Enforcement, Petitioner v. Ricardo Aparecido Barbosa da Cunha",
+  "docketUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-104.html",
+  "qpUrl": "https://www.supremecourt.gov/docket/docketfiles/html/qp/26-00104qp.pdf",
+  "lowerCourt": "2d Cir. No. 25-3141, decided April 28, 2026, 175 F.4th 61",
+  "petitionFiled": "2026-07-23",
+  "docketed": "2026-07-23",
+  "briefInOppositionFiled": "2026-08-21",
+  "replyFiled": "2026-09-04",
+  "distributed": "2026-09-09",
+  "conference": "2026-09-28",
+  "granted": "2026-10-01",
+  "orderListUrl": "https://www.supremecourt.gov/orders/courtorders/100126zr_6j37.pdf",
+  "questionPresented": "Whether 8 U.S.C. 1225(b)(2)(A) mandates the detention pending removal proceedings of aliens who, like respondent, are present in the United States without having been admitted.",
+  "counsel": {
+   "petitioner": "D. John Sauer, Solicitor General, U.S. Department of Justice (counsel of record)",
+   "respondent": "Michael K.T. Tan, American Civil Liberties Union Foundation (counsel of record); also listed: Matthew H. Adams, Northwest Immigrant Rights Project"
+  },
+  "briefingSchedule": null,
+  "argumentDate": null,
+  "notes": "Docket shows no briefing schedule or argument date as of October 7, 2026. The SG's petition asked the Court to HOLD this case for Raycraft (now Putra) v. Lopez-Campos, No. 25-1415, calling Lopez-Campos the better vehicle because it also squarely presents due process; the Court instead granted this case, which presents only the statutory question. Respondent's letters of Sept. 14 and Sept. 25, 2026 urged the Court to grant only the statutory question.",
+  "relatedPetitions": [
+   {
+    "name": "Putra v. Lopez-Campos",
+    "docket": "25-1415",
+    "filedBy": "Government",
+    "filed": "2026-06-22",
+    "status": "Distributed for Sept. 28, 2026 conference; no action on Oct. 1 or Oct. 5 order lists; docket shows no disposition as of Oct. 7, 2026, consistent with being held for No. 26-104 (holding not formally stated).",
+    "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-1415.html",
+    "from": "6th Cir. Nos. 25-1965 et al."
+   },
+   {
+    "name": "Buenrostro-Mendez v. Blanche",
+    "docket": "26-43",
+    "filedBy": "Detained noncitizens",
+    "filed": "2026-07-02",
+    "status": "Distributed for Sept. 28, 2026 conference; no disposition shown as of Oct. 7, 2026, consistent with being held.",
+    "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-43.html",
+    "from": "5th Cir. Nos. 25-20496, 25-40701"
+   }
+  ]
+ },
+ "timeline": [
+  {
+   "date": "2025-07-08",
+   "label": "ICE interim guidance (Todd M. Lyons, Acting Director) treats applicants for admission as subject to 1225(b) detention",
+   "source": "https://www.aila.org/library/ice-memo-interim-guidance-regarding-detention-authority-for-applications-for-admission"
+  },
+  {
+   "date": "2025-09-05",
+   "label": "BIA decides Matter of Yajure Hurtado, 29 I&N Dec. 216: immigration judges lack authority to hold bond hearings for those present without admission",
+   "source": "https://www.justice.gov/eoir/media/1413311/dl?inline"
+  },
+  {
+   "date": "2026-02-06",
+   "label": "5th Cir. sides with government in Buenrostro-Mendez v. Bondi",
+   "source": "https://www.ca5.uscourts.gov/opinions/pub/25/25-20496-CV0.pdf"
+  },
+  {
+   "date": "2026-03-25",
+   "label": "8th Cir. sides with government in Herrera Avila v. Bondi",
+   "source": "https://ecf.ca8.uscourts.gov/opndir/26/03/253248P.pdf"
+  },
+  {
+   "date": "2026-04-09",
+   "label": "5th Cir. denies rehearing in Buenrostro-Mendez",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-43.html"
+  },
+  {
+   "date": "2026-04-28",
+   "label": "2d Cir. rules for detainee in Barbosa da Cunha v. Freden",
+   "source": "https://ww3.ca2.uscourts.gov/decisions/OPN/25-3141_complete_opn.pdf"
+  },
+  {
+   "date": "2026-05-06",
+   "label": "11th Cir. rules for detainees in Hernandez Alvarez v. Warden",
+   "source": "https://media.ca11.uscourts.gov/opinions/pub/files/202514065.pdf"
+  },
+  {
+   "date": "2026-05-11",
+   "label": "6th Cir. rules for detainees in Lopez-Campos v. Raycraft",
+   "source": "https://www.opn.ca6.uscourts.gov/opinions.pdf/26a0139p-06.pdf"
+  },
+  {
+   "date": "2026-06-15",
+   "label": "Supreme Court grants Genalo v. Black, No. 25-886 (1226(c) prolonged detention), as to G.M.",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-886.html"
+  },
+  {
+   "date": "2026-06-22",
+   "label": "Government files cert petition in Raycraft (now Putra) v. Lopez-Campos, No. 25-1415",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-1415.html"
+  },
+  {
+   "date": "2026-06-30",
+   "label": "10th Cir. rules for detainee in Santillan Quiroz v. Mullin",
+   "source": "https://law.justia.com/cases/federal/appellate-courts/ca10/26-6019/26-6019-2026-06-30.html"
+  },
+  {
+   "date": "2026-07-02",
+   "label": "Detainees file cert petition in Buenrostro-Mendez v. Blanche, No. 26-43",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-43.html"
+  },
+  {
+   "date": "2026-07-23",
+   "label": "Government files cert petition in Rhoney v. Barbosa da Cunha, No. 26-104",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-104.html"
+  },
+  {
+   "date": "2026-07-30",
+   "label": "7th Cir. (Cirrus Rojas v. Olson) and 9th Cir. (Rodriguez Vazquez v. Bostock) rule for detainees",
+   "source": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/07/30/25-6842.pdf"
+  },
+  {
+   "date": "2026-08-13",
+   "label": "1st Cir. rules for detainee class in Guerrero Orellana v. Moniz",
+   "source": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/25-2152P-01A.pdf"
+  },
+  {
+   "date": "2026-08-28",
+   "label": "3d Cir. rules for detainees in Buele Morocho v. Warden Philadelphia FDC",
+   "source": "https://www2.ca3.uscourts.gov/opinarch/261150p.pdf"
+  },
+  {
+   "date": "2026-09-09",
+   "label": "Nos. 26-104, 25-1415, and 26-43 distributed for the Sept. 28 conference",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-104.html"
+  },
+  {
+   "date": "2026-09-10",
+   "label": "4th Cir. rules for detainees in Lopez Garcia v. Guadian",
+   "source": "https://www.ca4.uscourts.gov/opinions/257044.P.pdf"
+  },
+  {
+   "date": "2026-09-11",
+   "label": "Genalo v. Black dismissed under Rule 46 after G.M.'s pardon mooted his case",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-886.html"
+  },
+  {
+   "date": "2026-09-21",
+   "label": "Government files cert before judgment in Genalo v. D.C., No. 26-379",
+   "source": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-379.html"
+  },
+  {
+   "date": "2026-10-01",
+   "label": "Supreme Court grants certiorari in Rhoney v. Barbosa da Cunha, No. 26-104",
+   "source": "https://www.supremecourt.gov/orders/courtorders/100126zr_6j37.pdf"
+  }
+ ],
+ "related": [
+  {
+   "name": "Genalo v. Black",
+   "docket": "No. 25-886",
+   "court": "Supreme Court, on cert to the 2d Cir. (Nos. 20-3224, 22-70; decision below 103 F.4th 133)",
+   "status": "Cert granted June 15, 2026 as to No. 22-70 (G.M.), with an added mootness question; set for argument Oct. 13, 2026; dismissed under Rule 46 on Sept. 11, 2026 by joint stipulation.",
+   "relevance": "Not the 235(b) versus 236(a) question. It concerned whether due process requires bond hearings for prolonged 1226(c) detention of noncitizens with criminal convictions. Its only tie to Rhoney is that detainees argued the Court should not take up the due process question in Putra and Rhoney while Genalo was pending.",
+   "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-886.html",
+   "notes": "The SG's Sept. 11, 2026 letter explains G.M. received a New York gubernatorial pardon, mooting the case; the government chose not to seek Munsingwear vacatur and said it would look for alternative vehicles, including from the 2d Cir."
+  },
+  {
+   "name": "Genalo v. D.C.",
+   "docket": "No. 26-379",
+   "court": "Supreme Court, cert before judgment to the 2d Cir. (No. 26-1396)",
+   "status": "Petition filed Sept. 21, 2026; response due Oct. 21, 2026.",
+   "relevance": "Replacement vehicle for the Genalo constitutional (prolonged detention) questions; ACLU letter says it presents the same constitutional issues as G.M.",
+   "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-379.html",
+   "notes": null
+  },
+  {
+   "name": "Putra v. Lopez-Campos",
+   "docket": "No. 25-1415",
+   "court": "Supreme Court, on cert to the 6th Cir.",
+   "status": "Pending; apparently held for No. 26-104.",
+   "relevance": "\"Putra\" is Matthew Putra, Director of ICE's Detroit Field Office, substituted for Kevin Raycraft as the petitioner. This was the government's preferred vehicle because it presents both the statutory and the due process questions.",
+   "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-1415.html",
+   "notes": null
+  },
+  {
+   "name": "Sosnava Rodriguez v. Ortega",
+   "docket": "5th Cir. No. 26-50183",
+   "court": "5th Cir. en banc",
+   "status": "Panel opinion July 2, 2026 (due process requires bond hearing after 90 days) vacated; rehearing en banc granted July 10, 2026.",
+   "relevance": "Due process limits on 1225(b)(2)(A) detention within the Fifth Circuit.",
+   "url": "https://www.ca5.uscourts.gov/opinions/pub/26/26-50183-CV1.pdf",
+   "notes": "URL appeared in search results for this case but was not opened."
+  },
+  {
+   "name": "Castañon-Nava v. U.S. Department of Homeland Security",
+   "docket": "7th Cir. No. 25-3050",
+   "court": "7th Cir.",
+   "status": "Decided May 5, 2026, 175 F.4th 828.",
+   "relevance": "Consent decree appeal in which the panel split three ways on the statutory question with no majority holding; Kirsch dissent favors the government's reading.",
+   "url": null,
+   "notes": "Date from ISBA summary and Leagle listing; opinion itself not opened."
+  }
+ ]
+}

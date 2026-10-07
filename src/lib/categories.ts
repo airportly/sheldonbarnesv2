@@ -29,6 +29,12 @@ export const categories: Category[] = [
     description:
       "Frameworks and analysis for senior leaders navigating AI's impact on regulated industries.",
   },
+  {
+    slug: "law-and-policy",
+    name: "Law & Policy",
+    description:
+      "Notes from law school and beyond: circuit splits, Supreme Court cases, and the data behind the arguments.",
+  },
 ];
 
 export function getCategoryBySlug(slug: string): Category | undefined {

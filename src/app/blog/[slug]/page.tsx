@@ -9,6 +9,8 @@ import MarkdownBody from "@/components/blog/MarkdownBody";
 import RelatedPosts from "@/components/blog/RelatedPosts";
 import ShareButtons from "@/components/blog/ShareButtons";
 import APAPSimulator from "@/components/blog/APAPSimulator";
+import CircuitExplorer from "@/components/blog/bond-split/CircuitExplorer";
+import BondCharts from "@/components/blog/bond-split/BondCharts";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -244,10 +246,12 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body — supports {{apap-simulator}} and {{viewer-cta}} shortcodes */}
+          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}} and {{bond-data}} shortcodes */}
           {(() => {
             const SHORTCODES: Record<string, React.ReactNode> = {
               "{{apap-simulator}}": <APAPSimulator />,
+              "{{circuit-map}}": <CircuitExplorer />,
+              "{{bond-data}}": <BondCharts />,
               "{{viewer-cta}}": (
                 <div className="my-8 flex justify-center">
                   <Link

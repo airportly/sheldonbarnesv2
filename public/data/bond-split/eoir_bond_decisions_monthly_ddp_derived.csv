@@ -1,0 +1,102 @@
+# Series: Immigration judge bond decisions per month by decision type, including denials for lack of jurisdiction. value = 'Bond Denied-No Jurisdiction' decisions
+# DERIVED SERIES: computed for this project from case-level government data, not read from a published table. Script: scripts/bond_monthly.py in this folder.
+# Source data: EOIR case data (FOIA) as processed by the Deportation Data Project, cases.parquet (cases through July 1, 2026; release note 2026-07-15), fields bond_completion_date_{first,second,last}, bond_decision_{...}, new_bond_amount_{...}
+# URL: https://deportationdata.org/data/processed/eoir.html ; https://deportationdata.org/news/2026-07-14-EOIR-release.html ; file https://github.com/deportationdata/eoir (data/cases.parquet, Git LFS, 465 MB)
+# Retrieved: 2026-10-07
+# Definition: each distinct recorded bond decision (first, second and last per case, de-duplicated) counted in the month of its completion date. granted = 'Bond Granted-Amount Decreased' + 'Bond Granted-Own Recognizance'. denied_on_merits_or_increased = 'Bond Denied- No Change (No Bond Set By DHS)' + 'Bond Denied- No Change (DHS Bond Amount Unchanged)' + 'Bond Amount Increased'. substantive = granted + denied_on_merits_or_increased + denied_no_jurisdiction. other = amelioration, Flores and 'Other' codes. median_bond_amount_usd = median new_bond_amount among 'Bond Granted-Amount Decreased' decisions.
+# Coverage: 2018-10 through 2026-06.
+# Caveats: DDP keeps only the first, second and last bond decision per case, so cases with 4+ bond decisions are undercounted (DDP says these are relatively few). Totals do not match TRAC because TRAC uses its own hearing definition (TRAC appears to exclude moot denials, among other differences); use this file for the composition of decisions (especially no-jurisdiction denials) and TRAC for headline counts. 'Bond Denied-No Jurisdiction' is the code an IJ would use when holding that the person is detained under INA 235(b)(2)(A) and ineligible for bond after Matter of Yajure Hurtado, but the code also covers other jurisdictional bars (for example arriving aliens), so it was nonzero before July 2025; read the post-July 2025 jump as consistent with, not proof of, the policy effect.
+date_or_period,value,unit,bond_decisions_all,granted,denied_on_merits_or_increased,denied_no_jurisdiction,denied_moot,withdrawn,other,grant_rate_of_substantive,no_jurisdiction_share_of_substantive,median_bond_amount_usd,n_grants_with_amount
+2018-10,276,IJ bond decisions denied for no jurisdiction,8579,3364,2369,276,2558,5,7,0.5598,0.0459,8500.0,3352
+2018-11,188,IJ bond decisions denied for no jurisdiction,7450,2918,2064,188,2275,0,5,0.5644,0.0364,10000.0,2899
+2018-12,172,IJ bond decisions denied for no jurisdiction,6829,2677,1752,172,2219,7,2,0.5818,0.0374,9000.0,2671
+2019-01,216,IJ bond decisions denied for no jurisdiction,8339,3473,2053,216,2590,2,5,0.6048,0.0376,9000.0,3464
+2019-02,243,IJ bond decisions denied for no jurisdiction,7053,2695,1865,243,2245,3,2,0.5611,0.0506,8000.0,2680
+2019-03,223,IJ bond decisions denied for no jurisdiction,7603,2815,2023,223,2528,7,7,0.5562,0.0441,8000.0,2802
+2019-04,228,IJ bond decisions denied for no jurisdiction,8089,2868,2155,228,2829,4,5,0.5462,0.0434,8000.0,2857
+2019-05,232,IJ bond decisions denied for no jurisdiction,8345,2841,2130,232,3123,14,5,0.546,0.0446,8000.0,2828
+2019-06,219,IJ bond decisions denied for no jurisdiction,7732,2842,1832,219,2829,4,6,0.5808,0.0448,8000.0,2824
+2019-07,419,IJ bond decisions denied for no jurisdiction,8743,2790,2008,419,3517,3,6,0.5348,0.0803,8000.0,2777
+2019-08,258,IJ bond decisions denied for no jurisdiction,7975,3212,1895,258,2606,3,1,0.5987,0.0481,8500.0,3202
+2019-09,277,IJ bond decisions denied for no jurisdiction,8414,3493,1867,277,2769,6,2,0.6197,0.0491,10000.0,3473
+2019-10,336,IJ bond decisions denied for no jurisdiction,9216,3901,2183,336,2780,11,5,0.6076,0.0523,9500.0,3892
+2019-11,269,IJ bond decisions denied for no jurisdiction,7202,3064,1796,269,2064,7,2,0.5974,0.0524,10000.0,3052
+2019-12,272,IJ bond decisions denied for no jurisdiction,7075,2942,1728,272,2125,5,3,0.5953,0.055,9500.0,2934
+2020-01,266,IJ bond decisions denied for no jurisdiction,6717,2574,1660,266,2203,11,3,0.572,0.0591,10000.0,2553
+2020-02,301,IJ bond decisions denied for no jurisdiction,6644,2482,1659,301,2186,13,3,0.5588,0.0678,8000.0,2474
+2020-03,251,IJ bond decisions denied for no jurisdiction,6919,2836,1598,251,2208,23,3,0.6053,0.0536,8000.0,2813
+2020-04,161,IJ bond decisions denied for no jurisdiction,4575,1748,1391,161,1213,53,9,0.5297,0.0488,7500.0,1725
+2020-05,136,IJ bond decisions denied for no jurisdiction,3033,338,1079,136,506,476,498,0.2176,0.0876,7500.0,265
+2020-06,105,IJ bond decisions denied for no jurisdiction,2609,323,883,105,420,453,425,0.2464,0.0801,9000.0,286
+2020-07,97,IJ bond decisions denied for no jurisdiction,2152,339,682,97,323,338,373,0.3032,0.0868,9000.0,301
+2020-08,91,IJ bond decisions denied for no jurisdiction,2421,311,741,91,386,534,358,0.2721,0.0796,8000.0,264
+2020-09,108,IJ bond decisions denied for no jurisdiction,2678,344,828,108,422,610,366,0.2688,0.0844,8000.0,291
+2020-10,112,IJ bond decisions denied for no jurisdiction,2811,360,831,112,455,667,386,0.2763,0.086,7500.0,314
+2020-11,88,IJ bond decisions denied for no jurisdiction,2437,288,818,88,429,507,307,0.2412,0.0737,7500.0,237
+2020-12,59,IJ bond decisions denied for no jurisdiction,2350,272,705,59,408,565,341,0.2625,0.0569,7000.0,249
+2021-01,57,IJ bond decisions denied for no jurisdiction,2138,326,582,57,378,489,306,0.3378,0.0591,8000.0,298
+2021-02,70,IJ bond decisions denied for no jurisdiction,1735,226,456,70,361,347,275,0.3005,0.0931,8000.0,203
+2021-03,47,IJ bond decisions denied for no jurisdiction,1564,187,436,47,357,260,277,0.2791,0.0701,7500.0,170
+2021-04,44,IJ bond decisions denied for no jurisdiction,1673,254,295,44,496,314,270,0.4283,0.0742,7500.0,242
+2021-05,52,IJ bond decisions denied for no jurisdiction,2188,367,377,52,558,515,319,0.4611,0.0653,7000.0,345
+2021-06,75,IJ bond decisions denied for no jurisdiction,2639,523,517,75,599,460,465,0.4691,0.0673,7500.0,498
+2021-07,48,IJ bond decisions denied for no jurisdiction,2493,491,453,48,585,567,349,0.495,0.0484,5000.0,464
+2021-08,49,IJ bond decisions denied for no jurisdiction,2008,233,397,49,568,545,216,0.3432,0.0722,5000.0,214
+2021-09,44,IJ bond decisions denied for no jurisdiction,2119,283,399,44,517,499,377,0.3898,0.0606,5000.0,265
+2021-10,42,IJ bond decisions denied for no jurisdiction,2202,415,381,42,457,532,375,0.4952,0.0501,5000.0,392
+2021-11,45,IJ bond decisions denied for no jurisdiction,2648,418,431,45,568,598,588,0.4676,0.0503,5000.0,396
+2021-12,30,IJ bond decisions denied for no jurisdiction,2030,313,343,30,510,374,460,0.4563,0.0437,5000.0,296
+2022-01,44,IJ bond decisions denied for no jurisdiction,2052,166,271,44,534,526,511,0.3451,0.0915,5000.0,145
+2022-02,36,IJ bond decisions denied for no jurisdiction,2656,244,277,36,589,738,772,0.4381,0.0646,7000.0,219
+2022-03,36,IJ bond decisions denied for no jurisdiction,2975,305,379,36,721,990,544,0.4236,0.05,5000.0,293
+2022-04,42,IJ bond decisions denied for no jurisdiction,2988,385,405,42,618,932,606,0.4627,0.0505,7500.0,364
+2022-05,70,IJ bond decisions denied for no jurisdiction,3798,647,636,70,681,1215,549,0.4782,0.0517,6500.0,581
+2022-06,62,IJ bond decisions denied for no jurisdiction,3703,697,761,62,542,1149,492,0.4586,0.0408,5000.0,630
+2022-07,71,IJ bond decisions denied for no jurisdiction,3468,523,758,71,605,1050,461,0.3868,0.0525,6000.0,491
+2022-08,167,IJ bond decisions denied for no jurisdiction,4253,672,846,167,612,1322,634,0.3988,0.0991,5000.0,619
+2022-09,136,IJ bond decisions denied for no jurisdiction,3412,562,624,136,443,1089,558,0.4251,0.1029,5000.0,531
+2022-10,118,IJ bond decisions denied for no jurisdiction,3100,493,594,118,367,1081,447,0.4091,0.0979,7000.0,455
+2022-11,122,IJ bond decisions denied for no jurisdiction,3478,666,749,122,373,1049,519,0.4333,0.0794,7000.0,644
+2022-12,95,IJ bond decisions denied for no jurisdiction,2699,437,548,95,407,896,316,0.4046,0.088,8000.0,417
+2023-01,96,IJ bond decisions denied for no jurisdiction,1726,289,407,96,179,575,180,0.3649,0.1212,7500.0,267
+2023-02,116,IJ bond decisions denied for no jurisdiction,1891,344,425,116,210,573,223,0.3887,0.1311,6500.0,327
+2023-03,147,IJ bond decisions denied for no jurisdiction,2476,358,532,147,311,786,342,0.3452,0.1418,8000.0,332
+2023-04,130,IJ bond decisions denied for no jurisdiction,2145,327,437,130,221,745,285,0.3658,0.1454,8000.0,301
+2023-05,140,IJ bond decisions denied for no jurisdiction,2470,313,498,140,331,810,378,0.3291,0.1472,7500.0,293
+2023-06,117,IJ bond decisions denied for no jurisdiction,2312,388,482,117,244,696,385,0.3931,0.1185,7000.0,372
+2023-07,124,IJ bond decisions denied for no jurisdiction,2895,399,538,124,395,973,466,0.3761,0.1169,7000.0,378
+2023-08,234,IJ bond decisions denied for no jurisdiction,3203,549,615,234,382,897,526,0.3927,0.1674,8000.0,529
+2023-09,171,IJ bond decisions denied for no jurisdiction,2390,387,437,171,338,688,369,0.3889,0.1719,7000.0,379
+2023-10,166,IJ bond decisions denied for no jurisdiction,2767,390,482,166,468,837,424,0.3757,0.1599,7000.0,382
+2023-11,153,IJ bond decisions denied for no jurisdiction,2445,388,485,153,323,744,352,0.3782,0.1491,5000.0,379
+2023-12,131,IJ bond decisions denied for no jurisdiction,2210,331,465,131,276,634,373,0.3571,0.1413,5000.0,316
+2024-01,194,IJ bond decisions denied for no jurisdiction,2319,380,476,194,270,656,343,0.3619,0.1848,5000.0,364
+2024-02,200,IJ bond decisions denied for no jurisdiction,2669,450,510,200,314,783,412,0.3879,0.1724,5000.0,428
+2024-03,184,IJ bond decisions denied for no jurisdiction,2522,460,556,184,246,667,409,0.3833,0.1533,6000.0,425
+2024-04,159,IJ bond decisions denied for no jurisdiction,2766,462,573,159,361,743,468,0.3869,0.1332,5000.0,444
+2024-05,190,IJ bond decisions denied for no jurisdiction,2606,357,566,190,326,670,497,0.3208,0.1707,6500.0,350
+2024-06,195,IJ bond decisions denied for no jurisdiction,2618,440,563,195,262,632,526,0.3673,0.1628,6500.0,423
+2024-07,206,IJ bond decisions denied for no jurisdiction,2778,406,561,206,262,765,578,0.3461,0.1756,7000.0,394
+2024-08,217,IJ bond decisions denied for no jurisdiction,2775,417,534,217,271,722,614,0.357,0.1858,6500.0,402
+2024-09,216,IJ bond decisions denied for no jurisdiction,2568,372,541,216,238,678,523,0.3295,0.1913,7500.0,358
+2024-10,288,IJ bond decisions denied for no jurisdiction,3164,502,686,288,287,845,556,0.3401,0.1951,8000.0,486
+2024-11,268,IJ bond decisions denied for no jurisdiction,2510,295,537,268,175,777,458,0.2682,0.2436,7500.0,283
+2024-12,204,IJ bond decisions denied for no jurisdiction,2560,385,549,204,190,741,491,0.3383,0.1793,8000.0,366
+2025-01,247,IJ bond decisions denied for no jurisdiction,2490,279,509,247,218,705,532,0.2696,0.2386,7500.0,272
+2025-02,318,IJ bond decisions denied for no jurisdiction,3505,346,663,318,348,1138,692,0.2607,0.2396,7500.0,328
+2025-03,707,IJ bond decisions denied for no jurisdiction,6141,757,1063,707,496,1641,1477,0.2996,0.2798,7500.0,725
+2025-04,614,IJ bond decisions denied for no jurisdiction,7344,1086,1457,614,513,1777,1897,0.344,0.1945,7000.0,1028
+2025-05,501,IJ bond decisions denied for no jurisdiction,7198,1004,1601,501,449,1890,1753,0.3232,0.1613,7500.0,955
+2025-06,697,IJ bond decisions denied for no jurisdiction,7644,1160,1534,697,472,1950,1831,0.3421,0.2055,7000.0,1055
+2025-07,1377,IJ bond decisions denied for no jurisdiction,8311,957,1526,1377,479,2157,1815,0.2479,0.3567,7500.0,874
+2025-08,1253,IJ bond decisions denied for no jurisdiction,5700,672,1215,1253,338,1259,963,0.214,0.399,7500.0,605
+2025-09,1344,IJ bond decisions denied for no jurisdiction,4856,418,766,1344,400,1118,810,0.1653,0.5316,7500.0,382
+2025-10,821,IJ bond decisions denied for no jurisdiction,3486,506,578,821,224,710,647,0.2656,0.431,6500.0,452
+2025-11,633,IJ bond decisions denied for no jurisdiction,3247,579,607,633,184,568,676,0.3183,0.348,6500.0,523
+2025-12,2553,IJ bond decisions denied for no jurisdiction,8447,1054,1247,2553,439,1412,1742,0.2171,0.526,5000.0,965
+2026-01,2394,IJ bond decisions denied for no jurisdiction,8158,1312,1522,2394,449,1261,1220,0.251,0.4579,7000.0,1238
+2026-02,1557,IJ bond decisions denied for no jurisdiction,6258,1371,1684,1557,294,774,578,0.2973,0.3376,7500.0,1312
+2026-03,2051,IJ bond decisions denied for no jurisdiction,7511,1471,1933,2051,296,1182,578,0.2697,0.376,7500.0,1411
+2026-04,978,IJ bond decisions denied for no jurisdiction,5297,1330,1682,978,249,665,393,0.3333,0.2451,7500.0,1284
+2026-05,650,IJ bond decisions denied for no jurisdiction,5437,1530,1940,650,258,754,305,0.3714,0.1578,7500.0,1468
+2026-06,623,IJ bond decisions denied for no jurisdiction,5618,1464,2049,623,286,808,388,0.354,0.1506,7500.0,1412
