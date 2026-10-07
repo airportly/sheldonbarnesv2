@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import geo from "@/data/bond-split/circuit-geo.json";
 import data from "@/data/bond-split/circuits.json";
+import Cite, { type CiteSegments } from "./Cite";
 
 /**
  * Interactive circuit map for the INA 235(b) versus 236(a) bond split.
@@ -34,9 +35,10 @@ interface Circuit {
   rehearing: string | null;
   links: { court: string | null; courtlistener: string | null; justia: string | null };
   westlaw: string | null;
+  bluebook?: CiteSegments;
   label: number[];
   notes?: string | null;
-  quotes?: Partial<Record<QuoteKind, { by: string; text: string }>> | null;
+  quotes?: Partial<Record<QuoteKind, { by: string; text: string; cite?: CiteSegments }>> | null;
 }
 
 type QuoteKind = "majority" | "dissent" | "concurrence";
@@ -301,7 +303,7 @@ export default function CircuitExplorer() {
       <Timeline selected={selected} onSelect={select} />
 
       <p className="text-[11px] text-muted mt-5 leading-relaxed">
-        Sources: published opinions of the U.S. Courts of Appeals (quotations from the slip opinions, citations omitted); Supreme Court docket No. 26-104 and order list of October 1,
+        Sources: published opinions of the U.S. Courts of Appeals, with Bluebook citations and pin cites checked against the Westlaw versions (citations within quotations omitted); Supreme Court docket No. 26-104 and order list of October 1,
         2026. Circuit boundaries drawn by state from U.S. Census Bureau geometry (us-atlas). Puerto Rico sits in the 1st Circuit,
         the U.S. Virgin Islands in the 3rd, and Guam and the Northern Mariana Islands in the 9th.
       </p>
@@ -407,6 +409,7 @@ function Detail({ c }: { c: Circuit }) {
       ) : null}
 
       <dl>
+        {c.bluebook && <Row k="Citation" v={<Cite segs={c.bluebook} />} />}
         <Row k="Holding" v={c.holding} />
         <Row k="Decided" v={c.date ? fmtDate(c.date) : null} />
         <Row k="Docket" v={c.docket} />
@@ -654,8 +657,12 @@ function QuoteBanner({ c }: { c: Circuit }) {
                   <span className="text-primary" aria-hidden>&rdquo;</span>
                 </blockquote>
                 <figcaption className="mt-3 text-xs md:text-sm text-muted">
-                  Judge {q.by}, {kind === "majority" ? "for the majority" : kind === "dissent" ? "dissenting" : "concurring"} ·{" "}
-                  <em>{c.shortName}</em> ({court})
+                  Judge {q.by}, {kind === "majority" ? "for the majority" : kind === "dissent" ? "dissenting" : "concurring"} ({court})
+                  {q.cite && (
+                    <span className="block mt-1 text-[11px] md:text-xs">
+                      <Cite segs={q.cite} />
+                    </span>
+                  )}
                 </figcaption>
               </motion.figure>
             </AnimatePresence>

@@ -7,7 +7,7 @@
    "caption": "José Arnulfo Guerrero Orellana, Petitioner, Appellee, v. Antone Moniz, Superintendent, Plymouth County Correctional Facility; David J. Venturella, Acting Director, U.S. Immigration and Customs Enforcement; Markwayne Mullin, Secretary of the U.S. Department of Homeland Security; Todd Blanche, U.S. Attorney General; David Wesling, Acting Field Office Director; Daren K. Margolin, Director, Executive Office for Immigration Review, Respondents, Appellants",
    "shortName": "Guerrero Orellana v. Moniz",
    "docket": "Nos. 25-2152, 26-1094",
-   "citation": "2026 WL 2352042 (1st Cir. Aug. 13, 2026)",
+   "citation": "188 F.4th 1 (1st Cir. 2026)",
    "date": "2026-08-13",
    "published": true,
    "panel": [
@@ -33,13 +33,43 @@
    "quotes": {
     "majority": {
      "by": "Montecalvo",
-     "text": "Because we conclude that the term \"seeking admission\" means seeking lawful entry, and Guerrero Orellana already entered the country unlawfully, we hold that he is not \"seeking admission.\""
+     "text": "Because we conclude that the term \"seeking admission\" means seeking lawful entry, and Guerrero Orellana already entered the country unlawfully, we hold that he is not \"seeking admission.\"",
+     "cite": [
+      [
+       "Guerrero Orellana v. Moniz",
+       true
+      ],
+      [
+       ", 188 F.4th 1, 7-8 (1st Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Dunlap",
-     "text": "The role of the judiciary, however, is not to determine policy but to interpret the law."
+     "text": "The role of the judiciary, however, is not to determine policy but to interpret the law.",
+     "cite": [
+      [
+       "Guerrero Orellana v. Moniz",
+       true
+      ],
+      [
+       ", 188 F.4th 1, 29 (1st Cir. 2026) (Dunlap, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "2",
@@ -73,13 +103,67 @@
    "quotes": {
     "majority": {
      "by": "Bianco",
-     "text": "The government's interpretation of Section 1225(b)(2)(A) would send a seismic shock through our immigration detention system and society, straining our already overcrowded detention infrastructure, incarcerating millions, separating families, and disrupting communities."
+     "text": "The government's interpretation of Section 1225(b)(2)(A) would send a seismic shock through our immigration detention system and society, straining our already overcrowded detention infrastructure, incarcerating millions, separating families, and disrupting communities.",
+     "cite": [
+      [
+       "Barbosa da Cunha v. Freden",
+       true
+      ],
+      [
+       ", 175 F.4th 61, 93 (2d Cir. 2026), ",
+       false
+      ],
+      [
+       "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+       true
+      ],
+      [
+       ", No. 26-104 (U.S. Oct. 1, 2026).",
+       false
+      ]
+     ]
     },
     "concurrence": {
      "by": "Cabranes",
-     "text": "In the meantime, fifteen Congresses stood silently by as five presidents ignored the plain text of the statute."
+     "text": "In the meantime, fifteen Congresses stood silently by as five presidents ignored the plain text of the statute.",
+     "cite": [
+      [
+       "Barbosa da Cunha v. Freden",
+       true
+      ],
+      [
+       ", 175 F.4th 61, 96 (2d Cir. 2026) (Cabranes, J., concurring), ",
+       false
+      ],
+      [
+       "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+       true
+      ],
+      [
+       ", No. 26-104 (U.S. Oct. 1, 2026).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "3",
@@ -87,7 +171,7 @@
    "caption": "Gabriel Antonio Buele Morocho v. Warden Philadelphia FDC; Acting Director Philadelphia Field Office Immigration and Customs Enforcement; Secretary U.S. Department of Homeland Security; et al., Appellants (consolidated with Wanderson Lopes De Andrade v. Director Philadelphia Field Office Immigration and Customs Enforcement; Warden Philadelphia FDC, Appellants)",
    "shortName": "Buele Morocho v. Warden Philadelphia FDC",
    "docket": "Nos. 26-1150, 26-1454",
-   "citation": "2026 WL 2546223 (3d Cir. Aug. 28, 2026)",
+   "citation": "No. 26-1150, 2026 WL 2546223 (3d Cir. Aug. 28, 2026)",
    "date": "2026-08-28",
    "published": true,
    "panel": [
@@ -113,13 +197,43 @@
    "quotes": {
     "majority": {
      "by": "Shwartz",
-     "text": "Given the limited number of beds Congress mandated to accommodate the increased number of criminal noncitizens subject to removal without corresponding increases for noncriminal noncitizens, we are skeptical IIRIRA also mandated detention of, by Congress's count, millions of other noncitizens who had entered the country without admission."
+     "text": "Given the limited number of beds Congress mandated to accommodate the increased number of criminal noncitizens subject to removal without corresponding increases for noncriminal noncitizens, we are skeptical IIRIRA also mandated detention of, by Congress's count, millions of other noncitizens who had entered the country without admission.",
+     "cite": [
+      [
+       "Buele Morocho v. Warden Phila. FDC",
+       true
+      ],
+      [
+       ", No. 26-1150, 2026 WL 2546223, at *6 n.26 (3d Cir. Aug. 28, 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Mascott",
-     "text": "For what purpose have Petitioners been deemed \"applicants for admission\" if not to fall within applicant instructions and requirements contained within § 1225 itself?"
+     "text": "For what purpose have Petitioners been deemed \"applicants for admission\" if not to fall within applicant instructions and requirements contained within § 1225 itself?",
+     "cite": [
+      [
+       "Buele Morocho v. Warden Phila. FDC",
+       true
+      ],
+      [
+       ", No. 26-1150, 2026 WL 2546223, at *15 n.47 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "4",
@@ -127,7 +241,7 @@
    "caption": "Oscar Enrique Lopez Garcia, Petitioner-Appellee, v. Robert Guadian, in his official capacity as Director of the Washington Field Office of U.S. Immigration and Customs Enforcement; Markwayne Mullin, Secretary of the U.S. Department of Homeland Security; Todd Blanche, Attorney General of the United States, Respondents-Appellants (consolidated with Juan Jose Rivera v. Robert Guadian, et al., No. 25-7050)",
    "shortName": "Lopez Garcia v. Guadian",
    "docket": "Nos. 25-7044, 25-7050",
-   "citation": null,
+   "citation": "No. 25-7044, 2026 WL 2661092 (4th Cir. Sept. 10, 2026)",
    "date": "2026-09-10",
    "published": true,
    "panel": [
@@ -153,13 +267,43 @@
    "quotes": {
     "majority": {
      "by": "Berner",
-     "text": "If we were to agree with the Government's construction, we would need to conclude that, in passing IIRIRA thirty years ago, Congress intended to direct the single largest mass detention of human beings in our nation's history."
+     "text": "If we were to agree with the Government's construction, we would need to conclude that, in passing IIRIRA thirty years ago, Congress intended to direct the single largest mass detention of human beings in our nation's history.",
+     "cite": [
+      [
+       "Lopez Garcia v. Guadian",
+       true
+      ],
+      [
+       ", No. 25-7044, 2026 WL 2661092, at *6 (4th Cir. Sept. 10, 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Rushing",
-     "text": "The sentence, \"Tomatoes and cucumbers shall be deemed vegetables\" does not define the term \"vegetables.\""
+     "text": "The sentence, \"Tomatoes and cucumbers shall be deemed vegetables\" does not define the term \"vegetables.\"",
+     "cite": [
+      [
+       "Lopez Garcia v. Guadian",
+       true
+      ],
+      [
+       ", No. 25-7044, 2026 WL 2661092, at *24 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "5",
@@ -193,13 +337,43 @@
    "quotes": {
     "majority": {
      "by": "Jones",
-     "text": "Years of consistent practice cannot vindicate an interpretation that is inconsistent with a statute's plain text."
+     "text": "Years of consistent practice cannot vindicate an interpretation that is inconsistent with a statute's plain text.",
+     "cite": [
+      [
+       "Buenrostro-Mendez v. Bondi",
+       true
+      ],
+      [
+       ", 166 F.4th 494, 506 (5th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Douglas",
-     "text": "In sum, the government's proposed reading of the statute would mean that, for purposes of immigration detention, the border is now everywhere."
+     "text": "In sum, the government's proposed reading of the statute would mean that, for purposes of immigration detention, the border is now everywhere.",
+     "cite": [
+      [
+       "Buenrostro-Mendez v. Bondi",
+       true
+      ],
+      [
+       ", 166 F.4th 494, 520 (5th Cir. 2026) (Douglas, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "6",
@@ -233,13 +407,43 @@
    "quotes": {
     "majority": {
      "by": "Clay",
-     "text": "To ignore this important detail is like declaring that every single high school senior is an applicant to college because they are eligible to submit an application."
+     "text": "To ignore this important detail is like declaring that every single high school senior is an applicant to college because they are eligible to submit an application.",
+     "cite": [
+      [
+       "Lopez-Campos v. Raycraft",
+       true
+      ],
+      [
+       ", 175 F.4th 713, 729 (6th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Murphy",
-     "text": "And under the plain meaning of \"applicant,\" we must treat them as seeking the thing that they are deemed to be applying for."
+     "text": "And under the plain meaning of \"applicant,\" we must treat them as seeking the thing that they are deemed to be applying for.",
+     "cite": [
+      [
+       "Lopez-Campos v. Raycraft",
+       true
+      ],
+      [
+       ", 175 F.4th 713, 744-45 (6th Cir. 2026) (Murphy, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "7",
@@ -273,13 +477,43 @@
    "quotes": {
     "majority": {
      "by": "Kolar",
-     "text": "The student is an applicant for admission precisely because they are seeking admission; Cirrus Rojas is an \"applicant for admission\" only because the statute deems him so."
+     "text": "The student is an applicant for admission precisely because they are seeking admission; Cirrus Rojas is an \"applicant for admission\" only because the statute deems him so.",
+     "cite": [
+      [
+       "Cirrus Rojas v. Olson",
+       true
+      ],
+      [
+       ", 183 F.4th 909, 921 (7th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Sykes",
-     "text": "Today, any alien who \"arrives\" or is \"present\" in the United States without admission is deemed an \"applicant for admission\" and is treated as though he never entered the country at all."
+     "text": "Today, any alien who \"arrives\" or is \"present\" in the United States without admission is deemed an \"applicant for admission\" and is treated as though he never entered the country at all.",
+     "cite": [
+      [
+       "Cirrus Rojas v. Olson",
+       true
+      ],
+      [
+       ", 183 F.4th 909, 934 (7th Cir. 2026) (Sykes, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "8",
@@ -313,13 +547,43 @@
    "quotes": {
     "majority": {
      "by": "Shepherd",
-     "text": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases \"applicant for admission\" and \"seeking admission\" are the same."
+     "text": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases \"applicant for admission\" and \"seeking admission\" are the same.",
+     "cite": [
+      [
+       "Avila v. Bondi",
+       true
+      ],
+      [
+       ", 170 F.4th 1128, 1134 (8th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Erickson",
-     "text": "To get to its desired result, the court uses the statutory definition to deem Avila an \"applicant for admission,\" and then turns around and uses the ordinary meaning of the same phrase to find he is also \"seeking admission\" when he is not."
+     "text": "To get to its desired result, the court uses the statutory definition to deem Avila an \"applicant for admission,\" and then turns around and uses the ordinary meaning of the same phrase to find he is also \"seeking admission\" when he is not.",
+     "cite": [
+      [
+       "Avila v. Bondi",
+       true
+      ],
+      [
+       ", 170 F.4th 1128, 1138 (8th Cir. 2026) (Erickson, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "9",
@@ -353,13 +617,43 @@
    "quotes": {
     "majority": {
      "by": "Bress",
-     "text": "And we are aided by the further common-sense intuition that a change of this magnitude would likely not have gone unnoticed and unobserved in the nearly thirty years since it was allegedly put into place."
+     "text": "And we are aided by the further common-sense intuition that a change of this magnitude would likely not have gone unnoticed and unobserved in the nearly thirty years since it was allegedly put into place.",
+     "cite": [
+      [
+       "Rodriguez Vazquez v. Bostock",
+       true
+      ],
+      [
+       ", 183 F.4th 1160, 1172 (9th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Bea",
-     "text": "It strains belief that Congress would go to the trouble of \"deeming\" a group of aliens \"applicants for admission\" if it did not intend for that group of aliens to assume any of the characteristics of the plain meaning of those words."
+     "text": "It strains belief that Congress would go to the trouble of \"deeming\" a group of aliens \"applicants for admission\" if it did not intend for that group of aliens to assume any of the characteristics of the plain meaning of those words.",
+     "cite": [
+      [
+       "Rodriguez Vazquez v. Bostock",
+       true
+      ],
+      [
+       ", 183 F.4th 1160, 1204 (9th Cir. 2026) (Bea, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "10",
@@ -393,9 +687,29 @@
    "quotes": {
     "majority": {
      "by": "Federico",
-     "text": "\"Deemed\" is a single word, tucked away in a definitional provision that says nothing on its face about detention. . . . Yet that one word supposedly upends the country's system of immigration detention by mandating the bondless detention of millions."
+     "text": "\"Deemed\" is a single word, tucked away in a definitional provision that says nothing on its face about detention. . . . Yet that one word supposedly upends the country's system of immigration detention by mandating the bondless detention of millions.",
+     "cite": [
+      [
+       "Santillan Quiroz v. Mullin",
+       true
+      ],
+      [
+       ", 180 F.4th 1226, 1242-43 (10th Cir. 2026).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "11",
@@ -429,13 +743,43 @@
    "quotes": {
     "majority": {
      "by": "Marcus",
-     "text": "We do not hold that Congress is without the power to authorize the detention of unadmitted aliens who are simply present in the country. That question is not before us. We hold only that Congress has not done so under the provisions found in the INA."
+     "text": "We do not hold that Congress is without the power to authorize the detention of unadmitted aliens who are simply present in the country. That question is not before us. We hold only that Congress has not done so under the provisions found in the INA.",
+     "cite": [
+      [
+       "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+       true
+      ],
+      [
+       ", 175 F.4th 1258, 1262 (11th Cir. 2026).",
+       false
+      ]
+     ]
     },
     "dissent": {
      "by": "Lagoa",
-     "text": "If a person whom Congress has deemed an applicant for admission is not seeking admission, it is hard to know what Congress thought it was deeming him to be."
+     "text": "If a person whom Congress has deemed an applicant for admission is not seeking admission, it is hard to know what Congress thought it was deeming him to be.",
+     "cite": [
+      [
+       "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+       true
+      ],
+      [
+       ", 175 F.4th 1258, 1291 (11th Cir. 2026) (Lagoa, J., dissenting).",
+       false
+      ]
+     ]
     }
-   }
+   },
+   "bluebook": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "circuit": "DC",

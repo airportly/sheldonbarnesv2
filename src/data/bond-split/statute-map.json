@@ -447,7 +447,17 @@
    "status": "answered",
    "summary": "Treats \"applicant for admission\" as a statutory status covering people merely present without admission, unlike \"applying for admission,\" which implies active steps, and on that basis rejects the government's (a)(4) argument and college applicant analogy.",
    "quote": "And that differs from the statutory meaning of \"applicant for admission,\" which includes noncitizens taking no action at all who simply satisfy the passive condition of being present in the United States unlawfully.",
-   "page": 36
+   "page": 36,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 21 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -455,7 +465,17 @@
    "status": "relied",
    "summary": "Holds that seeking admission means trying to gain lawful entry after inspection, so people who already entered unlawfully years ago are not seeking admission and fall outside 1225(b)(2)(A).",
    "quote": "Thus, the text leads us to the rather straightforward conclusion: Guerrero Orellana and his fellow class members are not \"seeking admission\" under § 1225(b)(2)(A) because they have already unlawfully entered the United States.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 14 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -463,7 +483,17 @@
    "status": "answered",
    "summary": "Rejects the dissent's view that deeming someone an applicant also deems him to be seeking admission; the deeming text says nothing about seeking, and Sturgeon is distinguishable because there the statute stated the consequence.",
    "quote": "The problem is that this leap between the deeming language of § 1225(a)(1) and its alleged effect on § 1225(b)(2)(A) is contradicted by the text of § 1225(a)(1). The text \"deem[s]\" certain noncitizens \"applicant[s] for admission\" but says nothing to indicate that they are also deemed to be \"seeking admission.\"",
-   "page": 24
+   "page": 24,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 16 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -471,7 +501,17 @@
    "status": "answered",
    "summary": "Concedes or otherwise often signals a subset, but holds it can also mean something different, citing Helsinn and the advance parole example of applicants for admission who are not seeking admission.",
    "quote": "In this example, then, the government's argument that § 1225(a)(3)'s use of \"or otherwise\" indicates that \"applicant for admission\" is a smaller category necessarily included within the broader category of \"seeking admission\" fails.",
-   "page": 38
+   "page": 38,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 22 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -479,7 +519,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-majority",
@@ -487,7 +528,17 @@
    "status": "relied",
    "summary": "Holds the government's reading makes seeking admission superfluous, while the detainee's reading only limits applicant for admission; illustrates with travelers at a Dublin preinspection site who seek admission but are not applicants.",
    "quote": "The government, in interpreting \"applicant for admission\" and \"seeking admission\" as meaning essentially the same thing, reads \"seeking admission,\" -- which, again, means seeking lawful entry -- out of the statute.",
-   "page": 31
+   "page": 31,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 19 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -495,7 +546,17 @@
    "status": "relied",
    "summary": "Finds that 1226(c) mandatory detention for inadmissible noncitizens, especially the Laken Riley Act's subsection (E), would be duplicative under the government's reading, and rejects the parole limiting explanation as unsupported.",
    "quote": "If we accept the government's interpretation of § 1225(b)(2)(A) as already mandating the detention of all noncitizens present in the United States without admission, Congress's addition of subsection (E) through the Laken Riley Act was entirely duplicative.",
-   "page": 41
+   "page": 41,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 23 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -503,7 +564,17 @@
    "status": "relied",
    "summary": "Reads the if clause as requiring an examining officer to decide whether someone may lawfully enter, a determination made at the time of entry at the border, not by ICE after an interior arrest.",
    "quote": "For § 1225(b)(2)(A) to apply then, the examining immigration officer necessarily must ascertain whether the noncitizen has a right to lawfully enter the United States.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 14 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -511,7 +582,17 @@
    "status": "relied",
    "summary": "Adds, for anyone still doubtful, that five administrations over three decades applied 1226 to these detainees and Congress would not have tolerated a grossly mistaken reading of so large a detention mandate.",
    "quote": "Over three decades, five administrations implemented the disputed statutes just as we conclude today that their texts require.",
-   "page": 54
+   "page": 54,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 29 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -519,7 +600,17 @@
    "status": "relied",
    "summary": "Contrasts IIRIRA's delayed implementation clause and modest bed increase for 1226(c) with silence on capacity for millions under 1225(b)(2)(A), concluding Congress scaled capacity only for the smaller criminal detention expansion.",
    "quote": "Instead of gearing up to newly detain millions of noncitizens present in the United States without inspection, IIRIRA's relatively modest uptick in detention capacity to \"9,000 beds\" by the end of fiscal year 1997 more logically reflects Congress's efforts to scale capacity",
-   "page": 53
+   "page": 53,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 28 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -527,7 +618,17 @@
    "status": "relied",
    "summary": "Briefly invokes the elephants in mouseholes principle, reasoning that a massive detention increase with no provision for capacity is not something Congress would have enacted silently.",
    "quote": "In light of the massive increase in detention that the government's reading of § 1225(b)(2)(A) would require, IIRIRA's complete silence about how to address the resulting detention capacity gap tells the exact opposite story about congressional intent. After all, Congress \"does not . . . hide elephants in mouseholes.\"",
-   "page": 53
+   "page": 53,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 28 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -535,7 +636,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-majority",
@@ -543,7 +645,17 @@
    "status": "answered",
    "summary": "Rejects the government's reliance on the House report entry doctrine passage, reading it as commentary on the 1101(a)(13) definition change that never mentions detention, so it does not show an intent to expand detention.",
    "quote": "Rather than being a general statement of congressional intent behind IIRIRA writ-large, this single-sentence excerpt from a 550-page report constitutes commentary about the amendment to a particular subsection of the INA, 8 U.S.C. § 1101(a)(13), which replaced the definition of \"entry\" with \"admission\" and \"admitted,\"",
-   "page": 51
+   "page": 51,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 28 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-majority",
@@ -551,7 +663,17 @@
    "status": "relied",
    "summary": "Gives great weight to Jennings's description of 1225 as covering those seeking admission and 1226 those already present, relies on Preap, and reads Al Otro Lado and Lau as border cases supporting its view.",
    "quote": "In sum, Guerrero Orellana's interpretation of the disputed statutory provisions here aligns with Supreme Court precedent explaining how §§ 1225 and 1226 function.",
-   "page": 45
+   "page": 45,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 25 (1st Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -559,7 +681,17 @@
    "status": "relied",
    "summary": "Argues 1225(a)(1) is not a definition of applicant for admission but a deeming provision, since Congress uses the word means when it defines terms, so the status carries legal consequences.",
    "quote": "If Congress wanted to define \"applicant for admission,\" it could have done so by foregoing the term \"deemed\" and instead stating that an applicant for admission \"means\" an alien in the United States who has not been admitted or who arrives in the United States.",
-   "page": 62
+   "page": 62,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 32 n.32 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -567,7 +699,17 @@
    "status": "relied",
    "summary": "Reads seeking admission as a reference back to applicant for admission rather than a separate condition, noting Congress did not use an is/and construction to require present affirmative conduct.",
    "quote": "Congress' choice not to do so suggests that \"seeking admission\" is not a standalone criterion requiring aliens to be making some present, affirmative action to seek admission.",
-   "page": 59
+   "page": 59,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 31 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -575,7 +717,17 @@
    "status": "relied",
    "summary": "Treats 1225(a)(1) as a legal fiction that deems unadmitted people applicants seeking admission; says the majority's definitional exercise nullifies the deeming language and that Sturgeon does not require the consequence to be stated.",
    "quote": "This analysis is beside the point because § 1225(a)(1) expressly creates a legal fiction, deeming a person to be an applicant for admission who would not otherwise be considered an applicant seeking admission.",
-   "page": 60
+   "page": 60,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 31 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -583,7 +735,17 @@
    "status": "relied",
    "summary": "Reads or otherwise in 1225(a)(3) as a catchall showing applicants for admission are a subset of those seeking admission, and distinguishes Helsinn as a reenactment case.",
    "quote": "This language strongly suggests that applicants for admission are deemed to be seeking admission. The word \"otherwise\" is a catch-all identifying that the items preceding it are subsumed by what comes after -- that is, it indicates a sub-set/super-set relationship.",
-   "page": 67
+   "page": 67,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 34 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -591,7 +753,17 @@
    "status": "relied",
    "summary": "Finds support in 1182(a)(9)(B)(i)(I): the word again implies that prior unlawful presence itself counted as seeking admission, whether or not the person took affirmative steps.",
    "quote": "The use of the word \"again\" indicates that those who have been unlawfully present in the United States are deemed to have sought admission -- whether or not they took any affirmative action to do so.",
-   "page": 70
+   "page": 70,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 35-36 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -599,7 +771,17 @@
    "status": "answered",
    "summary": "Accepts some redundancy as inartful drafting, since the canon is not an iron rule, and argues the detainee's reading creates the bigger surplusage problem by reading much of the deeming provision out of the statute.",
    "quote": "In any event, the surplusage canon raises a larger problem for Petitioner, given the intentional breadth of the deeming provision in § 1225(a)(1). A statute must generally be construed to give effect to every provision.",
-   "page": 64
+   "page": 64,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 33 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -607,7 +789,17 @@
    "status": "answered",
    "summary": "Argues overlap is permissible: 1226(a) still governs admitted deportable people, 1226(c) adds deportable people and bars parole, and the Laken Riley Act had real effect while the Executive treated such people as bond eligible.",
    "quote": "My point, however, is a limited one: Regardless of Congress' intent, there is no reasonable dispute that the Laken Riley Act had the effect I have described; this is enough to give the amendments to § 1226(c) meaning.",
-   "page": 73
+   "page": 73,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 37 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -615,7 +807,17 @@
    "status": "answered",
    "summary": "Disputes the majority's premise that inspection questioning happens only at the border, saying immigration officers can question unlawfully present aliens too and that the word may only makes the questions optional.",
    "quote": "But immigration officers can ask unlawfully present aliens these questions as well . . . and the use of the word \"may\" means only that the questions are not mandatory,",
-   "page": 69
+   "page": 69,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 35 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -623,7 +825,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-dissent",
@@ -631,7 +834,17 @@
    "status": "answered",
    "summary": "Rejects the inference from IIRIRA's delayed implementation for 1226(c) but not 1225(b)(2)(A), offering plausible reasons Congress might not have expected a surge in noncriminal detention and calling such inferences speculation.",
    "quote": "The point is, we cannot divine Congress' expectations. Speculation as to Congress' choice is not a sound basis for reaching a conclusion contrary to the best reading of the statute.",
-   "page": 77
+   "page": 77,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 38 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "1-dissent",
@@ -639,7 +852,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-dissent",
@@ -647,7 +861,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-dissent",
@@ -655,7 +870,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "1-dissent",
@@ -663,7 +879,17 @@
    "status": "answered",
    "summary": "Argues Jennings and Preap do not make 1225 and 1226 mutually exclusive, calling the Jennings language background dicta, and notes another Jennings passage equates seeking entry with applicants for admission.",
    "quote": "So much is true; but, like Preap, Jennings does not compel the conclusion that § 1225(b)(2)(A) and § 1226 are mutually exclusive.",
-   "page": 74
+   "page": 74,
+   "cite": [
+    [
+     "Guerrero Orellana v. Moniz",
+     true
+    ],
+    [
+     ", 188 F.4th 1, 37 (1st Cir. 2026) (Dunlap, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -671,7 +897,25 @@
    "status": "relied",
    "summary": "Holds applicant for admission is a defined term with an artificial meaning covering constructive applicants who never applied, so the government's ordinary meaning comparison and college analogy do not work.",
    "quote": "Petitioner can therefore only be an \"applicant for admission\" because the statute uses \"applicant\" in a \"specialized\" way, rather than in its ordinary meaning.",
-   "page": 19
+   "page": 19,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 76 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -679,7 +923,25 @@
    "status": "relied",
    "summary": "Holds seeking, a present participle, means currently requesting lawful entry, so a person who entered twenty years ago and seeks only relief from removal is not seeking admission.",
    "quote": "Here, although Petitioner is an applicant for admission under the statutory definition because he is present in the country and has never been admitted, it simply cannot be said that he is \"seeking admission,\" as he is not requesting lawful entry into the United States.",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 74 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -687,7 +949,25 @@
    "status": "relied",
    "summary": "Says the word deemed confirms that applicant for admission is a legal fiction, but because Congress created no fiction for seeking, that phrase keeps its ordinary meaning and cannot be deemed.",
    "quote": "Thus, Congress here deemed, \"abracadabra-style,\" . . . \"applicant for admission\" to cover noncitizens who literally cannot be applying for or seeking \"admission.\" By contrast, the statute is silent on the meaning of \"seeking\" and \"applying\" and does not establish a legal fiction as to those terms, leaving them with their ordinary meanings.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 76 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -695,7 +975,25 @@
    "status": "answered",
    "summary": "Rejects the subset reading of or otherwise, citing Helsinn and Taylor, because 1225(a)(3) starts with the general term and follows with specific categories rather than a list of examples.",
    "quote": "By contrast, \"applicant for admission\" is not narrower or more specific than \"alien seeking admission,\" nor does the statute enumerate multiple examples of \"seeking admission.\"",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 79 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -703,7 +1001,25 @@
    "status": "answered",
    "summary": "Reads again seeks admission as covering those who previously sought lawful entry, noting the government's reading would erase differences among 1182(a)(9)'s distinct phrasings, and that again, if anything, implies one stopped seeking admission.",
    "quote": "If the government were correct that every \"applicant for admission\" has, by operation of law, sought admission, then there would be no need to specify \"again,\" nor would there be any difference between \"again seeks admission\" and \"seeks admission.\"",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 82-83 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -711,7 +1027,25 @@
    "status": "relied",
    "summary": "Holds the government's reading would render seeking admission mere surplus, while the detainee's reading gives both phrases a role by mandating detention only for those in both categories.",
    "quote": "Finally, if the government were right that \"applicant for admission\" is a subset of \"seeking admission,\" there would have been no reason for Congress to use both.",
-   "page": 23
+   "page": 23,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 77 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -719,7 +1053,25 @@
    "status": "relied",
    "summary": "Finds 1226(a) covers any alien pending removal, including inadmissible people, and that the government's reading would render much of 1226(c), including the 2025 Laken Riley Act amendment, superfluous.",
    "quote": "The government's interpretation also renders superfluous much of Section 1226(c), including amendments to that provision in the Laken Riley Act, which was passed by Congress in 2025.",
-   "page": 42
+   "page": 42,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 87 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -727,7 +1079,25 @@
    "status": "relied",
    "summary": "Holds 1225(b)(2)(A) covers people presenting at a port of entry or caught at the threshold of entry, and notes the examining officer's present tense determination reinforces the current seeking requirement.",
    "quote": "Instead, Section 1225(b)(2)(A) applies to those noncitizens who present themselves at a port of entry for admission, or who cross the physical border into the United States but are apprehended at the \"threshold of initial entry.\"",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 75 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -735,7 +1105,25 @@
    "status": "relied",
    "summary": "Treats nearly three decades of executive practice across five administrations, the 1997 regulation, and congressional silence through later amendments including the Laken Riley Act as strong evidence against the new reading.",
    "quote": "Even assuming arguendo that ambiguity existed in Section 1225(b)(2) with respect to its application to Petitioner and such ambiguity could support the government's position, the fact that the Executive Branch has for nearly three decades acted inconsistently with the newfound interpretation strongly counsels against adopting it.",
-   "page": 51
+   "page": 51,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 91 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -743,7 +1131,25 @@
    "status": "relied",
    "summary": "Contrasts the safety valve Congress wrote for about 100,000 criminal detainees under 1226(c) with no capacity provision for an estimated two million people under the government's reading of 1225.",
    "quote": "The government offers no explanation for why the same Congress that was so concerned with the detention of 100,000 people under Section 1226(c) would have turned a blind eye to the consequences of mandating detention for all applicants for admission under Section 1225",
-   "page": 48
+   "page": 48,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 90 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -751,7 +1157,25 @@
    "status": "relied",
    "summary": "Invokes extraordinary cases skepticism and elephants in mouseholes, reasoning that a seismic overhaul jailing millions would not be enacted through indirect, ambiguous text or a surreptitious again in 1182(a)(9).",
    "quote": "The government's interpretation of Section 1225(b)(2)(A) would send a seismic shock through our immigration detention system and society, straining our already overcrowded detention infrastructure, incarcerating millions, separating families, and disrupting communities.",
-   "page": 55
+   "page": 55,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 93 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -759,7 +1183,25 @@
    "status": "relied",
    "summary": "Holds in the alternative that even if the text were ambiguous, constitutional avoidance would require rejecting the government's reading because categorical, potentially prolonged detention without bond raises serious due process problems.",
    "quote": "Finally, even if there were ambiguity in the statutory text, we would reject the government's interpretation because of the grave constitutional concerns it raises.",
-   "page": 56
+   "page": 56,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 93 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -767,7 +1209,25 @@
    "status": "answered",
    "summary": "Rejects the government's reading of the House report as cherry picking; IIRIRA aimed at status and procedural inequities, not detention, and the government's reading itself treats illegal entrants worse than visa overstayers.",
    "quote": "As a result, the government erroneously concludes that IIRIRA sought to abolish all distinctions between arriving and already present noncitizens. It did not.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 89 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-majority",
@@ -775,7 +1235,25 @@
    "status": "relied",
    "summary": "Gives great deference to Jennings's description of 1225 as operating at the border and 1226 for those already present, and limits Thuraissigiam's entry fiction to people caught at the threshold.",
    "quote": "The government points to no change in the legal landscape, and thus we afford great deference to the Court's description of the statutory scheme in Jennings.",
-   "page": 38
+   "page": 38,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 85 (2d Cir. 2026), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -783,7 +1261,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -791,7 +1270,25 @@
    "status": "relied",
    "summary": "Combines the statutory definition of admission with the meaning of entry as coming from outside to conclude seeking admission means trying to come in from abroad, which the petitioner is not doing.",
    "quote": "In short, someone who is \"seeking admission\" is trying to go from the exterior to the interior.",
-   "page": 65
+   "page": 65,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 97-98 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -799,7 +1296,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -807,7 +1305,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -815,7 +1314,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -823,7 +1323,25 @@
    "status": "relied",
    "summary": "Agrees that treating every applicant for admission as seeking admission would make the latter phrase surplusage, and courts are loath to find Congress's words hollow.",
    "quote": "Third, Respondent's argument that all \"applicants for admission\" are necessarily \"seeking admission\" turns that latter phrase into surplusage.",
-   "page": 66
+   "page": 66,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 98 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -831,7 +1349,25 @@
    "status": "relied",
    "summary": "Points to features of 1226, such as detention for state law offenses, roles for local authorities, and state attorney general standing, as showing its focus on the interior.",
    "quote": "Move along to § 1226, and its focus on the interior is likewise clear. It provides for the detention of certain aliens who violate state law",
-   "page": 67
+   "page": 67,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 98-99 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -839,7 +1375,25 @@
    "status": "relied",
    "summary": "Stresses that admission requires entry after inspection, which settled case law places at a port of entry, and that 1225(b)(2)'s title refers to inspection at the border.",
    "quote": "And even if Petitioner were somehow seeking \"entry,\" he surely is not seeking \"entry . . . after inspection.\" Long-settled case law says that \"inspection\" ordinarily takes place at a port of entry",
-   "page": 66
+   "page": 66,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 98 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -847,7 +1401,25 @@
    "status": "relied",
    "summary": "Notes five administrations from Clinton to Biden applied 1226 to interior detention, deserving substantial weight, and that a 1996 mandate for the largest mass detention in history would have been noticed sooner.",
    "quote": "If Respondent is right that in 1996 Congress ordered the largest mass detention in American history, the world would have likely noticed sooner.",
-   "page": 68
+   "page": 68,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 99 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -855,7 +1427,25 @@
    "status": "relied",
    "summary": "Highlights that Congress gave a two year grace period and added beds for 1226(c) detention but no grace period for the two million people the government says 1225(b)(2) covered.",
    "quote": "Notably, Congress allowed no such grace period for the mandatory detention of the two million aliens that Respondent says then came within § 1225(b)(2)'s sweep.",
-   "page": 69
+   "page": 69,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 99 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "2-concurrence",
@@ -863,7 +1453,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -871,7 +1462,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -879,7 +1471,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "2-concurrence",
@@ -887,7 +1480,25 @@
    "status": "relied",
    "summary": "Leads with Jennings, which describes 1225(b) as covering aliens seeking admission and 1226 as covering those already in the country, and says the passage is right even if dicta.",
    "quote": "Because Petitioner was \"already in the country\" and not \"seeking admission into\" it, his detention is governed by § 1226.",
-   "page": 64
+   "page": 64,
+   "cite": [
+    [
+     "Barbosa da Cunha v. Freden",
+     true
+    ],
+    [
+     ", 175 F.4th 61, 97 (2d Cir. 2026) (Cabranes, J., concurring), ",
+     false
+    ],
+    [
+     "cert. granted sub nom. Rhoney v. Barbosa da Cunha",
+     true
+    ],
+    [
+     ", No. 26-104 (U.S. Oct. 1, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -895,7 +1506,17 @@
    "status": "relied",
    "summary": "Holds 1225(a)(1) defines applicant for admission, calling the deemed versus defined distinction meaningless, and rejects the college analogy because the definition does not include seeking admission.",
    "quote": "This reasoning is inapt because Congress has given \"applicant for admission\" a specific definition that does not include the phrase \"seeking admission.\"",
-   "page": 21
+   "page": 21,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *4 n.15 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -903,7 +1524,17 @@
    "status": "relied",
    "summary": "Holds the present participle seeking requires present or ongoing affirmative action to gain lawful entry, and petitioners who entered years ago are taking no such action.",
    "quote": "By including this language, Congress specified what an \"applicant for admission\" must do to be subject to § 1225(b)(2)(A), namely engage in an ongoing affirmative act to \"seek[] admission\" to the United States.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *4 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -911,7 +1542,17 @@
    "status": "answered",
    "summary": "Treats 1225(a)(1) as an ordinary statutory definition rather than a legal fiction, rejecting the government's reliance on the word deemed without engaging Sturgeon.",
    "quote": "We are not recognizing a legal fiction but rather are simply applying the statutory definition provided by Congress.",
-   "page": 11
+   "page": 11,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *2 n.4 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -919,7 +1560,17 @@
    "status": "answered",
    "summary": "Rejects the subset reading of or otherwise because 1225(a)(3) does not list examples followed by a catchall; it simply makes both applicants and those seeking admission subject to inspection.",
    "quote": "Section 1225(a)(3) does not list several ways of \"seeking admission,\" but rather merely states that \"applicants for admission\" and those \"seeking admission\" are subject to inspection—this use of \"or otherwise\" does not support the Government's position.",
-   "page": 19
+   "page": 19,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *4 n.14 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -927,7 +1578,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "3-majority",
@@ -935,7 +1587,17 @@
    "status": "relied",
    "summary": "Holds that treating every applicant as seeking admission would make seeking admission surplusage, and that its reading gives every term meaning without departing from ordinary usage.",
    "quote": "If an \"applicant for admission\" were necessarily \"seeking admission,\" then it would be unnecessary for § 1225(b)(2)(A) to specify that the noncitizen is \"seeking admission.\"",
-   "page": 14
+   "page": 14,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *4 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -943,7 +1605,17 @@
    "status": "relied",
    "summary": "Holds 1226(a) is not limited to admitted noncitizens and that the Laken Riley Act's 2025 addition to 1226(c) would be largely unnecessary if 1225(b)(2)(A) already covered unadmitted noncitizens inside the country.",
    "quote": "If one were to read § 1225(b)(2)(A) as mandating detention of unadmitted noncitizens within our borders, then § 1226(c) would be almost wholly unnecessary.",
-   "page": 37
+   "page": 37,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *7 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -951,7 +1623,17 @@
    "status": "relied",
    "summary": "Reads 1225's title, its references to crewmen, stowaways, and contiguous territory, and the arriving alien regulation as showing the section governs inspection of people arriving at the border.",
    "quote": "Section 1225 is entitled \"Inspection by immigration officers; expedited removal of inadmissible arriving aliens; referral for hearing,\" and accordingly uses terms focusing on individuals at the border.",
-   "page": 24
+   "page": 24,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *5 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -959,7 +1641,17 @@
    "status": "relied",
    "summary": "Relies on the 1997 regulation and every later administration granting bond to those present without admission, plus Congress's failure to correct that practice, as evidence supporting its reading.",
    "quote": "In fact, when IIRIRA was passed, the Department of Justice explicitly recognized that noncitizens present in the United States were entitled to discretionary release . . . and every administration since has done the same",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *6 n.25 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -967,7 +1659,17 @@
    "status": "relied",
    "summary": "Notes Congress added only about 500 beds and paused implementation to handle criminal detention under 1226(c), making it doubtful IIRIRA silently mandated detention of millions more.",
    "quote": "Given the limited number of beds Congress mandated to accommodate the increased number of criminal noncitizens subject to removal without corresponding increases for noncriminal noncitizens, we are skeptical IIRIRA also mandated detention of, by Congress's count, millions of other noncitizens who had entered the country without admission.",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *6 n.26 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -975,7 +1677,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "3-majority",
@@ -983,7 +1686,17 @@
    "status": "relied",
    "summary": "Separately holds that detaining longtime residents without a bond hearing violates procedural due process under the Mathews balancing test, rejecting the government's reliance on Thuraissigiam.",
    "quote": "Thus, the Mathews factors weigh in Petitioners' favor, and their detentions without bond hearings violated their procedural due process rights.",
-   "page": 42
+   "page": 42,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *10 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -991,7 +1704,17 @@
    "status": "answered",
    "summary": "Reads the House report as targeting procedural inequities between exclusion and deportation, not detention, and says Congress kept the bond distinction that favors interior entrants, so policy concerns cannot override the text.",
    "quote": "Although our holding affords bond to those who entered our borders without authorization while mandating detention for noncitizens who present themselves, Congress established this distinction in IIRIRA",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *6 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-majority",
@@ -999,7 +1722,17 @@
    "status": "relied",
    "summary": "Finds Jennings's dicta distinguishing 1225 and 1226 persuasive, and holds Thuraissigiam does not govern people who have lived in the country for decades with established connections.",
    "quote": "Their reliance on Thuraissigiam is misplaced as that case concerned the \"entry fiction\" doctrine as applied to a noncitizen apprehended within twenty-five yards of the border, i.e. \"at the threshold of initial entry.\"",
-   "page": 38
+   "page": 38,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *8 (3d Cir. Aug. 28, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1007,7 +1740,17 @@
    "status": "relied",
    "summary": "Argues 1225(a)(1) supplies a broad definition of applicant for admission for the whole chapter, so the term must carry the same full meaning in 1225(b)(2)(A), covering anyone present without admission.",
    "quote": "Section 1225(a)(1) supplies an explicit definition of \"applicant for admission,\" and that definition governs wherever the defined term appears in the Chapter.",
-   "page": 55
+   "page": 55,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *16 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1015,7 +1758,17 @@
    "status": "relied",
    "summary": "Argues seeking admission describes a status or state of being, not a discrete act, so anyone present without admission who desires to stay is seeking admission under ordinary meaning.",
    "quote": "Where an alien desires presence in the United States, he is \"seeking\" admission under the ordinary, common-sense meaning of the term.",
-   "page": 63
+   "page": 63,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *20 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1023,7 +1776,17 @@
    "status": "relied",
    "summary": "Treats the deeming clause as assigning a legal status for the whole chapter without case by case inquiry, and says the majority's reading leaves it without the point Sturgeon requires.",
    "quote": "First, \"deemed\" is a legal command essentially creating a legal status of \"applicant for admission\" that applies to a broad class. Congress did not direct courts to ask, on a case-by-case basis, whether an alien colloquially has put forward an application for admission.",
-   "page": 54
+   "page": 54,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *16 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1031,7 +1794,17 @@
    "status": "relied",
    "summary": "Reads or otherwise in 1225(a)(3) as a catchall making the seeking admission group broader than applicants for admission, not a narrower subcategory.",
    "quote": "It signifies the following phrase such as \"seeking admission\" is a catchall—making the reference broader, not narrower, than the group of \"applicant[s] for admission.\"",
-   "page": 65
+   "page": 65,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *21 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1039,7 +1812,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "3-dissent",
@@ -1047,7 +1821,17 @@
    "status": "relied",
    "summary": "Turns the canon around, arguing the majority's reading makes the reference to applicants for admission in 1225(b)(2)(A) meaningless, and that the final definite article the alien shows both phrases describe one group.",
    "quote": "They read the statute to require only a separate group, those actively \"seeking admission,\" to be placed in mandatory detention. But then the § 1225(b)(2)(A) reference to the § 1225(a)(1) applicant class is meaningless and unnecessary.",
-   "page": 56
+   "page": 56,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *17 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1055,7 +1839,17 @@
    "status": "answered",
    "summary": "Argues 1226(a)'s general reference to aliens yields to the more specific 1225(b)(2)(A) for unadmitted applicants, with 1226(a) mainly covering previously admitted people facing deportation; does not address the Laken Riley Act.",
    "quote": "But they misperceive the statutory scheme. Section 1226(a) references \"alien[s]\" in general, potentially extending to Petitioners here. But § 1225(b)(2)(A) is more specific—it mandates detention under § 1229a for all \"applicant[s] for admission\"",
-   "page": 49
+   "page": 49,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *13 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1063,7 +1857,17 @@
    "status": "answered",
    "summary": "Argues the examining officer language assumes an officer for every applicant rather than limiting the provision to the border, and that exemptions for stowaways and contiguous land arrivals would be unnecessary under the majority's reading.",
    "quote": "But the reference to \"examining immigration officer\" assumes there will be such an officer anytime there is an applicant—§ 1225(b)(2)(A) refers to \"the\" officer, not \"if an . . . officer determines.\"",
-   "page": 63
+   "page": 63,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *20 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1071,7 +1875,17 @@
    "status": "answered",
    "summary": "Discounts decades of nonuse, comparing it to expedited removal and Title 42 authority that went largely unused for years before courts upheld their full use.",
    "quote": "Further, the § 1225(b)(1) expedited removal authority provides another clear, high-profile example of an Executive Branch policy determination not to use the full range of its removal or detention authority for decades after a statute's enactment.",
-   "page": 69
+   "page": 69,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *23 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1079,7 +1893,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "3-dissent",
@@ -1087,7 +1902,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "3-dissent",
@@ -1095,7 +1911,17 @@
    "status": "answered",
    "summary": "Argues mandatory detention during removal proceedings is consistent with due process under Demore and related cases, that the hearing claim is really substantive, and that no history supports a right to bond.",
    "quote": "And Petitioners make no attempt to show a history or tradition of a constitutional right to release into the United States on bond during adjudication of an alien's claims to legal presence in the United States.",
-   "page": 77
+   "page": 77,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *27 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1103,7 +1929,17 @@
    "status": "relied",
    "summary": "Argues IIRIRA eliminated the old regime favoring unlawful entrants, and the majority's reading recreates it by treating those who ask permission at the border more harshly than those who sneak in.",
    "quote": "It also would subject individuals who lawfully ask permission to enter the country to much tougher rules than people who submit formal requests to stay only once detained or inspected by immigration officials.",
-   "page": 44
+   "page": 44,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *10 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "3-dissent",
@@ -1111,7 +1947,17 @@
    "status": "relied",
    "summary": "Relies on Thuraissigiam for treating illegal entrants as applicants for admission and avoiding a perverse incentive, and on Demore and related cases to uphold detention without bond hearings.",
    "quote": "under the statutory scheme even an \"alien who tries to enter the country illegally\" is nonetheless \"treated as an 'applicant for admission.'\"",
-   "page": 54
+   "page": 54,
+   "cite": [
+    [
+     "Buele Morocho v. Warden Phila. FDC",
+     true
+    ],
+    [
+     ", No. 26-1150, 2026 WL 2546223, at *16 (3d Cir. Aug. 28, 2026) (Mascott, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1119,7 +1965,17 @@
    "status": "relied",
    "summary": "Finds merit in both definitional and deeming readings of 1225(a)(1), suggests \"applicant for admission\" might best be understood as a term of art, and treats the statute as ambiguous on this point.",
    "quote": "Because Section 1225(a)(1) includes both people who are, by the ordinary meaning of the phrase, applicants for admission as well as those who must be designated as such for purposes of the law, the phrase \"applicants for admission\" might be best understood as a term of art.",
-   "page": 25
+   "page": 25,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *10 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1127,7 +1983,17 @@
    "status": "relied",
    "summary": "Holds \"seeking admission\" is an additional element describing active, ongoing conduct of applicants attempting lawful entry, typically at the border, which longtime residents like Petitioners are not engaged in.",
    "quote": "Seeking admission is a modifier indicating an additional element that must be met, not a characteristic imputed to every applicant for admission.",
-   "page": 44
+   "page": 44,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *18 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1135,7 +2001,17 @@
    "status": "answered",
    "summary": "Rejects the dissent's expansive reading of the deeming clause; even if 1225(a)(1) creates a legal fiction under Sturgeon, Hedin shows it deems people applicants only, not persons \"seeking admission.\"",
    "quote": "Third, and significantly, even if Congress did intend to create a legal fiction by \"deeming\" the Petitioners to be \"applicants for admission,\" it did not \"deem\" them to be \"seeking admission,\" \"applying for admission,\" or to have \"submitted an application for admission.\"",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *11 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1143,7 +2019,17 @@
    "status": "answered",
    "summary": "Rejects the government's \"or otherwise\" argument in a footnote, agreeing with the Second Circuit that the phrase does not always create a subset relationship and does not cure the ambiguity.",
    "quote": "As our colleagues at the Second Circuit have explained, however, \"or otherwise\" does not always create a subset relationship. . . . \"Or otherwise\" is context-dependent and does not cure the ambiguity of this statute.",
-   "page": 29
+   "page": 29,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *11 n.9 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1151,7 +2037,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "4-majority",
@@ -1159,7 +2046,17 @@
    "status": "relied",
    "summary": "Applies the canons against surplusage and for meaningful variation: treating the phrases as synonyms writes \"seeking admission\" out of 1225(b)(2)(A), while Petitioners' reading gives every word effect.",
    "quote": "The Government's interpretation of Section 1225(b)(2)(A) collapses two distinct phrases, \"applicant for admission\" and \"seeking admission,\" into one.",
-   "page": 30
+   "page": 30,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *12 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1167,7 +2064,17 @@
    "status": "relied",
    "summary": "Reads the 1226(c) carve outs, especially the Laken Riley Act's 1226(c)(1)(E), as proof that 1226(a) covers people who entered without inspection; the government's reading would give the 2025 amendment no effect.",
    "quote": "Under the Government's interpretation, these noncitizens would already have been subject to mandatory detention under Section 1225(b)(2)(A). The Laken Riley Act amendment would therefore have no effect.",
-   "page": 33
+   "page": 33,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *13 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1175,7 +2082,17 @@
    "status": "relied",
    "summary": "Traces the \"clearly and beyond a doubt\" language of 1225(b)(2)(A) to the 1893 border inspection statute and concludes \"seeking admission\" limits the provision to noncitizens at the border.",
    "quote": "Seeking admission is not surplusage. Rather, it is an essential phrase that limits the application of the subsection to noncitizens at the border.",
-   "page": 44
+   "page": 44,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *18 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1183,7 +2100,17 @@
    "status": "relied",
    "summary": "Treats three decades of uniform executive practice across five administrations, including the 1997 statement that people who entered without inspection are bond eligible, as weighty evidence for applying 1226(a).",
    "quote": "Since the passage of IIRIRA in 1996, 8 U.S.C. § 1226(a) has been universally understood to govern the detention of noncitizens, like Lopez Garcia and Rivera, who are already in the country, regardless of whether they entered the country lawfully.",
-   "page": 45
+   "page": 45,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *18 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1191,7 +2118,17 @@
    "status": "relied",
    "summary": "Contrasts Congress's worry that roughly 45,000 added 1226(c) detainees would strain detention resources, prompting delayed implementation, with its silence about detaining millions under the government's reading.",
    "quote": "Congress expressed concern that such an increase would place significant strain on existing detention resources and therefore provided for delayed implementation to allow time to scale up the nation's detention resources.",
-   "page": 48
+   "page": 48,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *19 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1199,7 +2136,17 @@
    "status": "relied",
    "summary": "Invokes the elephants in mouseholes canon: Congress would not have mandated detaining millions, an estimated six million today, through an ambiguous provision that no branch noticed for thirty years.",
    "quote": "As we have shown, the statute is riddled with ambiguity. We can safely assume that Congress would not have enacted such an historically unprecedented change without greater clarity.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *18 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1207,7 +2154,17 @@
    "status": "relied",
    "summary": "Applies constitutional avoidance, reasoning that mandatory detention without hearings for millions long present in the country would raise grave due process problems, while the bond hearing reading is fairly possible.",
    "quote": "This is a textbook case for constitutional avoidance. The Government's novel construction would implicate the constitutional due process rights of millions of noncitizens in our country, many of whom have lived, worked, and become integral parts of their communities, for years.",
-   "page": 50
+   "page": 50,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *20 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1215,7 +2172,17 @@
    "status": "answered",
    "summary": "Rejects the government's perverse incentive argument: IIRIRA equalized burdens and procedures in certain respects, but its text and history show no intent to erase every distinction or narrow bond eligibility.",
    "quote": "IIRIRA therefore made significant moves toward equalizing the treatment of noncitizens present in the country unlawfully and those who have just arrived. There is, however, nothing in the statutory text, structure, or history of IIRIRA to suggest that Congress intended, as the Government asserts, to eliminate every distinction between these groups.",
-   "page": 42
+   "page": 42,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *17 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-majority",
@@ -1223,7 +2190,17 @@
    "status": "relied",
    "summary": "Relies on Jennings for the points that 1226(c) carves out of 1226(a) and that 1225(b)(2)(A) governs noncitizens seeking admission at the border; cites Thuraissigiam only on parole.",
    "quote": "By contrast, 8 U.S.C. § 1225(b)(2)(A), which does not allow for a bond hearing in advance of removal, has been understood to govern the detention of noncitizens \"seeking admission into the country\" at the border.",
-   "page": 45
+   "page": 45,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *18 (4th Cir. Sept. 10, 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1231,7 +2208,17 @@
    "status": "relied",
    "summary": "Argues 1225(a)(1) is not a definition because it lacks \"means\" and sits outside 1101; \"applicant for admission\" keeps its ordinary dictionary meaning of one who requests lawful entry.",
    "quote": "Just as \"vegetables\" keeps its ordinary meaning, \"applicant for admission\" retains its definition as supplied by Section 1101(a)(13) and contemporary dictionaries.",
-   "page": 59
+   "page": 59,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *24 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1239,7 +2226,17 @@
    "status": "relied",
    "summary": "Using dictionaries, reasons that an applicant is one who requests and seeking is requesting, so \"applicant for admission\" and \"alien seeking admission\" describe the same person.",
    "quote": "The result is straightforward: \"applicant for admission\" and \"alien seeking admission\" both refer to an alien who requests lawful entry into the United States. In other words, an applicant for admission is seeking admission.",
-   "page": 54
+   "page": 54,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *22 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1247,7 +2244,17 @@
    "status": "relied",
    "summary": "Relying on Sturgeon v. Frost, treats 1225(a)(1) as a legal fiction with real effect: deeming Petitioners applicants places them in that posture, so they are deemed to be seeking admission.",
    "quote": "The statute deems aliens who actually are not applying for admission to be so. By deeming Petitioners to be persons who apply for admission, Section 1225(a)(1) deems them to be persons who seek admission.",
-   "page": 62
+   "page": 62,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *25 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1255,7 +2262,17 @@
    "status": "relied",
    "summary": "Reads \"or otherwise\" in 1225(a)(3), consistent with other IIRIRA usages, to mean being an applicant for admission is one way of seeking admission, making applicants a subset of those seeking admission.",
    "quote": "The most natural reading of Section 1225(a)(3), then, indicates that being an \"applicant[] for admission\" is one \"way or manner\" of \"seeking admission\" and that aliens also can seek admission in \"a different way or manner.\"",
-   "page": 67
+   "page": 67,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *27 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1263,7 +2280,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "4-dissent",
@@ -1271,7 +2289,17 @@
    "status": "answered",
    "summary": "Concedes some redundancy but says the surplusage canon yields to ordinary meaning, and argues the majority's reading creates worse surplusage by leaving 1225(a)(1)'s coverage of present aliens no work in section 1225.",
    "quote": "As previously discussed, an applicant is one who seeks. Because the terms' ordinary meanings overlap, there is some redundancy between them.",
-   "page": 63
+   "page": 63,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *25 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1279,7 +2307,17 @@
    "status": "answered",
    "summary": "Argues each 1226(c) subparagraph, including the Laken Riley Act's, reaches some people outside 1225(b)(2)(A) and removes parole eligibility, and that a 2025 Congress cannot fix the meaning of a 1996 statute.",
    "quote": "While this clause is another instance of overlap in subparagraph (E), it is not superfluous because it eliminates the possibility of parole that would otherwise be available to these individuals under Section 1182(d)(5)(A).",
-   "page": 75
+   "page": 75,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *30 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1287,7 +2325,17 @@
    "status": "answered",
    "summary": "Rejects limiting 1225(b)(2)(A) to arriving aliens at the border: Congress said \"arriving\" elsewhere in section 1225 when it meant it, and 1225(b)(2)(C) covers aliens arriving between ports.",
    "quote": "Those provisions are strong evidence that Congress did not use the materially different phrase \"alien seeking admission\" when it meant \"arriving alien.\"",
-   "page": 72
+   "page": 72,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *29 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1295,7 +2343,17 @@
    "status": "answered",
    "summary": "Gives three decades of agency practice no weight: the 1997 bond policy was one conclusory sentence, a 1997 regulation applied 1225(b)(2), and unexercised authority does not evaporate.",
    "quote": "That the Executive long preferred the flexibility of Section 1226(a) over the rigidity of Section 1225(b)(2)(A) is unsurprising and is not evidence that the latter authority was never conferred.",
-   "page": 85
+   "page": 85,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *35 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1303,7 +2361,17 @@
    "status": "answered",
    "summary": "Calls the detention capacity inference speculation that favors neither side, since the government never had capacity to detain everyone under section 1225, and Congress may have relied on parole or enforcement discretion.",
    "quote": "For one thing, it favors neither side because the Government \"has never had sufficient detention capacity to maintain in custody every single person described in section 1225,\" under any interpretation.",
-   "page": 83
+   "page": 83,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *34 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1311,7 +2379,17 @@
    "status": "answered",
    "summary": "Rejects the elephants in mouseholes objection: Congress spoke clearly by abandoning arrival based language and amending the detention provision itself, and section 1225 is no ancillary provision.",
    "quote": "But Congress did speak clearly in IIRIRA when it jettisoned all prior formulations of the detention provision that applied solely to arriving aliens and explicitly extended that provision to cover aliens present in the country who have not been admitted.",
-   "page": 81
+   "page": 81,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *33 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1319,7 +2397,17 @@
    "status": "answered",
    "summary": "Rejects constitutional avoidance because detention pending removal, with parole available, raises no serious constitutional doubt under Demore, Flores, and Carlson, and removal safeguards are unaffected.",
    "quote": "The canon has no place here because the correct interpretation of the detention provision at Section 1225(b)(2)(A) does not \"raise[] serious constitutional doubts.\"",
-   "page": 77
+   "page": 77,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *31 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "4-dissent",
@@ -1327,7 +2415,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "4-dissent",
@@ -1335,7 +2424,17 @@
    "status": "relied",
    "summary": "Relies on Jennings's description of 1225(b)(2) as a catchall for all applicants not covered by 1225(b)(1), and on Demore to answer the due process concern.",
    "quote": "By contrast, the detention provision in Section 1225(b)(2)(A) draws no distinction between arriving aliens and those present in the United States. It covers any \"alien who is an applicant for admission.\" . . . (Section 1225(b)(2) \"serves as a catchall provision that applies to all applicants for admission not covered by § 1225(b)(1).\")",
-   "page": 72
+   "page": 72,
+   "cite": [
+    [
+     "Lopez Garcia v. Guadian",
+     true
+    ],
+    [
+     ", No. 25-7044, 2026 WL 2661092, at *29 (4th Cir. Sept. 10, 2026) (Rushing, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1343,7 +2442,17 @@
    "status": "relied",
    "summary": "Rejects Petitioners' term of art argument and reads \"applicant\" by its ordinary meaning, under which a person who applies for something is necessarily seeking it.",
    "quote": "Undeterred, the petitioners argue that \"applicant for admission\" is a term of art, so it cannot be understood according to its ordinary meaning. But the remaining provisions of § 1225 confirm that applicants for admission are indeed necessarily seeking admission.",
-   "page": 12
+   "page": 12,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 503 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1351,7 +2460,17 @@
    "status": "relied",
    "summary": "Using a college applicant analogy, rejects the present tense argument: no further affirmative act is needed, because an applicant keeps seeking admission while the application is pending.",
    "quote": "It would make no sense to say that as soon as the applicant clicks \"submit\" on her application, she is no longer seeking admission, merely because she does not take any further affirmative steps to gain admittance.",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 502 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1359,7 +2478,17 @@
    "status": "relied",
    "summary": "Treats Petitioners as applicants for admission deemed by statute and reasons that while that status lasts through removal proceedings they are presently seeking admission; does not discuss Sturgeon or legal fictions.",
    "quote": "The petitioners are deemed, by statute, to be applicants for admission pending the resolution of removal proceedings. While they remain applicants, they are presently seeking admission.",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 502 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1367,7 +2496,17 @@
    "status": "relied",
    "summary": "Reads \"or otherwise\" in 1225(a)(3), like \"bike, jog, or otherwise exercise,\" to make applicants for admission a subset of those seeking admission; Petitioners' reading would make \"otherwise\" surplusage.",
    "quote": "The use of \"or otherwise\" suggests that \"applicants for admission\" are a subset of those \"seeking admission.\"",
-   "page": 12
+   "page": 12,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 503 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1375,7 +2514,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "5-majority",
@@ -1383,7 +2523,17 @@
    "status": "answered",
    "summary": "Says any redundancy does not license rewriting the statute, since redundancies are common and overlapping ordinary meanings make interchangeable use of the two phrases natural.",
    "quote": "That seems doubly true where the ordinary meaning of the terms involved overlap. Because being an applicant ordinarily entails seeking something, it seems natural to use the words somewhat interchangeably",
-   "page": 11
+   "page": 11,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 503 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1391,7 +2541,17 @@
    "status": "answered",
    "summary": "Holds 1226(c) still does work by reaching deportable aliens and barring parole, and the Laken Riley Act had real effect because the executive was then giving bond to the people it covers.",
    "quote": "Accordingly, the Act did have a substantial effect when passed insofar as it required the detention without bond or parole of certain aliens the administration was then treating as bond-eligible.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 505 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1399,7 +2559,17 @@
    "status": "answered",
    "summary": "Rejects reading \"seeking admission\" as \"arriving alien,\" noting Congress used \"arriving alien\" elsewhere in section 1225, and says Petitioners' reading would eliminate inspection of unlawful entrants.",
    "quote": "To make matters worse for the petitioners, if Congress had intended an alien \"seeking admission\" to effectively mean \"arriving alien,\" it would simply have said \"arriving alien.\" Congress did not hesitate to use the \"arriving alien\" language elsewhere in § 1225.",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 504 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1407,7 +2577,17 @@
    "status": "answered",
    "summary": "Holds 29 years of practice cannot override clear text, citing Pereira, and reads the 1997 Federal Register and a regulation as conceding that unadmitted aliens fell within section 1225.",
    "quote": "The text says what it says, regardless of the decisions of prior Administrations. Years of consistent practice cannot vindicate an interpretation that is inconsistent with a statute's plain text.",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 506 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1415,7 +2595,17 @@
    "status": "answered",
    "summary": "Declines to draw meaning from Congress delaying 1226(c), but not 1225(b)(2)(A), over capacity concerns, saying the omission offers little insight into clear text.",
    "quote": "Congress could have declined to delay implementation of § 1225(b)(2)(A) for any number of reasons, and reading into a Congressional omission provides little insight, if any, into the meaning of clear text.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 507-08 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1423,7 +2613,17 @@
    "status": "answered",
    "summary": "In a footnote, rejects the dissent's mousehole charge because the text of 1225(b)(2)(A) is clear and 1225(a)(1) unambiguously has a sweeping scope.",
    "quote": "Because the text of § 1225(b)(2)(A) is clear, it is no mousehole, contrary to the dissent's characterization. Section 1225(a)(1) unambiguously has a sweeping scope",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 502 n.7 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1431,7 +2631,17 @@
    "status": "answered",
    "summary": "Briefly dismisses fears of detention abuse as speculative and says Zadvydas has no direct application to aliens receiving due process during removal proceedings.",
    "quote": "In any event, Zadvydas v Davis . . . has no direct application to aliens who are detained and being given due process during removal proceedings.",
-   "page": 21
+   "page": 21,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 508 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1439,7 +2649,17 @@
    "status": "relied",
    "summary": "Says its reading better honors IIRIRA's goal of ending the entry anomaly, since preserving bond only for unlawful entrants would be strange, citing a 1997 Inspector General finding that most released aliens absconded.",
    "quote": "By eliminating the exclusion/deportation dichotomy, IIRIRA put aliens seeking admission lawfully on equal footing with those who entered without inspection. It seems strange to suggest that Congress would have preserved bond hearings exclusively for unlawful entrants.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 508 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-majority",
@@ -1447,7 +2667,17 @@
    "status": "answered",
    "summary": "Treats Jennings's statement that 1225(b) covers aliens seeking admission as dicta, and reads Jennings's pairing of applicants for admission with aliens seeking entry as supporting the government.",
    "quote": "In determining that aliens lacked a statutory right to periodic bond hearings, the Jennings court did not opine on the difference between detention authority under § 1225 and § 1226. At most, the language petitioners cite is dicta.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 505 (5th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1455,7 +2685,17 @@
    "status": "relied",
    "summary": "Treats \"applicant for admission\" as a defined statutory term of art and faults the majority for reading that definition back into the undefined phrase \"seeking admission.\"",
    "quote": "\"Applicant for admission,\" however, is a specifically defined statutory term of art in § 1225(a)(1); \"seeking admission\" is not. . . . The majority's attempt to read the definition of \"applicant for admission\" back into the phrase \"seeking admission,\" as if sharing a word necessitates sharing a meaning, is unpersuasive.",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 511 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1463,7 +2703,17 @@
    "status": "relied",
    "summary": "Reads \"seeking\" by its ordinary meaning and present participle form to require present, active conduct, actively seeking to enter, which Petitioners arrested inside the country were not doing.",
    "quote": "The ordinary meaning of \"seek\" requires some present, active action on the seeker's part.",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 511 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1471,7 +2721,17 @@
    "status": "answered",
    "summary": "Answers the majority's question why 1225(a)(1) covers present noncitizens: the clause places them in the applicant category so they face the same removal proceedings, not mandatory detention.",
    "quote": "The answer is simple: § 1225(a)(1) does the crucial work of defining inadmissible noncitizens already in the country as within the category of \"applicants for admission,\" which renders them subject to the same removal proceedings as noncitizens detained at ports of entry.",
-   "page": 41
+   "page": 41,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 519-20 n.21 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1479,7 +2739,17 @@
    "status": "answered",
    "summary": "Rejects the subset reading of \"or otherwise,\" noting 1225(a)(3) mixes a noun with participial phrases and that \"or otherwise\" ordinarily refers to something different from what precedes it.",
    "quote": "There is thus no necessary subset-category relationship between \"applicant for admission\" and \"seeking admission,\" even in § 1225(a)(3).",
-   "page": 40
+   "page": 40,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 519 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1487,7 +2757,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "5-dissent",
@@ -1495,7 +2766,17 @@
    "status": "relied",
    "summary": "Argues the government's reading leaves \"an alien seeking admission\" doing no independent work, violating the canon that every clause and word of a statute be given effect.",
    "quote": "On the government's reading, the phrase \"alien seeking admission\" does no independent work.",
-   "page": 26
+   "page": 26,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 511 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1503,7 +2784,17 @@
    "status": "relied",
    "summary": "Argues the Laken Riley Act and other 1226(c) exceptions for inadmissible noncitizens would be largely unnecessary under the government's reading, and rejects the parole elimination explanation.",
    "quote": "But this Act, and several of the other § 1226(c) exceptions referring to inadmissible noncitizens, would have been largely unnecessary if all inadmissible noncitizens were already subject to mandatory detention without a bond hearing under § 1225(b)(2)(A).",
-   "page": 28
+   "page": 28,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 512 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1511,7 +2802,17 @@
    "status": "relied",
    "summary": "Relies on section 1225's titles, its repeated references to arrival and inspection, and its descent from the 1893 border statute to read \"seeking admission\" as limiting it to arriving noncitizens.",
    "quote": "\"[S]eeking admission\" is therefore not a throwaway extra phrase, but rather the modern statute's equivalent of the key term limiting its reach to noncitizens \"arriving\" at the border.",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 514 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1519,7 +2820,17 @@
    "status": "relied",
    "summary": "Treats nearly thirty years of unbroken practice under 1226, the 1997 Justice Department statement, and congressional acquiescence as independent reasons to reject the government's reading.",
    "quote": "the government's prior practice of detaining inadmissible noncitizens apprehended within this country under § 1226, not § 1225—unbroken for almost thirty years, not to mention the much longer historical practice from which it stems",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 514 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1527,7 +2838,17 @@
    "status": "relied",
    "summary": "Contrasts Congress's provision to delay 1226(c), affecting about 45,000 people, over capacity concerns with the government's claim that IIRIRA silently required detaining millions.",
    "quote": "Congress specifically gave the Attorney General authority to defer the agency's much more modest implementation of § 1226(c)'s new detention mandate, which affected only persons subject to removal based on certain criminal offenses—an estimated 45,000 people in total—out of a recognition that this mandate alone would strain the agency's limited detention capacity.",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 515 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1535,7 +2856,17 @@
    "status": "relied",
    "summary": "Calls the government's reading a quintessential elephant in a mousehole, citing major questions cases and the enormous impact of detaining potentially millions of long present noncitizens.",
    "quote": "This is a quintessential elephant-in-a-mousehole interpretation, and is all the more suspect because of the inconsistency of the agency's views and its longstanding failure to assert this hidden power.",
-   "page": 36
+   "page": 36,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 517 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1543,7 +2874,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "5-dissent",
@@ -1551,7 +2883,17 @@
    "status": "answered",
    "summary": "Answers the equalization argument: a single House Report sentence on 1225(a)(1) says nothing about detention, and Congress pursued equalization through other means such as unified removal proceedings.",
    "quote": "At its core, the government's argument hinges on some arguable statutory ambiguity at the margins and a single sentence of legislative history suggesting that the Congress that passed the IIRIRA wished to move toward equalizing the treatment of inadmissible noncitizens apprehended inside the country and those apprehended at the border",
-   "page": 37
+   "page": 37,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 517 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "5-dissent",
@@ -1559,7 +2901,17 @@
    "status": "relied",
    "summary": "Relies on Jennings's statement that 1225(b) covers aliens seeking admission and 1226 covers aliens already in the country, insisting lower courts are bound by such explications even if dicta.",
    "quote": "Second, Petitioners' reading of the text is confirmed by the Supreme Court's own clearly stated understanding of the difference between § 1225(b) and § 1226, and by the context and history of those provisions.",
-   "page": 30
+   "page": 30,
+   "cite": [
+    [
+     "Buenrostro-Mendez v. Bondi",
+     true
+    ],
+    [
+     ", 166 F.4th 494, 513 (5th Cir. 2026) (Douglas, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1567,7 +2919,17 @@
    "status": "relied",
    "summary": "Holds 1225(a)(1) defines \"applicant for admission\" as a term of art departing from ordinary meaning, so courts cannot break it apart and derive meaning from the word \"applicant.\"",
    "quote": "Section 1225(a)(1) sufficiently indicates Congress's intent for the phrase \"applicant for admission\" to bear a meaning different from any ordinary meaning.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 728 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1575,7 +2937,17 @@
    "status": "relied",
    "summary": "Relying on dictionaries and the present participle, holds \"seeking admission\" requires actively pursuing lawful entry through inspection, which Petitioners, who avoided inspection, were not doing.",
    "quote": "These definitions, in addition to Congress's definition of \"admission,\" demonstrate that for a noncitizen to be \"seeking admission\" under § 1225(b)(2)(A), the noncitizen must actively be in search of lawful entry into the United States via inspection and authorization by an immigration officer.",
-   "page": 8
+   "page": 8,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 723 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1583,7 +2955,17 @@
    "status": "answered",
    "summary": "Rejects the dissent's view that 1225(a)(1) merely lists who is treated as an applicant, calling it a distinction without a difference because presence alone departs from ordinary meaning.",
    "quote": "After all, § 1225(a)(1)'s designation that mere presence in the United States makes for an \"applicant for admission\" departs from the ordinary meaning of \"applicant.\" . . . The phrase itself thus evades ordinary understanding.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 728 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1591,7 +2973,17 @@
    "status": "answered",
    "summary": "Rejects the subset reading of \"or otherwise,\" finding no list for ejusdem generis and noting stowaways and some permanent residents seek admission without being applicants.",
    "quote": "But it is not the only way. The word \"otherwise\" can refine the subsection's scope as opposed to indicating relation between the two phrases.",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 727 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1599,7 +2991,17 @@
    "status": "answered",
    "summary": "Rejects the dissent's Lemus-Losa argument, holding \"again\" limits 1182(a)(9)(B)(i)(II) to those who previously sought admission and now seek it again, not to mere unlawful presence.",
    "quote": "The word \"again\" in the provision has force. It limits the category of noncitizens who are deemed inadmissible in this provision to those who have sought admission or lawful entry in the past and are again seeking admission.",
-   "page": 19
+   "page": 19,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 731 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1607,7 +3009,17 @@
    "status": "relied",
    "summary": "Applies the surplusage canon: if \"seeking admission\" lacked independent meaning, Congress could have written only \"applicant for admission,\" and the dissent's withdrawal theory does not cure the problem.",
    "quote": "If \"seeking admission\" did not have independent meaning, then Congress could have simply written § 1225(b)(2)(A) without the phrase and instead employed \"applicant for admission.\" To hold otherwise would render § 1225(b)(2)(A)'s use of \"seeking admission\" superfluous.",
-   "page": 8
+   "page": 8,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 723 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1615,7 +3027,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "6-majority",
@@ -1623,7 +3036,17 @@
    "status": "relied",
    "summary": "Notes 1225(b)(2)(A) applies only after an examining immigration officer's determination, while interior relief claims go to immigration judges; it expressly declines to address border only arguments.",
    "quote": "But for noncitizens like Petitioners who are within the interior, these claims for relief are typically presented before and resolved by an immigration judge, who is expressly not an immigration officer.",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 729 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1631,7 +3054,17 @@
    "status": "relied",
    "summary": "Treats the government's unbroken 29 year practice of applying 1226(a), including the 1997 interim rule allowing bond hearings, as consequential evidence under Loper Bright.",
    "quote": "Finally, the government's previously unbroken 29-year streak of applying § 1226(a) as opposed to § 1225(b)(2)(A) to noncitizens like Petitioners is consequential.",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 725 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1639,7 +3072,17 @@
    "status": "relied",
    "summary": "Contrasts IIRIRA's capacity escape hatch for about 45,000 added 1226(c) detainees with the absence of any provision for the millions who would be detained under the government's reading.",
    "quote": "This is all to say that Congress was well aware of the gargantuanly large population of \"applicants for admission\" when it passed IIRIRA but expressed no concern as to the logistical nightmare implicated by the government's interpretation of § 1225(b)(2)(A)'s mandatory detention scheme.",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 725 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1647,7 +3090,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "6-majority",
@@ -1655,7 +3099,17 @@
    "status": "relied",
    "summary": "Separately holds that detaining long term residents without an individualized bond hearing violated due process, rejecting the government's reliance on Thuraissigiam and Demore.",
    "quote": "We find no error in the district courts' conclusions that Petitioners were due individualized bond hearings in light of the significant time they have spent within the interior of the United States.",
-   "page": 24
+   "page": 24,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 734 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1663,7 +3117,17 @@
    "status": "answered",
    "summary": "Acknowledges IIRIRA aimed to remedy the entry anomaly but says it did so through other changes, and appeals to that purpose cannot override the text.",
    "quote": "IIRIRA thus has already done much to address this anomaly. But appealing to this congressional purpose can only go so far.",
-   "page": 19
+   "page": 19,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 731 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-majority",
@@ -1671,7 +3135,17 @@
    "status": "relied",
    "summary": "Relies on Jennings's description of 1225(b) for those seeking admission and 1226 for those already present, and confines Thuraissigiam to the border and Demore to 1226(c).",
    "quote": "Put differently, § 1225(b)(2)'s mandatory detention scheme applies to certain noncitizens who seek admission into the country, whereas § 1226's permissive detention scheme applies to all other noncitizens pending a decision on their removability, with exceptions.",
-   "page": 6
+   "page": 6,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 722 (6th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1679,7 +3153,17 @@
    "status": "relied",
    "summary": "Argues 1225(a)(1) is not a definition, since it says \"deemed\" and sits outside 1101, so the undefined word \"applicant\" takes its ordinary meaning of one who applies for or seeks.",
    "quote": "Because the paragraph nowhere defines the word \"applicant,\" it is inevitable that courts must give some definition to this word. And I would use its ordinary meaning when applying the law.",
-   "page": 37
+   "page": 37,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 743 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1687,7 +3171,17 @@
    "status": "relied",
    "summary": "Reads the participle to require seeking in progress at inspection, but says deemed applicants remain applicants while present, a constructive pending application, so they continue to seek admission.",
    "quote": "And the ongoing status of being an applicant implies that the person continues to seek the applied-for item (unless the applicant seeks to withdraw the application).",
-   "page": 39
+   "page": 39,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 745 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1695,7 +3189,17 @@
    "status": "relied",
    "summary": "Treats the deeming clause as a legal fiction requiring courts to regard present noncitizens as applying for or seeking admission wherever the INA uses those phrases.",
    "quote": "In other words, by \"deem[ing]\" certain immigrants to be \"applicant[s] for admission\" under the INA . . . the law commands us to treat them as if they were applying for (or seeking) admission wherever the INA uses those phrases",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 741 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1703,7 +3207,17 @@
    "status": "relied",
    "summary": "Reads \"otherwise\" to mean in a different way, so 1225(a)(3) shows being an applicant for admission is one way of seeking admission, and rejects four competing explanations.",
    "quote": "So the paragraph conveys that being an \"applicant for admission\" is one of several ways of \"seeking admission.\"",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 747 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1711,7 +3225,17 @@
    "status": "relied",
    "summary": "Adopts the BIA's Lemus-Losa reasoning that \"again seeks admission\" in 1182(a)(9)(B)(i)(II) assumes prior unlawful presence already counted as seeking admission, supporting his reading.",
    "quote": "As the Board of Immigration Appeals has explained, the word \"again\" in this provision would serve no purpose unless the prior unlawful presence itself qualified as the first time that the immigrant was \"seeking admission.\"",
-   "page": 50
+   "page": 50,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 752 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1719,7 +3243,17 @@
    "status": "answered",
    "summary": "Answers the surplusage objection by saying \"seeking admission\" excludes applicants who withdraw and depart under 1225(a)(4), and that redundancy is common in immigration statutes anyway.",
    "quote": "Congress might have used the phrase \"seeking admission\" to exclude \"applicants for admission\" who seek to withdraw their applications and depart the country at the time of their inspection.",
-   "page": 40
+   "page": 40,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 745 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1727,7 +3261,17 @@
    "status": "answered",
    "summary": "Argues 1226(c) and the Laken Riley Act are not superfluous because they impose arrest duties and narrower release rules, and may have clarified a practice that gave bond to criminal immigrants.",
    "quote": "In sum, the INA prioritizes the arrest, detention, and removal of criminal immigrants under any interpretation of § 1225(b)(2)(A). So the Laken Riley Act also is \"not superfluous\" under my reading.",
-   "page": 53
+   "page": 53,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 754 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1735,7 +3279,17 @@
    "status": "answered",
    "summary": "Rejects limiting 1225(b)(2)(A) to arriving immigrants: Congress used \"arriving\" elsewhere in section 1225 and dropped \"port of arrival\" and \"entry,\" so a subtle participle cannot impose that limit.",
    "quote": "If Congress had meant to restrict mandatory detention to the narrow range of immigrants who are both on the border and claiming to be admissible, one would have expected to see it in a clear standalone requirement—not a subtle participle clause.",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 747 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1743,7 +3297,17 @@
    "status": "answered",
    "summary": "Gives prior practice no weight because long practice cannot override text, citing Pereira, and the 1997 bond position was one unreasoned sentence that conflicted with the agency's parole view.",
    "quote": "But the Petitioners identify no reasoned opinion from the Executive Branch that supports their view. To the contrary, the government adopted that view in one conclusory sentence soon after IIRIRA's enactment",
-   "page": 58
+   "page": 58,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 758 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1751,7 +3315,17 @@
    "status": "answered",
    "summary": "Rejects the detention capacity inference as speculation, suggesting Congress may have expected parole or enforcement discretion to relieve capacity concerns under 1225(b)(2)(A).",
    "quote": "Or perhaps Congress thought the \"parole option\" under § 1182(d)(5)(A) would relieve any detention-capacity concerns with § 1225(b)(2)(A).",
-   "page": 56
+   "page": 56,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 756 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1759,7 +3333,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "6-dissent",
@@ -1767,7 +3342,17 @@
    "status": "answered",
    "summary": "Rejects avoidance because the text is unambiguous and finds no due process problem under Demore, Flores, and Carlson, since detention pending removal is permissible and parole remains available.",
    "quote": "In these circumstances, the Petitioners' temporary detention during their \"removal proceedings\" represents a \"constitutionally permissible part of that process.\"",
-   "page": 61
+   "page": 61,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 760 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1775,7 +3360,17 @@
    "status": "relied",
    "summary": "Relies on IIRIRA's elimination of the entry anomaly and says Petitioners' reading would expand the perverse incentive to enter unlawfully; also cites that incentive as a rational basis for detention.",
    "quote": "The Petitioners' view thus would read IIRIRA to expand (rather than eliminate) the \"perverse incentive to enter at an unlawful rather than a lawful location\" that existed before Congress passed that law.",
-   "page": 55
+   "page": 55,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 755-56 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "6-dissent",
@@ -1783,7 +3378,17 @@
    "status": "answered",
    "summary": "Says Jennings decided a different question and should not be parsed like a statute, adding that its catchall description of 1225(b)(2) favors the government; relies on Thuraissigiam and Demore on due process.",
    "quote": "Because Jennings did not consider the scope of § 1225(b)(2)(A), I would not overread any language about the specific contours of the respective sections.",
-   "page": 57
+   "page": 57,
+   "cite": [
+    [
+     "Lopez-Campos v. Raycraft",
+     true
+    ],
+    [
+     ", 175 F.4th 713, 757 (6th Cir. 2026) (Murphy, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1791,7 +3396,17 @@
    "status": "relied",
    "summary": "Treats 'applicant for admission' as a term of art defined by 1225(a)(1), so Congress's artificial meaning displaces ordinary meaning and cannot import the ordinary sense of seeking.",
    "quote": "Section 1225(a)(1) explains \"applicant for admission\" as a term of art—relevant here, as \"[a]n alien present in the United States who has not been admitted.\" This artificial \"deeming\" mandates that the ordinary meaning of \"applicant for admission\" must give way to Congress's chosen definition.",
-   "page": 14
+   "page": 14,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 919 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1799,7 +3414,17 @@
    "status": "relied",
    "summary": "Holds that undefined 'seeking admission' takes its ordinary meaning of affirmative pursuit, and Cirrus Rojas, who entered unlawfully years ago and seeks only asylum and similar relief, is not seeking admission.",
    "quote": "To read Section 1225(b)(2)(A)'s use of \"seeking admission\" as merely another way of saying \"applicant for admission\" ignores that while \"applicants for admission\" may literally \"seek admission,\" they do not always do so.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 921 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1807,7 +3432,17 @@
    "status": "relied",
    "summary": "Reads the deeming clause as a legal fiction that makes him an applicant but, citing Sturgeon, does not conjure a fictional intent to seek admission; mixing fiction with fact is error.",
    "quote": "While Section 1225(a)(1)'s \"deeming\" language may make Cirrus Rojas an applicant for admission \"abracadabra-style,\" . . . it does not conjure a fictional intent to seek admission. Congress holds the magic wand to \"deem\" that statutory terms carry a specific meaning in this context; the Executive does not.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 920 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1815,7 +3450,17 @@
    "status": "answered",
    "summary": "Rejects the government's subset reading of 'or otherwise' in 1225(a)(3), noting the phrase can also denote something different, and finds a disjunctive reading fits the INA better.",
    "quote": "But \"or otherwise\" can also \"refer to something that is different from something already mentioned.\" . . . And as we discuss below, a disjunctive reading of Section 1225(a)(3)—treating \"applicant for admission\" and \"seeking admission\" as distinct—better fits within Section 1225 and the INA as a whole.",
-   "page": 19
+   "page": 19,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 922 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1823,7 +3468,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-majority",
@@ -1831,7 +3477,17 @@
    "status": "relied",
    "summary": "Finds the government's reading writes 'seeking admission' out of 1225(b)(2)(A), while its own reading gives both phrases independent work, and rejects the government's claim of surplusage within 1225.",
    "quote": "These examples show that \"applicant for admission\" and \"seeking admission\" are distinct—both do independent work in Section 1225 and the INA overall. Some \"applicants for admission\" are also \"seeking admission,\" and some are not.",
-   "page": 23
+   "page": 23,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 924 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1839,7 +3495,17 @@
    "status": "relied",
    "summary": "Says treating 1226(c) as redundant violates the surplusage canon, because the 2025 Laken Riley Act expansion would have been unnecessary if 1225(b)(2)(A) already mandated detention of all inadmissible aliens present here.",
    "quote": "There was \"no need\" for Congress to amend Section 1226(c) in this way if Section 1225(b)(2)(A) \"had always covered\" all inadmissible aliens present in the United States and required detention without bond.",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 926 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1847,7 +3513,17 @@
    "status": "relied",
    "summary": "Reads 'the examining immigration officer' as evoking a specific border examination, notes it is unclear who examined an interior arrestee, and says 1225(a)(4) and (a)(5) make sense only at the border.",
    "quote": "This language suggests contact at the border, not the interior: DHS's own regulations outline a border-specific \"examination\" process applying to individuals presenting \"in person to an immigration officer at a U.S. port-of-entry when the port is open for inspection.\"",
-   "page": 24
+   "page": 24,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 924 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1855,7 +3531,17 @@
    "status": "relied",
    "summary": "Treats nearly thirty years of practice by five administrations, and Congress's failure to correct it even when passing the Laken Riley Act, as confirming that 1225(b)(2)(A) applies only at the border.",
    "quote": "Until last year, all three branches of our government agreed that Section 1225(b)(2)(A) applied only at the border. Five successive presidential administrations followed this interpretation. And the Executive's sudden about-face presents its own reason to doubt the government's new reading.",
-   "page": 33
+   "page": 33,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 929 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1863,7 +3549,17 @@
    "status": "relied",
    "summary": "Finds it telling that Congress delayed 1226(c) for lack of detention space but made no similar provision or funding for 1225(b)(2)(A), which would have covered at least two million people.",
    "quote": "That Congress did not enact a similar provision for Section 1225(b)(2)(A)—which would have mandated detention for at least two million people in 1996—is telling.",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 928 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1871,7 +3567,17 @@
    "status": "relied",
    "summary": "Invokes the elephants in mouseholes principle, rejecting the idea that Congress tucked the broadest mass detention mandate in the nation's history into an obscure clause and never funded it.",
    "quote": "Put simply, Congress does not hide \"elephants in mouseholes.\" . . . The government asks us to accept that Congress in 1996 tucked \"the broadest mass-detention-without-bond mandate in our Nation's history\" into an obscure corner of its new law and has never bothered to fund it for three decades since.",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 929-30 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1879,7 +3585,17 @@
    "status": "relied",
    "summary": "As an alternative ground, says the government's reading raises grave due process concerns by allowing detention without purpose or risk findings, supporting avoidance, though these concerns do not drive the holding.",
    "quote": "And at minimum, there is a very real risk that the government's reading will sweep in others like Cirrus Rojas who have already been found not to be dangers or flight risks. The Due Process Clause forbids such arbitrary detention. This alone makes us doubt the government's interpretation as a matter of constitutional avoidance.",
-   "page": 37
+   "page": 37,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 931 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1887,7 +3603,17 @@
    "status": "answered",
    "summary": "Says legislative purpose cannot displace text and that IIRIRA's equalizing aim targeted disparities in removal procedures between lawful and unlawful entrants, not detention pending removal.",
    "quote": "Whatever IIRIRA's various \"purposes\" may have been, they were far more nuanced than what the government asserts. Its amendments to the INA show that Congress focused on eliminating disparities between lawful and unlawful entrants in removal procedures, not pre-removal detention.",
-   "page": 29
+   "page": 29,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 927 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-majority",
@@ -1895,7 +3621,17 @@
    "status": "relied",
    "summary": "Treats Jennings's border versus interior description as nonbinding dicta but another data point for its reading, and in a footnote limits Thuraissigiam to people in that petitioner's position near the border.",
    "quote": "But at minimum, the Supreme Court's unquestioning recitation of the border-interior distinction between Sections 1225 and 1226 is another data point suggesting that Cirrus Rojas's reading is correct.",
-   "page": 34
+   "page": 34,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 929 (7th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1903,7 +3639,17 @@
    "status": "relied",
    "summary": "Reads 1225(a)(1) as a statutory classification making all unadmitted aliens, arriving or present, applicants for admission subject to the same inspection, removal, and detention procedures.",
    "quote": "Section 1225(a)(1) deems both arriving and unlawfully present aliens as \"applicants for admission.\" And by design, all applicants for admission are subject to the same inspection and removal procedures.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 935 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1911,7 +3657,17 @@
    "status": "relied",
    "summary": "Concludes that nothing in the statute, including the use of the verb 'seeking' instead of the noun 'applicant', shows Congress meant to treat present aliens differently from arriving ones.",
    "quote": "In my view, they are also subject to the same mandatory-detention requirement. Nothing in the statute—and certainly not the use of the verb \"seeking\" in lieu of the noun \"applicant\"—suggests that Congress intended otherwise.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 935 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1919,7 +3675,17 @@
    "status": "relied",
    "summary": "Views the deeming clause as creating a constructive application by operation of law, so Cirrus Rojas must be treated as seeking admission whether or not he actually is.",
    "quote": "By operation of law, he is an \"applicant for admission\" and must be treated as if he is applying for or seeking admission into the United States regardless of whether he is in fact doing so.",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 934 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1927,7 +3693,17 @@
    "status": "answered",
    "summary": "Describes 1225(a)(3) as the inspection mandate but says debates over the meaning of 'otherwise', like dictionary definitions, cannot resolve the case.",
    "quote": "analogies to real-world uses of the word \"admission,\" and the various meanings of the word \"otherwise\" do not—cannot—resolve this case.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 935 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1935,7 +3711,17 @@
    "status": "relied",
    "summary": "Argues 1182(a)(9)(B)(i)'s 'again seeks admission' makes sense only if seeking admission includes being treated as an applicant because of unlawful entry, undercutting the majority's literal reading.",
    "quote": "If \"seeking admission\" means in fact \"seeking admission,\" then the presence of \"again\" makes no sense. If, by contrast, that phrase means \"being treated as an applicant for admission by virtue of an unlawful entry,\" then the use of \"again\" is perfectly coherent.",
-   "page": 45
+   "page": 45,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 935 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1943,7 +3729,17 @@
    "status": "answered",
    "summary": "Considers the surplusage canon inconclusive, observing that every canon has exceptions and that incongruities arise under both sides' readings of the INA.",
    "quote": "For every grammatical thrust, there is a parry; for every canon of construction, there is an exception that calls for the canon to give way.",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 935 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1951,7 +3747,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-dissent",
@@ -1959,7 +3756,17 @@
    "status": "answered",
    "summary": "Concedes 1225's inspection questions fit oddly for a longtime resident, but says the provision's application is fixed by law rather than by the facts of an individual case.",
    "quote": "It would indeed be odd to ask Cirrus Rojas, who has been living in the United States for eight years and who was arrested without warning, whether he \"intends to remain permanently\" in the country.",
-   "page": 41
+   "page": 41,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 933 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -1967,7 +3774,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-dissent",
@@ -1975,7 +3783,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-dissent",
@@ -1983,7 +3792,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-dissent",
@@ -1991,7 +3801,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "7-dissent",
@@ -1999,7 +3810,17 @@
    "status": "relied",
    "summary": "Explains that IIRIRA cured the anomaly favoring those who evaded inspection by making admission the touchstone, putting all unadmitted aliens on equal footing as applicants for admission.",
    "quote": "By reorienting removal procedures around an alien's admission by immigration authorities rather than his physical entry into the country, Congress eliminated the procedural windfall that had long accrued to aliens who evaded inspection at the border.",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 934 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "7-dissent",
@@ -2007,7 +3828,17 @@
    "status": "relied",
    "summary": "Cites Jennings's description of 1225(b)(2)(A) as a catchall for all applicants for admission, arguing the majority shrinks it to a subset of arriving aliens.",
    "quote": "And it relegates § 1225(b)(2)(A)'s detention mandate from \"a catchall provision that applies to all applicants for admission not covered by § 1225(b)(1),\" . . . to a far more limited provision that applies to only a subset of arriving aliens",
-   "page": 44
+   "page": 44,
+   "cite": [
+    [
+     "Cirrus Rojas v. Olson",
+     true
+    ],
+    [
+     ", 183 F.4th 909, 934 (7th Cir. 2026) (Sykes, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2015,7 +3846,17 @@
    "status": "answered",
    "summary": "Rejects Avila's term of art argument, reasoning that even if 'applicant for admission' is a term of art, the text shows it means the same thing as 'seeking admission'.",
    "quote": "Avila also asserts that \"applicant for admission\" is a term of art with special meaning, but this argument is similarly unavailing. Because the text does not indicate that \"seeking admission\" and \"applicant for admission\" are different, they still mean the same thing even if \"applicant for admission\" is a term of art.",
-   "page": 8
+   "page": 8,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1135 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2023,7 +3864,17 @@
    "status": "relied",
    "summary": "Agrees with the Fifth Circuit that applying and seeking share an ordinary meaning, and holds that 1225(b)(2)(A)'s structure does not make seeking admission a separate condition for detention.",
    "quote": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases \"applicant for admission\" and \"seeking admission\" are the same.",
-   "page": 5
+   "page": 5,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1134 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2031,7 +3882,17 @@
    "status": "relied",
    "summary": "Reasons that just as a present alien is an applicant without filing an application, he is likewise seeking admission without literally asking, so seeking mirrors the term of art meaning.",
    "quote": "In other words, just as an alien is an \"applicant for admission\" even though no literal \"application\" is filed, so too is an alien \"seeking admission\" even when the alien does not literally \"request\" or \"ask for\" admission into the country.",
-   "page": 8
+   "page": 8,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1135 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2039,7 +3900,17 @@
    "status": "relied",
    "summary": "In a footnote, says 1225(a)(3)'s 'or otherwise seeking admission' shows any distinction between the phrases is irrelevant, endorsing the Fifth Circuit's view that applicants are a subset of those seeking.",
    "quote": "the statutory context constrains and limits any distinction to a level of irrelevance. This is made evident in the plain language of 8 U.S.C. § 1225(a)(3), which says that \"[a]ll aliens . . . who are applicants for admission or otherwise seeking admission . . . shall be inspected by immigration officers.\"",
-   "page": 7
+   "page": 7,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1135 n.4 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2047,7 +3918,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-majority",
@@ -2055,7 +3927,17 @@
    "status": "answered",
    "summary": "Rejects the surplusage objection, reasoning that Congress may use synonyms and that the statute's structure gives 'seeking admission' no standalone meaning, so redundancy is not decisive.",
    "quote": "Since the structure of the text does not indicate that this phrase has standalone meaning, merely using it as a synonym for something else does not make it surplusage.",
-   "page": 7
+   "page": 7,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1135 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2063,7 +3945,17 @@
    "status": "answered",
    "summary": "Says 1226(c), including the Laken Riley Act, reaches deportable aliens and bars parole, so overlap with 1225(b)(2)(A) is not surplusage and may reflect Congress being doubly sure.",
    "quote": "Because § 1225(b)(2)(A) broadly applies to any alien who is \"seeking admission,\" and because, as established earlier, the text is clear that this phrase is synonymous with \"applicant for admission,\" any overlap between § 1225(b)(2)(A) and the Laken Riley Act is just that—overlap.",
-   "page": 11
+   "page": 11,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1137 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2071,7 +3963,17 @@
    "status": "answered",
    "summary": "Answers the border limitation argument by noting 1225(a)(1) distinguishes aliens who have not been admitted from those who arrive, so the statute reaches the interior as well as the border.",
    "quote": "In distinguishing an alien \"who has not been admitted\" from one \"who arrives,\" the text makes clear that it applies to aliens in the nation's interior as well as at the border.",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1136-37 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2079,7 +3981,17 @@
    "status": "answered",
    "summary": "Holds that prior administrations' limited use of 1225 cannot narrow the statute, because authority granted by Congress does not evaporate through lack of administrative exercise.",
    "quote": "Thus, even if previous administrations did not exercise their full authority under § 1225, the \"[a]uthority granted by Congress . . . cannot evaporate through lack of administrative exercise,\"",
-   "page": 10
+   "page": 10,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1137 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2087,7 +3999,17 @@
    "status": "answered",
    "summary": "Rejects the argument that Congress's failure to delay 1225(b)(2)(A) for detention capacity, as it did for 1226(c), shows a narrower reading, calling it speculation drawn from legislative history.",
    "quote": "However, Avila's argument is unconvincing because \"it is never our job to rewrite . . . statutory text under the banner of speculation about what Congress might have done.\"",
-   "page": 11
+   "page": 11,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1137 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2095,7 +4017,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-majority",
@@ -2103,7 +4026,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-majority",
@@ -2111,7 +4035,17 @@
    "status": "relied",
    "summary": "Relies on IIRIRA's goal of placing all unadmitted aliens on equal footing, finding it incongruous that unlawful entrants would get bond hearings while those engaging the legal process would not.",
    "quote": "Because this outcome is incongruous and contradicts the statute's goal of placing all aliens \"on equal footing,\" it cuts against Avila's reading of the statute.",
-   "page": 9
+   "page": 9,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1136 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-majority",
@@ -2119,7 +4053,17 @@
    "status": "answered",
    "summary": "Treats Jennings's border and interior description as nonbinding background dicta that does not preclude applying 1225 to aliens arrested in the interior.",
    "quote": "But this characterization was offered only as general background information, as the Court there was not confronted with the interpretive issue now before us.",
-   "page": 9
+   "page": 9,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1136 (8th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2127,7 +4071,17 @@
    "status": "relied",
    "summary": "Faults the majority for using the statutory definition to deem Avila an applicant and then the ordinary meaning of the same phrase to find him seeking admission.",
    "quote": "To get to its desired result, the court uses the statutory definition to deem Avila an \"applicant for admission,\" and then turns around and uses the ordinary meaning of the same phrase to find he is also \"seeking admission\" when he is not.",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1138 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2135,7 +4089,17 @@
    "status": "relied",
    "summary": "Reads 'seeking' as a present participle expressing present action, so 1225(b)(2)(A) covers only aliens presently trying to gain lawful entry after inspection, which Avila was not doing.",
    "quote": "Applying the ordinary meaning of the word \"seeking\" and the statutory definition of \"admission,\" § 1225(b)(2)(A) applies to aliens presently trying to gain lawful entry into the United States after inspection and authorization by an immigration officer.",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1138 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2143,7 +4107,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-dissent",
@@ -2151,7 +4116,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-dissent",
@@ -2159,7 +4125,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-dissent",
@@ -2167,7 +4134,17 @@
    "status": "relied",
    "summary": "Argues the majority renders 'seeking admission' superfluous, while Avila's reading gives effect to every word by requiring both applicant status and actual seeking.",
    "quote": "While the court's interpretation renders \"seeking admission\" superfluous, Avila's interpretation gives effect to every word in § 1225(b)(2)(A) by applying only when an alien is both (1) an \"applicant for admission\" and (2) actually seeking admission.",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1139 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2175,7 +4152,17 @@
    "status": "relied",
    "summary": "Argues the 1226(c) exceptions for inadmissible aliens, including the Laken Riley Act provision for those who entered without inspection, would be superfluous, showing Congress understood 1226(a) to cover them.",
    "quote": "When Congress enacted the Laken Riley Act, it acted with the understanding that § 1226(a) applied to at least some inadmissible noncitizens.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1140 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2183,7 +4170,17 @@
    "status": "relied",
    "summary": "Points to 1225's title referring to inspection by immigration officers and arriving aliens, and to the phrase 'seeking admission', as preserving the border detention distinction.",
    "quote": "The IIRIRA maintained this distinction as evidenced by Congress's use of \"seeking admission\" and § 1225's title, which continues to refer to \"Inspection by immigration officers\" and \"expedited removal of inadmissible arriving aliens.\"",
-   "page": 14
+   "page": 14,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1139 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2191,7 +4188,17 @@
    "status": "relied",
    "summary": "Stresses that five administrations and most immigration judges applied 1225 only at the border, and that Congress never corrected that view, which courts should consider.",
    "quote": "Five presidential administrations, including the first Trump administration, and most immigration judges interpreted § 1225 to apply only to those arriving at the border. This conduct is something courts ought to consider.",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1140 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2199,7 +4206,17 @@
    "status": "relied",
    "summary": "Notes Congress deferred 1226(c) for two years to build detention capacity but made no such provision for 1225(b)(2), consistent with the traditional reading.",
    "quote": "This comported with Congress's decision when it passed the IIRIRA to authorize deferred implementation of § 1226(c) for two years while the agency increased its detention capacity, . . . while making no such provision for implementation of § 1225(b)(2).",
-   "page": 15
+   "page": 15,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1140 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2207,7 +4224,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-dissent",
@@ -2215,7 +4233,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "8-dissent",
@@ -2223,7 +4242,17 @@
    "status": "answered",
    "summary": "Says IIRIRA fixed the entry anomaly for removal proceedings but kept the bond distinction for detention, and rejects the majority's perverse incentive rationale.",
    "quote": "Despite the well-established understanding and application of § 1225(b)(2), the court reaches a different result, pointing to the perverse incentive it creates.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1140 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "8-dissent",
@@ -2231,7 +4260,17 @@
    "status": "relied",
    "summary": "Relies on Zadvydas for the principle that the distinction between those who have entered and those who have not runs throughout immigration law.",
    "quote": "But as the Supreme Court has recognized, \"[t]he distinction between an alien who has effected an entry into the United States and one who has never entered runs throughout immigration law\"",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Avila v. Bondi",
+     true
+    ],
+    [
+     ", 170 F.4th 1128, 1140 (8th Cir. 2026) (Erickson, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2239,7 +4278,17 @@
    "status": "relied",
    "summary": "Following Torres, treats 'applicant for admission' as a term of art conferring a fictive legal status on people outside its plain meaning, so it cannot be equated with 'seeking admission' by ordinary meaning.",
    "quote": "For all these reasons, we conclude that \"applicant for admission\" in § 1225 is best treated as a term of art used to identify a class of people that do not meet the plain meaning understanding of that term, and that imbues them with \"a fictive legal status.\"",
-   "page": 38
+   "page": 38,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1178-79 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2247,7 +4296,17 @@
    "status": "relied",
    "summary": "Reads the present participle 'seeking' as describing active effort to gain entry, and holds that a person living in the interior is not in a perpetual state of seeking entry.",
    "quote": "In ordinary usage, however, we would not normally regard someone present in the United States to be in the perpetual state of \"seeking\" entry into the United States.",
-   "page": 35
+   "page": 35,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1177 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2255,7 +4314,17 @@
    "status": "relied",
    "summary": "Says placing people in an unordinary legal classification through deeming does not mean they take on other statutory attributes sharing that term's ordinary meaning, as its college analogy shows.",
    "quote": "When people are placed into a legal classification that—as a matter of ordinary meaning—would not typically apply to them (\"applicants for admission\"), it does not mechanically follow that those people should thereby fall within other aspects of the statute that otherwise would share an ordinary meaning with what is in fact an unordinary term-of-art classification.",
-   "page": 38
+   "page": 38,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1179 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2263,7 +4332,17 @@
    "status": "answered",
    "summary": "Finds 'or otherwise' in 1225(a)(3) ambiguous, noting the subset reading would also make applicants a subset of those seeking readmission or transit, so the provision is at best a wash.",
    "quote": "But in that scenario, \"applicants for admission\" would also be a subset of those seeking \"readmission to or transit through the United States,\" . . . which does not easily follow. In short, § 1225(a)(3) is at best a wash for the question before us.",
-   "page": 42
+   "page": 42,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1181 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2271,7 +4350,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "9-majority",
@@ -2279,7 +4359,17 @@
    "status": "relied",
    "summary": "Holds the government's reading leaves 'seeking admission' without independent meaning, and because the phrase is integral to triggering examination and detention, the usual tolerance for surplusage is weaker here.",
    "quote": "For one, if all applicants for admission are necessarily \"seeking admission,\" as the government maintains, it is unclear why Congress would have included the phrase \"seeking admission\" in § 1225(b)(2)(A).",
-   "page": 32
+   "page": 32,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1176 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2287,7 +4377,17 @@
    "status": "relied",
    "summary": "Reasons that 1226(c), including the Laken Riley Act's 1226(c)(1)(E), shows 1226(a) covers inadmissible aliens present without admission, and that the government's reading makes the recent amendment largely irrelevant.",
    "quote": "In any event, for present purposes the point is that in considering the statutory scheme as a whole, § 1226(c)(1)(E) more strongly supports the conclusion that the aliens it covers who did not commit qualifying criminal acts are already covered by § 1226(a).",
-   "page": 54
+   "page": 54,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1186 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2295,7 +4395,17 @@
    "status": "relied",
    "summary": "Reads 'examining immigration officer' as describing a formal examination traditionally conducted at the border, noting predecessor statutes used the same phrase and tied it explicitly to the port of arrival.",
    "quote": "This is corroborated by the fact that, in the pre-IIRIRA statutory predecessors for mandatory detention, Congress similarly used the phrase \"examining immigration officer\" and explicitly tied application of the provision to the border.",
-   "page": 31
+   "page": 31,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1175 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2303,7 +4413,17 @@
    "status": "relied",
    "summary": "Treats thirty years of consistent executive practice granting bond, the government's Jennings briefing, and congressional silence across many amendments as strong evidence the claimed detention mandate does not exist.",
    "quote": "The dissent therefore errs in suggesting that all we have here is Executive Branch \"inactions.\" . . . We have thirty years of action—the government actively treating unadmitted aliens present in the interior of the country as entitled to bond hearings under § 1226(a).",
-   "page": 65
+   "page": 65,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1192 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2311,7 +4431,17 @@
    "status": "relied",
    "summary": "Notes Congress delayed 1226(c) to build detention capacity, showing capacity was a countervailing concern that may explain why Congress did not mandate detention of some two million interior aliens.",
    "quote": "But we need not theorize as to why Congress did not delay implementation of § 1225(b)(2)(A) to make the more basic observation that the delay afforded for § 1226(c) shows that detention capacity is a countervailing concern when it comes to how many aliens Congress may wish to place in mandatory detention.",
-   "page": 59
+   "page": 59,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1189 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2319,7 +4449,17 @@
    "status": "relied",
    "summary": "Says Congress would not make a sharp break toward mass detention through a cross referenced deeming provision, citing Whitman and MCI, and expects clearer language for such a fundamental change.",
    "quote": "We may fairly ask: if the statute is meant to require the mass detention of unadmitted aliens present in the United States and mark a sharp break from the past, would Congress have introduced such a major change through a cross-referenced deeming provision, in the way the government asserts?",
-   "page": 46
+   "page": 46,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1182 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2327,7 +4467,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "9-majority",
@@ -2335,7 +4476,17 @@
    "status": "answered",
    "summary": "Accepts IIRIRA sought equal footing in removal but says that need not extend to detention, that expedited removal addresses entry incentives, and that perverse incentive concerns cannot override text.",
    "quote": "Thus, to the extent there is concern that the traditional understanding of § 1225(b)(2)(A) lowers the costs of illegal entry, the expedited removal and other detention provisions, as well as the criminal prohibitions, address this concern to some degree.",
-   "page": 61
+   "page": 61,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1190 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-majority",
@@ -2343,7 +4494,17 @@
    "status": "relied",
    "summary": "Relies on Jennings's descriptions of 1225 as applying to aliens seeking entry and 1226 to those already present as reflecting the traditional understanding of the two provisions.",
    "quote": "This language in Jennings indicates that the Supreme Court was evidently operating on the same understanding of §§ 1225 and 1226 that has prevailed since 1996 (and earlier, under the predecessor provisions)",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1169 (9th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2351,7 +4512,17 @@
    "status": "relied",
    "summary": "Applies an ordinary, nonspecialized meaning to 'applicant for admission', rejecting the majority's term of art treatment drawn from Torres, which he says addressed a different provision.",
    "quote": "Second, I apply a non-specialized, ordinary meaning to both the phrases \"applicant for admission\" and \"seeking admission\" as neither phrase is defined in the statute.",
-   "page": 70
+   "page": 70,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1194 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2359,7 +4530,17 @@
    "status": "relied",
    "summary": "Concludes an applicant for admission is one who applies, and applying for admission is synonymous with seeking admission; the verb form does not change the meaning.",
    "quote": "As several judges before me have noted, an applicant for admission is one who applies for admission, and the ordinary meaning of \"apply for admission\" is synonymous with \"seeking admission.\" The use of the gerund does not change its meaning.",
-   "page": 70
+   "page": 70,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1194 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2367,7 +4548,17 @@
    "status": "relied",
    "summary": "Citing Sturgeon, argues the deeming clause must carry consequences, so deemed applicants take on the plain meaning traits of applicants, including seeking admission; otherwise the clause becomes a nullity.",
    "quote": "It strains belief that Congress would go to the trouble of \"deeming\" a group of aliens \"applicants for admission\" if it did not intend for that group of aliens to assume any of the characteristics of the plain meaning of those words.",
-   "page": 89
+   "page": 89,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1204 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2375,7 +4566,17 @@
    "status": "relied",
    "summary": "Reads 'or otherwise' in 1225(a)(3) as showing applicants for admission are a subset of those seeking admission, calling this the simplest and most natural reading.",
    "quote": "That the words \"or otherwise\" set off \"applicants for admission\" from \"seeking admission\" demonstrates that Congress denoted applicants for admission as a \"subset\" of those seeking admission.",
-   "page": 71
+   "page": 71,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1195 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2383,7 +4584,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "9-dissent",
@@ -2391,7 +4593,17 @@
    "status": "answered",
    "summary": "Says the surplusage canon is not decisive because redundancy is common, the plaintiffs' reading creates its own redundancy, and 'seeking admission' may exclude those withdrawing under 1225(a)(4).",
    "quote": "In these circumstances, when both sides' interpretations could introduce some surplusage, we cannot prioritize a desire to avoid redundancy over the plain text of the statute Congress enacted.",
-   "page": 91
+   "page": 91,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1205 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2399,7 +4611,17 @@
    "status": "answered",
    "summary": "Says 1226(a) and 1226(c) still do independent work for admitted aliens and parole, and the Laken Riley Act overlap carries little weight given longstanding nonenforcement when it passed.",
    "quote": "And as to the Laken Riley Act amendments under § 1226(c)(1)(E) in particular, any presumption against surplusage is substantially weakened by the fact that Congress passed that Act in 2025, against the backdrop of longstanding nonenforcement of § 1225(b)(2)(A) to the class of aliens relevant to this case.",
-   "page": 96
+   "page": 96,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1207 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2407,7 +4629,17 @@
    "status": "answered",
    "summary": "Rejects limiting 'examining immigration officer' to border inspectors, reasoning that an ICE agent fits the statutory definition and necessarily finds an alien who entered without inspection inadmissible.",
    "quote": "The majority seeks artificially to limit the definition of an \"examining immigration officer\" to someone behind a numbered window, counter or desk, with papers before him, to the exclusion of the ICE agent on the dusty road in Texas or the street corner in the Los Angeles barrio.",
-   "page": 93
+   "page": 93,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1206 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2415,7 +4647,17 @@
    "status": "answered",
    "summary": "Dismisses decades of executive nonenforcement as an exercise of discretion that cannot change the text, and cites 1997 regulations as showing the agency recognized its detention power.",
    "quote": "That the executive branch had until this point exercised its discretion in deciding not to detain aliens present without admission under § 1225(b)(2)(A) is irrelevant. Such previous governmental practice does nothing to change the text of the statute.",
-   "page": 83
+   "page": 83,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1200-01 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2423,7 +4665,17 @@
    "status": "answered",
    "summary": "Rejects inferences from Congress's delay of 1226(c) for detention capacity as speculation, suggesting Congress may have had other reasons not to delay 1225(b)(2)(A).",
    "quote": "This argument invites undue speculation as to what Congress would have done and why it would have done so. Although the plaintiffs would have us infer from the delay in implementation Congress's understanding of the statutory text, the delay could also reflect Congress's understanding of the executive's then-intended enforcement agenda.",
-   "page": 98
+   "page": 98,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1208 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2431,7 +4683,17 @@
    "status": "answered",
    "summary": "Doubts the major questions doctrine applies, citing immigration's foreign affairs dimension and that detention is within the agency's wheelhouse, and says no heightened clarity requirement is appropriate.",
    "quote": "While the majority is correct that the Supreme Court has employed this heightened standard in recent Major Questions Doctrine cases, many of which the majority cites, as Judge Lagoa made clear, it is doubtful that the doctrine applies to the case at hand.",
-   "page": 79
+   "page": 79,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1199 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2439,7 +4701,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "9-dissent",
@@ -2447,7 +4710,17 @@
    "status": "relied",
    "summary": "Relies on IIRIRA's purpose, recognized in Torres, of ending the anomaly favoring unlawful entrants, arguing the majority's reading would restore the perverse incentive to enter unlawfully.",
    "quote": "The majority's interpretation would thus reintroduce the very inequality that Torres told us Congress sought to remedy in IIRIRA: that our immigration laws would incongruously privilege those who enter this country illegally and evade detection, as compared to those who responsibly present themselves at ports of entry consistent with legal requirements.",
-   "page": 78
+   "page": 78,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1198 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "9-dissent",
@@ -2455,7 +4728,17 @@
    "status": "answered",
    "summary": "Does not engage Jennings's own border and interior description; in a footnote, discounts the government's Jennings briefing as reciting past practice rather than conceding what 1225 and 1226 mean.",
    "quote": "This recitation of past usage was not a comment on the meaning of the text of §§ 1225 and 1226 and was certainly not a concession that § 1225(b)(2)(A) could not be used to detain aliens present within the country.",
-   "page": 83
+   "page": 83,
+   "cite": [
+    [
+     "Rodriguez Vazquez v. Bostock",
+     true
+    ],
+    [
+     ", 183 F.4th 1160, 1201 n.3 (9th Cir. 2026) (Bea, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2463,7 +4746,17 @@
    "status": "relied",
    "summary": "Treats \"applicant for admission\" as a defined term under 1225(a)(1) and faults the government for using its statutory meaning to cover the petitioner but its ordinary meaning to equate it with seeking admission.",
    "quote": "Like Schrödinger's cat is simultaneously dead and alive, \"applicant for admission\" simultaneously takes on both its ordinary and statutory meanings in the Government's hands.",
-   "page": 25
+   "page": 25,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1242 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2471,7 +4764,17 @@
    "status": "relied",
    "summary": "Reads the present participle \"seeking\" to require present, ongoing action requesting lawful entry, which a person who already entered and lives in the interior cannot take, so 1225(b)(2)(A) is limited to the border.",
    "quote": "Putting these pieces together, we conclude that a noncitizen is \"seeking admission\" when he takes some kind of ongoing action to request lawful entry into the United States.",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1238 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2479,7 +4782,17 @@
    "status": "answered",
    "summary": "Rejects the Sixth and Eleventh Circuit dissents: \"deemed\" in 1225(a)(1) creates a definition, as in TC Heartland, and even a legal fiction would not also deem applicants to be seeking admission.",
    "quote": "It is therefore best to understand § 1225(a)(1)'s use of the word \"deemed\" as creating a definition, not a legal fiction. Even if § 1225(a)(1) created a legal fiction, we are not so sure that legal fictions behave in the way our colleagues posit.",
-   "page": 30
+   "page": 30,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1243-44 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2487,7 +4800,17 @@
    "status": "answered",
    "summary": "Agrees \"or otherwise\" can signal a subset but holds it can also mean something different, as in Helsinn, so 1225(a)(3) does not compel the conclusion that all applicants are seeking admission.",
    "quote": "Without that disambiguation, § 1225(a)(3) does not compel the conclusion that all applicants for admission are necessarily seeking admission. Thus, § 1225(a)(3)'s \"or otherwise\" language does not turn the argument in the Government's favor.",
-   "page": 33
+   "page": 33,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1245 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2495,7 +4818,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "10-majority",
@@ -2503,7 +4827,17 @@
    "status": "relied",
    "summary": "Holds the government's reading reads \"seeking admission\" out of the statute, violating the canon against surplusage and the presumption that different words carry different meanings; the government fails to show redundancy is more natural.",
    "quote": "However, these canons put a thumb on the scale in favor of giving \"seeking admission\" independent effect, and it is up to the Government to convince us that its redundant interpretation is the \"more natural one.\"",
-   "page": 23
+   "page": 23,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1241 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2511,7 +4845,17 @@
    "status": "relied",
    "summary": "Reasons that 1226(c)'s exceptions for inadmissible people would be pointless under the government's reading, Preap makes 1226(c) a limit on 1226(a), and the Laken Riley Act ratified the border versus interior understanding.",
    "quote": "The Act therefore ratified the understanding and practice that § 1225(b)(2)(A) applies at the border while § 1226(a) applies to the interior.",
-   "page": 40
+   "page": 40,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1248 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2519,7 +4863,17 @@
    "status": "relied",
    "summary": "Relies on 1225's title, the 1996 practice of inspections at ports of entry, and the section's many references to arriving aliens to conclude that 1225(b)(2)(A) governs only the border.",
    "quote": "For starters, § 1225's title refers to \"[i]nspection by immigration officers.\" When Congress enacted IIRIRA in 1996, immigration inspections took place at the border.",
-   "page": 20
+   "page": 20,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1239 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2527,7 +4881,17 @@
    "status": "relied",
    "summary": "Gives weight under Loper Bright and Learning Resources to nearly thirty years of executive practice across five administrations applying 1226 in the interior, beginning with the 1997 regulation.",
    "quote": "Over the course of the next five Presidential administrations, that understanding held. But in July 2025, the Government reversed course.",
-   "page": 8
+   "page": 8,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1235 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2535,7 +4899,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "10-majority",
@@ -2543,7 +4908,17 @@
    "status": "relied",
    "summary": "Rejects the deeming argument partly because a single word in a definitional provision cannot hide an elephant in a mousehole by mandating bondless detention of millions.",
    "quote": "The word \"deemed\" cannot bear the weight of the millions of noncitizens it would potentially subject to detention without bond. For one, this construction would render the word \"deemed\" a mousehole hiding an elephant.",
-   "page": 27
+   "page": 27,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1242 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2551,7 +4926,17 @@
    "status": "relied",
    "summary": "Invokes constitutional avoidance as an additional reason: mandatory detention of millions without bond, unsupported by class wide findings like those in Demore, raises serious substantive due process concerns.",
    "quote": "The mandatory detention of potentially millions of noncitizens without the potential for bond raises exactly such serious concerns.",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1249 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2559,7 +4944,17 @@
    "status": "answered",
    "summary": "Rejects the government's entry doctrine purpose argument: IIRIRA replaced only certain aspects of the old regime, Congress may have had reasons not to detain in the interior, and purpose cannot overcome text.",
    "quote": "While the Government's account is plausible, and many may agree with it as a matter of policy, it finds little purchase as an interpretive aid.",
-   "page": 41
+   "page": 41,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1248 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "10-majority",
@@ -2567,7 +4962,17 @@
    "status": "relied",
    "summary": "Treats Jennings's description of 1225 at the border and 1226 in the interior as near binding dicta favoring the petitioner, and distinguishes Demore as resting on categorical congressional findings.",
    "quote": "In short, Jennings explained that § 1225 \"authorizes the Government to detain certain aliens seeking admission into the country\" while § 1226 \"authorizes the Government to detain certain aliens already in the country.\"",
-   "page": 13
+   "page": 13,
+   "cite": [
+    [
+     "Santillan Quiroz v. Mullin",
+     true
+    ],
+    [
+     ", 180 F.4th 1226, 1237 (10th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2575,7 +4980,17 @@
    "status": "relied",
    "summary": "Holds that 1225(a)(1) gives \"applicant for admission\" a technical meaning, a passive condition of presence without admission, so its ordinary meaning cannot be used to equate it with seeking admission.",
    "quote": "we are required to look beyond ordinary meaning, because Congress has chosen to define the phrase \"applicant for admission\" in a technical and specific way.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1267 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2583,7 +4998,17 @@
    "status": "relied",
    "summary": "Gives \"seeking\" its ordinary meaning of affirmative pursuit; the present participle signals an active, ongoing step toward lawful entry after inspection, which petitioners arrested after traffic stops were not taking.",
    "quote": "That the word is written as a present participle (\"seeking\") underscores that it is describing some active and temporally ongoing step or process on the part of the alien.",
-   "page": 17
+   "page": 17,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1268 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2591,7 +5016,17 @@
    "status": "relied",
    "summary": "In a footnote, reads \"deemed\" as confirming a technical legal fiction, citing Sturgeon, that works precisely because the deemed class does not carry the ordinary meaning of applicant.",
    "quote": "This legal fiction functions not in spite of the term \"applicant for admission\" carrying its ordinary meaning, but precisely because it does not.",
-   "page": 16
+   "page": 16,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1267 n.2 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2599,7 +5034,17 @@
    "status": "answered",
    "summary": "Calls 1225(a)(3) the government's strongest argument but holds \"or otherwise\" can denote something different, the structure is A or otherwise B or C or D, and Villarreal is distinguishable.",
    "quote": "At the outset, even if this reading of § 1225(a)(3) were correct, it would not contravene the plain text of § 1225(b)(2)(A).",
-   "page": 29
+   "page": 29,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1273 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2607,7 +5052,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "11-majority",
@@ -2615,7 +5061,17 @@
    "status": "relied",
    "summary": "Holds the government's reading makes \"an alien seeking admission\" surplusage; had Congress meant applicant status alone to trigger detention, it could have written the provision more simply.",
    "quote": "The Government's proffered reading also renders the phrase \"an alien seeking admission\" surplusage in the operation of § 1225(b)(2)(A), \"an interpretative no-no.\"",
-   "page": 25
+   "page": 25,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1271 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2623,7 +5079,17 @@
    "status": "relied",
    "summary": "Reasons that 1226(a) covers unadmitted people, 1226(c)'s inadmissibility exceptions and the Laken Riley Act's targeting of those who entered without inspection would be redundant under the government's reading.",
    "quote": "What's more, why would the Laken Riley Act target unadmitted aliens who were otherwise already included within the ambit of § 1225(b)(2)(A) by later adding a new and separate provision?",
-   "page": 43
+   "page": 43,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1279 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2631,7 +5097,17 @@
    "status": "relied",
    "summary": "Reads 1225's titles and provisions as an inspection scheme for arriving aliens at the border, and holds seeking admission matters at examination by an officer, before removal proceedings begin.",
    "quote": "The INA's text confirms that the two relevant sections on detention govern distinct classes of aliens: § 1225 applies to arriving aliens seeking entry at the border, whereas § 1226 applies to aliens unlawfully in the interior.",
-   "page": 36
+   "page": 36,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1276 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2639,7 +5115,17 @@
    "status": "relied",
    "summary": "Relies on the 1997 regulation and nearly thirty years of unbroken practice by five administrations, plus Congress leaving that construction untouched when it passed the Laken Riley Act.",
    "quote": "The original purpose in passing IIRIRA is confirmed by nearly thirty years of unbroken executive practice.",
-   "page": 51
+   "page": 51,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1283 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2647,7 +5133,17 @@
    "status": "relied",
    "summary": "Notes Congress funded 500 beds and an escape hatch for 1226(c) yet made no capacity provision for the vast detention the government reads into 1225, suggesting no such mandate.",
    "quote": "No similar considerations were given for the sweeping detention provisions the Government says IIRIRA baked into § 1225. If Congress really had sought to launch such a detention campaign, it's a wonder Congress did not factor in the scale of new detentions when it was crunching the numbers",
-   "page": 51
+   "page": 51,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1283 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2655,7 +5151,17 @@
    "status": "relied",
    "summary": "Applies skepticism toward sweeping claimed power and the elephants in mouseholes principle to reject reading 1225(a)(3) to mandate mass detention, while disclaiming reliance on the major questions doctrine itself.",
    "quote": "It produces a paradigmatic \"elephant in a mousehole\" that we are reluctant to embrace, hiding a sweeping reorientation of § 1225 inside an otherwise innocuous and separate provision that only addresses inspection.",
-   "page": 33
+   "page": 33,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1275 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2663,7 +5169,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "11-majority",
@@ -2671,7 +5178,17 @@
    "status": "answered",
    "summary": "Rejects the government's entry doctrine argument: legislative history shows IIRIRA modified only certain aspects, chiefly merging exclusion and deportation, with no sign Congress meant to overhaul detention.",
    "quote": "None of these important revisions, however, suggest Congress also sought to throw out the entry doctrine where federal detention authority was concerned.",
-   "page": 50
+   "page": 50,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1282 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-majority",
@@ -2679,7 +5196,17 @@
    "status": "relied",
    "summary": "Gives Jennings substantial weight as a detailed account of 1225 at the border and 1226 in the interior, and relies on Preap that 1226(c) limits 1226(a).",
    "quote": "We are obliged to afford Jennings some weight in how to view the provisions at issue today. Moreover, that the Court construed the INA in this manner in reaching its ultimate holding again suggests why our reading of the relevant provisions is most natural.",
-   "page": 42
+   "page": 42,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1279 (11th Cir. 2026).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2687,7 +5214,17 @@
    "status": "relied",
    "summary": "Argues 1225(a)(1) does not define \"applicant for admission\" with \"means\" but deems a class into it, so the phrase keeps its ordinary meaning, which the majority concedes matches seeking admission.",
    "quote": "That is not what Congress wrote. Section 1225(a)(1) does not \"define\" \"applicant for admission\" by listing its new meaning, set off by the word \"means.\"",
-   "page": 62
+   "page": 62,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1288 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2695,7 +5232,17 @@
    "status": "relied",
    "summary": "Argues an applicant necessarily seeks admission, and 1225(b)(2)(C)'s coverage of people arriving between ports shows \"seeking admission\" cannot require affirmative conduct toward inspected lawful entry.",
    "quote": "\"Seeking admission\" is not a description of what the alien is subjectively doing or intending. It is a consequence of what Congress has deemed him to be.",
-   "page": 79
+   "page": 79,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1295 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2703,7 +5250,17 @@
    "status": "relied",
    "summary": "Relies on Sturgeon, Kaplan v. Tod, and Leng May Ma to argue a deeming clause carries the deemed category's consequences, so those deemed applicants are also seeking admission.",
    "quote": "If a person whom Congress has deemed an applicant for admission is not seeking admission, it is hard to know what Congress thought it was deeming him to be.",
-   "page": 70
+   "page": 70,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1291 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2711,7 +5268,17 @@
    "status": "relied",
    "summary": "Relies on the en banc Villarreal rule that \"or otherwise\" is a catchall subsuming what precedes it, so 1225(a)(3) makes applicants for admission a subset of those seeking admission.",
    "quote": "\"Applicants for admission\" precedes \"or otherwise.\" \"Seeking admission\" follows. Section 1225(a)(3) thus makes plain that applicants for admission are a subset of those seeking admission.",
-   "page": 71
+   "page": 71,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1292 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2719,7 +5286,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "11-dissent",
@@ -2727,7 +5295,17 @@
    "status": "answered",
    "summary": "Calls the two phrases a doublet to which the surplusage canon does not apply, and argues the majority's reading creates worse surplusage by nullifying 1225(a)(1)'s coverage of present aliens.",
    "quote": "Doublet redundancy in a single sentence is a minor interpretive cost. Nullifying the reach of a deeming provision across an entire statutory section is not.",
-   "page": 82
+   "page": 82,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1297 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2735,7 +5313,17 @@
    "status": "answered",
    "summary": "Argues 1226 keeps work under the government's reading, covering admitted people and deportable aliens, and that the Laken Riley Act closed a parole gap for criminal aliens rather than signaling 1226 coverage.",
    "quote": "It is unsurprising that, in the wake of the events that gave the Act its name, Congress wanted to foreclose \"parole to aliens who have committed certain offenses.\"",
-   "page": 83
+   "page": 83,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1297 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2743,7 +5331,17 @@
    "status": "relied",
    "summary": "Argues 1225(b)(2)(A) is not limited to border inspection: Congress expressly limited other 1225 provisions to arriving aliens, and the (b)(2) title covers \"other aliens\" like the petitioner.",
    "quote": "What is more, Congress demonstrated throughout § 1225 that it knew how to limit a provision to arriving aliens when it wished to do so.",
-   "page": 87
+   "page": 87,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1299 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2751,7 +5349,17 @@
    "status": "answered",
    "summary": "Argues past practice is not clean: the 1997 rule said bond was available despite applicant status, 8 C.F.R. 235.3(b)(1)(ii) applied 1225(b)(2) to interior aliens, and unexercised authority does not evaporate.",
    "quote": "That the Executive long preferred flexibility over rigidity is not evidence that the mandatory authority was never conferred.",
-   "page": 106
+   "page": 106,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1307 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2759,7 +5367,17 @@
    "status": "answered",
    "summary": "Responds that even the majority's reading mandates detention the government never had capacity for, and the statute's reach has never depended on the size of the population it covers.",
    "quote": "The statute's reach has never been constrained by the size of the population it describes.",
-   "page": 109
+   "page": 109,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1309 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2767,7 +5385,17 @@
    "status": "answered",
    "summary": "Argues the major questions doctrine does not apply to a specific detention command in an area of overlapping political branch power, and that 1225(b)(2)(A) is no elephant in a mousehole.",
    "quote": "Regardless, Section 1225(b)(2)(A) does not present the kind of gap between statutory text and claimed executive power that the major questions doctrine polices.",
-   "page": 90
+   "page": 90,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1300 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   },
   {
    "op": "11-dissent",
@@ -2775,7 +5403,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "11-dissent",
@@ -2783,7 +5412,8 @@
    "status": "none",
    "summary": null,
    "quote": null,
-   "page": null
+   "page": null,
+   "cite": null
   },
   {
    "op": "11-dissent",
@@ -2791,7 +5421,17 @@
    "status": "answered",
    "summary": "Argues Jennings addressed prolonged detention, not this question; its framework description is dicta that also treated seeking entry and applicants for admission as interchangeable.",
    "quote": "If the majority wishes to accord Jennings's dicta special weight, it must take all of it, not just the portions it favors.",
-   "page": 85
+   "page": 85,
+   "cite": [
+    [
+     "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami",
+     true
+    ],
+    [
+     ", 175 F.4th 1258, 1298 (11th Cir. 2026) (Lagoa, J., dissenting).",
+     false
+    ]
+   ]
   }
  ]
 }
