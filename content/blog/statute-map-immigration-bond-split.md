@@ -14,7 +14,7 @@ published: true
 
 The Supreme Court agreed to decide one question in *Rhoney v. Barbosa da Cunha*: what 48 words in 8 U.S.C. 1225(b)(2)(A) mean. Every federal circuit except the D.C. Circuit has now read those words, along with a handful of neighboring provisions, and they have not read them the same way.
 
-My [circuit map](/blog/immigration-bond-circuit-split-map-and-data) shows where each court landed. This page shows how they got there. It puts the statute at the center and arranges the courts around it, phrase by phrase, so you can see which words carried each decision and which arguments each side never had to answer.
+My [circuit map](/blog/immigration-bond-circuit-split-map-and-data) shows where each court landed. This page shows how they got there. A companion [influence map](/blog/circuit-influence-network-immigration-bond) shows how the opinions cite and echo each other. It puts the statute at the center and arranges the courts around it, phrase by phrase, so you can see which words carried each decision and which arguments each side never had to answer.
 
 ## How to read it
 

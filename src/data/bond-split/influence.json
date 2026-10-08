@@ -1,0 +1,2441 @@
+{
+ "asOf": "2026-10-08",
+ "nodes": [
+  {
+   "id": "1-majority",
+   "circuit": "1",
+   "part": "majority",
+   "judge": "Montecalvo",
+   "side": "bond",
+   "case": "Guerrero Orellana v. Moniz",
+   "date": "2026-08-13",
+   "ordinal": "1st",
+   "cite": "Guerrero Orellana v. Moniz, 188 F.4th 1 (1st Cir. 2026)",
+   "pdf": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/25-2152P-01A.pdf",
+   "deg": {
+    "in": 3,
+    "out": 9,
+    "in_follow": 2
+   }
+  },
+  {
+   "id": "1-dissent",
+   "circuit": "1",
+   "part": "dissent",
+   "judge": "Dunlap",
+   "side": "mandatory",
+   "case": "Guerrero Orellana v. Moniz",
+   "date": "2026-08-13",
+   "ordinal": "1st",
+   "cite": "Guerrero Orellana v. Moniz, 188 F.4th 1 (1st Cir. 2026)",
+   "pdf": "https://www.ca1.uscourts.gov/sites/ca1/files/opnfiles/25-2152P-01A.pdf",
+   "deg": {
+    "in": 1,
+    "out": 11,
+    "in_follow": 0
+   }
+  },
+  {
+   "id": "2-majority",
+   "circuit": "2",
+   "part": "majority",
+   "judge": "Bianco",
+   "side": "bond",
+   "case": "Barbosa da Cunha v. Freden",
+   "date": "2026-04-28",
+   "ordinal": "2nd",
+   "cite": "Barbosa da Cunha v. Freden, 175 F.4th 61 (2d Cir. 2026)",
+   "pdf": "https://ww3.ca2.uscourts.gov/decisions/OPN/25-3141_complete_opn.pdf",
+   "deg": {
+    "in": 8,
+    "out": 0,
+    "in_follow": 6
+   }
+  },
+  {
+   "id": "2-concurrence",
+   "circuit": "2",
+   "part": "concurrence",
+   "judge": "Cabranes",
+   "side": "bond",
+   "case": "Barbosa da Cunha v. Freden",
+   "date": "2026-04-28",
+   "ordinal": "2nd",
+   "cite": "Barbosa da Cunha v. Freden, 175 F.4th 61 (2d Cir. 2026)",
+   "pdf": "https://ww3.ca2.uscourts.gov/decisions/OPN/25-3141_complete_opn.pdf",
+   "deg": {
+    "in": 2,
+    "out": 0,
+    "in_follow": 1
+   }
+  },
+  {
+   "id": "3-majority",
+   "circuit": "3",
+   "part": "majority",
+   "judge": "Shwartz",
+   "side": "bond",
+   "case": "Buele Morocho v. Warden Philadelphia FDC",
+   "date": "2026-08-28",
+   "ordinal": "3rd",
+   "cite": "Buele Morocho v. Warden Phila. FDC, No. 26-1150, 2026 WL 2546223 (3d Cir. Aug. 28, 2026)",
+   "pdf": "https://www2.ca3.uscourts.gov/opinarch/261150p.pdf",
+   "deg": {
+    "in": 1,
+    "out": 10,
+    "in_follow": 1
+   }
+  },
+  {
+   "id": "3-dissent",
+   "circuit": "3",
+   "part": "dissent",
+   "judge": "Mascott",
+   "side": "mandatory",
+   "case": "Buele Morocho v. Warden Philadelphia FDC",
+   "date": "2026-08-28",
+   "ordinal": "3rd",
+   "cite": "Buele Morocho v. Warden Phila. FDC, No. 26-1150, 2026 WL 2546223 (3d Cir. Aug. 28, 2026)",
+   "pdf": "https://www2.ca3.uscourts.gov/opinarch/261150p.pdf",
+   "deg": {
+    "in": 1,
+    "out": 11,
+    "in_follow": 0
+   }
+  },
+  {
+   "id": "4-majority",
+   "circuit": "4",
+   "part": "majority",
+   "judge": "Berner",
+   "side": "bond",
+   "case": "Lopez Garcia v. Guadian",
+   "date": "2026-09-10",
+   "ordinal": "4th",
+   "cite": "Lopez Garcia v. Guadian, No. 25-7044, 2026 WL 2661092 (4th Cir. Sept. 10, 2026)",
+   "pdf": "https://www.ca4.uscourts.gov/opinions/257044.P.pdf",
+   "deg": {
+    "in": 0,
+    "out": 17,
+    "in_follow": 0
+   }
+  },
+  {
+   "id": "4-dissent",
+   "circuit": "4",
+   "part": "dissent",
+   "judge": "Rushing",
+   "side": "mandatory",
+   "case": "Lopez Garcia v. Guadian",
+   "date": "2026-09-10",
+   "ordinal": "4th",
+   "cite": "Lopez Garcia v. Guadian, No. 25-7044, 2026 WL 2661092 (4th Cir. Sept. 10, 2026)",
+   "pdf": "https://www.ca4.uscourts.gov/opinions/257044.P.pdf",
+   "deg": {
+    "in": 0,
+    "out": 6,
+    "in_follow": 0
+   }
+  },
+  {
+   "id": "5-majority",
+   "circuit": "5",
+   "part": "majority",
+   "judge": "Jones",
+   "side": "mandatory",
+   "case": "Buenrostro-Mendez v. Bondi",
+   "date": "2026-02-06",
+   "ordinal": "5th",
+   "cite": "Buenrostro-Mendez v. Bondi, 166 F.4th 494 (5th Cir. 2026)",
+   "pdf": "https://www.ca5.uscourts.gov/opinions/pub/25/25-20496-CV0.pdf",
+   "deg": {
+    "in": 13,
+    "out": 0,
+    "in_follow": 6
+   }
+  },
+  {
+   "id": "5-dissent",
+   "circuit": "5",
+   "part": "dissent",
+   "judge": "Douglas",
+   "side": "bond",
+   "case": "Buenrostro-Mendez v. Bondi",
+   "date": "2026-02-06",
+   "ordinal": "5th",
+   "cite": "Buenrostro-Mendez v. Bondi, 166 F.4th 494 (5th Cir. 2026)",
+   "pdf": "https://www.ca5.uscourts.gov/opinions/pub/25/25-20496-CV0.pdf",
+   "deg": {
+    "in": 2,
+    "out": 0,
+    "in_follow": 2
+   }
+  },
+  {
+   "id": "6-majority",
+   "circuit": "6",
+   "part": "majority",
+   "judge": "Clay",
+   "side": "bond",
+   "case": "Lopez-Campos v. Raycraft",
+   "date": "2026-05-11",
+   "ordinal": "6th",
+   "cite": "Lopez-Campos v. Raycraft, 175 F.4th 713 (6th Cir. 2026)",
+   "pdf": "https://www.opn.ca6.uscourts.gov/opinions.pdf/26a0139p-06.pdf",
+   "deg": {
+    "in": 7,
+    "out": 4,
+    "in_follow": 5
+   }
+  },
+  {
+   "id": "6-dissent",
+   "circuit": "6",
+   "part": "dissent",
+   "judge": "Murphy",
+   "side": "mandatory",
+   "case": "Lopez-Campos v. Raycraft",
+   "date": "2026-05-11",
+   "ordinal": "6th",
+   "cite": "Lopez-Campos v. Raycraft, 175 F.4th 713 (6th Cir. 2026)",
+   "pdf": "https://www.opn.ca6.uscourts.gov/opinions.pdf/26a0139p-06.pdf",
+   "deg": {
+    "in": 7,
+    "out": 4,
+    "in_follow": 4
+   }
+  },
+  {
+   "id": "7-majority",
+   "circuit": "7",
+   "part": "majority",
+   "judge": "Kolar",
+   "side": "bond",
+   "case": "Cirrus Rojas v. Olson",
+   "date": "2026-07-30",
+   "ordinal": "7th",
+   "cite": "Cirrus Rojas v. Olson, 183 F.4th 909 (7th Cir. 2026)",
+   "pdf": "https://media.ca7.uscourts.gov/cgi-bin/OpinionsWeb/processWebInputExternal.pl?Submit=Display&Path=Y2026/D07-30/C:25-3127:J:Sykes:dis:T:fnOp:N:3583247:S:0",
+   "deg": {
+    "in": 5,
+    "out": 0,
+    "in_follow": 3
+   }
+  },
+  {
+   "id": "7-dissent",
+   "circuit": "7",
+   "part": "dissent",
+   "judge": "Sykes",
+   "side": "mandatory",
+   "case": "Cirrus Rojas v. Olson",
+   "date": "2026-07-30",
+   "ordinal": "7th",
+   "cite": "Cirrus Rojas v. Olson, 183 F.4th 909 (7th Cir. 2026)",
+   "pdf": "https://media.ca7.uscourts.gov/cgi-bin/OpinionsWeb/processWebInputExternal.pl?Submit=Display&Path=Y2026/D07-30/C:25-3127:J:Sykes:dis:T:fnOp:N:3583247:S:0",
+   "deg": {
+    "in": 2,
+    "out": 0,
+    "in_follow": 1
+   }
+  },
+  {
+   "id": "8-majority",
+   "circuit": "8",
+   "part": "majority",
+   "judge": "Shepherd",
+   "side": "mandatory",
+   "case": "Herrera Avila v. Bondi",
+   "date": "2026-03-25",
+   "ordinal": "8th",
+   "cite": "Avila v. Bondi, 170 F.4th 1128 (8th Cir. 2026)",
+   "pdf": "https://ecf.ca8.uscourts.gov/opndir/26/03/253248P.pdf",
+   "deg": {
+    "in": 11,
+    "out": 1,
+    "in_follow": 5
+   }
+  },
+  {
+   "id": "8-dissent",
+   "circuit": "8",
+   "part": "dissent",
+   "judge": "Erickson",
+   "side": "bond",
+   "case": "Herrera Avila v. Bondi",
+   "date": "2026-03-25",
+   "ordinal": "8th",
+   "cite": "Avila v. Bondi, 170 F.4th 1128 (8th Cir. 2026)",
+   "pdf": "https://ecf.ca8.uscourts.gov/opndir/26/03/253248P.pdf",
+   "deg": {
+    "in": 0,
+    "out": 2,
+    "in_follow": 0
+   }
+  },
+  {
+   "id": "9-majority",
+   "circuit": "9",
+   "part": "majority",
+   "judge": "Bress",
+   "side": "bond",
+   "case": "Rodriguez Vazquez v. Bostock",
+   "date": "2026-07-30",
+   "ordinal": "9th",
+   "cite": "Rodriguez Vazquez v. Bostock, 183 F.4th 1160 (9th Cir. 2026)",
+   "pdf": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/07/30/25-6842.pdf",
+   "deg": {
+    "in": 5,
+    "out": 7,
+    "in_follow": 3
+   }
+  },
+  {
+   "id": "9-dissent",
+   "circuit": "9",
+   "part": "dissent",
+   "judge": "Bea",
+   "side": "mandatory",
+   "case": "Rodriguez Vazquez v. Bostock",
+   "date": "2026-07-30",
+   "ordinal": "9th",
+   "cite": "Rodriguez Vazquez v. Bostock, 183 F.4th 1160 (9th Cir. 2026)",
+   "pdf": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/07/30/25-6842.pdf",
+   "deg": {
+    "in": 2,
+    "out": 4,
+    "in_follow": 1
+   }
+  },
+  {
+   "id": "10-majority",
+   "circuit": "10",
+   "part": "majority",
+   "judge": "Federico",
+   "side": "bond",
+   "case": "Santillan Quiroz v. Mullin",
+   "date": "2026-06-30",
+   "ordinal": "10th",
+   "cite": "Santillan Quiroz v. Mullin, 180 F.4th 1226 (10th Cir. 2026)",
+   "pdf": "https://www.ca10.uscourts.gov/sites/ca10/files/opinions/010111461009.pdf",
+   "deg": {
+    "in": 7,
+    "out": 8,
+    "in_follow": 4
+   }
+  },
+  {
+   "id": "11-majority",
+   "circuit": "11",
+   "part": "majority",
+   "judge": "Marcus",
+   "side": "bond",
+   "case": "Hernandez Alvarez v. Warden, Federal Detention Center Miami",
+   "date": "2026-05-06",
+   "ordinal": "11th",
+   "cite": "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami, 175 F.4th 1258 (11th Cir. 2026)",
+   "pdf": "https://media.ca11.uscourts.gov/opinions/pub/files/202514065.pdf",
+   "deg": {
+    "in": 9,
+    "out": 0,
+    "in_follow": 6
+   }
+  },
+  {
+   "id": "11-dissent",
+   "circuit": "11",
+   "part": "dissent",
+   "judge": "Lagoa",
+   "side": "mandatory",
+   "case": "Hernandez Alvarez v. Warden, Federal Detention Center Miami",
+   "date": "2026-05-06",
+   "ordinal": "11th",
+   "cite": "Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami, 175 F.4th 1258 (11th Cir. 2026)",
+   "pdf": "https://media.ca11.uscourts.gov/opinions/pub/files/202514065.pdf",
+   "deg": {
+    "in": 8,
+    "out": 0,
+    "in_follow": 5
+   }
+  }
+ ],
+ "edges": [
+  {
+   "source": "1-majority",
+   "target": "10-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit joins the Tenth Circuit and five others in holding section 1226, not section 1225, governs.",
+   "quote": "our careful study of the disputed statutory texts leads us to join the Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits in holding that noncitizens like Guerrero Orellana . . . are governed by § 1226.",
+   "pin": {
+    "page": 20,
+    "page_end": 20,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "11-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The First Circuit rejects the deeming argument it traces to Lagoa's Eleventh Circuit dissent, finding it contradicted by the text of section 1225(a)(1).",
+   "quote": "The problem is that this leap between the deeming language of § 1225(a)(1) and its alleged effect on § 1225(b)(2)(A) is contradicted by the text of § 1225(a)(1).",
+   "pin": {
+    "page": 16,
+    "page_end": 16,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "11-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit joins the Eleventh Circuit majority and uses its redundancy reasoning as support.",
+   "quote": "See Hernandez Alvarez v. Warden, Fed. Det. Ctr. Miami, 175 F.4th 1258, 1280 (11th Cir. 2026) (explaining that this is no \"small overlap,\" but rather, \"a serious statutory redundancy\").",
+   "pin": {
+    "page": 19,
+    "page_end": 19,
+    "fn": 18
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "2-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit joins the Second Circuit and five others in holding section 1226 governs.",
+   "quote": "our careful study of the disputed statutory texts leads us to join the Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits in holding that noncitizens like Guerrero Orellana . . . are governed by § 1226.",
+   "pin": {
+    "page": 20,
+    "page_end": 20,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "5-majority",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The First Circuit rejects the Fifth Circuit's college applicant analogy and reaches the opposite holding.",
+   "quote": "We acknowledge that two circuit court majorities have accepted the government's college applicant analogy. . . . But the government provides no reason to think that Congress had such an analogy in mind. We reject that analogy",
+   "pin": {
+    "page": 18,
+    "page_end": 18,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "6-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit joins the Sixth Circuit and five others in holding section 1226 governs.",
+   "quote": "our careful study of the disputed statutory texts leads us to join the Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits in holding that noncitizens like Guerrero Orellana . . . are governed by § 1226.",
+   "pin": {
+    "page": 20,
+    "page_end": 20,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "7-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit follows the Seventh Circuit's finding of no textual support for reading seeking admission into section 1225(a)(1).",
+   "quote": "For example, in Cirrus Rojas, the Seventh Circuit found a lack of textual support for the government's efforts \"to read 'seeking admission' into\" § 1225(a)(1).",
+   "pin": {
+    "page": 17,
+    "page_end": 17,
+    "fn": 16
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "8-majority",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The First Circuit rejects the Eighth Circuit's college applicant analogy and reaches the opposite holding.",
+   "quote": "We acknowledge that two circuit court majorities have accepted the government's college applicant analogy. . . . But the government provides no reason to think that Congress had such an analogy in mind. We reject that analogy",
+   "pin": {
+    "page": 18,
+    "page_end": 18,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-majority",
+   "target": "9-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The First Circuit joins the Ninth Circuit and five others in holding section 1226 governs.",
+   "quote": "our careful study of the disputed statutory texts leads us to join the Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits in holding that noncitizens like Guerrero Orellana . . . are governed by § 1226.",
+   "pin": {
+    "page": 20,
+    "page_end": 20,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "10-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Tenth Circuit among courts that have confronted the question, a neutral footnote string cite.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "11-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Dunlap adopts Lagoa's Eleventh Circuit dissent, invoking her explanation of the deeming clause as his own.",
+   "quote": "As Judge Lagoa has thoroughly explained, \"even on its most sympathetic reading, the deeming clause in Sturgeon did not displace the ordinary meaning of the deemed category.\"",
+   "pin": {
+    "page": 32,
+    "page_end": 32,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "11-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Eleventh Circuit majority in a neutral footnote cataloguing the courts that have confronted the question.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "2-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Second Circuit in a neutral footnote cataloguing the courts that have confronted the question.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "5-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Dunlap adopts the Fifth Circuit majority's reading that alien seeking admission refers back to applicant for admission.",
+   "quote": "The term \"alien seeking admission\" simply appears to be a (rather inartful) reference back to the term \"applicant for admission.\"",
+   "pin": {
+    "page": 33,
+    "page_end": 33,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "6-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Dunlap adopts Murphy's Sixth Circuit dissent, relying on its reading that unadmitted aliens are deemed to have sought admission.",
+   "quote": "the word \"again\" indicates that those who have been unlawfully present in the United States are deemed to have sought admission . . . whether or not they took any affirmative action to do so.",
+   "pin": {
+    "page": 35,
+    "page_end": 36,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "6-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Sixth Circuit case in a neutral footnote; his substantive cites are to Murphy's dissent, not the majority.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "7-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Dunlap shares Sykes's Seventh Circuit dissent and relies on its view that the question warrants the Supreme Court.",
+   "quote": "I share Judge Sykes' view that little is to be gained by rehashing the arguments further; the debate . . . will doubtless be resolved by the Supreme Court.",
+   "pin": {
+    "page": 38,
+    "page_end": 39,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "7-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Seventh Circuit majority in a neutral footnote cataloguing the courts that have confronted the question.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "8-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Dunlap cites the Eighth Circuit majority approvingly, adopting its reading that section 1226 does not preclude section 1225(b)(2)(A).",
+   "quote": "\"While Jennings states that § 1226 generally authorizes the Government to detain 'certain aliens already in the country,' this does not preclude other statutory provisions . . . from also applying to such aliens.\"",
+   "pin": {
+    "page": 37,
+    "page_end": 37,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "1-dissent",
+   "target": "9-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Dunlap lists the Ninth Circuit majority in a neutral footnote cataloguing the courts that have confronted the question.",
+   "quote": "multiple courts of appeal have already confronted the question, disagreeing among each other and themselves.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "1-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit accords with the First Circuit and six others that mandatory detention under section 1225(b)(2)(A) is unlawful.",
+   "quote": "The Courts of Appeals for the First, Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits determined that mandatory detention of similarly-situated petitioners under § 1225(b)(2)(A) is unlawful.",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "10-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit accords with the Tenth Circuit and six others that mandatory detention is unlawful, citing it repeatedly as same.",
+   "quote": "The Courts of Appeals for the First, Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits determined that mandatory detention of similarly-situated petitioners under § 1225(b)(2)(A) is unlawful.",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "11-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit accords with the Eleventh Circuit and six others that mandatory detention is unlawful.",
+   "quote": "The Courts of Appeals for the First, Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits determined that mandatory detention of similarly-situated petitioners under § 1225(b)(2)(A) is unlawful.",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "2-concurrence",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit cites the Cabranes concurrence approvingly for its point about Congress's limited detention beds and grace period.",
+   "quote": "we are skeptical IIRIRA also mandated detention of, by Congress's count, millions of other noncitizens who had entered the country without admission.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "2-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Third Circuit adopts the Second Circuit's reasoning that the college applicant analogy is inapposite given the term of art.",
+   "quote": "It is precisely because Congress employed a statutory term of art for \"applicant for admission\" but not for \"seeking admission\" that the analogy to an applicant for college . . . is inapposite.",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "5-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Third Circuit rejects the Fifth Circuit's college analogy reasoning as inapt, though it cites the Fifth favorably on the definitional point.",
+   "quote": "This reasoning is inapt because Congress has given \"applicant for admission\" a specific definition that does not include the phrase \"seeking admission.\"",
+   "pin": {
+    "page": 4,
+    "page_end": 4,
+    "fn": 15
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "6-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Third Circuit adopts the Sixth Circuit's reasoning, quoting Lopez-Campos to reject the argument that the term was left undefined.",
+   "quote": "Thus, we disagree \"that Congress did not sufficiently indicate to us the obscure statutory meaning of 'applicant for admission' such that we may then use ordinary meanings to determine its definition.\"",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": 4
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "7-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit accords with the Seventh Circuit and six others that mandatory detention is unlawful.",
+   "quote": "The Courts of Appeals for the First, Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits determined that mandatory detention of similarly-situated petitioners under § 1225(b)(2)(A) is unlawful.",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "8-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Third Circuit sweeps the Eighth Circuit into the two sister circuits whose college analogy it deems inapposite, while citing it favorably on the definition.",
+   "quote": "the analogy to an applicant for college, relied upon heavily by the government and our two sister circuits, is inapposite.",
+   "pin": {
+    "page": 4,
+    "page_end": 4,
+    "fn": 15
+   },
+   "count": null
+  },
+  {
+   "source": "3-majority",
+   "target": "9-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Third Circuit accords with the Ninth Circuit and six others that mandatory detention is unlawful.",
+   "quote": "The Courts of Appeals for the First, Second, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits determined that mandatory detention of similarly-situated petitioners under § 1225(b)(2)(A) is unlawful.",
+   "pin": {
+    "page": 2,
+    "page_end": 2,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "1-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the First Circuit held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "10-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Tenth Circuit held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "11-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Mascott cites Lagoa's Eleventh Circuit dissent approvingly for the point that deemed applicants carry the attributes of seeking admission.",
+   "quote": "Hernandez Alvarez, 175 F.4th at 1287–89 (Lagoa, J., dissenting) (noting that § 1225(a)(1)'s use of \"deemed\" creates a legal fiction that carries the ordinary attributes of the assigned status, so that one deemed an applicant for admission is treated as seeking admission)",
+   "pin": {
+    "page": 16,
+    "page_end": 16,
+    "fn": 55
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "11-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Eleventh Circuit majority held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "2-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Second Circuit held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "5-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Mascott adopts the Fifth Circuit majority's reasoning, including its or otherwise subset analysis and its historical account.",
+   "quote": "see also Buenrostro-Mendez, 166 F.4th at 503–04 (finding that \"the phrase 'or otherwise' suggests that 'applicants for admission' are a subset of those 'seeking admission'\")",
+   "pin": {
+    "page": 21,
+    "page_end": 21,
+    "fn": 103
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "6-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Mascott cites Murphy's Sixth Circuit dissent approvingly for the view that the for purposes of direction operates by law.",
+   "quote": "Lopez-Campos, 175 F.4th at 740–41 (Murphy, J., dissenting) (arguing that Congress's direction to treat an unadmitted alien as an applicant for admission \"for purposes of\" the INA operates by law, making that alien one \"seeking admission\")",
+   "pin": {
+    "page": 16,
+    "page_end": 16,
+    "fn": 55
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "6-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Sixth Circuit majority held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "7-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Seventh Circuit majority held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "8-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Mascott cites the Eighth Circuit majority approvingly for holding that interior-arrested aliens are subject to mandatory detention.",
+   "quote": "Avila v. Bondi, 170 F.4th 1128, 1134 (8th Cir. 2026) (holding that Petitioners detained for removal proceedings after crossing the border without inspection are subject to § 1225’s mandatory detention provision)",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "3-dissent",
+   "target": "9-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Mascott notes the Ninth Circuit majority held the other way, listing it among the contrary majority decisions.",
+   "quote": "The Second and Tenth Circuits held the other way, along with split panels on the First, Sixth, Seventh, Ninth, and Eleventh Circuits.",
+   "pin": {
+    "page": 12,
+    "page_end": 12,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "1-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the dissenting judges' expansive deeming approach, noting they cite no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "1-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the First Circuit and seven others in concluding section 1226 applies and a bond hearing is required.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "10-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit adopts the Tenth Circuit's reasoning, quoting Santillan Quiroz that applicants can be seeking admission, not that they must be.",
+   "quote": "As our colleagues in the Tenth Circuit aptly noted, \"[a]ll that subsection (a)(5) demonstrates is that applicants for admission can be seeking admission, not that they must be.\"",
+   "pin": {
+    "page": 11,
+    "page_end": 11,
+    "fn": 9
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "11-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the Eleventh Circuit dissent's expansive deeming approach, noting it cites no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "11-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Eleventh Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "2-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Second Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "3-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the Third Circuit dissent's expansive deeming approach, noting it cites no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "3-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Third Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "5-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Fourth Circuit cites Douglas's Fifth Circuit dissent approvingly for the tsunami of habeas petitions the new policy produced.",
+   "quote": "this change in policy has led to a \"tsunami\" of habeas . . . filed across the country.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "5-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "The Fourth Circuit describes the Fifth Circuit's contrary holding and its borrowed college analogy as background to the split, then joins the opposite majority.",
+   "quote": "The Fifth and Eighth Circuits ruled, on the other hand, that Section 1225 applies to all noncitizens who have not been admitted to the United States . . . and therefore they must be detained without bond.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "6-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the Sixth Circuit dissent's expansive deeming approach, noting it cites no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "6-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Sixth Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "7-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the Seventh Circuit dissent's expansive deeming approach, noting it cites no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "7-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Seventh Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "8-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "The Fourth Circuit describes the Eighth Circuit's contrary holding that section 1225 applies as background to the split, then joins the opposite majority.",
+   "quote": "The Fifth and Eighth Circuits ruled, on the other hand, that Section 1225 applies to all noncitizens who have not been admitted to the United States . . . and therefore they must be detained without bond.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "9-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Fourth Circuit rejects the Ninth Circuit dissent's expansive deeming approach, noting it cites no cases to support it.",
+   "quote": "Our dissenting colleague, and the dissenting judges from the First, Third, Sixth, Seventh, Ninth, and Eleventh Circuits interpret this possible deeming provision expansively . . . Tellingly, they cite no cases to support this approach.",
+   "pin": {
+    "page": 10,
+    "page_end": 10,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-majority",
+   "target": "9-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Fourth Circuit joins the Ninth Circuit and seven others in concluding section 1226 applies.",
+   "quote": "The First, Second, Third, Sixth, Seventh, Ninth, Tenth, and Eleventh Circuits concluded that Section 1226 applies to noncitizens inside our country, like the Petitioners, and that they must thus be provided a bond hearing.",
+   "pin": {
+    "page": 5,
+    "page_end": 5,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "10-majority",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "Rushing rejects the Tenth Circuit's assertion the majority relied on, saying it rests on a non-parallel hypothetical, not the text.",
+   "quote": "That conclusion, however, is based not on the text of the statute but on a hypothetical sentence that does not parallel Section 1225(a)(5)'s structure because it omits the \"regarding\" clause and, particularly, the use of a definite article to refer back to \"the applicant.\"",
+   "pin": {
+    "page": 27,
+    "page_end": 27,
+    "fn": 6
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "11-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Rushing adopts Lagoa's Eleventh Circuit dissent, using its point that the majority's reading creates a worse surplusage problem.",
+   "quote": "The construction espoused by Petitioners and the majority, moreover, \"creates a far worse surplusage problem than the one it purports to solve.\"",
+   "pin": {
+    "page": 26,
+    "page_end": 26,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "5-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Rushing cites the Fifth Circuit majority approvingly for the breadth of section 1226 and the redundancy point.",
+   "quote": "Because Section 1226 applies to \"an alien\" without qualification, it covers a much broader group than Section 1225(b)(2), including inadmissible aliens who were admitted erroneously or because of fraud, aliens who overstay their visas, and others who become deportable on many different grounds.",
+   "pin": {
+    "page": 30,
+    "page_end": 30,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "6-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Rushing adopts Murphy's Sixth Circuit dissent, using its reading that being an applicant for admission is one of several ways of seeking admission.",
+   "quote": "(Murphy, J., dissenting) (“[T]he paragraph conveys that being an ‘applicant for admission’ is one of several ways of ‘seeking . . . admission.’”)",
+   "pin": {
+    "page": 27,
+    "page_end": 27,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "8-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Rushing adopts the Eighth Circuit majority's explanation that the two phrases are not independent conditions requiring separate satisfaction.",
+   "quote": "As the Eighth Circuit has explained, Congress did not structure Section 1225(b)(2)(A) such that “applicant for admission” and “alien seeking admission” are independent conditions that must be separately satisfied for detention under the statute.",
+   "pin": {
+    "page": 25,
+    "page_end": 25,
+    "fn": 4
+   },
+   "count": null
+  },
+  {
+   "source": "4-dissent",
+   "target": "9-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Rushing cites Bea's Ninth Circuit dissent approvingly for the point that a later Congress's views cannot fix the 1996 statute's meaning.",
+   "quote": "the intent of the 119th Congress when it passed the Laken Riley Act in 2025 cannot tell us the meaning of the detention provision in Section 1225(b)(2)(A), which a different Congress enacted in 1996.",
+   "pin": {
+    "page": 31,
+    "page_end": 31,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-majority",
+   "target": "11-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Sixth Circuit majority expressly joins the Eleventh Circuit, adopting its holding that section 1225(b)(2)(A) does not reach noncitizens like petitioners, and cites it approvingly throughout.",
+   "quote": "For the reasons discussed below, we join the Second and Eleventh Circuits, and Judge Lee’s individual opinion in Castañon-Nava, in holding that § 1225(b)(2)(A) does not apply to noncitizens like Petitioners.",
+   "pin": {
+    "page": 722,
+    "page_end": 722,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-majority",
+   "target": "2-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Sixth Circuit majority expressly joins the Second Circuit, adopting its holding that section 1225(b)(2)(A) does not apply to these interior noncitizens.",
+   "quote": "For the reasons discussed below, we join the Second and Eleventh Circuits, and Judge Lee’s individual opinion in Castañon-Nava, in holding that § 1225(b)(2)(A) does not apply to noncitizens like Petitioners.",
+   "pin": {
+    "page": 722,
+    "page_end": 722,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-majority",
+   "target": "5-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "The Sixth Circuit majority lists the Fifth Circuit among circuits that addressed the split and agrees only on the narrow point that section 1225(a)(1) defines applicant for admission, while reaching the opposite result.",
+   "quote": "To date, hundreds of district courts and five of our sister circuits have already addressed this statutory interpretation issue.",
+   "pin": {
+    "page": 722,
+    "page_end": 722,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-majority",
+   "target": "8-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "The Sixth Circuit majority lists the Eighth Circuit among circuits that addressed the split and cites it approvingly only on the shared definitional premise, while reaching the opposite result.",
+   "quote": "To date, hundreds of district courts and five of our sister circuits have already addressed this statutory interpretation issue.",
+   "pin": {
+    "page": 722,
+    "page_end": 722,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-dissent",
+   "target": "11-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Judge Murphy's dissent repeatedly cites Judge Lagoa's Eleventh Circuit dissent as supporting authority, agreeing with its reasoning that unadmitted present immigrants are seeking admission.",
+   "quote": "So I do not find this questioning absurd. See Hernandez Alvarez, 2026 WL 1243395, at *30 (Lagoa, J., dissenting).",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "6-dissent",
+   "target": "11-majority",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "Judge Murphy's dissent rejects the Eleventh Circuit majority's approach, refusing to follow it and refuting its reading of otherwise in section 1225(a)(3).",
+   "quote": "Unlike my colleagues, then, I would follow the approach of the Fifth and Eighth Circuits rather than that of the Second and Eleventh Circuits.",
+   "pin": {
+    "page": 739,
+    "page_end": 739,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-dissent",
+   "target": "5-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Judge Murphy's dissent sides with the Fifth Circuit, following its approach that applicants for admission are seeking admission and subject to mandatory detention.",
+   "quote": "Unlike my colleagues, then, I would follow the approach of the Fifth and Eighth Circuits rather than that of the Second and Eleventh Circuits.",
+   "pin": {
+    "page": 739,
+    "page_end": 739,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "6-dissent",
+   "target": "8-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Judge Murphy's dissent sides with the Eighth Circuit, following its approach that applicants for admission are seeking admission under section 1225(b)(2)(A).",
+   "quote": "Unlike my colleagues, then, I would follow the approach of the Fifth and Eighth Circuits rather than that of the Second and Eleventh Circuits.",
+   "pin": {
+    "page": 739,
+    "page_end": 739,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "8-majority",
+   "target": "5-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Eighth Circuit majority agrees with and follows the Fifth Circuit throughout, adopting its ordinary meaning, structure, and purpose reasoning to reach the same holding for the government.",
+   "quote": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases “applicant for admission” and “seeking admission” are the same.",
+   "pin": {
+    "page": 1134,
+    "page_end": 1134,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "8-dissent",
+   "target": "5-dissent",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Judge Erickson's dissent cites Judge Douglas's Fifth Circuit dissent approvingly, relying on it for the superfluity point and the border versus interior distinction.",
+   "quote": "The court’s holding that mandatory detention applies to all inadmissible noncitizens renders those exceptions superfluous. Buenrostro-Mendez v. Bondi, 166 F.4th 494, 518 (5th Cir. 2026) (Douglas, J., dissenting).",
+   "pin": {
+    "page": 1140,
+    "page_end": 1140,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "8-dissent",
+   "target": "5-majority",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "Judge Erickson's dissent notes in a footnote that after the Fifth Circuit's decision, district courts there granted similar habeas petitions on due process grounds.",
+   "quote": "After the Fifth Circuit’s decision in Buenrostro-Mendez, multiple district courts in the Fifth Circuit have granted similar habeas petitions on due process grounds.",
+   "pin": {
+    "page": 1140,
+    "page_end": 1140,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "11-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority takes up the Eleventh Circuit dissent's deeming and doublet arguments and rejects them as unable to justify mandatory detention.",
+   "quote": "In sum, the “deemed” argument advanced by the Sixth and Eleventh Circuit dissents does not justify the Government’s position.",
+   "pin": {
+    "page": 1244,
+    "page_end": 1244,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "11-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority agrees with the Eleventh Circuit majority, citing it in accord for the point that the government conflates ordinary and statutory meaning.",
+   "quote": "Instead, it conflates ordinary and statutory meaning. See Lopez-Campos, 175 F.4th at 727–28; Hernandez Alvarez, 175 F.4th at 1267; Barbosa da Cunha, 175 F.4th at 75–76.",
+   "pin": {
+    "page": 1241,
+    "page_end": 1241,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "2-concurrence",
+   "stance": "discusses",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority cites the Cabranes concurrence for background support that immigration inspections historically took place at the border.",
+   "quote": "When Congress enacted IIRIRA in 1996, immigration inspections took place at the border. See Barbosa da Cunha, 175 F.4th at 98 & n.12 (Cabranes, J., concurring) (collecting cases).",
+   "pin": {
+    "page": 1239,
+    "page_end": 1239,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "2-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority agrees with the Second Circuit majority on the ordinary meaning of seek and on the or otherwise point.",
+   "quote": "We agree that “or otherwise” can indicate a subset-superset relationship. See Barbosa da Cunha, 175 F.4th at 78–79.",
+   "pin": {
+    "page": 1244,
+    "page_end": 1244,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "5-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Tenth Circuit majority rejects the Fifth Circuit majority's holding for the government, while agreeing with its narrow reading that seek means request.",
+   "quote": "The Fifth and Eighth Circuits similarly paid scant attention to the problem in their opinions adopting the Government’s position.",
+   "pin": {
+    "page": 1242,
+    "page_end": 1242,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "6-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority considers and rejects the Sixth Circuit dissent's reasoning, including its view that seeking admission is not rendered superfluous.",
+   "quote": "we will consider the justifications for mandatory detention set forth in the Sixth and Eleventh Circuit dissents. In doing so, we respectfully disagree with their reasoning.",
+   "pin": {
+    "page": 1242,
+    "page_end": 1242,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "6-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Tenth Circuit majority agrees with the Sixth Circuit majority that seek carries its ordinary meaning of request or ask for.",
+   "quote": "Here, our sister circuits have already done the legwork by canvassing such dictionaries, and we agree with them that “seek” ordinarily means “request,” “ask for,” or something similar.",
+   "pin": {
+    "page": 1238,
+    "page_end": 1238,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "10-majority",
+   "target": "8-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Tenth Circuit majority rejects the Eighth Circuit majority's holding adopting the government's position, while agreeing with its ordinary meaning reading of seek.",
+   "quote": "The Fifth and Eighth Circuits similarly paid scant attention to the problem in their opinions adopting the Government’s position.",
+   "pin": {
+    "page": 1242,
+    "page_end": 1242,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "10-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "The Ninth Circuit majority follows the Tenth Circuit majority, adopting its point that the government's new interpretation conflates ordinary and statutory meaning.",
+   "quote": "As the Tenth Circuit has explained, the government’s new interpretation “conflates ordinary and statutory meaning.”",
+   "pin": null,
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "11-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Ninth Circuit majority agrees with the Eleventh Circuit majority, placing it in accord with its reading that renders seeking admission non superfluous.",
+   "quote": "accord Santillan Quiroz, 2026 WL 1876709, at *8; Barbosa da Cunha, 175 F.4th at 75; Hernandez Alvarez, 175 F.4th at 1271.",
+   "pin": {
+    "page": 1176,
+    "page_end": 1176,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "2-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Ninth Circuit majority agrees with the Second Circuit majority that Congress could have used applicant for admission alone, so seeking admission must carry meaning.",
+   "quote": "See Barbosa da Cunha, 175 F.4th at 77 (“Congress could have achieved the same outcome by using ‘applicant for admission’ alone and omitting ‘seeking admission’ entirely.”).",
+   "pin": {
+    "page": 1176,
+    "page_end": 1176,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "5-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Ninth Circuit majority rejects the Fifth Circuit majority's reading, finding its section 1225(a)(5) argument unpersuasive, though it relies on the case for other points.",
+   "quote": "The Fifth Circuit also relied on § 1225(a)(5) in crediting the government’s interpretation. . . . § 1225(a)(5) at minimum does not provide independent support for the government’s interpretation of § 1225(b)(2)(A).",
+   "pin": {
+    "page": 1181,
+    "page_end": 1181,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "6-dissent",
+   "stance": "rejects",
+   "mixed": false,
+   "gist": "The Ninth Circuit majority rejects the Sixth Circuit dissent's withdrawal argument, noting the government did not raise it, perhaps because it lacks merit.",
+   "quote": "The government has not made this argument, perhaps because it lacks merit.",
+   "pin": {
+    "page": 1167,
+    "page_end": 1167,
+    "fn": 1
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "6-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "The Ninth Circuit majority agrees with the Sixth Circuit majority that the government's reading renders seeking admission superfluous.",
+   "quote": "See Lopez-Campos, 175 F.4th at 723 (observing the government’s interpretation . . . “render[s] § 1225(b)(2)(A)’s use of ‘seeking admission’ superfluous”)",
+   "pin": {
+    "page": 1176,
+    "page_end": 1176,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-majority",
+   "target": "8-majority",
+   "stance": "rejects",
+   "mixed": true,
+   "gist": "The Ninth Circuit majority rejects the Eighth Circuit majority's holding for the government, finding its equal footing purpose argument insufficient against the text.",
+   "quote": "The other circuits that have held for the government on the issue before us have likewise relied on legislative history for the “equal footing” point . . . the legislative history materials do not indicate that the “equal footing” principle extended to every possible aspect of immigration law",
+   "pin": {
+    "page": 1188,
+    "page_end": 1188,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-dissent",
+   "target": "11-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Judge Bea's dissent adopts the Eleventh Circuit dissent's legal fiction reasoning, following Judge Lagoa that the major questions doctrine does not apply here.",
+   "quote": "as Judge Lagoa made clear, it is doubtful that the doctrine applies to the case at hand.",
+   "pin": {
+    "page": 1199,
+    "page_end": 1199,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-dissent",
+   "target": "5-majority",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Judge Bea's dissent adopts the Fifth Circuit majority's reasoning, relying on its subset reading and its account of why Congress delayed implementation.",
+   "quote": "As the Fifth Circuit stated, “Congress could have declined to delay implementation of § 1225(b)(2)(A) for any number of reasons.”",
+   "pin": {
+    "page": 1208,
+    "page_end": 1208,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-dissent",
+   "target": "6-dissent",
+   "stance": "adopts",
+   "mixed": false,
+   "gist": "Judge Bea's dissent adopts the Sixth Circuit dissent's reasoning, following Judge Murphy that seeking admission may create no redundancy at all.",
+   "quote": "Furthermore, as Judge Murphy explains, the phrase “seeking admission” may well not create any redundancy at all.",
+   "pin": {
+    "page": 1205,
+    "page_end": 1205,
+    "fn": null
+   },
+   "count": null
+  },
+  {
+   "source": "9-dissent",
+   "target": "8-majority",
+   "stance": "agrees",
+   "mixed": false,
+   "gist": "Judge Bea's dissent agrees with the Eighth Circuit majority, citing Avila that the petitioners' reading produces incongruous results at odds with equal footing.",
+   "quote": "under Avila’s interpretation of the statute, he would be entitled to receive a bond hearing, even though aliens who “seek[ ] admission” by actively engaging with the legal process would not be",
+   "pin": {
+    "page": 1198,
+    "page_end": 1198,
+    "fn": null
+   },
+   "count": null
+  }
+ ],
+ "language": [
+  {
+   "label": "elephants in mouseholes",
+   "phrase": "Congress does not hide elephants in mouseholes",
+   "kind": "borrowed",
+   "source": "Whitman v. Am. Trucking Ass'ns",
+   "uses": [
+    {
+     "op": "1-majority",
+     "snippet": "After all, Congress \"does not . . . hide elephants in mouseholes.\" Whitman v. Am. Trucking Ass'ns, 531 U.S. 457, 468"
+    },
+    {
+     "op": "2-majority",
+     "snippet": "As noted supra, Congress does not “hide elephants in mouseholes.” Whitman, 531 U.S. at 468."
+    },
+    {
+     "op": "4-majority",
+     "snippet": "Congress “does not, one might say, hide elephants in mouseholes.” Id. As we have shown, the statute is riddled with ambiguity."
+    },
+    {
+     "op": "5-majority",
+     "snippet": "Because the text of § 1225(b)(2)(A) is clear, it is no mousehole, contrary to the dissent’s characterization."
+    },
+    {
+     "op": "5-dissent",
+     "snippet": "combined with the familiar “elephants in mouseholes” rule of interpretation, provides independent sufficient reason to reject the government’s reading."
+    },
+    {
+     "op": "7-majority",
+     "snippet": "Put simply, Congress does not hide “elephants in mouseholes.” Whitman v. American Trucking Associations, Inc., 531 U.S. 457, 468 (2001)."
+    },
+    {
+     "op": "10-majority",
+     "snippet": "this construction would render the word “deemed” a mousehole hiding an elephant. See Whitman v. Am. Trucking Ass’ns, 531 U.S. 457, 468 (2001)."
+    },
+    {
+     "op": "11-majority",
+     "snippet": "It produces a paradigmatic “elephant in a mousehole” that we are reluctant to embrace, hiding a sweeping reorientation of § 1225 inside an otherwise innocuous and separate provision that only addresses inspection."
+    },
+    {
+     "op": "11-dissent",
+     "snippet": "Section 1225(b)(2)(A) is not a “paradigmatic ‘elephant in a mousehole.’” Contra Maj. Op. 33. It is, to borrow from Justice Kavanaugh, “an elephant ([mandatory detention]) in a statutory elephant hole.”"
+    }
+   ]
+  },
+  {
+   "label": "perverse incentive to enter at an unlawful rather than a lawful location",
+   "phrase": "perverse incentive to enter at an unlawful rather than a lawful location",
+   "kind": "borrowed",
+   "source": "DHS v. Thuraissigiam",
+   "uses": [
+    {
+     "op": "3-dissent",
+     "snippet": "Congress did not want there to be a “perverse incentive to enter at an unlawful rather than a lawful location.”"
+    },
+    {
+     "op": "6-dissent",
+     "snippet": "The Petitioners’ view thus would read IIRIRA to expand (rather than eliminate) the “perverse incentive to enter at an unlawful rather than a lawful location” that existed before Congress passed that law. Thuraissigiam, 591 U.S. at 140."
+    },
+    {
+     "op": "9-dissent",
+     "snippet": "We have previously “refuse[d] to interpret the INA in a way” that “‘create[s] a perverse incentive to enter at an unlawful rather than a lawful location,’” because “this was the precise situation that Congress intended to do away with by enacting [IIRIRA].”"
+    }
+   ]
+  },
+  {
+   "label": "college applicant analogy",
+   "phrase": "Just as an applicant to a college seeks admission, an applicant for admission to the United States is seeking admission",
+   "kind": "coined",
+   "source": "Buenrostro-Mendez v. Bondi (5th Cir.)",
+   "uses": [
+    {
+     "op": "5-majority",
+     "snippet": "Just as an applicant to a college seeks admission, an applicant for admission to the United States is “seeking admission” to the"
+    },
+    {
+     "op": "8-majority",
+     "snippet": "Here, we agree with the Fifth Circuit that the ordinary meanings of the phrases “applicant for admission” and “seeking admission” are the same. See Buenrostro-Mendez, 166 F.4th at 502."
+    },
+    {
+     "op": "1-majority",
+     "snippet": "for the college analogy to work, \"a college would have to deem an individual physically located on its campus at any point in time to be an 'applicant for admission' to that college, including an individual who had never filed an application and had no intention of doing so.\" Barbosa da Cunha, 175 F.4th at 76."
+    },
+    {
+     "op": "6-majority",
+     "snippet": "The government and the dissent also offer the analogy of a college or club applicant who is necessarily seeking admission to a college or club by virtue of their pending application. This analogy, however, has no purchase."
+    },
+    {
+     "op": "7-majority",
+     "snippet": "The student is an applicant for admission precisely because they are seeking admission; Cirrus Rojas is an “applicant for admission” only because the statute deems him so."
+    },
+    {
+     "op": "9-majority",
+     "snippet": "As the Fifth Circuit posited in crediting this argument, a person who applies to college also seeks admission to that college, “regardless whether the person actively engages in further affirmative acts to gain admission.”"
+    },
+    {
+     "op": "11-dissent",
+     "snippet": "An applicant for voter registration is plainly seeking to register to vote. So too here. “Just as an applicant to a college seeks admission, an applicant for admission to the United States is ‘seeking admission’ to the same, regardless whether the person actively engages in further affirmative acts to"
+    }
+   ]
+  },
+  {
+   "label": "deeming creates a legal fiction",
+   "phrase": "deeming something to be what it is not or deeming something not to be what it is",
+   "kind": "borrowed",
+   "source": "Sturgeon v. Frost (quoting Black's Law Dictionary)",
+   "uses": [
+    {
+     "op": "1-dissent",
+     "snippet": "A deeming provision treats something as if it were something else, thereby creating a legal fiction. Sturgeon v. Frost, 587 U.S. 28, 47 (2019)."
+    },
+    {
+     "op": "4-majority",
+     "snippet": "Legislatures sometimes use deeming provisions when “‘it is necessary to establish a legal fiction’ either by ‘deeming something to be what it is not’ or ‘by deeming something not to be what it is.” Sturgeon v. Frost, 587 U.S. 28, 47 (2019)"
+    },
+    {
+     "op": "4-dissent",
+     "snippet": "Thus, “deeming something to be what it is not” has real effect; it is not merely a matter of labeling. Id."
+    },
+    {
+     "op": "9-dissent",
+     "snippet": "the word useful when it is necessary to establish a legal fiction, either by deeming something to be what it is not or by deeming something not to be what it is."
+    },
+    {
+     "op": "11-majority",
+     "snippet": "The word is “a useful word when it is necessary to establish a legal fiction either positively by ‘deeming’ something to be what it is not or negatively by ‘deeming’ something not to be what it is.” Id. (citation modified); see Sturgeon, 587 U.S. at 47"
+    }
+   ]
+  },
+  {
+   "label": "fictive legal status",
+   "phrase": "fictive legal status",
+   "kind": "borrowed",
+   "source": "Torres v. Barr (9th Cir.)",
+   "uses": [
+    {
+     "op": "9-majority",
+     "snippet": "identify a class of people that do not meet the plain meaning understanding of that term, and that imbues them with “a fictive legal status.” Torres, 976 F.3d at 927–28."
+    },
+    {
+     "op": "9-dissent",
+     "snippet": "Torres v. Barr, 976 F.3d 918, 928 (9th Cir. 2020) (holding that in § 1225(a)(1), Congress included a “deeming provision, which places some physically-but-not-lawfully present noncitizens into a fictive legal status for purposes of removal proceedings”)"
+    }
+   ]
+  },
+  {
+   "label": "largest mass detention in the nation's history",
+   "phrase": "the broadest mass detention without bond mandate in our Nation's history",
+   "kind": "coined",
+   "source": null,
+   "uses": [
+    {
+     "op": "1-majority",
+     "snippet": "amendment to § 1225(b)(2)(A) created the largest increase in mandatory detention in this nation's history, as the government alleges"
+    },
+    {
+     "op": "2-majority",
+     "snippet": "the serious constitutional questions attendant to what would be the broadest massdetention-without-bond mandate in our Nation’s history for millions of noncitizens."
+    },
+    {
+     "op": "2-concurrence",
+     "snippet": "that in 1996 Congress ordered the largest mass detention in American history, the world would have likely noticed sooner."
+    },
+    {
+     "op": "4-majority",
+     "snippet": "Congress intended to direct the single largest mass detention of human beings in our nation’s history."
+    },
+    {
+     "op": "7-majority",
+     "snippet": "The government asks us to accept that Congress in 1996 tucked “the broadest mass-detention-without-bond mandate in our Nation’s history” into an obscure corner of its new law"
+    },
+    {
+     "op": "9-majority",
+     "snippet": "if the statute were departing from prior law and practice and imposing a new mass detention requirement, Congress would have drafted language more direct"
+    },
+    {
+     "op": "11-majority",
+     "snippet": "There is no evidence in the record that Congress anticipated, much less intended, that its revisions of § 1225 would mandate potentially the largest detention operation in the Republic’s history."
+    },
+    {
+     "op": "11-dissent",
+     "snippet": "Reading § 1225(b)(2)(A) to reach interior unadmitted aliens, the majority warns, echoed by Petitioner and amici, would “effect[] a mass detention campaign of every unadmitted alien present in the country.” Maj. Op. 32."
+    }
+   ]
+  },
+  {
+   "label": "the pre-1996 anomaly IIRIRA remedied",
+   "phrase": "anomaly whereby immigrants who were attempting to lawfully enter were in a worse position than persons who had crossed the border unlawfully",
+   "kind": "borrowed",
+   "source": "Hing Sum v. Holder / Torres v. Barr (9th Cir.)",
+   "uses": [
+    {
+     "op": "5-majority",
+     "snippet": "Congress undeniably did take other steps to address the entry anomaly. But that does not explain why Congress would preserve one of the most significant advantages available for unlawful entrants."
+    },
+    {
+     "op": "6-majority",
+     "snippet": "its interpretation of “seeking admission” better serves Congress’s intent to remedy the prior “anomaly” that a noncitizen stopped at the border had fewer procedural and substantive rights than a noncitizen who entered without inspection. See Hing Sum v. Holder, 602 F.3d 1092, 1099–100 (9th Cir. 2010)."
+    },
+    {
+     "op": "6-dissent",
+     "snippet": "This distinction created an “anomaly.” Hing Sum v. Holder, 602 F.3d 1092, 1100 (9th Cir. 2010). Immigrants who lawfully “presented themselves at a port of entry” had fewer “procedural and substantive rights” than those who unlawfully snuck in."
+    },
+    {
+     "op": "7-dissent",
+     "snippet": "This distinction, as the Ninth Circuit pointed out, “resulted in an anomaly.” Hing Sum v. Holder, 602 F.3d 1092, 1100 (9th Cir. 2010). Aliens who evaded inspection and sneaked across the border could seek release on bond; those who sought to enter the country lawfully could not."
+    },
+    {
+     "op": "9-majority",
+     "snippet": "This court’s case law has recognized that Congress in IIRIRA sought to rectify the “anomaly,” Torres, 976 F.3d at 928"
+    },
+    {
+     "op": "9-dissent",
+     "snippet": "prior to 1996, our immigration laws “created an anomaly whereby immigrants who were attempting to lawfully enter the United States were in a worse position than persons who had crossed the border unlawfully.” Torres, 976 F.3d at 928."
+    }
+   ]
+  },
+  {
+   "label": "cram a veritable legislative zoo",
+   "phrase": "seeks to cram a veritable legislative zoo",
+   "kind": "borrowed",
+   "source": "Patel v. Garland (Gorsuch, J., dissenting)",
+   "uses": [
+    {
+     "op": "2-majority",
+     "snippet": "the government here “seeks to cram a veritable legislative zoo” into an exceptionally small mousehole. Patel v. Garland, 596 U.S. 328, 365 (2022) (Gorsuch, J., dissenting)"
+    },
+    {
+     "op": "7-majority",
+     "snippet": "That is more than an “elephant in a mousehole”: it “cram[s] a veritable legislative zoo into one clause of one subparagraph of one subsection of our"
+    }
+   ]
+  },
+  {
+   "label": "sneaks into Yankee Stadium",
+   "phrase": "If someone sneaks into Yankee Stadium at the start of the game with no ticket for admission",
+   "kind": "coined",
+   "source": "Barbosa da Cunha v. Freden (2d Cir.)",
+   "uses": [
+    {
+     "op": "2-majority",
+     "snippet": "Here is a better analogy. If someone sneaks into Yankee Stadium at the start of the game with no ticket for admission (and no intention of ever paying) and he is later found by security in a seat"
+    },
+    {
+     "op": "3-majority",
+     "snippet": "Barbosa da Cunha, 175 F.4th at 76 (“If someone sneaks into Yankee Stadium [a baseball stadium] at the start of the game with no ticket for admission (and no intention of ever paying)"
+    }
+   ]
+  },
+  {
+   "label": "not a little-used backwater but the opening line of 1225",
+   "phrase": "previously little-used backwater",
+   "kind": "borrowed",
+   "source": "West Virginia v. EPA",
+   "uses": [
+    {
+     "op": "9-dissent",
+     "snippet": "The text from which the detainment power is derived is not hidden in some “previously little-used [statutory] backwater.” West Virginia, 597 U.S. at 730"
+    },
+    {
+     "op": "11-dissent",
+     "snippet": "the deeming provision on which it rests, § 1225(a)(1), is not buried in some “backwater.” See West Virginia, 597 U.S. at 730. It is the opening line of § 1225."
+    }
+   ]
+  },
+  {
+   "label": "the government's newfound interpretation",
+   "phrase": "the government's newfound interpretation",
+   "kind": "coined",
+   "source": null,
+   "uses": [
+    {
+     "op": "2-majority",
+     "snippet": "neither the government’s reliance on legislative history nor Congress’s overall purpose in enacting IIRIRA can rescue the newfound interpretation of Section 1225(b)(2)(A)"
+    },
+    {
+     "op": "4-majority",
+     "snippet": "The longstanding, universal interpretation and application of this statutory language also counsels against crediting the Government’s newfound construction."
+    },
+    {
+     "op": "5-dissent",
+     "snippet": "the government’s assertion of this newfound power and mandate is inconsistent with its representations in other cases before the Supreme Court and our court."
+    },
+    {
+     "op": "7-majority",
+     "snippet": "We join the majority of the circuits that have confronted this question in rejecting the government’s newfound statutory requirement for mandatory detention"
+    },
+    {
+     "op": "9-majority",
+     "snippet": "The government’s newfound interpretation of § 1225(b)(2)(A) has some initial intuitive force, but there are good reasons to reject it as a textual matter."
+    },
+    {
+     "op": "10-majority",
+     "snippet": "In our circuit, thousands of noncitizens are likely subject to mandatory detention under the Government’s newfound statutory reading and policy."
+    }
+   ]
+  },
+  {
+   "label": "entry fiction doctrine",
+   "phrase": "entry fiction doctrine",
+   "kind": "borrowed",
+   "source": "DHS v. Thuraissigiam / Shaughnessy v. Mezei",
+   "uses": [
+    {
+     "op": "2-majority",
+     "snippet": "Although the “entry fiction” doctrine allows the government to treat physical entrants as if still “on the threshold” if they are “detained shortly after unlawful entry,” the reach of that doctrine is"
+    },
+    {
+     "op": "3-majority",
+     "snippet": "Their reliance on Thuraissigiam is misplaced as that case concerned the “entry fiction” doctrine as applied to a noncitizen apprehended within twenty-five yards of the border, i.e. “at the threshold of initial entry.”"
+    }
+   ]
+  }
+ ],
+ "precedent": [
+  {
+   "case": "Jennings v. Rodriguez",
+   "uses": [
+    {
+     "op": "1-majority",
+     "lean": "bond",
+     "snippet": "Jennings concerned §§ 1225 and 1226 -- the same statutory sections before us here -- and the above-quoted language served as a summary paragraph following a reasoned explanation of how those two sections function."
+    },
+    {
+     "op": "1-dissent",
+     "lean": "mandatory",
+     "snippet": "like Preap, Jennings does not compel the conclusion that § 1225(b)(2)(A) and § 1226 are mutually exclusive."
+    },
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "we afford great deference to the Court’s description of the statutory scheme in Jennings."
+    },
+    {
+     "op": "3-majority",
+     "lean": "bond",
+     "snippet": "Although Jennings made this observation in dicta, its insight is persuasive."
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "Cf. Jennings v. Rodriguez, 583 U.S. 281, 293–94 (2018) (plurality opinion)"
+    },
+    {
+     "op": "4-majority",
+     "lean": "bond",
+     "snippet": "§ 1225(b)(2)(A), which does not allow for a bond hearing in advance of removal, has been understood to govern the detention of noncitizens “seeking admission into the country” at the border. Jennings, 583 U.S. at 289."
+    },
+    {
+     "op": "4-dissent",
+     "lean": "mandatory",
+     "snippet": "see Jennings, 583 U.S. at 287 (Section 1225(b)(2) “serves as a catchall provision that applies to all applicants for admission not covered by § 1225(b)(1).”)"
+    },
+    {
+     "op": "5-majority",
+     "lean": "mandatory",
+     "snippet": "even if this court should conduct a granular analysis of the language in Jennings, doing so supports the government’s interpretation."
+    },
+    {
+     "op": "5-dissent",
+     "lean": "bond",
+     "snippet": "See Jennings, 583 U.S. at 297 (referring to “aliens seeking entry into the United States (‘applicants for admission’ in the language of the statute)”)."
+    },
+    {
+     "op": "6-majority",
+     "lean": "bond",
+     "snippet": "The Supreme Court in Jennings described the relationship between the two detention standards"
+    },
+    {
+     "op": "6-dissent",
+     "lean": "mandatory",
+     "snippet": "The decision framed § 1225(b)(2)(A) as a “catchall provision that applies to all applicants for admission not covered by § 1225(b)(1)[.]” Jennings, 583 U.S. at 287 (emphasis added)."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "Section 1225(b)(2)(A)’s applicability was not before the Court in that case."
+    },
+    {
+     "op": "7-dissent",
+     "lean": "mandatory",
+     "snippet": "it relegates § 1225(b)(2)(A)’s detention mandate from “a catchall provision that applies to all applicants for admission not covered by § 1225(b)(1),”"
+    },
+    {
+     "op": "8-majority",
+     "lean": "mandatory",
+     "snippet": "Moreover, Jennings does not preclude the application of § 1225 to aliens arrested in the interior."
+    },
+    {
+     "op": "9-majority",
+     "lean": "bond",
+     "snippet": "the Supreme Court’s decision in Jennings reflects the traditional understanding of the distinction between § 1225 and § 1226."
+    },
+    {
+     "op": "9-dissent",
+     "lean": "mandatory",
+     "snippet": "the government relied on § 1226(a) when detaining illegal aliens within the country and on § 1225(b)(2)(A) when detaining those at the border."
+    },
+    {
+     "op": "10-majority",
+     "lean": "bond",
+     "snippet": "Jennings therefore counsels, if not requires, us to rule in Santillan Quiroz’s favor since immigration agents did not arrest Santillan Quiroz at the border."
+    },
+    {
+     "op": "11-majority",
+     "lean": "bond",
+     "snippet": "The Government’s interpretation cannot readily be reconciled with Jennings."
+    },
+    {
+     "op": "11-dissent",
+     "lean": "mandatory",
+     "snippet": "Jennings does not foreclose the question we decide today because it simply does not address it."
+    }
+   ]
+  },
+  {
+   "case": "DHS v. Thuraissigiam",
+   "uses": [
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "no one could seriously contend that it applies to a noncitizen like Petitioner"
+    },
+    {
+     "op": "3-majority",
+     "lean": "bond",
+     "snippet": "Their reliance on Thuraissigiam is misplaced as that case concerned the “entry fiction” doctrine as applied to a noncitizen apprehended within twenty-five yards of the border"
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "under the statutory scheme even an “alien who tries to enter the country illegally” is nonetheless “treated as an ‘applicant for admission.’”"
+    },
+    {
+     "op": "4-majority",
+     "lean": "neutral",
+     "snippet": "Thuraissigiam, 591 U.S. 103, 139 (2020) (quoting Mezei, 345 U.S. at 215)."
+    },
+    {
+     "op": "6-majority",
+     "lean": "bond",
+     "snippet": "The government stretches the Supreme Court’s holdings in Thuraissigiam and Demore beyond their logical breaking points."
+    },
+    {
+     "op": "6-dissent",
+     "lean": "mandatory",
+     "snippet": "would read IIRIRA to expand (rather than eliminate) the “perverse incentive to enter at an unlawful rather than a lawful location” that existed before Congress passed that law. Thuraissigiam, 591 U.S. at 140."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "The petitioner in Thuraissigiam was arrested only twenty-five yards from the border."
+    },
+    {
+     "op": "9-majority",
+     "lean": "neutral",
+     "snippet": "Thuraissigiam, 591 U.S. 103, 109 (2020) (discussing expedited removal)."
+    },
+    {
+     "op": "9-dissent",
+     "lean": "mandatory",
+     "snippet": "United States v. Gambino-Ruiz, 91 F.4th 981, 990 (9th Cir. 2024) (quoting Dep’t of Homeland Sec. v. Thuraissigiam, 591 U.S. 103, 140 (2020))"
+    }
+   ]
+  },
+  {
+   "case": "Sturgeon v. Frost",
+   "uses": [
+    {
+     "op": "1-majority",
+     "lean": "bond",
+     "snippet": "Unlike in § 1225(a)(1), the deeming language at issue in Sturgeon was immediately followed by language \"expressly stat[ing] the consequence\" of the deeming language."
+    },
+    {
+     "op": "1-dissent",
+     "lean": "mandatory",
+     "snippet": "Nor am I convinced that, under Sturgeon, the statute must expressly state the consequences of the deeming language to read it as I do."
+    },
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "Thus, Congress here deemed, “abracadabra-style,” Sturgeon, 587 U.S. at 47, “applicant for admission” to cover noncitizens who literally cannot be applying for or seeking “admission.”"
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "Sturgeon, 587 U.S. at 61 (“There is no reason to pretend that inholdings are not part of a park if they can still be regulated as parklands.”)."
+    },
+    {
+     "op": "4-majority",
+     "lean": "bond",
+     "snippet": "See, e.g., Sturgeon, 587 U.S. at 47 (citing 16 U.S.C"
+    },
+    {
+     "op": "4-dissent",
+     "lean": "mandatory",
+     "snippet": "As Sturgeon demonstrates, deeming one thing to be another as a matter of law has consequences."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "it does not conjure a fictional intent to seek admission."
+    },
+    {
+     "op": "9-dissent",
+     "lean": "mandatory",
+     "snippet": "see also Sturgeon, 587 U.S. at 51 (holding that “[t]here is no reason [for Congress] to pretend” that something is what it is not through a deeming clause if there are no consequences that result from the legal fiction created)."
+    },
+    {
+     "op": "11-majority",
+     "lean": "bond",
+     "snippet": "see Sturgeon, 587 U.S. at 47 (public lands were “deemed” to be parkland, and “non-public lands (everything else) were, by negative implication, ‘deemed’ not” to be)."
+    },
+    {
+     "op": "11-dissent",
+     "lean": "mandatory",
+     "snippet": "The majority takes Sturgeon’s instruction on deference to statutory definitions but leaves behind its instruction about enforcing statutory deeming provisions."
+    }
+   ]
+  },
+  {
+   "case": "Nielsen v. Preap",
+   "uses": [
+    {
+     "op": "1-majority",
+     "lean": "bond",
+     "snippet": "In Preap, the Court clarified that § 1226(c)'s mandate to detain certain criminal noncitizens is not a \"separate\" source of detention authority from § 1226(a)"
+    },
+    {
+     "op": "1-dissent",
+     "lean": "mandatory",
+     "snippet": "But Preap simply reinforces the point, already made, that §§ 1225 and 1226"
+    },
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "Preap, 586 U.S. 392, 409 (2019) (emphasis omitted)"
+    },
+    {
+     "op": "3-majority",
+     "lean": "bond",
+     "snippet": "This misreads § 1226(c), which “is simply a limit on the authority conferred by subsection [§ 1226](a).” Nielsen v. Preap, 586 U.S. 392, 409 (2019)."
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "Preap, 586 U.S. 392, 408 (2019) (“‘[T]he’ is a function word indicating that a following noun or noun equivalent is definite or has been previously specified by context.”"
+    },
+    {
+     "op": "4-majority",
+     "lean": "bond",
+     "snippet": "Preap, 586 U.S. 392, 409 (2019)."
+    },
+    {
+     "op": "4-dissent",
+     "lean": "mandatory",
+     "snippet": "(Murphy, J., dissenting) (quoting Nielsen v. Preap, 586 U.S. 392, 415 (2019))."
+    },
+    {
+     "op": "5-majority",
+     "lean": "neutral",
+     "snippet": "authority conferred by subsection (a).” Nielsen v. Preap, 586 U.S. 392, 409"
+    },
+    {
+     "op": "5-dissent",
+     "lean": "bond",
+     "snippet": "Preap, 586 U.S. 392, 397–98 (2019)."
+    },
+    {
+     "op": "6-majority",
+     "lean": "bond",
+     "snippet": "Preap, 586 U.S. 392, 414 (2019) (quoting Antonin Scalia"
+    },
+    {
+     "op": "6-dissent",
+     "lean": "mandatory",
+     "snippet": "Nielsen, 586 U.S. at 415."
+    },
+    {
+     "op": "9-majority",
+     "lean": "bond",
+     "snippet": "Preap, 586 U.S. 392, 409 (2019) (observing that § 1226(c) is “a limit on the authority conferred by subsection (a)”)."
+    },
+    {
+     "op": "10-majority",
+     "lean": "bond",
+     "snippet": "the § 1226(c) exceptions do not stand independent from § 1226(a), Nielsen, 586 U.S. at 409."
+    },
+    {
+     "op": "11-majority",
+     "lean": "bond",
+     "snippet": "This argument is undermined by the Supreme Court’s decision in Nielsen v. Preap"
+    }
+   ]
+  },
+  {
+   "case": "Zadvydas v. Davis",
+   "uses": [
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "Here, like in Zadvydas, mandatory detention of noncitizens like Petitioner"
+    },
+    {
+     "op": "3-majority",
+     "lean": "bond",
+     "snippet": "does not outweigh the other two factors"
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "the Supreme Court addressed the distinct question of whether aliens not removable to an appropriate country may be indefinitely detained while remaining within the United States"
+    },
+    {
+     "op": "4-majority",
+     "lean": "bond",
+     "snippet": "Zadvydas, 533 U.S. at 693."
+    },
+    {
+     "op": "4-dissent",
+     "lean": "neutral",
+     "snippet": "limits on detention, which continue to apply. See, e.g., Zadvydas v. Davis, 533 U.S. 678"
+    },
+    {
+     "op": "5-majority",
+     "lean": "mandatory",
+     "snippet": "In any event, Zadvydas v Davis, 533 U.S. 678, 678, 121 S. Ct. 2491, 2492, (2001), has no direct application to aliens who are detained and being given due process during removal proceedings."
+    },
+    {
+     "op": "5-dissent",
+     "lean": "bond",
+     "snippet": "See Zadvydas, 533 U.S. at 693."
+    },
+    {
+     "op": "6-majority",
+     "lean": "bond",
+     "snippet": "See Zadvydas, 533 U.S. at 690; Hamdi, 542 U.S. at 529."
+    },
+    {
+     "op": "6-dissent",
+     "lean": "mandatory",
+     "snippet": "Zadvydas, 533 U.S. at 690–96."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "“indefinite” detention that the Court in Zadvydas found unacceptable."
+    },
+    {
+     "op": "10-majority",
+     "lean": "bond",
+     "snippet": "Zadvydas, 533 U.S. at 690."
+    },
+    {
+     "op": "11-dissent",
+     "lean": "mandatory",
+     "snippet": "The majority invokes Zadvydas v. Davis, 533 U.S."
+    }
+   ]
+  },
+  {
+   "case": "Demore v. Kim",
+   "uses": [
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "the Court in Demore assumed that detention would be relatively brief because of the criminal context."
+    },
+    {
+     "op": "3-dissent",
+     "lean": "mandatory",
+     "snippet": "Detention during removal proceedings is a constitutionally permissible part of that process."
+    },
+    {
+     "op": "4-dissent",
+     "lean": "mandatory",
+     "snippet": "Detention during removal proceedings is a constitutionally permissible part of that process” for aliens present in the United States."
+    },
+    {
+     "op": "6-majority",
+     "lean": "bond",
+     "snippet": "Crucially, Demore did not address the process due to noncitizens subject to § 1226(a)’s permissive detention scheme."
+    },
+    {
+     "op": "6-dissent",
+     "lean": "mandatory",
+     "snippet": "Demore, 538 U.S. at 527–28."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "aliens detained under Section 1225 are not."
+    },
+    {
+     "op": "10-majority",
+     "lean": "bond",
+     "snippet": "At most, Demore stands for the proposition that individualized findings are not always necessary to justify detention in the immigration context"
+    }
+   ]
+  },
+  {
+   "case": "Whitman v. American Trucking Ass'ns",
+   "uses": [
+    {
+     "op": "1-majority",
+     "lean": "bond",
+     "snippet": "Congress \"does not . . . hide elephants in mouseholes.\""
+    },
+    {
+     "op": "2-majority",
+     "lean": "bond",
+     "snippet": "Congress does not “hide elephants in mouseholes.” Whitman, 531 U.S. at 468."
+    },
+    {
+     "op": "4-majority",
+     "lean": "bond",
+     "snippet": "Congress “does not, one might say, hide elephants in mouseholes.”"
+    },
+    {
+     "op": "4-dissent",
+     "lean": "mandatory",
+     "snippet": "But Congress did speak clearly in IIRIRA when it jettisoned all prior formulations of the detention provision that applied solely to arriving aliens"
+    },
+    {
+     "op": "5-dissent",
+     "lean": "bond",
+     "snippet": "does not, one might say, hide elephants in mouseholes."
+    },
+    {
+     "op": "7-majority",
+     "lean": "bond",
+     "snippet": "Congress does not hide “elephants in mouseholes.”"
+    },
+    {
+     "op": "9-majority",
+     "lean": "bond",
+     "snippet": "Congress is unlikely to confer significant authority through “modest words,” “vague terms,” or “subtle device[s]”"
+    },
+    {
+     "op": "10-majority",
+     "lean": "bond",
+     "snippet": "this construction would render the word “deemed” a mousehole hiding an elephant."
+    },
+    {
+     "op": "11-majority",
+     "lean": "bond",
+     "snippet": "It produces a paradigmatic “elephant in a mousehole” that we are reluctant to embrace"
+    },
+    {
+     "op": "11-dissent",
+     "lean": "mandatory",
+     "snippet": "Section 1225(b)(2)(A) is not a “paradigmatic ‘elephant in a mousehole.’”"
+    }
+   ]
+  },
+  {
+   "case": "Loper Bright Enterprises v. Raimondo",
+   "uses": [
+    {
+     "op": "2-majority",
+     "lean": "neutral",
+     "snippet": "See Loper Bright Enters., 603 U.S. at 388 (quoting Skidmore"
+    },
+    {
+     "op": "2-concurrence",
+     "lean": "neutral",
+     "snippet": "accord Loper Bright Enters. v. Raimondo, 603 U.S. 369, 386, 394 (2024)."
+    },
+    {
+     "op": "3-majority",
+     "lean": "neutral",
+     "snippet": "Because courts must conduct their own statutory analysis"
+    },
+    {
+     "op": "4-majority",
+     "lean": "neutral",
+     "snippet": "we must “use every tool at [our] disposal [to] determine the best reading of the statute[.]”"
+    },
+    {
+     "op": "6-majority",
+     "lean": "neutral",
+     "snippet": "Loper Bright Enters. v. Raimondo, 603 U.S. 369, 386, 394 (2024)"
+    },
+    {
+     "op": "8-dissent",
+     "lean": "neutral",
+     "snippet": "See Loper Bright Enters. v. Raimondo, 603 U.S. 369, 386 (2024)"
+    },
+    {
+     "op": "9-dissent",
+     "lean": "neutral",
+     "snippet": "c.f. Loper Bright Enters. v. Raimondo, 603 U.S. 369, 412–13 (2024)"
+    },
+    {
+     "op": "10-majority",
+     "lean": "neutral",
+     "snippet": "Loper Bright, 603 U.S. at 386."
+    }
+   ]
+  }
+ ]
+}

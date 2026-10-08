@@ -12,6 +12,7 @@ import APAPSimulator from "@/components/blog/APAPSimulator";
 import CircuitExplorer from "@/components/blog/bond-split/CircuitExplorer";
 import BondCharts from "@/components/blog/bond-split/BondCharts";
 import StatuteMap from "@/components/blog/bond-split/StatuteMap";
+import InfluenceNetwork from "@/components/blog/bond-split/InfluenceNetwork";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -247,13 +248,14 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}}, {{bond-data}} and {{statute-map}} shortcodes */}
+          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}}, {{bond-data}}, {{statute-map}} and {{influence-map}} shortcodes */}
           {(() => {
             const SHORTCODES: Record<string, React.ReactNode> = {
               "{{apap-simulator}}": <APAPSimulator />,
               "{{circuit-map}}": <CircuitExplorer />,
               "{{bond-data}}": <BondCharts />,
               "{{statute-map}}": <StatuteMap />,
+              "{{influence-map}}": <InfluenceNetwork />,
               "{{viewer-cta}}": (
                 <div className="my-8 flex justify-center">
                   <Link
