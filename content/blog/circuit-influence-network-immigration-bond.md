@@ -12,9 +12,15 @@ skipHero: true
 published: true
 ---
 
-My [circuit map](/blog/immigration-bond-circuit-split-map-and-data) shows where each court landed, and my [statute map](/blog/statute-map-immigration-bond-split) shows how each court read the words. This last piece shows something the first two cannot: how the opinions talk to each other. Which courts adopt another circuit's reasoning, which answer it, which quietly borrow its phrasing, and which lean on the same Supreme Court cases.
+Somewhere in the Federal Reporter, there is a zoo.
 
-A circuit split is usually described as a scoreboard, nine to two. But the opinions are not independent votes. They are a conversation that ran from February to September, each court reading the ones before it, joining some and rejecting others. That conversation is the thing this map draws.
+I did not notice it at first. I was reading eleven circuit opinions about a single immigration statute, expecting dry argument about one phrase, and instead the animals began to appear. An elephant, to start, because Congress does not hide elephants in mouseholes, and for months eleven courts could not agree on whether this particular elephant had been stuffed into this particular hole. Then a whole menagerie loose in the pages of the United States Code: a man who sneaks into Yankee Stadium, a perverse incentive to enter at an unlawful rather than a lawful location, a seismic shock running through the detention system, a warning that the border is now everywhere, and, in a quieter aside, the strange suggestion that tomatoes and cucumbers might be deemed vegetables.
+
+None of it is mine. I invented none of it. Judges wrote every word, borrowing some from the Supreme Court and, it turns out, a great deal from each other. That was the thing I could not see until I stopped reading and started drawing. The same images kept migrating, circuit to circuit, dissent to dissent, an elephant passed hand to hand down the line. A phrase coined in one courtroom in April would surface, unattributed and slightly reshaped, in another in August.
+
+So I mapped it. I put all twenty-one opinions on a ring and drew a line every time one court reached for another, green where it agreed and red where it did not, and watched the conversation light up. The scoreboard says nine to two. The map says something more interesting: that most of a nation's circuit courts were quietly reading over each other's shoulders, trading the same handful of metaphors like playing cards.
+
+My [circuit map](/blog/immigration-bond-circuit-split-map-and-data) shows where each court landed, and my [statute map](/blog/statute-map-immigration-bond-split) shows how each court read the words. This last piece shows the conversation itself. Come find the elephant.
 
 ## How to read it
 
