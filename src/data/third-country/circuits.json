@@ -205,7 +205,7 @@
     322
    ],
    "removal": {
-    "status": "district",
+    "status": "pending",
     "district": [
      {
       "name": "Cruz-Medina v. Noem",
@@ -264,6 +264,48 @@
        ]
       ],
       "holding": "Stated that a noncitizen granted withholding as to one country who faces removal to another “must be given notice and an opportunity to request withholding of removal to that particular country.” The Supreme Court reversed on a different issue."
+     }
+    ],
+    "appellate": [
+     {
+      "name": "Bojorquez v. Baker (appeal pending)",
+      "bluebook": [
+       [
+        "Bojorquez v. Baker",
+        true
+       ],
+       [
+        ", No. 1:25-cv-03107-DLB (D. Md. Nov. 7, 2025), ",
+        false
+       ],
+       [
+        "appeal docketed",
+        true
+       ],
+       [
+        ", No. 25-6996 (4th Cir. Nov. 25, 2025).",
+        false
+       ]
+      ],
+      "holding": "The District of Maryland denied a preliminary injunction in a challenge to the petitioner’s removal to Mexico after a negative USCIS third country fear screening, while barring his removal for 30 days so he could appeal. The Fourth Circuit entered an administrative stay, ordered supplemental briefing, and on January 26, 2026 granted a stay of removal pending appeal. Briefing closed with the reply brief on April 29, 2026. The Westlaw docket, current through May 24, 2026, shows no argument or decision.",
+      "meta": [
+       [
+        "District ruling",
+        "November 7, 2025 (Boardman, J.); district case stayed pending appeal"
+       ],
+       [
+        "Stay of removal",
+        "Granted by the Fourth Circuit, January 26, 2026"
+       ],
+       [
+        "Briefing",
+        "Opening February 25, 2026; response March 26, 2026; reply April 29, 2026"
+       ],
+       [
+        "Why it matters",
+        "The only appeal on third country procedures pending outside the First Circuit"
+       ]
+      ]
      }
     ]
    },
@@ -404,8 +446,24 @@
     200
    ],
    "removal": {
-    "status": "none",
-    "note": "No ruling found in the sources searched."
+    "status": "district",
+    "district": [
+     {
+      "name": "Ansumana S. v. Blanche",
+      "bluebook": [
+       [
+        "Ansumana S. v. Blanche",
+        true
+       ],
+       [
+        ", No. 26-cv-3371 (KMM/DJF), 2026 WL 2606655 (D. Minn. Sept. 3, 2026).",
+        false
+       ]
+      ],
+      "holding": "Granted habeas relief in part for a man with withholding as to Ivory Coast whom ICE planned to send to Sierra Leone, a country that had given diplomatic assurances. Held that his D.V.D. class membership did not defeat jurisdiction, that § 1252(g) did not bar a pure question of law under the Eighth Circuit’s Jama exception, and that the March and July 2025 guidance denied due process. Enjoined removal to any country not named in his order without meaningful notice and a chance to present a fear claim to an immigration judge."
+     }
+    ],
+    "note": "The same court cites earlier District of Minnesota rulings, including Folashade O. v. Schilling, 2026 WL 1734877 (D. Minn. June 16, 2026), and Ahmed S. v. Blanche, No. 26-cv-2265."
    },
    "juris": {
     "status": "rejects",
@@ -423,6 +481,20 @@
        ]
       ],
       "holding": "Applied § 1252(g) to tort claims arising from a decision to execute a removal order even though the case “may not involve a discretionary decision by the agency.”"
+     },
+     {
+      "name": "Jama v. INS",
+      "bluebook": [
+       [
+        "Jama v. INS",
+        true
+       ],
+       [
+        ", 329 F.3d 630, 632 (8th Cir. 2003).",
+        false
+       ]
+      ],
+      "holding": "Carved out an exception to § 1252(g) for habeas claims presenting a pure question of law. District courts in Minnesota treat Silva as preserving that exception and use it to hear third country procedure claims, so the Eighth Circuit’s practical position is less settled than Judge Bea’s count suggests."
      }
     ]
    }
@@ -609,12 +681,27 @@
     300
    ],
    "removal": {
-    "status": "filings",
+    "status": "district",
     "district": [
      {
-      "name": "Habeas petition (D. Colo.)",
-      "bluebook": null,
-      "holding": "In a January 13, 2026 filing, the government argued that the petitioner is a member of the D.V.D. class and cannot bring a separate equitable claim, and that third country procedures are not cognizable in habeas. I found no ruling on the third country claim."
+      "name": "Arostegui-Maldonado v. Baltazar",
+      "bluebook": [
+       [
+        "Arostegui-Maldonado v. Baltazar",
+        true
+       ],
+       [
+        ", 794 F. Supp. 3d 926 (D. Colo. 2025).",
+        false
+       ]
+      ],
+      "holding": "Granted a preliminary injunction in part for a detainee with withholding only relief as to Costa Rica and El Salvador after the government said he could still be removed to a third country. Under the All Writs Act, barred his removal and transfer while his habeas petition is pending, and held that § 1252(g) does not prevent an order requiring notice and an opportunity to seek withholding before removal to any third country.",
+      "meta": [
+       [
+        "Decided",
+        "August 8, 2025 (Martínez, J.)"
+       ]
+      ]
      }
     ]
    },
@@ -631,7 +718,7 @@
    ],
    "removal": {
     "status": "none",
-    "note": "No ruling found in the sources searched."
+    "note": "No ruling reviewed yet. The District of Colorado quotes E.D.Q.C. v. Warden, Stewart Detention Center, 789 F. Supp. 3d 1234, 1240-41 (M.D. Ga. 2025), for the rule that a noncitizen must get notice and a chance to seek withholding before removal to a third country. I have not yet read that opinion or confirmed its outcome."
    },
    "juris": {
     "status": "rejects",
@@ -660,8 +747,34 @@
     268
    ],
    "removal": {
-    "status": "denied",
+    "status": "district",
     "district": [
+     {
+      "name": "Quiroz Zapata v. Mullin",
+      "bluebook": [
+       [
+        "Zapata v. Mullin",
+        true
+       ],
+       [
+        ", 834 F. Supp. 3d 16 (D.D.C. 2026).",
+        false
+       ]
+      ],
+      "holding": "Granted emergency relief and ordered the return of a Colombian woman with protection as to Colombia who had been removed to the Democratic Republic of the Congo. The theory differs from the notice cases: § 1231(b)(2)(E)(vii) allows removal only to a country whose government will accept the person, and the Congo had refused.",
+      "meta": [
+       [
+        "Decided",
+        "May 2026"
+       ]
+      ],
+      "links": [
+       {
+        "label": "Case summary",
+        "url": "https://clearinghouse.net/case/48267/"
+       }
+      ]
+     },
      {
       "name": "D.A. v. Noem",
       "bluebook": [
@@ -714,6 +827,12 @@
    "label": "DHS issues a second guidance document"
   },
   {
+   "date": "2025-08-08",
+   "kind": "district",
+   "label": "D. Colo. bars removal and transfer in Arostegui-Maldonado v. Baltazar",
+   "circuit": "10"
+  },
+  {
    "date": "2025-08-27",
    "kind": "circuit",
    "label": "9th Cir., Ibarra-Perez v. United States: § 1252(g) does not bar the claim",
@@ -732,6 +851,18 @@
    "circuit": "4"
   },
   {
+   "date": "2025-11-07",
+   "kind": "district",
+   "label": "D. Md. denies a preliminary injunction in Bojorquez v. Baker; appeal follows",
+   "circuit": "4"
+  },
+  {
+   "date": "2026-01-26",
+   "kind": "circuit",
+   "label": "4th Cir. grants a stay of removal pending appeal in Bojorquez",
+   "circuit": "4"
+  },
+  {
    "date": "2026-02-25",
    "kind": "district",
    "label": "D. Mass. enters final judgment in D.V.D. and vacates the guidance",
@@ -745,10 +876,29 @@
    "circuit": "1"
   },
   {
+   "date": "2026-04-29",
+   "kind": "circuit",
+   "label": "Bojorquez appeal fully briefed in the 4th Cir.",
+   "circuit": "4"
+  },
+  {
+   "date": "2026-05-13",
+   "approx": "May 2026",
+   "kind": "district",
+   "label": "D.D.C. orders a woman returned from the Congo in Zapata v. Mullin",
+   "circuit": "DC"
+  },
+  {
    "date": "2026-06-25",
    "kind": "circuit",
    "label": "9th Cir. denies rehearing en banc in Ibarra-Perez; 12 judges object",
    "circuit": "9"
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "district",
+   "label": "D. Minn. grants relief in Ansumana S. v. Blanche",
+   "circuit": "8"
   },
   {
    "date": "2026-09-18",

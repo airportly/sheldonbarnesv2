@@ -18,7 +18,7 @@ import Cite, { type CiteSegments } from "../bond-split/Cite";
  */
 
 type View = "removal" | "juris";
-type RemovalStatus = "merits" | "access" | "district" | "denied" | "filings" | "none";
+type RemovalStatus = "merits" | "access" | "pending" | "district" | "denied" | "filings" | "none";
 type JurisStatus = "allows" | "exercised" | "rejects" | "none";
 
 interface CaseItem {
@@ -86,12 +86,14 @@ interface Style {
 
 const HATCH_BLUE = "repeating-linear-gradient(45deg,#4f8fd6 0 2px,#22405f 2px 6px)";
 const HATCH_ORANGE = "repeating-linear-gradient(45deg,#dd6814 0 2px,#6a320b 2px 6px)";
+const CROSS_BLUE = "repeating-linear-gradient(45deg,#4f8fd6 0 2px,transparent 2px 6px),repeating-linear-gradient(-45deg,#4f8fd6 0 2px,#22405f 2px 6px)";
 const DOTS_GREY = "radial-gradient(circle,#9ca3af 1.2px,#3a3d3e 1.5px) 0 0/6px 6px";
 
 const STYLES: { removal: Record<RemovalStatus, Style>; juris: Record<JurisStatus, Style> } = {
   removal: {
     merits: { top: BLUE.top, swatch: BLUE.top, side: BLUE.side, hover: BLUE.hover, label: "Court of appeals ruled on the policy" },
     access: { top: VIOLET.top, swatch: VIOLET.top, side: VIOLET.side, hover: VIOLET.hover, label: "Court of appeals ruled on court access, plus district relief" },
+    pending: { top: "url(#tc-cross-blue)", swatch: CROSS_BLUE, side: BLUE.side, hover: "url(#tc-cross-blue)", label: "Appeal pending; court of appeals stayed a removal" },
     district: { top: "url(#tc-hatch-blue)", swatch: HATCH_BLUE, side: BLUE.side, hover: "url(#tc-hatch-blue-h)", label: "No appellate opinion; district courts stopped individual removals" },
     denied: { top: "url(#tc-hatch-orange)", swatch: HATCH_ORANGE, side: ORANGE.side, hover: "url(#tc-hatch-orange)", label: "No appellate opinion; district court denied relief" },
     filings: { top: "url(#tc-dots)", swatch: DOTS_GREY, side: GREY.side, hover: "url(#tc-dots)", label: "Petitions pending; no ruling found" },
@@ -108,10 +110,10 @@ const STYLES: { removal: Record<RemovalStatus, Style>; juris: Record<JurisStatus
 const VIEW_COPY: Record<View, { tab: string; sub: string; stats: { value: string; label: string; swatch: string; ring?: boolean }[] }> = {
   removal: {
     tab: "Removal procedures",
-    sub: "Where courts have ruled on how DHS sends people to countries not named in their removal orders. Solid fill means a court of appeals; striped fill means only district courts. Select a circuit for the cases.",
+    sub: "Where courts have ruled on how DHS sends people to countries not named in their removal orders. Solid fill means a court of appeals ruled; crosshatch means an appeal is pending; striped fill means only district courts have acted. Select a circuit for the cases.",
     stats: [
       { value: "1", label: "court of appeals has ruled on the policy (1st)", swatch: BLUE.top },
-      { value: "3", label: "circuits with no appellate opinion where district courts stopped removals", swatch: HATCH_BLUE },
+      { value: "6", label: "more circuits where district courts stopped removals, one with an appeal pending (4th)", swatch: HATCH_BLUE },
       { value: "Dec. 9", label: "argument in DHS v. D.V.D.", swatch: CERT_RING, ring: true },
     ],
   },
@@ -224,6 +226,11 @@ export default function ThirdCountryExplorer() {
             <Hatch id="tc-hatch-blue" line={BLUE.top} bg={BLUE.side} />
             <Hatch id="tc-hatch-blue-h" line={BLUE.hover} bg="#2b4f75" />
             <Hatch id="tc-hatch-orange" line={ORANGE.top} bg={ORANGE.side} />
+            <pattern id="tc-cross-blue" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+              <rect width="10" height="10" fill={BLUE.side} />
+              <line x1="0" y1="0" x2="0" y2="10" stroke={BLUE.top} strokeWidth="3.5" />
+              <line x1="0" y1="0" x2="10" y2="0" stroke={BLUE.top} strokeWidth="3.5" />
+            </pattern>
             <pattern id="tc-dots" patternUnits="userSpaceOnUse" width="9" height="9">
               <rect width="9" height="9" fill="#3a3d3e" />
               <circle cx="4.5" cy="4.5" r="1.6" fill="#9ca3af" />
