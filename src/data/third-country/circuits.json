@@ -1,0 +1,786 @@
+{
+ "asOf": "2026-10-10",
+ "scotus": {
+  "caseName": "Department of Homeland Security v. D.V.D.",
+  "docket": "26-426",
+  "docketUrl": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-426.html",
+  "qpUrl": "https://www.supremecourt.gov/docket/docketfiles/html/qp/26-00426qp.pdf",
+  "granted": "2026-09-29",
+  "argument": "2026-12-09",
+  "questions": [
+   "Whether the district court had jurisdiction over Respondents’ claims.",
+   "Whether the district court had authority to enter classwide declaratory relief and APA vacatur under 8 U. S. C. §1252(f)(1).",
+   "Whether the Government’s Guidance on third-country removals is unlawful under 8 U. S. C. §1231(b), the Due Process Clause, or FARRA/CAT and its implementing regulations.",
+   "Such other questions that the Government determines are appropriate for the proper disposition of the case."
+  ]
+ },
+ "quotes": {
+  "removal": {
+   "by": "Aframe",
+   "role": "for a unanimous panel (1st Circuit)",
+   "text": "An individual’s right to contest removal to a country based on a fear of persecution in that country means little if one does not receive prior notice of the intended removal destination and a meaningful opportunity to contest that destination.",
+   "cite": [
+    [
+     "D.V.D. v. U.S. Dep’t of Homeland Sec.",
+     true
+    ],
+    [
+     ", No. 26-1212 (1st Cir. Sept. 18, 2026).",
+     false
+    ]
+   ]
+  },
+  "juris": {
+   "by": "W. Fletcher",
+   "role": "for the majority (9th Circuit)",
+   "text": "The government’s reading of § 1252(g) would entirely insulate from judicial review any post-hearing decision by ICE to remove noncitizens to third countries where they would be in danger of persecution, torture, and even death.",
+   "cite": [
+    [
+     "Ibarra-Perez v. United States",
+     true
+    ],
+    [
+     ", 154 F.4th 989, 997 (9th Cir. 2025).",
+     false
+    ]
+   ]
+  }
+ },
+ "circuits": [
+  {
+   "circuit": "1",
+   "label": [
+    905,
+    95
+   ],
+   "removal": {
+    "status": "merits",
+    "appellate": [
+     {
+      "name": "D.V.D. v. U.S. Department of Homeland Security",
+      "bluebook": [
+       [
+        "D.V.D. v. U.S. Dep’t of Homeland Sec.",
+        true
+       ],
+       [
+        ", No. 26-1212 (1st Cir. Sept. 18, 2026), ",
+        false
+       ],
+       [
+        "stayed and cert. granted",
+        true
+       ],
+       [
+        ", No. 26-426 (U.S. Sept. 29, 2026).",
+        false
+       ]
+      ],
+      "holding": "Largely affirmed the District of Massachusetts final judgment for a nationwide class. Before DHS removes a class member to a country not named in the removal order, it must give meaningful notice and a meaningful opportunity to raise a fear of persecution or torture there. The roughly 24 hours of notice in the guidance was inadequate, and the court upheld setting aside the March and July 2025 guidance under the APA. It vacated the part of the judgment that required DHS to first try removal to the designated country.",
+      "meta": [
+       [
+        "Decided",
+        "September 18, 2026"
+       ],
+       [
+        "Panel",
+        "Montecalvo, Howard, Aframe (author); unanimous"
+       ],
+       [
+        "Afterward",
+        "Stay pending appeal dissolved September 23, 2026. The Supreme Court stayed the judgment and granted certiorari on September 29, 2026."
+       ]
+      ],
+      "links": [
+       {
+        "label": "Opinion (Leagle)",
+        "url": "https://www.leagle.com/decision/infco20260918089"
+       }
+      ]
+     }
+    ],
+    "district": [
+     {
+      "name": "D.V.D. v. DHS, No. 1:25-cv-10676 (D. Mass.)",
+      "bluebook": null,
+      "holding": "Certified the nationwide class and entered a preliminary injunction on April 18, 2025, which the Supreme Court stayed on June 23, 2025. Entered final judgment on February 25, 2026, declaring class members’ rights to notice and an opportunity to raise fear claims and vacating DHS’s third country guidance."
+     }
+    ]
+   },
+   "juris": {
+    "status": "exercised",
+    "items": [
+     {
+      "name": "D.V.D. v. U.S. Department of Homeland Security",
+      "bluebook": [
+       [
+        "D.V.D. v. U.S. Dep’t of Homeland Sec.",
+        true
+       ],
+       [
+        ", No. 26-1212 (1st Cir. Sept. 18, 2026).",
+        false
+       ]
+      ],
+      "holding": "Affirmed the classwide judgment over the government’s objections that § 1252 stripped the district court of jurisdiction. Those objections are now Questions 1 and 2 at the Supreme Court."
+     },
+     {
+      "name": "Kong v. United States",
+      "bluebook": [
+       [
+        "Kong v. United States",
+        true
+       ],
+       [
+        ", 62 F.4th 608, 617 (1st Cir. 2023).",
+        false
+       ]
+      ],
+      "holding": "Held that an FTCA claim challenging detention was collateral to the decision to execute a removal order and not barred by § 1252(g). The Ninth Circuit cited it in Ibarra-Perez; Judge R. Nelson’s dissent called it irrelevant because it concerned detention, not removal."
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "2",
+   "label": [
+    848,
+    150
+   ],
+   "removal": {
+    "status": "none",
+    "note": "I found no Second Circuit opinion and no district court ruling on third country procedures in the sources searched."
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not among the circuits that Judge Bea or Judge R. Nelson counted on either side of the § 1252(g) question."
+   }
+  },
+  {
+   "circuit": "3",
+   "label": [
+    815,
+    218
+   ],
+   "removal": {
+    "status": "district",
+    "district": [
+     {
+      "name": "Habeas petition, No. 2:26-cv-08574 (D.N.J.)",
+      "bluebook": null,
+      "holding": "Petitioner received withholding of removal as to Guinea in 2011 and was arrested July 9, 2026 for removal to Ghana. The court barred her transfer out of New Jersey, an order that covers removal, and in July 2026 directed the parties to confer on her claim that the third country process denies due process. The restraint remained in effect.",
+      "links": [
+       {
+        "label": "Docket (Habeas Dockets)",
+        "url": "https://habeasdockets.org/dockets/docket/63485/"
+       }
+      ]
+     }
+    ]
+   },
+   "juris": {
+    "status": "rejects",
+    "items": [
+     {
+      "name": "Tazu v. Attorney General",
+      "bluebook": [
+       [
+        "Tazu v. Att’y Gen. United States",
+        true
+       ],
+       [
+        ", 975 F.3d 292, 298 (3d Cir. 2020) (Bibas, J.).",
+        false
+       ]
+      ],
+      "holding": "Rejected the argument that challenges to the government’s legal authority fall outside § 1252(g), warning that the reading would “gut § 1252(g)” because any challenge can be restyled. It left open a narrow exception where the INA itself removes the government’s authority."
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "4",
+   "label": [
+    790,
+    322
+   ],
+   "removal": {
+    "status": "district",
+    "district": [
+     {
+      "name": "Cruz-Medina v. Noem",
+      "bluebook": [
+       [
+        "Cruz-Medina v. Noem",
+        true
+       ],
+       [
+        ", No. 25-cv-1768-ABA (D. Md. Oct. 7, 2025).",
+        false
+       ]
+      ],
+      "holding": "Granted a preliminary injunction barring removal to Mexico of a man with CAT protection as to Honduras until an immigration judge reviews the asylum officer’s negative fear finding. Held that §§ 1252(g), (a)(5), (b)(9), and (a)(4) did not bar the claim, and declined to read the Supreme Court’s 2025 stay in D.V.D. as a merits ruling.",
+      "links": [
+       {
+        "label": "Opinion (CourtListener)",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.mdd.583999/gov.uscourts.mdd.583999.45.0.pdf"
+       }
+      ]
+     },
+     {
+      "name": "Santamaria Orellana v. Baker",
+      "bluebook": [
+       [
+        "Santamaria Orellana v. Baker",
+        true
+       ],
+       [
+        ", No. 25-1788-TDC, 2025 WL 2841886 (D. Md. Oct. 7, 2025).",
+        false
+       ]
+      ],
+      "holding": "Exercised jurisdiction over a challenge to the execution of a removal order. Judge Bea listed it among the district courts following Ibarra-Perez."
+     }
+    ],
+    "earlier": [
+     {
+      "name": "Guzman Chavez v. Hott",
+      "bluebook": [
+       [
+        "Guzman Chavez v. Hott",
+        true
+       ],
+       [
+        ", 940 F.3d 867, 879 (4th Cir. 2019), ",
+        false
+       ],
+       [
+        "rev’d on other grounds",
+        true
+       ],
+       [
+        ", 594 U.S. 523 (2021).",
+        false
+       ]
+      ],
+      "holding": "Stated that a noncitizen granted withholding as to one country who faces removal to another “must be given notice and an opportunity to request withholding of removal to that particular country.” The Supreme Court reversed on a different issue."
+     }
+    ]
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not counted on either side. The Ninth Circuit cited the Fourth Circuit’s older narrow reading in Bowrin v. INS, 194 F.3d 483, 488 (4th Cir. 1999)."
+   }
+  },
+  {
+   "circuit": "5",
+   "label": [
+    440,
+    470
+   ],
+   "removal": {
+    "status": "district",
+    "district": [
+     {
+      "name": "Sagastizado Sanchez v. Noem",
+      "bluebook": [
+       [
+        "Sagastizado Sanchez v. Noem",
+        true
+       ],
+       [
+        ", No. 5:25-cv-104 (S.D. Tex. Sept. 10, 2025; Oct. 2, 2025).",
+        false
+       ]
+      ],
+      "holding": "Held that noncitizens have a right to meaningful notice and an opportunity to be heard before removal to a third country, and that no regulation allows a USCIS fear screening without immigration judge review. Relied on by the District of Maryland in Cruz-Medina."
+     },
+     {
+      "name": "Ajcac Guachiac habeas petition (S.D. Tex.)",
+      "bluebook": null,
+      "holding": "After a March 3, 2026 TRO, the court ruled on March 27, 2026 on his motion for a preliminary injunction, granting it in part and ordering the government to produce its third country screening notice. It rejected the government’s argument that the Supreme Court’s D.V.D. orders foreclose individual relief.",
+      "links": [
+       {
+        "label": "Order (CourtListener)",
+        "url": "https://storage.courtlistener.com/recap/gov.uscourts.txsd.2054737/gov.uscourts.txsd.2054737.49.0.pdf"
+       }
+      ]
+     },
+     {
+      "name": "Romero v. Ladwig",
+      "bluebook": [
+       [
+        "Romero v. Ladwig",
+        true
+       ],
+       [
+        ", No. 25-cv-1106-JWD-EWD, 2026 WL 685131 (M.D. La. Mar. 10, 2026).",
+        false
+       ]
+      ],
+      "holding": "Exercised jurisdiction over a challenge to the execution of a removal order. Listed by Judge Bea among district courts following Ibarra-Perez."
+     }
+    ],
+    "note": "In the Northern and Eastern Districts of Texas, the government argues that petitioners are members of the non opt out D.V.D. class and cannot bring separate third country claims."
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not counted on either side of the § 1252(g) question in the Ibarra-Perez opinions."
+   }
+  },
+  {
+   "circuit": "6",
+   "label": [
+    690,
+    262
+   ],
+   "removal": {
+    "status": "none",
+    "note": "No ruling found in the sources searched."
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not counted on either side."
+   }
+  },
+  {
+   "circuit": "7",
+   "label": [
+    612,
+    232
+   ],
+   "removal": {
+    "status": "none",
+    "note": "No ruling found on the current guidance.",
+    "earlier": [
+     {
+      "name": "Kossov v. INS and Wani Site v. Holder",
+      "bluebook": [
+       [
+        "Kossov v. INS",
+        true
+       ],
+       [
+        ", 132 F.3d 405, 409 (7th Cir. 1998); ",
+        false
+       ],
+       [
+        "Wani Site v. Holder",
+        true
+       ],
+       [
+        ", 656 F.3d 590, 594 (7th Cir. 2011).",
+        false
+       ]
+      ],
+      "holding": "Older petition for review cases cited for the rule that withholding is country specific and that the government must use its broad authority to designate a removal country “in the appropriate way.”"
+     }
+    ]
+   },
+   "juris": {
+    "status": "rejects",
+    "items": [
+     {
+      "name": "E.F.L. v. Prim",
+      "bluebook": [
+       [
+        "E.F.L. v. Prim",
+        true
+       ],
+       [
+        ", 986 F.3d 959, 965 (7th Cir. 2021).",
+        false
+       ]
+      ],
+      "holding": "Held that any “distinction between DHS’s ‘discretionary decisions’ and its ‘legal authority’ to execute removal orders is illusory,” so § 1252(g) applies either way."
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "8",
+   "label": [
+    492,
+    200
+   ],
+   "removal": {
+    "status": "none",
+    "note": "No ruling found in the sources searched."
+   },
+   "juris": {
+    "status": "rejects",
+    "items": [
+     {
+      "name": "Silva v. United States",
+      "bluebook": [
+       [
+        "Silva v. United States",
+        true
+       ],
+       [
+        ", 866 F.3d 938, 941 (8th Cir. 2017) (Colloton, J.).",
+        false
+       ]
+      ],
+      "holding": "Applied § 1252(g) to tort claims arising from a decision to execute a removal order even though the case “may not involve a discretionary decision by the agency.”"
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "9",
+   "label": [
+    150,
+    250
+   ],
+   "removal": {
+    "status": "access",
+    "appellate": [
+     {
+      "name": "Ibarra-Perez v. United States",
+      "bluebook": [
+       [
+        "Ibarra-Perez v. United States",
+        true
+       ],
+       [
+        ", 154 F.4th 989 (9th Cir. 2025), ",
+        false
+       ],
+       [
+        "reh’g en banc denied",
+        true
+       ],
+       [
+        ", No. 24-631 (9th Cir. June 25, 2026).",
+        false
+       ]
+      ],
+      "holding": "A Cuban man with withholding as to Cuba was sent to Mexico about 16 hours after being told, despite repeatedly saying he feared it. He sued for damages. The court held that § 1252(g) did not bar the suit because he challenged ICE’s separate decision about where to send him, not whether or when to execute his order, and that §§ 1252(a)(5) and (b)(9) did not apply to a decision made after proceedings ended.",
+      "meta": [
+       [
+        "Decided",
+        "August 27, 2025"
+       ],
+       [
+        "Panel",
+        "Hawkins, W. Fletcher (author), R. Nelson (dissenting)"
+       ],
+       [
+        "En banc",
+        "Denied June 25, 2026. Judge Bea, joined by 11 judges, objected."
+       ],
+       [
+        "Next",
+        "Solicitor General’s certiorari deadline extended to October 23, 2026"
+       ]
+      ],
+      "links": [
+       {
+        "label": "En banc order with opinions",
+        "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/06/25/24-631.pdf"
+       },
+       {
+        "label": "SG extension application",
+        "url": "https://www.supremecourt.gov/DocketPDF/26/26A302/423142/20260904144424703_Ibarra-Perez%20Extension%20Application%20-%20September.pdf"
+       }
+      ]
+     }
+    ],
+    "district": [
+     {
+      "name": "Southern District of California",
+      "bluebook": [
+       [
+        "Nos. 3:26-cv-01171 (S.D. Cal. Mar. 24, 2026), 3:26-cv-01289 (S.D. Cal. Mar. 19, 2026), 3:26-cv-01161 (S.D. Cal.).",
+        false
+       ]
+      ],
+      "holding": "Held DHS procedures violate due process because they do not require DHS to ask whether the person fears the designated country and allow removal within 24 hours of notice.",
+      "links": [
+       {
+        "label": "Docket 24594",
+        "url": "https://habeasdockets.org/dockets/docket/24594"
+       },
+       {
+        "label": "Docket 25859",
+        "url": "https://habeasdockets.org/dockets/docket/25859"
+       }
+      ]
+     },
+     {
+      "name": "Bedrosian v. Noem",
+      "bluebook": [
+       [
+        "Bedrosian v. Noem",
+        true
+       ],
+       [
+        ", No. 5:25-cv-02814 (C.D. Cal. May 20, 2026).",
+        false
+       ]
+      ],
+      "holding": "Granted the habeas petition, which included a claim that detaining him again for removal to a third country without notice or a chance to object would violate due process.",
+      "links": [
+       {
+        "label": "Order",
+        "url": "https://www.justsecurity.org/wp-content/uploads/2026/05/Tigran-Bedrosian-v.-Kristi-Noem-525-cv-02814-C.D.-Cal.-Order-GRANTING-Petition-May-20-2026.pdf"
+       }
+      ]
+     },
+     {
+      "name": "Nevada, Washington, and Eastern California",
+      "bluebook": [
+       [
+        "Guerra v. Blanche",
+        true
+       ],
+       [
+        ", 2026 WL 949027 (D. Nev. Apr. 7, 2026); ",
+        false
+       ],
+       [
+        "Castillo v. Chestnut",
+        true
+       ],
+       [
+        ", 2026 WL 121652 (E.D. Cal. Jan. 16, 2026); ",
+        false
+       ],
+       [
+        "Samadi v. Blanche",
+        true
+       ],
+       [
+        ", 2026 WL 1172917 (W.D. Wash. Apr. 30, 2026).",
+        false
+       ]
+      ],
+      "holding": "Granted habeas petitions and barred removal to a third country without notice and an opportunity to present a fear claim. Judge Bea collected these and similar Nevada orders as the effect of Ibarra-Perez."
+     }
+    ],
+    "earlier": [
+     {
+      "name": "Andriasian v. INS",
+      "bluebook": [
+       [
+        "Andriasian v. INS",
+        true
+       ],
+       [
+        ", 180 F.3d 1033, 1041 (9th Cir. 1999).",
+        false
+       ]
+      ],
+      "holding": "A “last minute” country of removal designation “violated a basic tenet of constitutional due process.”"
+     }
+    ]
+   },
+   "juris": {
+    "status": "allows",
+    "items": [
+     {
+      "name": "Ibarra-Perez v. United States",
+      "bluebook": [
+       [
+        "Ibarra-Perez v. United States",
+        true
+       ],
+       [
+        ", 154 F.4th 989, 996-99 (9th Cir. 2025).",
+        false
+       ]
+      ],
+      "holding": "Section 1252(g) protects discretionary choices about when or whether to execute a removal order. It does not bar purely legal challenges to the government’s authority to remove someone to a country without notice and a chance to raise fear. Judge Bea, for 12 judges, wrote that this reading “has been rejected by every other circuit that has considered it.”",
+      "links": [
+       {
+        "label": "En banc order with opinions",
+        "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/06/25/24-631.pdf"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "10",
+   "label": [
+    340,
+    300
+   ],
+   "removal": {
+    "status": "filings",
+    "district": [
+     {
+      "name": "Habeas petition (D. Colo.)",
+      "bluebook": null,
+      "holding": "In a January 13, 2026 filing, the government argued that the petitioner is a member of the D.V.D. class and cannot bring a separate equitable claim, and that third country procedures are not cognizable in habeas. I found no ruling on the third country claim."
+     }
+    ]
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not counted on either side."
+   }
+  },
+  {
+   "circuit": "11",
+   "label": [
+    740,
+    455
+   ],
+   "removal": {
+    "status": "none",
+    "note": "No ruling found in the sources searched."
+   },
+   "juris": {
+    "status": "rejects",
+    "items": [
+     {
+      "name": "Camarena v. Director, ICE",
+      "bluebook": [
+       [
+        "Camarena v. Dir., Immigr. & Customs Enf’t",
+        true
+       ],
+       [
+        ", 988 F.3d 1268, 1273 (11th Cir. 2021) (Grant, J.).",
+        false
+       ]
+      ],
+      "holding": "Rejected the distinction because “any petitioner could frame his or her claim as an attack on the government’s authority to execute a removal order rather than its execution of a removal order.”"
+     }
+    ]
+   }
+  },
+  {
+   "circuit": "DC",
+   "label": [
+    880,
+    268
+   ],
+   "removal": {
+    "status": "denied",
+    "district": [
+     {
+      "name": "D.A. v. Noem",
+      "bluebook": [
+       [
+        "D.A. v. Noem",
+        true
+       ],
+       [
+        ", No. 25-cv-3135 (TSC), 2025 WL 2646888 (D.D.C. Sept. 15, 2025).",
+        false
+       ]
+      ],
+      "holding": "Denied a TRO for people DHS had already sent to Ghana, who feared onward removal to their home countries. The court held it lacked power to order the Executive to have Ghana keep them. The government also argued the claims duplicated D.V.D.",
+      "links": [
+       {
+        "label": "Case summary",
+        "url": "https://clearinghouse.net/case/46948/"
+       }
+      ]
+     }
+    ]
+   },
+   "juris": {
+    "status": "none",
+    "note": "Not counted on either side."
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "date": "2025-03-30",
+   "kind": "policy",
+   "label": "DHS issues third country removal guidance"
+  },
+  {
+   "date": "2025-04-18",
+   "kind": "district",
+   "label": "D. Mass. certifies a nationwide class and enters a preliminary injunction in D.V.D.",
+   "circuit": "1"
+  },
+  {
+   "date": "2025-06-23",
+   "kind": "scotus",
+   "label": "Supreme Court stays the D.V.D. preliminary injunction without explanation"
+  },
+  {
+   "date": "2025-07-15",
+   "approx": "July 2025",
+   "kind": "policy",
+   "label": "DHS issues a second guidance document"
+  },
+  {
+   "date": "2025-08-27",
+   "kind": "circuit",
+   "label": "9th Cir., Ibarra-Perez v. United States: § 1252(g) does not bar the claim",
+   "circuit": "9"
+  },
+  {
+   "date": "2025-09-15",
+   "kind": "district",
+   "label": "D.D.C. denies a TRO in D.A. v. Noem for people already sent to Ghana",
+   "circuit": "DC"
+  },
+  {
+   "date": "2025-10-07",
+   "kind": "district",
+   "label": "D. Md. enjoins a removal to Mexico in Cruz-Medina v. Noem",
+   "circuit": "4"
+  },
+  {
+   "date": "2026-02-25",
+   "kind": "district",
+   "label": "D. Mass. enters final judgment in D.V.D. and vacates the guidance",
+   "circuit": "1"
+  },
+  {
+   "date": "2026-03-17",
+   "approx": "March 2026",
+   "kind": "circuit",
+   "label": "A divided 1st Cir. panel stays the final judgment pending appeal",
+   "circuit": "1"
+  },
+  {
+   "date": "2026-06-25",
+   "kind": "circuit",
+   "label": "9th Cir. denies rehearing en banc in Ibarra-Perez; 12 judges object",
+   "circuit": "9"
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "circuit",
+   "label": "1st Cir. largely affirms in D.V.D.",
+   "circuit": "1"
+  },
+  {
+   "date": "2026-09-23",
+   "kind": "circuit",
+   "label": "1st Cir. dissolves its stay, putting the judgment into effect",
+   "circuit": "1"
+  },
+  {
+   "date": "2026-09-29",
+   "kind": "scotus",
+   "label": "Supreme Court stays the judgment and grants certiorari, No. 26-426",
+   "circuit": "1"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "scotus",
+   "future": true,
+   "label": "Extended deadline for the Solicitor General to seek review of Ibarra-Perez",
+   "circuit": "9"
+  },
+  {
+   "date": "2026-12-09",
+   "kind": "scotus",
+   "future": true,
+   "label": "Oral argument in DHS v. D.V.D.",
+   "circuit": "1"
+  }
+ ]
+}
