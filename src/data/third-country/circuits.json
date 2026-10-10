@@ -321,7 +321,7 @@
     470
    ],
    "removal": {
-    "status": "district",
+    "status": "mixed",
     "district": [
      {
       "name": "Sagastizado Sanchez v. Noem",
@@ -361,9 +361,33 @@
        ]
       ],
       "holding": "Exercised jurisdiction over a challenge to the execution of a removal order. Listed by Judge Bea among district courts following Ibarra-Perez."
+     },
+     {
+      "name": "Lopez v. U.S. Immigration & Customs Enforcement",
+      "bluebook": [
+       [
+        "Lopez v. U.S. Immigr. & Customs Enf’t",
+        true
+       ],
+       [
+        ", 832 F. Supp. 3d 617 (W.D. Tex. 2026).",
+        false
+       ]
+      ],
+      "holding": "Ruled for the government. A Bolivian woman with protection as to Bolivia, appearing without a lawyer, opposed removal to the Congo. The court lifted its stay of removal, holding that DHS’s receipt of diplomatic assurances under the March 2025 guidance gave her all the process due, relying on Munaf v. Geren and then Judge Kavanaugh’s concurrence in Kiyemba v. Obama. It noted she had a full hearing before an immigration judge and refused to name another country. It also held that FARRA and §§ 1252(a)(4), (a)(5), and (b)(9) did not bar review.",
+      "meta": [
+       [
+        "Decided",
+        "April 23, 2026 (Pulliam, J.), No. SA-26-CV-01298-JKP"
+       ],
+       [
+        "Assurances",
+        "DHS and the Congo signed a third country removal agreement on December 24, 2025; DHS found the assurances credible on January 12, 2026"
+       ]
+      ]
      }
     ],
-    "note": "In the Northern and Eastern Districts of Texas, the government argues that petitioners are members of the non opt out D.V.D. class and cannot bring separate third country claims."
+    "note": "In the Northern and Eastern Districts of Texas, the government argues that petitioners are members of the non opt out D.V.D. class and cannot bring separate third country claims. Lopez is the only merits ruling for the government I have found, and it conflicts with Ansumana S. (D. Minn.), which held that diplomatic assurances do not replace notice and a hearing."
    },
    "juris": {
     "status": "none",
@@ -909,6 +933,12 @@
    "kind": "circuit",
    "label": "A divided 1st Cir. panel stays the final judgment pending appeal",
    "circuit": "1"
+  },
+  {
+   "date": "2026-04-23",
+   "kind": "district",
+   "label": "W.D. Tex. lifts a stay of removal to the Congo in Lopez v. ICE, holding diplomatic assurances enough",
+   "circuit": "5"
   },
   {
    "date": "2026-04-29",

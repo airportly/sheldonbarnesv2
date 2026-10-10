@@ -18,7 +18,7 @@ import Cite, { type CiteSegments } from "../bond-split/Cite";
  */
 
 type View = "removal" | "juris";
-type RemovalStatus = "merits" | "access" | "pending" | "district" | "denied" | "filings" | "none";
+type RemovalStatus = "merits" | "access" | "pending" | "district" | "mixed" | "denied" | "filings" | "none";
 type JurisStatus = "allows" | "exercised" | "rejects" | "none";
 
 interface CaseItem {
@@ -87,6 +87,7 @@ interface Style {
 const HATCH_BLUE = "repeating-linear-gradient(45deg,#4f8fd6 0 2px,#22405f 2px 6px)";
 const HATCH_ORANGE = "repeating-linear-gradient(45deg,#dd6814 0 2px,#6a320b 2px 6px)";
 const CROSS_BLUE = "repeating-linear-gradient(45deg,#4f8fd6 0 2px,transparent 2px 6px),repeating-linear-gradient(-45deg,#4f8fd6 0 2px,#22405f 2px 6px)";
+const MIXED = "repeating-linear-gradient(45deg,#4f8fd6 0 2px,#22405f 2px 5px,#dd6814 5px 7px,#22405f 7px 10px)";
 const DOTS_GREY = "radial-gradient(circle,#9ca3af 1.2px,#3a3d3e 1.5px) 0 0/6px 6px";
 
 const STYLES: { removal: Record<RemovalStatus, Style>; juris: Record<JurisStatus, Style> } = {
@@ -95,6 +96,7 @@ const STYLES: { removal: Record<RemovalStatus, Style>; juris: Record<JurisStatus
     access: { top: VIOLET.top, swatch: VIOLET.top, side: VIOLET.side, hover: VIOLET.hover, label: "Court of appeals ruled on court access, plus district relief" },
     pending: { top: "url(#tc-cross-blue)", swatch: CROSS_BLUE, side: BLUE.side, hover: "url(#tc-cross-blue)", label: "Appeal pending; court of appeals stayed a removal" },
     district: { top: "url(#tc-hatch-blue)", swatch: HATCH_BLUE, side: BLUE.side, hover: "url(#tc-hatch-blue-h)", label: "No appellate opinion; district courts stopped individual removals" },
+    mixed: { top: "url(#tc-mixed)", swatch: MIXED, side: BLUE.side, hover: "url(#tc-mixed)", label: "No appellate opinion; district courts split" },
     denied: { top: "url(#tc-hatch-orange)", swatch: HATCH_ORANGE, side: ORANGE.side, hover: "url(#tc-hatch-orange)", label: "No appellate opinion; district court denied relief" },
     filings: { top: "url(#tc-dots)", swatch: DOTS_GREY, side: GREY.side, hover: "url(#tc-dots)", label: "Litigation pending; jurisdiction upheld, no merits ruling" },
     none: { top: GREY.top, swatch: GREY.top, side: GREY.side, hover: GREY.hover, label: "No ruling found" },
@@ -230,6 +232,11 @@ export default function ThirdCountryExplorer() {
               <rect width="10" height="10" fill={BLUE.side} />
               <line x1="0" y1="0" x2="0" y2="10" stroke={BLUE.top} strokeWidth="3.5" />
               <line x1="0" y1="0" x2="10" y2="0" stroke={BLUE.top} strokeWidth="3.5" />
+            </pattern>
+            <pattern id="tc-mixed" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+              <rect width="12" height="12" fill={BLUE.side} />
+              <line x1="1.5" y1="0" x2="1.5" y2="12" stroke={BLUE.top} strokeWidth="3" />
+              <line x1="7.5" y1="0" x2="7.5" y2="12" stroke={ORANGE.top} strokeWidth="3" />
             </pattern>
             <pattern id="tc-dots" patternUnits="userSpaceOnUse" width="9" height="9">
               <rect width="9" height="9" fill="#3a3d3e" />

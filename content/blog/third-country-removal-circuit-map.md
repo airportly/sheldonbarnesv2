@@ -6,7 +6,7 @@ author: "Sheldon Barnes"
 category: "law-and-policy"
 tags: ["immigration", "supreme-court", "circuit-split", "third-country-removal", "habeas", "jurisdiction", "law-school"]
 hero: "/images/third-country/circuit-map-social.png"
-heroAlt: "Map of the United States divided into federal judicial circuits. The First Circuit is solid blue and outlined in gold for certiorari granted, the Ninth is violet, the Fourth is crosshatched for a pending appeal, the Third, Fifth, Eighth, Tenth, and D.C. Circuits are striped blue for district court relief, and the rest are grey."
+heroAlt: "Map of the United States divided into federal judicial circuits. The First Circuit is solid blue and outlined in gold for certiorari granted, the Ninth is violet, the Fourth is crosshatched for a pending appeal, the Fifth is striped blue and orange for a split among its district courts, the Third, Eighth, Tenth, and D.C. Circuits are striped blue for district court relief, and the rest are grey."
 socialImage: "/images/third-country/circuit-map-social.png"
 skipHero: true
 published: true
@@ -35,6 +35,12 @@ Only the First Circuit has ruled on the policy itself, but it may not stay alone
 The bond question reached eleven circuits because each detainee had to sue where he was held, and the Court had already barred classwide injunctions against the detention statutes in *Garland v. Aleman Gonzalez*. The third country question took the other road. The plaintiffs challenged DHS guidance as agency action under the APA, on behalf of a nationwide class that does not allow opting out, and asked for declaratory relief and vacatur instead of an injunction. One district court could then decide the policy for everyone, and no other circuit ever had the policy in front of it.
 
 The class also works as a shield. In habeas cases from Texas and Colorado, the government argues that the petitioner is a class member bound by *D.V.D.* and cannot litigate the same procedures separately. Some district courts have proceeded anyway on individual due process grounds. In the District of Maryland, *Cruz-Medina v. Noem* barred a removal to Mexico until an immigration judge reviews the asylum officer's negative fear finding. In the Southern District of Texas, *Sagastizado Sanchez v. Noem* held that people facing third country removal have a right to meaningful notice and a chance to be heard. In New Jersey, a court barred the transfer of a woman arrested for removal to Ghana while it considered her claim. District courts in Minnesota and Colorado have done the same: *Ansumana S. v. Blanche* (D. Minn. Sept. 3, 2026) barred a removal to Sierra Leone even though that country had given diplomatic assurances, and *Arostegui-Maldonado v. Baltazar* (D. Colo. 2025) barred a removal while the court decided the case. In Washington, D.C., *Zapata v. Mullin* ordered the return of a woman sent to the Congo on a different theory: the statute allows removal only to a country that will accept the person, and the Congo had refused. Those are the striped circuits on the map.
+
+## The one government win
+
+Not every district court has agreed. In *Lopez v. U.S. Immigration & Customs Enforcement*, 832 F. Supp. 3d 617 (W.D. Tex. 2026), a Bolivian woman with protection as to Bolivia, appearing without a lawyer, opposed her removal to the Congo. DHS had signed a third country removal agreement with the Congo on December 24, 2025 and found its diplomatic assurances credible on January 12, 2026. Judge Pulliam lifted the stay of removal, holding that those assurances, under the March 2025 guidance, gave her all the process she was due. He relied on *Munaf v. Geren* and on then Judge Kavanaugh's concurrence in *Kiyemba v. Obama*, which treat the Executive's judgment about a foreign government's assurances as one courts should not second guess.
+
+Four months later, *Ansumana S.* reached the opposite result on similar facts, holding that assurances from Sierra Leone did not replace notice and a hearing. That disagreement goes to the heart of Question 3, because the guidance allows removal with no notice at all when a country has given assurances. The Fifth Circuit is shaded as split on the map.
 
 ## The Fourth Circuit appeal
 
