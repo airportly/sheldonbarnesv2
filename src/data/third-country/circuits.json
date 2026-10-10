@@ -717,8 +717,37 @@
     455
    ],
    "removal": {
-    "status": "none",
-    "note": "No ruling reviewed yet. The District of Colorado quotes E.D.Q.C. v. Warden, Stewart Detention Center, 789 F. Supp. 3d 1234, 1240-41 (M.D. Ga. 2025), for the rule that a noncitizen must get notice and a chance to seek withholding before removal to a third country. I have not yet read that opinion or confirmed its outcome."
+    "status": "filings",
+    "district": [
+     {
+      "name": "E.D.Q.C. v. Warden, Stewart Detention Center",
+      "bluebook": [
+       [
+        "E.D.Q.C. v. Warden, Stewart Det. Ctr.",
+        true
+       ],
+       [
+        ", 789 F. Supp. 3d 1234 (M.D. Ga. 2025), ",
+        false
+       ],
+       [
+        "reconsideration denied",
+        true
+       ],
+       [
+        ", 2025 WL 1829416 (M.D. Ga. July 2, 2025).",
+        false
+       ]
+      ],
+      "holding": "A Venezuelan man whose notice to appear named Venezuela was sent to El Salvador on March 15, 2025 and held in CECOT; the government did not claim it removed him under the Alien Enemies Act. The magistrate judge held that §§ 1252(g), (a)(5), and (b)(9) did not bar his habeas petition, citing D.V.D. for the rule that a noncitizen must get notice and a chance to seek withholding before removal to a third country, and refused to stay the case pending D.V.D. The court ordered expedited discovery on whether he remained in U.S. constructive custody. It did not order his return, and on July 2, 2025 it paused discovery while the government objected to the district judge.",
+      "meta": [
+       [
+        "Decided",
+        "June 3, 2025 (Helmick, M.J.)"
+       ]
+      ]
+     }
+    ]
    },
    "juris": {
     "status": "rejects",
@@ -814,6 +843,12 @@
    "kind": "district",
    "label": "D. Mass. certifies a nationwide class and enters a preliminary injunction in D.V.D.",
    "circuit": "1"
+  },
+  {
+   "date": "2025-06-03",
+   "kind": "district",
+   "label": "M.D. Ga. rejects § 1252 bars for a man sent to El Salvador in E.D.Q.C.",
+   "circuit": "11"
   },
   {
    "date": "2025-06-23",

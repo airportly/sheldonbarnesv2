@@ -96,7 +96,7 @@ const STYLES: { removal: Record<RemovalStatus, Style>; juris: Record<JurisStatus
     pending: { top: "url(#tc-cross-blue)", swatch: CROSS_BLUE, side: BLUE.side, hover: "url(#tc-cross-blue)", label: "Appeal pending; court of appeals stayed a removal" },
     district: { top: "url(#tc-hatch-blue)", swatch: HATCH_BLUE, side: BLUE.side, hover: "url(#tc-hatch-blue-h)", label: "No appellate opinion; district courts stopped individual removals" },
     denied: { top: "url(#tc-hatch-orange)", swatch: HATCH_ORANGE, side: ORANGE.side, hover: "url(#tc-hatch-orange)", label: "No appellate opinion; district court denied relief" },
-    filings: { top: "url(#tc-dots)", swatch: DOTS_GREY, side: GREY.side, hover: "url(#tc-dots)", label: "Petitions pending; no ruling found" },
+    filings: { top: "url(#tc-dots)", swatch: DOTS_GREY, side: GREY.side, hover: "url(#tc-dots)", label: "Litigation pending; jurisdiction upheld, no merits ruling" },
     none: { top: GREY.top, swatch: GREY.top, side: GREY.side, hover: GREY.hover, label: "No ruling found" },
   },
   juris: {
