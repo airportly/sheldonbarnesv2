@@ -44,6 +44,21 @@
      false
     ]
    ]
+  },
+  "volume": {
+   "by": "Bea",
+   "role": "respecting the denial of rehearing en banc (9th Circuit)",
+   "text": "Throughout the country, aliens subject to final removal orders have filed last-second petitions in federal district court, requesting injunctions to block the execution of their removal orders.",
+   "cite": [
+    [
+     "Ibarra-Perez v. United States",
+     true
+    ],
+    [
+     ", No. 24-631 (9th Cir. June 25, 2026) (Bea, J., respecting the denial of rehearing en banc).",
+     false
+    ]
+   ]
   }
  },
  "circuits": [
@@ -997,5 +1012,317 @@
    "label": "Oral argument in DHS v. D.V.D.",
    "circuit": "1"
   }
- ]
+ ],
+ "volume": {
+  "asOf": "2026-10-10",
+  "national": {
+   "hdCases": 3595,
+   "hdPhrase": 1879,
+   "hdAttributed": 2363,
+   "hdHybrid": 1707,
+   "westlawDecisions": 838,
+   "westlawDistrict": 830,
+   "westlawAppeals": 6,
+   "westlawSupreme": 2,
+   "propublicaPetitions": 85252
+  },
+  "circuits": {
+   "1": {
+    "hd": 10,
+    "hybrid": 8,
+    "other": 2,
+    "westlaw": 14,
+    "districts": [
+     [
+      "D. Mass.",
+      3
+     ],
+     [
+      "D.R.I.",
+      3
+     ],
+     [
+      "D. Me.",
+      2
+     ],
+     [
+      "D.N.H.",
+      2
+     ]
+    ]
+   },
+   "2": {
+    "hd": 19,
+    "hybrid": 7,
+    "other": 12,
+    "westlaw": 13,
+    "districts": [
+     [
+      "S.D.N.Y.",
+      12
+     ],
+     [
+      "E.D.N.Y.",
+      5
+     ],
+     [
+      "W.D.N.Y.",
+      2
+     ]
+    ]
+   },
+   "3": {
+    "hd": 46,
+    "hybrid": 30,
+    "other": 16,
+    "westlaw": 24,
+    "districts": [
+     [
+      "M.D. Pa.",
+      17
+     ],
+     [
+      "D.N.J.",
+      15
+     ],
+     [
+      "E.D. Pa.",
+      8
+     ],
+     [
+      "W.D. Pa.",
+      6
+     ]
+    ]
+   },
+   "4": {
+    "hd": 90,
+    "hybrid": 39,
+    "other": 51,
+    "westlaw": 52,
+    "districts": [
+     [
+      "D. Md.",
+      48
+     ],
+     [
+      "E.D. Va.",
+      42
+     ]
+    ]
+   },
+   "5": {
+    "hd": 307,
+    "hybrid": 192,
+    "other": 115,
+    "westlaw": 74,
+    "districts": [
+     [
+      "W.D. Tex.",
+      147
+     ],
+     [
+      "S.D. Tex.",
+      79
+     ],
+     [
+      "N.D. Tex.",
+      49
+     ],
+     [
+      "W.D. La.",
+      21
+     ],
+     [
+      "M.D. La.",
+      5
+     ],
+     [
+      "S.D. Miss.",
+      3
+     ],
+     [
+      "E.D. Tex.",
+      3
+     ]
+    ]
+   },
+   "6": {
+    "hd": 16,
+    "hybrid": 6,
+    "other": 10,
+    "westlaw": 14,
+    "districts": [
+     [
+      "W.D. Mich.",
+      5
+     ],
+     [
+      "N.D. Ohio",
+      5
+     ],
+     [
+      "S.D. Ohio",
+      4
+     ],
+     [
+      "E.D. Mich.",
+      2
+     ]
+    ]
+   },
+   "7": {
+    "hd": 10,
+    "hybrid": 4,
+    "other": 6,
+    "westlaw": 5,
+    "districts": [
+     [
+      "N.D. Ind.",
+      6
+     ],
+     [
+      "N.D. Ill.",
+      4
+     ]
+    ]
+   },
+   "8": {
+    "hd": 52,
+    "hybrid": 36,
+    "other": 16,
+    "westlaw": 12,
+    "districts": [
+     [
+      "D. Minn.",
+      50
+     ],
+     [
+      "D. Neb.",
+      2
+     ]
+    ]
+   },
+   "9": {
+    "hd": 1398,
+    "hybrid": 1081,
+    "other": 317,
+    "westlaw": 539,
+    "districts": [
+     [
+      "S.D. Cal.",
+      578
+     ],
+     [
+      "W.D. Wash.",
+      296
+     ],
+     [
+      "C.D. Cal.",
+      208
+     ],
+     [
+      "E.D. Cal.",
+      122
+     ],
+     [
+      "D. Ariz.",
+      107
+     ],
+     [
+      "D. Nev.",
+      55
+     ],
+     [
+      "N.D. Cal.",
+      16
+     ],
+     [
+      "D. Or.",
+      9
+     ],
+     [
+      "D. Haw.",
+      5
+     ],
+     [
+      "D. Alaska",
+      2
+     ]
+    ]
+   },
+   "10": {
+    "hd": 121,
+    "hybrid": 90,
+    "other": 31,
+    "westlaw": 30,
+    "districts": [
+     [
+      "D. Colo.",
+      44
+     ],
+     [
+      "W.D. Okla.",
+      37
+     ],
+     [
+      "D. Kan.",
+      27
+     ],
+     [
+      "D.N.M.",
+      10
+     ],
+     [
+      "D. Wyo.",
+      3
+     ]
+    ]
+   },
+   "11": {
+    "hd": 291,
+    "hybrid": 214,
+    "other": 77,
+    "westlaw": 53,
+    "districts": [
+     [
+      "M.D. Fla.",
+      118
+     ],
+     [
+      "M.D. Ga.",
+      83
+     ],
+     [
+      "S.D. Fla.",
+      68
+     ],
+     [
+      "S.D. Ga.",
+      15
+     ],
+     [
+      "N.D. Ga.",
+      5
+     ],
+     [
+      "M.D. Ala.",
+      2
+     ]
+    ]
+   },
+   "DC": {
+    "hd": 3,
+    "hybrid": 0,
+    "other": 3,
+    "westlaw": 0,
+    "districts": [
+     [
+      "D.D.C.",
+      3
+     ]
+    ]
+   }
+  }
+ }
 }

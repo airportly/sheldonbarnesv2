@@ -17,7 +17,7 @@ import Cite, { type CiteSegments } from "../bond-split/Cite";
  * Case data lives in src/data/third-country/circuits.json.
  */
 
-type View = "removal" | "juris";
+type View = "removal" | "juris" | "volume";
 type RemovalStatus = "merits" | "access" | "pending" | "district" | "mixed" | "denied" | "filings" | "none";
 type JurisStatus = "allows" | "exercised" | "rejects" | "none";
 
@@ -59,6 +59,11 @@ interface Data {
   asOf: string;
   scotus: { caseName: string; docket: string; docketUrl: string; qpUrl: string; granted: string; argument: string; questions: string[] };
   quotes: Record<View, { by: string; role: string; text: string; cite: CiteSegments }>;
+  volume: {
+    asOf: string;
+    national: { hdCases: number; hdPhrase: number; hdAttributed: number; hdHybrid: number; westlawDecisions: number; westlawDistrict: number; westlawAppeals: number; westlawSupreme: number; propublicaPetitions: number };
+    circuits: Record<string, { hd: number; hybrid: number; other: number; westlaw: number; districts: [string, number][] }>;
+  };
   circuits: Circuit[];
   timeline: TEvent[];
 }
@@ -128,10 +133,35 @@ const VIEW_COPY: Record<View, { tab: string; sub: string; stats: { value: string
       { value: "Oct. 23", label: "SG deadline to seek review of Ibarra-Perez", swatch: CERT_RING, ring: true },
     ],
   },
+  volume: {
+    tab: "Habeas volume",
+    sub: "How often third country claims reach federal court. Shading counts Habeas Dockets cases assigned to a district in each circuit whose documents mention a third country; select a circuit for the hybrid split, the Westlaw decision count, and the busiest districts. Both sources miss cases, so treat every number as a floor.",
+    stats: [
+      { value: "3,595", label: "habeas cases whose documents mention a third country (Habeas Dockets)", swatch: "#5d9ad8" },
+      { value: "72%", label: "of district attributed cases also cite Zadvydas: hybrid detention claims", swatch: "#3f73a8" },
+      { value: "838", label: "Westlaw decisions since March 2025, 6 from courts of appeals", swatch: "#a3cdf5" },
+    ],
+  },
 };
+
+// Sequential scale for the volume view: brighter means more cases.
+const VOL_BUCKETS: { min: number; label: string; top: string; side: string; hover: string }[] = [
+  { min: 500, label: "500 or more cases", top: "#a3cdf5", side: "#4a6f93", hover: "#b8d9f8" },
+  { min: 150, label: "150 to 499 cases", top: "#5d9ad8", side: "#2f557d", hover: "#76aae0" },
+  { min: 50, label: "50 to 149 cases", top: "#3f73a8", side: "#274e75", hover: "#5284b8" },
+  { min: 10, label: "10 to 49 cases", top: "#2d5478", side: "#1d3a55", hover: "#3a6590" },
+  { min: 0, label: "Under 10 cases", top: "#3a4552", side: "#252c34", hover: "#4a5664" },
+];
+function volBucket(n: number) {
+  return VOL_BUCKETS.find((b) => n >= b.min) ?? VOL_BUCKETS[VOL_BUCKETS.length - 1];
+}
 
 function styleFor(view: View, c: string): Style {
   const info = BY_ID[c];
+  if (view === "volume") {
+    const b = volBucket(D.volume.circuits[c]?.hd ?? 0);
+    return { top: b.top, swatch: b.top, side: b.side, hover: b.hover, label: b.label };
+  }
   return view === "removal" ? STYLES.removal[info.removal.status] : STYLES.juris[info.juris.status];
 }
 
@@ -164,6 +194,7 @@ export default function ThirdCountryExplorer() {
   }, [selected]);
 
   const usedStatuses = useMemo(() => {
+    if (view === "volume") return [];
     const set = new Set(D.circuits.map((c) => (view === "removal" ? c.removal.status : c.juris.status)));
     const all = Object.keys(STYLES[view]);
     return all.filter((k) => set.has(k as never));
@@ -191,7 +222,7 @@ export default function ThirdCountryExplorer() {
 
       {/* View tabs */}
       <div className="mb-4 inline-flex flex-wrap gap-1 rounded-full border border-surface-light bg-background p-1" role="tablist" aria-label="Map view">
-        {(["removal", "juris"] as View[]).map((v) => (
+        {(["removal", "juris", "volume"] as View[]).map((v) => (
           <button
             key={v}
             type="button"
@@ -350,10 +381,12 @@ export default function ThirdCountryExplorer() {
 
       {/* Legend */}
       <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-xs text-muted">
-        {usedStatuses.map((k) => {
-          const s = (STYLES[view] as Record<string, Style>)[k];
-          return <LegendKey key={k} swatch={s.swatch} label={s.label} />;
-        })}
+        {view === "volume"
+          ? VOL_BUCKETS.map((b) => <LegendKey key={b.label} swatch={b.top} label={b.label} />)
+          : usedStatuses.map((k) => {
+              const s = (STYLES[view] as Record<string, Style>)[k];
+              return <LegendKey key={k} swatch={s.swatch} label={s.label} />;
+            })}
         <LegendKey swatch="transparent" ring={CERT_RING} label="Certiorari granted (1st Cir. case)" />
       </div>
 
@@ -536,7 +569,9 @@ function Detail({ c, view }: { c: Circuit; view: View }) {
         )}
       </div>
 
-      {view === "removal" ? (
+      {view === "volume" ? (
+        <VolumeDetail c={c.circuit} />
+      ) : view === "removal" ? (
         <>
           <Section title="Court of appeals" items={c.removal.appellate} />
           <Section title="District courts" items={c.removal.district} />
@@ -570,6 +605,55 @@ function Detail({ c, view }: { c: Circuit; view: View }) {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function VolumeDetail({ c }: { c: string }) {
+  const v = D.volume.circuits[c];
+  if (!v) return null;
+  const pct = v.hd ? Math.round((v.hybrid / v.hd) * 100) : 0;
+  const share = Math.round((v.hd / D.volume.national.hdAttributed) * 100);
+  const max = v.districts.length ? v.districts[0][1] : 1;
+  return (
+    <div className="mt-4">
+      <dl className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <Figure k="Habeas cases" v={v.hd.toLocaleString("en-US")} note={`${share}% of the national district attributed total`} />
+        <Figure k="Hybrid" v={v.hybrid.toLocaleString("en-US")} note={v.hd ? `${pct}% also cite Zadvydas` : "no cases"} />
+        <Figure k="Without Zadvydas" v={v.other.toLocaleString("en-US")} note="includes purer third country challenges" />
+        <Figure k="Westlaw decisions" v={v.westlaw.toLocaleString("en-US")} note="district courts, since March 2025" />
+      </dl>
+      {v.districts.length > 0 && (
+        <div className="mt-4">
+          <p className="text-[11px] font-mono uppercase tracking-wider text-muted border-b border-surface-light pb-1.5 mb-3">Busiest districts (Habeas Dockets)</p>
+          <ul className="space-y-1.5">
+            {v.districts.slice(0, 8).map(([name, n]) => (
+              <li key={name} className="grid grid-cols-[96px_1fr_44px] items-center gap-3 text-xs">
+                <span className="text-foreground truncate">{name}</span>
+                <span className="h-2 rounded-full bg-surface-light overflow-hidden">
+                  <span className="block h-full rounded-full" style={{ width: `${Math.max(3, (n / max) * 100)}%`, background: "#5d9ad8" }} />
+                </span>
+                <span className="text-muted text-right tabular-nums">{n.toLocaleString("en-US")}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <p className="text-[11px] text-muted mt-4 leading-relaxed">
+        Habeas Dockets counts are cases whose collected documents mention &ldquo;third country,&rdquo; searched {fmtDate(D.volume.asOf)} by district; &ldquo;hybrid&rdquo; cases also mention Zadvydas. Westlaw counts are
+        federal decisions since March 1, 2025 pairing a third country reference with notice or fear language. Nationally, Habeas Dockets returns{" "}
+        {D.volume.national.hdCases.toLocaleString("en-US")} cases, of which {D.volume.national.hdAttributed.toLocaleString("en-US")} are assigned to a district.
+      </p>
+    </div>
+  );
+}
+
+function Figure({ k, v, note }: { k: string; v: string; note: string }) {
+  return (
+    <div className="rounded-lg border border-surface-light p-3 min-w-0">
+      <dt className="text-[11px] font-mono uppercase tracking-wider text-muted">{k}</dt>
+      <dd className="text-xl md:text-2xl font-semibold text-foreground leading-tight mt-1 tabular-nums">{v}</dd>
+      <dd className="text-[11px] text-muted mt-1 leading-snug">{note}</dd>
     </div>
   );
 }
