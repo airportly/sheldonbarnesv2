@@ -14,6 +14,7 @@ import BondCharts from "@/components/blog/bond-split/BondCharts";
 import StatuteMap from "@/components/blog/bond-split/StatuteMap";
 import InfluenceNetwork from "@/components/blog/bond-split/InfluenceNetwork";
 import ThirdCountryExplorer from "@/components/blog/third-country/ThirdCountryExplorer";
+import ThirdCountryRoutes from "@/components/blog/third-country/ThirdCountryRoutes";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
 import { getCategoryBySlug } from "@/lib/categories";
 
@@ -249,7 +250,7 @@ export default async function BlogPostPage({
             </div>
           ) : null}
 
-          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}}, {{bond-data}}, {{statute-map}}, {{influence-map}} and {{third-country-map}} shortcodes */}
+          {/* Body — supports {{apap-simulator}}, {{viewer-cta}}, {{circuit-map}}, {{bond-data}}, {{statute-map}}, {{influence-map}}, {{third-country-map}} and {{third-country-routes}} shortcodes */}
           {(() => {
             const SHORTCODES: Record<string, React.ReactNode> = {
               "{{apap-simulator}}": <APAPSimulator />,
@@ -258,6 +259,7 @@ export default async function BlogPostPage({
               "{{statute-map}}": <StatuteMap />,
               "{{influence-map}}": <InfluenceNetwork />,
               "{{third-country-map}}": <ThirdCountryExplorer />,
+              "{{third-country-routes}}": <ThirdCountryRoutes />,
               "{{viewer-cta}}": (
                 <div className="my-8 flex justify-center">
                   <Link
