@@ -108,6 +108,28 @@ const FILTERS: { id: Filter; tab: string; ps: Pathway[]; sub: string }[] = [
   { id: "all", tab: "All", ps: ["deal", "border", "aca", "aea", "born"], sub: "Every documented route. Mexico dominates by volume; the removal deals reach the most countries." },
 ];
 
+// Continents, for scoping the map to a region. Each country is assigned by
+// hand rather than guessed from coordinates. A route belongs to a region when
+// either its home country or its destination sits in it.
+type RegionId = "africa" | "americas" | "europe" | "mideast" | "asia";
+const REGIONS: { id: RegionId; short: string; label: string }[] = [
+  { id: "africa", short: "Africa", label: "Africa" },
+  { id: "americas", short: "Americas", label: "The Americas" },
+  { id: "mideast", short: "Middle East", label: "The Middle East" },
+  { id: "europe", short: "Europe", label: "Europe" },
+  { id: "asia", short: "Asia-Pacific", label: "Asia & the Pacific" },
+];
+const REGION_MEMBERS: Record<RegionId, string[]> = {
+  africa: ["AGO", "BDI", "CMR", "CAF", "TCD", "COD", "COG", "EGY", "GNQ", "ERI", "SWZ", "ETH", "GMB", "GHA", "GIN", "CIV", "KEN", "LBR", "MLI", "MRT", "MAR", "NER", "NGA", "RWA", "SEN", "SLE", "SOM", "SSD", "SDN", "TZA", "TGO", "TUN", "UGA", "ZWE"],
+  americas: ["BLZ", "BOL", "BRA", "CHL", "COL", "CRI", "CUB", "DMA", "DOM", "ECU", "SLV", "GTM", "GUY", "HTI", "HND", "JAM", "MEX", "NIC", "PAN", "PRY", "PER", "KNA", "LCA", "TTO", "VEN"],
+  europe: ["XKX", "MDA", "POL", "RUS", "SRB", "UKR"],
+  mideast: ["ARM", "AZE", "GEO", "IRN", "IRQ", "JOR", "TUR", "YEM"],
+  asia: ["AFG", "BGD", "BTN", "KHM", "CHN", "IND", "IDN", "KAZ", "KGZ", "LAO", "MMR", "NPL", "PAK", "PLW", "PHL", "LKA", "THA", "UZB", "VNM"],
+};
+const REGION_OF: Record<string, RegionId> = {};
+for (const [rg, codes] of Object.entries(REGION_MEMBERS)) for (const c of codes) REGION_OF[c] = rg as RegionId;
+const REGION_LABEL = Object.fromEntries(REGIONS.map((r) => [r.id, r.label])) as Record<RegionId, string>;
+
 const BUCKETS = [
   { min: 250, w: 6, label: "250 or more" },
   { min: 50, w: 4, label: "50 to 249" },
@@ -209,22 +231,51 @@ type Sel = { kind: "dest" | "origin"; id: string } | { kind: "route"; o: string;
 
 export default function ThirdCountryRoutes() {
   const [filter, setFilter] = useState<Filter>("deal");
+  const [region, setRegion] = useState<RegionId | "all">("all");
   const [sel, setSel] = useState<Sel>(null);
   const [showCases, setShowCases] = useState(true);
   const [hover, setHover] = useState<{ x: number; y: number; text: string; sub?: string } | null>(null);
+  const [tour, setTour] = useState(false);
+  const [tourIdx, setTourIdx] = useState(0);
   const wrapRef = useRef<HTMLDivElement>(null);
 
   const f = FILTERS.find((x) => x.id === filter)!;
-  const routes = useMemo(() => D.routes.filter((r) => f.ps.includes(r.p) && W.points[r.o] && W.points[r.d]), [f]);
+  const inRegion = (r: Route) => region === "all" || REGION_OF[r.o] === region || REGION_OF[r.d] === region;
+  const routes = useMemo(
+    () => D.routes.filter((r) => f.ps.includes(r.p) && W.points[r.o] && W.points[r.d] && inRegion(r)),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [f, region]
+  );
+
+  // Which regions have any route in the current pathway, for enabling chips.
+  const regionCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    for (const r of D.routes) {
+      if (!f.ps.includes(r.p) || !W.points[r.o] || !W.points[r.d]) continue;
+      for (const id of new Set([REGION_OF[r.o], REGION_OF[r.d]])) if (id) c[id] = (c[id] ?? 0) + 1;
+    }
+    return c;
+  }, [f]);
+
+  // If the chosen pathway has nothing in the current region, fall back to all.
+  useEffect(() => {
+    if (region !== "all" && !regionCounts[region]) setRegion("all");
+  }, [region, regionCounts]);
 
   const dests = useMemo(() => {
+    if (region !== "all") {
+      // Scoped view: count each destination from the routes actually shown.
+      const m = new Map<string, number>();
+      for (const r of routes) m.set(r.d, (m.get(r.d) ?? 0) + (r.n ?? 0));
+      return [...m.keys()].map((id) => ({ id, n: m.get(id)! })).sort((a, b) => b.n - a.n);
+    }
     const m: { id: string; n: number }[] = [];
     for (const d of D.destinations) {
       const n = f.ps.reduce((s, p) => s + (d.byPathway[p] ?? 0), 0);
       if (n > 0 || routes.some((r) => r.d === d.id)) m.push({ id: d.id, n });
     }
     return m.sort((a, b) => b.n - a.n);
-  }, [f, routes]);
+  }, [f, routes, region]);
 
   const origins = useMemo(() => {
     const m = new Map<string, { id: string; n: number; dests: Set<string>; counted: boolean }>();
@@ -240,6 +291,20 @@ export default function ThirdCountryRoutes() {
 
   const people = dests.reduce((s, d) => s + d.n, 0);
 
+  // Guided tour: step through each home country, zooming to it, drawing its
+  // routes, and labelling each destination with how many people went there.
+  const tourId = origins.length ? origins[tourIdx % origins.length].id : null;
+  useEffect(() => {
+    if (!tour || !tourId) return;
+    setSel({ kind: "origin", id: tourId });
+    const t = setTimeout(() => setTourIdx((i) => i + 1), 3400);
+    return () => clearTimeout(t);
+  }, [tour, tourIdx, tourId]);
+  const startTour = () => {
+    setTourIdx(0);
+    setTour(true);
+  };
+
   const cases = useMemo(
     () =>
       D.cases
@@ -248,8 +313,8 @@ export default function ThirdCountryRoutes() {
           const p: Pathway = r?.p ?? DEST_BY_ID[c.d]?.pathways[0] ?? "deal";
           return { c, i, p, hasRoute: !!r };
         })
-        .filter((x) => f.ps.includes(x.p)),
-    [f]
+        .filter((x) => f.ps.includes(x.p) && (region === "all" || REGION_OF[x.c.d] === region || (x.c.o ? REGION_OF[x.c.o] === region : false))),
+    [f, region]
   );
 
   // Which routes are emphasized by the current selection.
@@ -266,7 +331,13 @@ export default function ThirdCountryRoutes() {
   };
 
   const target = useMemo<Box>(() => {
-    if (!sel) return BASE;
+    if (!sel) {
+      // No selection: frame the active region, or the whole world.
+      if (region === "all") return BASE;
+      const pts: [number, number][] = [];
+      for (const r of routes) pts.push(W.points[r.o], W.points[r.d]);
+      return fitBox(pts);
+    }
     const pts: [number, number][] = [];
     for (const r of routes) if (active(r)) pts.push(W.points[r.o], W.points[r.d]);
     if (sel.kind === "case") {
@@ -276,15 +347,38 @@ export default function ThirdCountryRoutes() {
     }
     return fitBox(pts);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sel, routes]);
+  }, [sel, routes, region]);
   const box = useTweenBox(target);
 
-  // Phones get a taller crop of the map that can be dragged sideways.
+  // Centroid of each region's countries that appear, for clickable map labels.
+  const regionLabels = useMemo(() => {
+    const acc: Partial<Record<RegionId, { sx: number; sy: number; n: number }>> = {};
+    const add = (code: string) => {
+      const rg = REGION_OF[code];
+      const p = W.points[code];
+      if (!rg || !p) return;
+      const a = (acc[rg] ??= { sx: 0, sy: 0, n: 0 });
+      a.sx += p[0];
+      a.sy += p[1];
+      a.n += 1;
+    };
+    for (const r of D.routes) {
+      if (!f.ps.includes(r.p) || !W.points[r.o] || !W.points[r.d]) continue;
+      add(r.o);
+      add(r.d);
+    }
+    return REGIONS.filter((rg) => acc[rg.id]).map((rg) => ({ id: rg.id, label: rg.short, x: acc[rg.id]!.sx / acc[rg.id]!.n, y: acc[rg.id]!.sy / acc[rg.id]!.n }));
+  }, [f]);
+
+  // Everyone can zoom and pan; phones also get a taller aspect crop to start.
   const [narrow, setNarrow] = useState(false);
   const [cw, setCw] = useState(1000);
-  const [pan, setPan] = useState(0);
-  const drag = useRef<{ x: number; pan: number; moved: boolean } | null>(null);
-  const panBounds = useRef<[number, number]>([0, 0]);
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const drag = useRef<{ x: number; y: number; pan: { x: number; y: number }; moved: boolean } | null>(null);
+  const pointers = useRef<Map<number, { x: number; y: number }>>(new Map());
+  const pinch = useRef<{ dist: number; zoom: number } | null>(null);
+  const panBounds = useRef<{ x: [number, number]; y: [number, number] }>({ x: [0, 0], y: [0, 0] });
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
@@ -308,30 +402,94 @@ export default function ThirdCountryRoutes() {
     return sw ? sx / sw : BASE[0] + BASE[2] / 2;
   }, [dests]);
   const targetKey = target.join(",");
-  useEffect(() => setPan(0), [targetKey, narrow, filter]);
+  useEffect(() => {
+    setPan({ x: 0, y: 0 });
+    setZoom(1);
+  }, [targetKey, narrow, filter]);
   const view = useMemo<Box>(() => {
-    if (!narrow) return box;
-    const NA = 1.2;
-    const w = Math.min(box[2], BASE[3] * NA);
-    const h = w / NA;
-    const t = Math.max(0, Math.min(1, (box[2] - w) / (BASE[2] - w)));
-    const base = box[0] + box[2] / 2 + (focusX - (box[0] + box[2] / 2)) * t;
-    const minX = BASE[0] + w / 2;
-    const maxX = BASE[0] + BASE[2] - w / 2;
-    panBounds.current = [minX - base, maxX - base];
-    const cx = Math.max(minX, Math.min(maxX, base + pan));
-    const cy = Math.max(BASE[1] + h / 2, Math.min(BASE[1] + BASE[3] - h / 2, box[1] + box[3] / 2));
+    // Base frame from the selection box, with the phone aspect crop.
+    let fw: number;
+    let fh: number;
+    let fcx: number;
+    let fcy: number;
+    if (narrow) {
+      const NA = 1.2;
+      fw = Math.min(box[2], BASE[3] * NA);
+      fh = fw / NA;
+      const t = Math.max(0, Math.min(1, (box[2] - fw) / (BASE[2] - fw || 1)));
+      fcx = box[0] + box[2] / 2 + (focusX - (box[0] + box[2] / 2)) * t;
+      fcy = box[1] + box[3] / 2;
+    } else {
+      fw = box[2];
+      fh = box[3];
+      fcx = box[0] + box[2] / 2;
+      fcy = box[1] + box[3] / 2;
+    }
+    // User zoom shrinks the window; never show more than the whole map.
+    const w = Math.min(fw / zoom, BASE[2]);
+    const h = Math.min(fh / zoom, BASE[3]);
+    const minCx = BASE[0] + w / 2;
+    const maxCx = BASE[0] + BASE[2] - w / 2;
+    const minCy = BASE[1] + h / 2;
+    const maxCy = BASE[1] + BASE[3] - h / 2;
+    const b0x = Math.max(minCx, Math.min(maxCx, fcx));
+    const b0y = Math.max(minCy, Math.min(maxCy, fcy));
+    panBounds.current = { x: [minCx - b0x, maxCx - b0x], y: [minCy - b0y, maxCy - b0y] };
+    const cx = Math.max(minCx, Math.min(maxCx, b0x + pan.x));
+    const cy = Math.max(minCy, Math.min(maxCy, b0y + pan.y));
     return [cx - w / 2, cy - h / 2, w, h];
-  }, [box, narrow, pan, focusX]);
+  }, [box, narrow, zoom, pan, focusX]);
   // Symbol scale in map units, so pins and rings keep one size on screen at any zoom or width.
   const k = (view[2] / Math.max(cw, 300)) * (narrow ? 1.15 : 0.95);
-  const canPan = narrow && view[2] < BASE[2] * 0.98;
+  const canPan = view[2] < BASE[2] - 1 || view[3] < BASE[3] - 1;
+
+  // Zoom toward a point (rx, ry in 0..1 of the viewport), keeping it fixed.
+  const zoomTo = (next: number, rx = 0.5, ry = 0.5) => {
+    const nz = Math.max(1, Math.min(10, next));
+    if (nz === zoom) return;
+    const wNew = view[2] * (zoom / nz);
+    const hNew = view[3] * (zoom / nz);
+    setPan((p) => ({ x: p.x + (rx - 0.5) * (view[2] - wNew), y: p.y + (ry - 0.5) * (view[3] - hNew) }));
+    setZoom(nz);
+  };
+  const resetZoom = () => {
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
+  };
+  // Native wheel listener so we can preventDefault (React's onWheel is passive).
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      const r = el.getBoundingClientRect();
+      zoomTo(zoom * Math.exp(-e.deltaY * 0.0016), (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [zoom, view]);
 
   const pickFilter = (id: Filter) => {
     setFilter(id);
     setSel(null);
+    setTour(false);
+    setTourIdx(0);
   };
-  const toggle = (s: NonNullable<Sel>) => setSel((cur) => (JSON.stringify(cur) === JSON.stringify(s) ? null : s));
+  const pickRegion = (id: RegionId | "all") => {
+    setRegion((cur) => (cur === id ? "all" : id));
+    setSel(null);
+    setTour(false);
+    setTourIdx(0);
+  };
+  const clearSel = () => {
+    setSel(null);
+    setTour(false);
+  };
+  const toggle = (s: NonNullable<Sel>) => {
+    setTour(false);
+    setSel((cur) => (JSON.stringify(cur) === JSON.stringify(s) ? null : s));
+  };
 
   const tip = (e: React.MouseEvent, text: string, sub?: string) => {
     const r = wrapRef.current?.getBoundingClientRect();
@@ -341,9 +499,10 @@ export default function ThirdCountryRoutes() {
 
   const sorted = [...routes].sort((a, b) => (b.n ?? 0) - (a.n ?? 0));
   const originIds = [...new Set(routes.map((r) => r.o))];
+  const focusMode = !!sel && (sel.kind === "origin" || sel.kind === "dest");
 
   return (
-    <div className="not-prose my-10 rounded-2xl border border-surface-light bg-surface p-4 md:p-8">
+    <div className="not-prose my-10 rounded-2xl border border-surface-light bg-surface p-4 md:p-8 lg:w-[min(94vw,1200px)] lg:max-w-none lg:relative lg:left-1/2 lg:-translate-x-1/2">
       <div className="mb-5">
         <p className="text-xs font-mono uppercase tracking-widest text-primary mb-1">Interactive map</p>
         <h3 className="text-xl md:text-2xl font-bold text-foreground">Where people are being sent</h3>
@@ -371,7 +530,40 @@ export default function ThirdCountryRoutes() {
           </button>
         ))}
       </div>
-      <p className="text-sm text-muted mb-4 max-w-3xl">{f.sub}</p>
+      <p className="text-sm text-muted mb-3 max-w-3xl">{f.sub}</p>
+
+      {/* Region scope */}
+      <div className="mb-4 flex flex-wrap items-center gap-1.5">
+        <span className="text-[11px] font-mono uppercase tracking-wider text-muted mr-1">Region</span>
+        <button
+          type="button"
+          onClick={() => pickRegion("all")}
+          aria-pressed={region === "all"}
+          className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+            region === "all" ? "bg-primary text-background" : "border border-surface-light text-muted hover:text-foreground"
+          }`}
+        >
+          Whole world
+        </button>
+        {REGIONS.map((rg) => {
+          const n = regionCounts[rg.id] ?? 0;
+          return (
+            <button
+              key={rg.id}
+              type="button"
+              disabled={!n}
+              onClick={() => pickRegion(rg.id)}
+              aria-pressed={region === rg.id}
+              title={n ? `${rg.label}: ${n} routes` : `${rg.label}: none in this view`}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors disabled:opacity-30 ${
+                region === rg.id ? "bg-primary text-background" : "border border-surface-light text-muted enabled:hover:text-foreground"
+              }`}
+            >
+              {rg.short}
+            </button>
+          );
+        })}
+      </div>
 
       {/* Figures */}
       <div className="grid grid-cols-3 gap-3 mb-5">
@@ -380,28 +572,91 @@ export default function ThirdCountryRoutes() {
         <Figure value={String(originIds.length)} label="home countries" />
       </div>
 
+      {/* Guided tour */}
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          onClick={tour ? () => setTour(false) : startTour}
+          aria-pressed={tour}
+          className={`inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold transition-colors ${
+            tour ? "bg-primary text-background" : "border border-surface-light text-foreground hover:border-primary"
+          }`}
+        >
+          {tour ? (
+            <>
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden>
+                <rect x="1" y="1" width="3" height="8" fill="currentColor" />
+                <rect x="6" y="1" width="3" height="8" fill="currentColor" />
+              </svg>
+              Pause tour
+            </>
+          ) : (
+            <>
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden>
+                <path d="M1,1 L9,5 L1,9 Z" fill="currentColor" />
+              </svg>
+              Play tour
+            </>
+          )}
+        </button>
+        {tour && tourId ? (
+          <span className="text-xs text-muted">
+            Highlighting <b className="text-foreground">{NAME(tourId)}</b> and where its nationals were sent &middot; {(tourIdx % origins.length) + 1} of {origins.length} home countries
+          </span>
+        ) : (
+          <span className="text-xs text-muted">Step through each home country and watch its routes draw, one at a time.</span>
+        )}
+      </div>
+
       {/* Map */}
       <div
         ref={wrapRef}
         className="relative rounded-xl border border-surface-light bg-background p-1 md:p-2"
         onMouseLeave={() => setHover(null)}
         onPointerDown={(e) => {
-          if (canPan) drag.current = { x: e.clientX, pan, moved: false };
+          pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+          if (pointers.current.size === 2) {
+            const [a, b] = [...pointers.current.values()];
+            pinch.current = { dist: Math.hypot(a.x - b.x, a.y - b.y), zoom };
+            drag.current = null;
+          } else if (pointers.current.size === 1 && canPan) {
+            drag.current = { x: e.clientX, y: e.clientY, pan, moved: false };
+          }
         }}
         onPointerMove={(e) => {
+          if (!pointers.current.has(e.pointerId)) return;
+          pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+          if (pinch.current && pointers.current.size >= 2) {
+            const [a, b] = [...pointers.current.values()];
+            const dist = Math.hypot(a.x - b.x, a.y - b.y);
+            const r = wrapRef.current?.getBoundingClientRect();
+            if (pinch.current.dist > 0 && r) {
+              zoomTo(pinch.current.zoom * (dist / pinch.current.dist), ((a.x + b.x) / 2 - r.left) / r.width, ((a.y + b.y) / 2 - r.top) / r.height);
+            }
+            return;
+          }
           const g = drag.current;
           if (!g || !wrapRef.current) return;
           const dx = e.clientX - g.x;
-          if (Math.abs(dx) > 6) g.moved = true;
+          const dy = e.clientY - g.y;
+          if (Math.abs(dx) > 5 || Math.abs(dy) > 5) g.moved = true;
           if (!g.moved) return;
-          const units = (dx * view[2]) / wrapRef.current.clientWidth;
-          const [lo, hi] = panBounds.current;
-          setPan(Math.max(lo, Math.min(hi, g.pan - units)));
+          const ux = (dx * view[2]) / wrapRef.current.clientWidth;
+          const uy = (dy * view[3]) / wrapRef.current.clientHeight;
+          const [lox, hix] = panBounds.current.x;
+          const [loy, hiy] = panBounds.current.y;
+          setPan({ x: Math.max(lox, Math.min(hix, g.pan.x - ux)), y: Math.max(loy, Math.min(hiy, g.pan.y - uy)) });
         }}
-        onPointerUp={() => {
-          setTimeout(() => (drag.current = null), 0);
+        onPointerUp={(e) => {
+          pointers.current.delete(e.pointerId);
+          if (pointers.current.size < 2) pinch.current = null;
+          if (pointers.current.size === 0) setTimeout(() => (drag.current = null), 0);
         }}
-        onPointerCancel={() => (drag.current = null)}
+        onPointerCancel={(e) => {
+          pointers.current.delete(e.pointerId);
+          pinch.current = null;
+          drag.current = null;
+        }}
         onClickCapture={(e) => {
           if (drag.current?.moved) {
             e.stopPropagation();
@@ -412,11 +667,11 @@ export default function ThirdCountryRoutes() {
         <svg
           viewBox={view.map((v) => v.toFixed(2)).join(" ")}
           className="w-full h-auto select-none"
-          style={canPan ? { touchAction: "pan-y" } : undefined}
+          style={{ touchAction: zoom > 1 ? "none" : "pan-y", cursor: canPan ? (drag.current?.moved ? "grabbing" : "grab") : "default" }}
           role="group"
           aria-label="World map of third country removal routes"
         >
-          <rect x={-500} y={-500} width={2000} height={1400} fill="transparent" onClick={() => setSel(null)} />
+          <rect x={-500} y={-500} width={2000} height={1400} fill="transparent" onClick={clearSel} />
           <path d={W.land} fill="#2c3033" />
           <path d={W.borders} fill="none" stroke="#1b1d1f" strokeWidth={0.6} vectorEffect="non-scaling-stroke" />
 
@@ -436,7 +691,7 @@ export default function ThirdCountryRoutes() {
                     strokeDasharray={r.n == null ? "3 3" : undefined}
                     vectorEffect="non-scaling-stroke"
                     initial={false}
-                    animate={{ opacity: on ? (sel ? 0.95 : 0.6) : 0.07 }}
+                    animate={{ opacity: on ? (focusMode ? 0.14 : sel ? 0.95 : 0.6) : focusMode ? 0.04 : 0.07 }}
                     transition={{ duration: 0.3 }}
                   />
                   <path
@@ -537,6 +792,69 @@ export default function ThirdCountryRoutes() {
               </g>
             );
           })}
+
+          {/* Clickable continent labels, shown only in the world overview */}
+          {region === "all" &&
+            !sel &&
+            !tour &&
+            regionLabels.map((rl) => (
+              <g
+                key={`rl-${rl.id}`}
+                transform={`translate(${rl.x},${rl.y}) scale(${k})`}
+                className="cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  pickRegion(rl.id);
+                }}
+                onMouseMove={(e) => tip(e, REGION_LABEL[rl.id], "Click to focus this region")}
+                onMouseLeave={() => setHover(null)}
+              >
+                <rect x={-(rl.label.length * 4.1 + 12)} y={-9} width={rl.label.length * 8.2 + 24} height={18} rx={9} fill="#0f1112" stroke="#8a9099" strokeWidth={1.1} opacity={0.82} />
+                <text textAnchor="middle" y={4} fontSize={10.5} fontWeight={700} fill="#e5e7eb" letterSpacing={0.3} style={{ textTransform: "uppercase" }}>
+                  {rl.label}
+                </text>
+              </g>
+            ))}
+
+          {/* Focus overlay: animated routes, per-line counts, and country labels */}
+          {focusMode &&
+            (() => {
+              const act = routes.filter(active);
+              const mainId = sel!.id;
+              const otherId = (r: Route) => (sel!.kind === "origin" ? r.d : r.o);
+              const otherIds = [...new Set(act.map(otherId))].filter((id) => id !== mainId);
+              const showCounts = act.length <= 26;
+              const showNames = act.length <= 14;
+              return (
+                <g key={`focus-${sel!.kind}-${mainId}`}>
+                  {act.map((r) => {
+                    const a = arc(W.points[r.o], W.points[r.d]);
+                    return (
+                      <motion.path
+                        key={`fp-${r.o}-${r.d}-${r.p}`}
+                        d={a.d}
+                        fill="none"
+                        stroke={PATH_STYLE[r.p].color}
+                        strokeWidth={Math.max(widthFor(r.n), 2.2)}
+                        strokeDasharray={r.n == null ? "4 3" : undefined}
+                        strokeLinecap="round"
+                        vectorEffect="non-scaling-stroke"
+                        initial={{ pathLength: 0, opacity: 0.25 }}
+                        animate={{ pathLength: 1, opacity: 1 }}
+                        transition={{ duration: 0.75, ease: "easeInOut" }}
+                      />
+                    );
+                  })}
+                  {showCounts &&
+                    act.map((r) => {
+                      const a = arc(W.points[r.o], W.points[r.d]);
+                      return <CountLabel key={`fc-${r.o}-${r.d}-${r.p}`} x={a.mid[0]} y={a.mid[1]} k={k} n={r.n} color={PATH_STYLE[r.p].color} />;
+                    })}
+                  {showNames && otherIds.map((id) => W.points[id] && <MapLabel key={`fn-${id}`} point={W.points[id]} k={k} text={NAME(id)} dy={13} />)}
+                  {W.points[mainId] && <MapLabel point={W.points[mainId]} k={k} text={NAME(mainId)} dy={-15} big />}
+                </g>
+              );
+            })()}
         </svg>
 
         {/* Hover tooltip */}
@@ -559,15 +877,41 @@ export default function ThirdCountryRoutes() {
         {sel && (
           <button
             type="button"
-            onClick={() => setSel(null)}
+            onClick={clearSel}
             className="absolute top-2 right-2 md:top-3 md:right-3 rounded-full border border-surface-light bg-surface px-3 py-1 text-xs font-semibold text-muted hover:text-foreground"
           >
             Show whole map
           </button>
         )}
+
+        {/* Zoom controls */}
+        <div className="absolute left-2 bottom-2 md:left-3 md:bottom-3 flex flex-col gap-1">
+          <ZoomBtn label="Zoom in" onClick={() => zoomTo(zoom * 1.6)} disabled={zoom >= 10}>
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+              <path d="M7 2v10M2 7h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </ZoomBtn>
+          <ZoomBtn label="Zoom out" onClick={() => zoomTo(zoom / 1.6)} disabled={zoom <= 1}>
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+              <path d="M2 7h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </ZoomBtn>
+          {(zoom > 1 || pan.x !== 0 || pan.y !== 0) && (
+            <ZoomBtn label="Reset zoom" onClick={resetZoom}>
+              <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+                <path d="M3 5V3h2M11 5V3H9M3 9v2h2M11 9v2H9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" fill="none" />
+              </svg>
+            </ZoomBtn>
+          )}
+        </div>
       </div>
 
-      {canPan && <p className="mt-2 text-xs text-muted">Drag the map sideways to see more. Tap a pin, a ring, or a line.</p>}
+      <p className="mt-2 text-xs text-muted">
+        {region === "all"
+          ? "Tap a continent label to focus a region. Scroll or pinch to zoom, drag to pan."
+          : `Showing routes to or from ${REGION_LABEL[region]}. Scroll or pinch to zoom, drag to pan.`}{" "}
+        Tap a pin, a ring, or a line for detail.
+      </p>
 
       {/* Legend */}
       <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted">
@@ -652,6 +996,63 @@ export default function ThirdCountryRoutes() {
         country a U.S. judge had protected them from.
       </p>
     </div>
+  );
+}
+
+function ZoomBtn({ label, onClick, disabled, children }: { label: string; onClick: () => void; disabled?: boolean; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      title={label}
+      onClick={onClick}
+      disabled={disabled}
+      className="flex h-8 w-8 items-center justify-center rounded-lg border border-surface-light bg-surface/90 text-foreground shadow-sm backdrop-blur transition-colors hover:border-primary hover:text-primary disabled:opacity-35 disabled:hover:border-surface-light disabled:hover:text-foreground"
+    >
+      {children}
+    </button>
+  );
+}
+
+/** A count pill pinned to a route's midpoint, telling you how many people. */
+function CountLabel({ x, y, k, n, color }: { x: number; y: number; k: number; n: number | null; color: string }) {
+  const text = n == null ? "?" : fmtN(n);
+  const w = text.length * 5.8 + 12;
+  return (
+    <g transform={`translate(${x},${y}) scale(${k})`} style={{ pointerEvents: "none" }}>
+      <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.25 }}>
+        <rect x={-w / 2} y={-8.5} width={w} height={17} rx={8.5} fill="#0f1112" stroke={color} strokeWidth={1.3} />
+        <text textAnchor="middle" y={3.9} fontSize={10.5} fontWeight={700} fill="#f8fafc">
+          {text}
+        </text>
+      </motion.g>
+    </g>
+  );
+}
+
+/** A country-name label; `big` is the focused country, plain labels are its partners. */
+function MapLabel({ point, k, text, dy, big }: { point: [number, number]; k: number; text: string; dy: number; big?: boolean }) {
+  const fs = big ? 13 : 9.5;
+  const w = text.length * fs * 0.62 + (big ? 20 : 12);
+  const h = big ? 22 : 16;
+  return (
+    <g transform={`translate(${point[0]},${point[1]}) scale(${k})`} style={{ pointerEvents: "none" }}>
+      <motion.g initial={{ opacity: 0, y: dy > 0 ? -4 : 4 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: big ? 0 : 0.2 }}>
+        <rect
+          x={-w / 2}
+          y={dy - h / 2}
+          width={w}
+          height={h}
+          rx={h / 2}
+          fill={big ? "#f8fafc" : "#0f1112"}
+          stroke={big ? "#0f1112" : "#e5e7eb"}
+          strokeWidth={big ? 0 : 1.1}
+        />
+        <text textAnchor="middle" y={dy + fs * 0.36} fontSize={fs} fontWeight={big ? 800 : 600} fill={big ? "#0f1112" : "#f8fafc"}>
+          {text}
+        </text>
+      </motion.g>
+    </g>
   );
 }
 
