@@ -66,6 +66,7 @@ interface Data {
   };
   circuits: Circuit[];
   timeline: TEvent[];
+  status: { inEffect: boolean; since: string; text: string };
 }
 
 const G = geo as unknown as Geo;
@@ -218,6 +219,14 @@ export default function ThirdCountryExplorer() {
         <p className="text-xs font-mono uppercase tracking-widest text-primary mb-1">Interactive map</p>
         <h3 className="text-xl md:text-2xl font-bold text-foreground">Where each circuit stands</h3>
         <p className="text-sm text-muted mt-1">Status as of {fmtDate(D.asOf)}. Select a circuit to see its cases.</p>
+      </div>
+
+      {/* Policy status */}
+      <div className="mb-5 flex gap-3 rounded-xl border p-3 md:p-4" style={{ borderColor: CERT_RING, background: "rgba(245,196,81,0.08)" }} role="status">
+        <span className="mt-1 inline-block w-2.5 h-2.5 rounded-full shrink-0" style={{ background: CERT_RING }} aria-hidden />
+        <p className="text-sm text-foreground leading-relaxed">
+          <span className="font-semibold">Policy in effect since {fmtDate(D.status.since)}.</span> {D.status.text}
+        </p>
       </div>
 
       {/* View tabs */}
@@ -592,7 +601,7 @@ function Detail({ c, view }: { c: Circuit; view: View }) {
           </p>
           <p className="text-sm text-foreground">
             <em>{D.scotus.caseName}</em>, No. {D.scotus.docket}. Judgment stayed and certiorari granted {fmtDate(D.scotus.granted)}. Argument{" "}
-            {fmtDate(D.scotus.argument)}. The Court directed the parties to brief:
+            {fmtDate(D.scotus.argument)}. Because the judgment is stayed, DHS may carry out third country removals under its guidance until the Court rules. The Court directed the parties to brief:
           </p>
           <ol className="list-decimal pl-5 mt-2 space-y-1 text-sm text-muted italic">
             {D.scotus.questions.map((q) => (

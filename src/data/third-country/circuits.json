@@ -892,7 +892,7 @@
   {
    "date": "2025-06-23",
    "kind": "scotus",
-   "label": "Supreme Court stays the D.V.D. preliminary injunction without explanation"
+   "label": "Supreme Court stays the D.V.D. preliminary injunction without explanation; the guidance goes back into effect"
   },
   {
    "date": "2025-07-15",
@@ -943,10 +943,9 @@
    "circuit": "1"
   },
   {
-   "date": "2026-03-17",
-   "approx": "March 2026",
+   "date": "2026-03-16",
    "kind": "circuit",
-   "label": "A divided 1st Cir. panel stays the final judgment pending appeal",
+   "label": "A divided 1st Cir. panel stays the final judgment pending appeal; the guidance goes back into effect",
    "circuit": "1"
   },
   {
@@ -989,13 +988,13 @@
   {
    "date": "2026-09-23",
    "kind": "circuit",
-   "label": "1st Cir. dissolves its stay, putting the judgment into effect",
+   "label": "1st Cir. dissolves its stay; the guidance is set aside nationwide",
    "circuit": "1"
   },
   {
    "date": "2026-09-29",
    "kind": "scotus",
-   "label": "Supreme Court stays the judgment and grants certiorari, No. 26-426",
+   "label": "Supreme Court stays the judgment and grants certiorari, No. 26-426; third country removals under the guidance may resume",
    "circuit": "1"
   },
   {
@@ -1324,5 +1323,10 @@
     ]
    }
   }
+ },
+ "status": {
+  "inEffect": true,
+  "since": "2026-09-29",
+  "text": "DHS may carry out third country removals under its 2025 guidance while the Supreme Court decides the case. Only people with their own court orders are protected in the meantime."
  }
 }

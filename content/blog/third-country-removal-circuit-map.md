@@ -1,6 +1,6 @@
 ---
 title: "Third Country Removals, Mapped: One Circuit Ruled, and Everyone Else Went Through Habeas"
-description: "An interactive map of where the federal courts stand on DHS's third country removal policy, the district court habeas rulings in circuits with no appellate opinion, and the 1252(g) jurisdiction split behind the first question in DHS v. D.V.D."
+description: "The Supreme Court has let third country removals resume while it decides DHS v. D.V.D. An interactive map of where the federal courts stand on the policy, the district court habeas rulings in circuits with no appellate opinion, and the 1252(g) jurisdiction split behind the first question in DHS v. D.V.D."
 date: "2026-10-10"
 author: "Sheldon Barnes"
 category: "law-and-policy"
@@ -14,6 +14,8 @@ published: true
 
 On September 29, the Supreme Court stayed the First Circuit's judgment in *D.V.D. v. Department of Homeland Security*, treated the government's stay application as a petition for certiorari, and granted it the same day. The case is now *Department of Homeland Security v. D.V.D.*, No. 26-426, and it will be argued December 9.
 
+The stay is easy to misread. It did not stop third country removals. It paused the judgment that had blocked them, so **DHS may carry out third country removals under its 2025 guidance while the case is pending.** The only people protected in the meantime are those with their own court orders.
+
 I built the [bond split map](/blog/immigration-bond-circuit-split-map-and-data) because eleven circuits had answered the same question. This case is different. The third country question never produced a split on the merits, and the reason why is the most interesting thing about it. This page shows what the courts have done anyway, with links to every opinion and order.
 
 ## The question
@@ -23,6 +25,21 @@ When an immigration judge orders someone removed but grants withholding of remov
 A nationwide class challenged that guidance in the District of Massachusetts. The district court set it aside, and on September 18, 2026 the First Circuit largely affirmed, holding that the statutes and regulations require meaningful notice and a meaningful opportunity to raise a fear of persecution or torture before removal to a country not named in the removal order.
 
 The Supreme Court directed the parties to brief four questions: whether the district court had jurisdiction; whether 8 U.S.C. 1252(f)(1) allowed classwide declaratory relief and APA vacatur; whether the guidance is unlawful under 8 U.S.C. 1231(b), the Due Process Clause, or FARRA and the CAT regulations; and any other question the government thinks necessary.
+
+## Where things stand right now
+
+Court orders have switched the guidance on and off six times since April 2025. For most of that time, it has been in effect.
+
+| Period | Status of the guidance | Why |
+|---|---|---|
+| April 18 to June 23, 2025 | Limited by court order | The District of Massachusetts required written notice and a chance to raise fear claims before any third country removal |
+| June 23, 2025 to February 25, 2026 | In effect | The Supreme Court stayed that injunction without explanation |
+| February 25 to March 16, 2026 | Set aside | The district court entered final judgment vacating the guidance |
+| March 16 to September 23, 2026 | In effect | A divided First Circuit panel stayed the judgment pending appeal |
+| September 23 to 29, 2026 | Set aside | The First Circuit affirmed and dissolved its stay |
+| Since September 29, 2026 | In effect | The Supreme Court stayed the judgment and granted certiorari |
+
+Three things follow. First, DHS can use the full guidance today, including removal with no notice at all to a country that has given diplomatic assurances, and removal 24 hours after notice, or 6 hours in exigent circumstances, everywhere else. Second, the stay is not a ruling on the merits; the Court will decide whether the guidance is lawful after the December 9 argument, most likely by the end of the Term next summer. Third, the Supreme Court's order reaches only the classwide judgment. A district court order protecting a specific person, like those in *Ansumana S.*, *Cruz-Medina*, or the Fourth Circuit's stay in *Bojorquez*, still binds the government for that person. That is why individual habeas petitions remain the only way to stop a particular removal while the case is pending.
 
 ## Where each circuit stands
 
@@ -91,6 +108,6 @@ Question 2 decides whether the class road stays open. If 1252(f)(1) bars classwi
 
 ## Sources and method
 
-Circuit decisions link to the court or to a published copy; district court orders and government filings come from [Habeas Dockets](https://habeasdockets.org), [CourtListener](https://www.courtlistener.com), and Westlaw. Case counts come from full text searches of Habeas Dockets run October 10, 2026, by district using the site’s court filter; “hybrid” means the case documents mention both “third country” and *Zadvydas*. The decision count comes from a Westlaw search of federal cases dated after March 1, 2025 for “third country” in the same sentence as notice, “meaningful opportunity,” “fear-based,” or “reasonable fear,” together with withholding or the Convention Against Torture. The petition total comes from the [ProPublica Habeas Tracker](https://projects.propublica.org/habeas-tracker). The Supreme Court materials link to the [docket for No. 26-426](https://www.supremecourt.gov/docket/docketfiles/html/public/26-426.html) and the [questions presented](https://www.supremecourt.gov/docket/docketfiles/html/qp/26-00426qp.pdf). The jurisdiction view relies on the [Ninth Circuit's June 25, 2026 order](https://cdn.ca9.uscourts.gov/datastore/opinions/2026/06/25/24-631.pdf) denying rehearing en banc in *Ibarra-Perez*, and the [Solicitor General's extension application](https://www.supremecourt.gov/DocketPDF/26/26A302/423142/20260904144424703_Ibarra-Perez%20Extension%20Application%20-%20September.pdf). Background on the guidance comes from the Congressional Research Service, [Immigration Removals to Third Countries](https://www.everycrsreport.com/files/2026-08-24_IF13295_34f00b90f254204060a214cc5e01f48176e45a96.html) (Aug. 24, 2026).
+Circuit decisions link to the court or to a published copy; district court orders and government filings come from [Habeas Dockets](https://habeasdockets.org), [CourtListener](https://www.courtlistener.com), and Westlaw. Case counts come from full text searches of Habeas Dockets run October 10, 2026, by district using the site’s court filter; “hybrid” means the case documents mention both “third country” and *Zadvydas*. The decision count comes from a Westlaw search of federal cases dated after March 1, 2025 for “third country” in the same sentence as notice, “meaningful opportunity,” “fear-based,” or “reasonable fear,” together with withholding or the Convention Against Torture. The petition total comes from the [ProPublica Habeas Tracker](https://projects.propublica.org/habeas-tracker). The dates in the status table come from the district and appellate orders cited on this page, including the First Circuit’s March 16, 2026 stay order as cited in *Ansumana S.*; for coverage of the September 29 order, see [States Newsroom](https://wisconsinexaminer.com/2026/09/29/repub/us-supreme-court-allows-trump-to-resume-deportations-outside-immigrants-home-countries/). The Supreme Court materials link to the [docket for No. 26-426](https://www.supremecourt.gov/docket/docketfiles/html/public/26-426.html) and the [questions presented](https://www.supremecourt.gov/docket/docketfiles/html/qp/26-00426qp.pdf). The jurisdiction view relies on the [Ninth Circuit's June 25, 2026 order](https://cdn.ca9.uscourts.gov/datastore/opinions/2026/06/25/24-631.pdf) denying rehearing en banc in *Ibarra-Perez*, and the [Solicitor General's extension application](https://www.supremecourt.gov/DocketPDF/26/26A302/423142/20260904144424703_Ibarra-Perez%20Extension%20Application%20-%20September.pdf). Background on the guidance comes from the Congressional Research Service, [Immigration Removals to Third Countries](https://www.everycrsreport.com/files/2026-08-24_IF13295_34f00b90f254204060a214cc5e01f48176e45a96.html) (Aug. 24, 2026).
 
 A circuit is striped only where I found a written district court ruling or order on third country procedures. "No ruling found" means none turned up in these sources, not that none exists; unpublished habeas orders are hard to find. All materials were retrieved in October 2026. If you know of a ruling I missed, [tell me](/contact) and I will add it.
