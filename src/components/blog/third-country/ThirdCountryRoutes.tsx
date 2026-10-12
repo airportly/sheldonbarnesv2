@@ -85,7 +85,7 @@ const FILTERS: { id: Filter; tab: string; ps: Pathway[]; sub: string }[] = [
     id: "deal",
     tab: "Removal deals",
     ps: ["deal"],
-    sub: "The practice D.V.D. is about. People with final removal orders, most of whom an immigration judge protected from return home, flown to countries that agreed to take them, mostly in Africa.",
+    sub: "The agreement- and assurance-based removals at the center of D.V.D.: people with final orders, most protected by a judge from return home, flown to countries that agreed to take them, mostly in Africa. Mexico, where the far larger land-border volume goes, is under the Americas view.",
   },
   {
     id: "border",
@@ -103,7 +103,7 @@ const FILTERS: { id: Filter; tab: string; ps: Pathway[]; sub: string }[] = [
     id: "other",
     tab: "Other",
     ps: ["aea", "born"],
-    sub: "The Alien Enemies Act flights of Venezuelans to El Salvador's CECOT prison, and refugees sent to a nationality they were born outside of and had never lived in. For these, the ring marks the birth country.",
+    sub: "The Alien Enemies Act flights of Venezuelans to El Salvador's CECOT prison, and refugees sent to a nationality they were born outside of and had never lived in. For these, the house marks the birth country.",
   },
   { id: "all", tab: "All", ps: ["deal", "border", "aca", "aea", "born"], sub: "Every documented route. Mexico dominates by volume; the removal deals reach the most countries." },
 ];
@@ -137,6 +137,10 @@ const BUCKETS = [
   { min: 1, w: 1.5, label: "1 to 9" },
 ];
 const widthFor = (n: number | null) => (n == null ? 1.1 : (BUCKETS.find((b) => n >= b.min)?.w ?? 1.5));
+
+// A small house glyph marks each home country (clearer than a bare dot).
+const HOUSE = "M0,-4.6 L4.8,-0.4 L3.6,-0.4 L3.6,4.4 L-3.6,4.4 L-3.6,-0.4 L-4.8,-0.4 Z";
+const HOUSE_DOOR = "M-1.2,4.4 L-1.2,1.3 L1.2,1.3 L1.2,4.4 Z";
 
 const OUTCOME: Record<Case["outcome"], { color: string; label: string }> = {
   blocked: { color: "#4f8fd6", label: "Court blocked the removal" },
@@ -235,8 +239,6 @@ export default function ThirdCountryRoutes() {
   const [sel, setSel] = useState<Sel>(null);
   const [showCases, setShowCases] = useState(true);
   const [hover, setHover] = useState<{ x: number; y: number; text: string; sub?: string } | null>(null);
-  const [tour, setTour] = useState(false);
-  const [tourIdx, setTourIdx] = useState(0);
   const wrapRef = useRef<HTMLDivElement>(null);
 
   const f = FILTERS.find((x) => x.id === filter)!;
@@ -290,20 +292,6 @@ export default function ThirdCountryRoutes() {
   }, [routes]);
 
   const people = dests.reduce((s, d) => s + d.n, 0);
-
-  // Guided tour: step through each home country, zooming to it, drawing its
-  // routes, and labelling each destination with how many people went there.
-  const tourId = origins.length ? origins[tourIdx % origins.length].id : null;
-  useEffect(() => {
-    if (!tour || !tourId) return;
-    setSel({ kind: "origin", id: tourId });
-    const t = setTimeout(() => setTourIdx((i) => i + 1), 3400);
-    return () => clearTimeout(t);
-  }, [tour, tourIdx, tourId]);
-  const startTour = () => {
-    setTourIdx(0);
-    setTour(true);
-  };
 
   const cases = useMemo(
     () =>
@@ -473,23 +461,13 @@ export default function ThirdCountryRoutes() {
   const pickFilter = (id: Filter) => {
     setFilter(id);
     setSel(null);
-    setTour(false);
-    setTourIdx(0);
   };
   const pickRegion = (id: RegionId | "all") => {
     setRegion((cur) => (cur === id ? "all" : id));
     setSel(null);
-    setTour(false);
-    setTourIdx(0);
   };
-  const clearSel = () => {
-    setSel(null);
-    setTour(false);
-  };
-  const toggle = (s: NonNullable<Sel>) => {
-    setTour(false);
-    setSel((cur) => (JSON.stringify(cur) === JSON.stringify(s) ? null : s));
-  };
+  const clearSel = () => setSel(null);
+  const toggle = (s: NonNullable<Sel>) => setSel((cur) => (JSON.stringify(cur) === JSON.stringify(s) ? null : s));
 
   const tip = (e: React.MouseEvent, text: string, sub?: string) => {
     const r = wrapRef.current?.getBoundingClientRect();
@@ -499,7 +477,6 @@ export default function ThirdCountryRoutes() {
 
   const sorted = [...routes].sort((a, b) => (b.n ?? 0) - (a.n ?? 0));
   const originIds = [...new Set(routes.map((r) => r.o))];
-  const focusMode = !!sel && (sel.kind === "origin" || sel.kind === "dest");
 
   return (
     <div className="not-prose my-10 rounded-2xl border border-surface-light bg-surface p-4 md:p-8 lg:w-[min(94vw,1200px)] lg:max-w-none lg:relative lg:left-1/2 lg:-translate-x-1/2">
@@ -570,42 +547,6 @@ export default function ThirdCountryRoutes() {
         <Figure value={fmtN(people)} label="people documented" />
         <Figure value={String(dests.length)} label={dests.length === 1 ? "destination country" : "destination countries"} />
         <Figure value={String(originIds.length)} label="home countries" />
-      </div>
-
-      {/* Guided tour */}
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          onClick={tour ? () => setTour(false) : startTour}
-          aria-pressed={tour}
-          className={`inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold transition-colors ${
-            tour ? "bg-primary text-background" : "border border-surface-light text-foreground hover:border-primary"
-          }`}
-        >
-          {tour ? (
-            <>
-              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden>
-                <rect x="1" y="1" width="3" height="8" fill="currentColor" />
-                <rect x="6" y="1" width="3" height="8" fill="currentColor" />
-              </svg>
-              Pause tour
-            </>
-          ) : (
-            <>
-              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden>
-                <path d="M1,1 L9,5 L1,9 Z" fill="currentColor" />
-              </svg>
-              Play tour
-            </>
-          )}
-        </button>
-        {tour && tourId ? (
-          <span className="text-xs text-muted">
-            Highlighting <b className="text-foreground">{NAME(tourId)}</b> and where its nationals were sent &middot; {(tourIdx % origins.length) + 1} of {origins.length} home countries
-          </span>
-        ) : (
-          <span className="text-xs text-muted">Step through each home country and watch its routes draw, one at a time.</span>
-        )}
       </div>
 
       {/* Map */}
@@ -691,7 +632,7 @@ export default function ThirdCountryRoutes() {
                     strokeDasharray={r.n == null ? "3 3" : undefined}
                     vectorEffect="non-scaling-stroke"
                     initial={false}
-                    animate={{ opacity: on ? (focusMode ? 0.14 : sel ? 0.95 : 0.6) : focusMode ? 0.04 : 0.07 }}
+                    animate={{ opacity: on ? (sel ? 0.95 : 0.6) : 0.07 }}
                     transition={{ duration: 0.3 }}
                   />
                   <path
@@ -746,26 +687,24 @@ export default function ThirdCountryRoutes() {
               );
             })}
 
-          {/* Home countries: hollow rings */}
+          {/* Home countries: small house icon */}
           {originIds.map((o) => {
             const p = W.points[o];
             const on = !sel || routes.some((r) => r.o === o && active(r));
             return (
-              <circle
+              <g
                 key={`o-${o}`}
-                cx={p[0]}
-                cy={p[1]}
-                r={3.4 * k}
-                fill="#0f1112"
-                stroke="#e5e7eb"
-                strokeWidth={1.4}
-                vectorEffect="non-scaling-stroke"
+                transform={`translate(${p[0]},${p[1]}) scale(${k * 0.82})`}
                 opacity={on ? 1 : 0.2}
                 className="cursor-pointer"
                 onMouseMove={(e) => tip(e, NAME(o), "Home country")}
                 onMouseLeave={() => setHover(null)}
                 onClick={() => toggle({ kind: "origin", id: o })}
-              />
+              >
+                <circle r={7} fill="transparent" />
+                <path d={HOUSE} fill="#e5e7eb" stroke="#0f1112" strokeWidth={1.1} vectorEffect="non-scaling-stroke" strokeLinejoin="round" />
+                <path d={HOUSE_DOOR} fill="#0f1112" />
+              </g>
             );
           })}
 
@@ -796,7 +735,6 @@ export default function ThirdCountryRoutes() {
           {/* Clickable continent labels, shown only in the world overview */}
           {region === "all" &&
             !sel &&
-            !tour &&
             regionLabels.map((rl) => (
               <g
                 key={`rl-${rl.id}`}
@@ -816,45 +754,6 @@ export default function ThirdCountryRoutes() {
               </g>
             ))}
 
-          {/* Focus overlay: animated routes, per-line counts, and country labels */}
-          {focusMode &&
-            (() => {
-              const act = routes.filter(active);
-              const mainId = sel!.id;
-              const otherId = (r: Route) => (sel!.kind === "origin" ? r.d : r.o);
-              const otherIds = [...new Set(act.map(otherId))].filter((id) => id !== mainId);
-              const showCounts = act.length <= 26;
-              const showNames = act.length <= 14;
-              return (
-                <g key={`focus-${sel!.kind}-${mainId}`}>
-                  {act.map((r) => {
-                    const a = arc(W.points[r.o], W.points[r.d]);
-                    return (
-                      <motion.path
-                        key={`fp-${r.o}-${r.d}-${r.p}`}
-                        d={a.d}
-                        fill="none"
-                        stroke={PATH_STYLE[r.p].color}
-                        strokeWidth={Math.max(widthFor(r.n), 2.2)}
-                        strokeDasharray={r.n == null ? "4 3" : undefined}
-                        strokeLinecap="round"
-                        vectorEffect="non-scaling-stroke"
-                        initial={{ pathLength: 0, opacity: 0.25 }}
-                        animate={{ pathLength: 1, opacity: 1 }}
-                        transition={{ duration: 0.75, ease: "easeInOut" }}
-                      />
-                    );
-                  })}
-                  {showCounts &&
-                    act.map((r) => {
-                      const a = arc(W.points[r.o], W.points[r.d]);
-                      return <CountLabel key={`fc-${r.o}-${r.d}-${r.p}`} x={a.mid[0]} y={a.mid[1]} k={k} n={r.n} color={PATH_STYLE[r.p].color} />;
-                    })}
-                  {showNames && otherIds.map((id) => W.points[id] && <MapLabel key={`fn-${id}`} point={W.points[id]} k={k} text={NAME(id)} dy={13} />)}
-                  {W.points[mainId] && <MapLabel point={W.points[mainId]} k={k} text={NAME(mainId)} dy={-15} big />}
-                </g>
-              );
-            })()}
         </svg>
 
         {/* Hover tooltip */}
@@ -916,8 +815,9 @@ export default function ThirdCountryRoutes() {
       {/* Legend */}
       <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted">
         <span className="inline-flex items-center gap-1.5">
-          <svg width="14" height="14" viewBox="-7 -7 14 14" aria-hidden>
-            <circle r="4" fill="#0f1112" stroke="#e5e7eb" strokeWidth="1.5" />
+          <svg width="14" height="14" viewBox="-6 -6 12 12" aria-hidden>
+            <path d={HOUSE} fill="#e5e7eb" stroke="#0f1112" strokeWidth="1" strokeLinejoin="round" />
+            <path d={HOUSE_DOOR} fill="#0f1112" />
           </svg>
           Home country
         </span>
@@ -1011,48 +911,6 @@ function ZoomBtn({ label, onClick, disabled, children }: { label: string; onClic
     >
       {children}
     </button>
-  );
-}
-
-/** A count pill pinned to a route's midpoint, telling you how many people. */
-function CountLabel({ x, y, k, n, color }: { x: number; y: number; k: number; n: number | null; color: string }) {
-  const text = n == null ? "?" : fmtN(n);
-  const w = text.length * 5.8 + 12;
-  return (
-    <g transform={`translate(${x},${y}) scale(${k})`} style={{ pointerEvents: "none" }}>
-      <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.25 }}>
-        <rect x={-w / 2} y={-8.5} width={w} height={17} rx={8.5} fill="#0f1112" stroke={color} strokeWidth={1.3} />
-        <text textAnchor="middle" y={3.9} fontSize={10.5} fontWeight={700} fill="#f8fafc">
-          {text}
-        </text>
-      </motion.g>
-    </g>
-  );
-}
-
-/** A country-name label; `big` is the focused country, plain labels are its partners. */
-function MapLabel({ point, k, text, dy, big }: { point: [number, number]; k: number; text: string; dy: number; big?: boolean }) {
-  const fs = big ? 13 : 9.5;
-  const w = text.length * fs * 0.62 + (big ? 20 : 12);
-  const h = big ? 22 : 16;
-  return (
-    <g transform={`translate(${point[0]},${point[1]}) scale(${k})`} style={{ pointerEvents: "none" }}>
-      <motion.g initial={{ opacity: 0, y: dy > 0 ? -4 : 4 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: big ? 0 : 0.2 }}>
-        <rect
-          x={-w / 2}
-          y={dy - h / 2}
-          width={w}
-          height={h}
-          rx={h / 2}
-          fill={big ? "#f8fafc" : "#0f1112"}
-          stroke={big ? "#0f1112" : "#e5e7eb"}
-          strokeWidth={big ? 0 : 1.1}
-        />
-        <text textAnchor="middle" y={dy + fs * 0.36} fontSize={fs} fontWeight={big ? 800 : 600} fill={big ? "#0f1112" : "#f8fafc"}>
-          {text}
-        </text>
-      </motion.g>
-    </g>
   );
 }
 
