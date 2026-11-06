@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Resources", href: "/books/the-platform-inversion/resources" },
   { label: "Molecule Viewer", href: "/tools/ai-voice-guided-molecule-viewer" },
+  { label: "GenomeOS", href: "/tools/genome-os" },
   { label: "Contact", href: "/contact" },
 ];
 

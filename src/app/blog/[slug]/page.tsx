@@ -13,6 +13,8 @@ import CircuitExplorer from "@/components/blog/bond-split/CircuitExplorer";
 import BondCharts from "@/components/blog/bond-split/BondCharts";
 import StatuteMap from "@/components/blog/bond-split/StatuteMap";
 import InfluenceNetwork from "@/components/blog/bond-split/InfluenceNetwork";
+import ShocksCatalog from "@/components/blog/ShocksCatalog";
+import BallotWheel from "@/components/blog/BallotWheel";
 import ThirdCountryExplorer from "@/components/blog/third-country/ThirdCountryExplorer";
 import ThirdCountryRoutes from "@/components/blog/third-country/ThirdCountryRoutes";
 import { getAllPosts, getPostBySlug, tagDisplay } from "@/lib/blog";
@@ -260,6 +262,8 @@ export default async function BlogPostPage({
               "{{influence-map}}": <InfluenceNetwork />,
               "{{third-country-map}}": <ThirdCountryExplorer />,
               "{{third-country-routes}}": <ThirdCountryRoutes />,
+              "{{shocks-catalog}}": <ShocksCatalog />,
+              "{{ballot-wheel}}": <BallotWheel />,
               "{{viewer-cta}}": (
                 <div className="my-8 flex justify-center">
                   <Link

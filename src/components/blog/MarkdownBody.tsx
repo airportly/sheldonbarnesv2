@@ -57,7 +57,7 @@ export default function MarkdownBody({ source }: { source: string }) {
               // Center paragraphs that are just a standalone image or an
               // anchor-wrapped image, so the max-width'd media sits in the middle
               // of the reading column rather than flush-left.
-              <p className="text-muted leading-relaxed mb-5 text-lg [&:has(>img)]:text-center [&:has(>a>img)]:text-center">
+              <p className="text-muted leading-relaxed mb-5 text-lg [&:has(>img:only-child)]:text-center [&:has(>a:only-child)]:text-center">
                 {children}
               </p>
             ),
@@ -142,6 +142,12 @@ export default function MarkdownBody({ source }: { source: string }) {
             img: ({ src, alt }) => {
               const safeSrc = typeof src === "string" ? src : "";
               const safeAlt = alt ?? "";
+              if (safeSrc.includes("/icons/")) {
+                return (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={safeSrc} alt={safeAlt} className="float-left mr-4 mb-2 h-16 w-16 rounded-lg border border-surface-light object-cover sm:h-20 sm:w-20" loading="lazy" />
+                );
+              }
               // inline-block + max-width keeps images tight within the reading
               // column; the parent <p>'s text-center handles horizontal alignment.
               // cursor-zoom-in + onClick opens the lightbox modal at the bottom

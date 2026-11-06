@@ -25,6 +25,7 @@ export default function PostCard({ post }: { post: BlogPost }) {
               fill
               className="object-cover group-hover:scale-[1.02] transition-transform"
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+              unoptimized={post.hero.endsWith(".gif")}
             />
           </div>
         ) : post.heroVideo ? (

@@ -1,0 +1,32 @@
+{
+  "name": "third-country-removal-trace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remotion video: Third Country / Removal Trace — explainer for DHS v. D.V.D., No. 26-426",
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render:main": "remotion render Main16x9 out/main-16x9.mp4",
+    "render:vertical": "remotion render Vertical4x5 out/vertical-4x5.mp4",
+    "render:test": "remotion render AnsumanaTest out/ansumana-test.mp4",
+    "upgrade": "remotion upgrade",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "d3-geo": "3.1.1",
+    "d3-geo-projection": "4.0.0",
+    "remotion": "4.0.535",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "3.1.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/topojson-client": "3.1.5",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "typescript": "5.9.3"
+  }
+}
