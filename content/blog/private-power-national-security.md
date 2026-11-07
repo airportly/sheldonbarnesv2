@@ -7,7 +7,7 @@ category: "law-and-policy"
 tags: ["national-security", "elon-musk", "spacex", "starlink", "starshield", "dragon-spacecraft", "nasa", "ukraine", "critical-infrastructure", "public-private-partnership", "defense", "space-policy", "executive-power", "regulation", "governance", "iran", "antitrust", "market-concentration", "conglomerate", "structural-separation", "civilian-oversight", "transparency", "commander-in-chief", "law-school"]
 hero: "/private-power-national-security.gif"
 heroAlt: "Illustration of a U.S. president in the Oval Office gesturing across the desk toward Elon Musk, who sits with his arms crossed, under the headline 'When private corporate power becomes a national security liability.' Side panels recap the June 2025 Dragon threat and the October 2026 Ukraine Starlink restrictions, over a banner reading 'It's not just about Elon Musk. It's about how we govern critical national security capabilities.'"
-socialImage: "/private-power-national-security.gif"
+socialImage: "/private-power-national-security.png"
 skipHero: false
 published: true
 ---
