@@ -6,6 +6,7 @@ import Expertise from "@/components/Expertise";
 import Author from "@/components/Author";
 import Books from "@/components/Books";
 import PeaceBook from "@/components/PeaceBook";
+import ComicCarousel from "@/components/ComicCarousel";
 import RecentPosts from "@/components/RecentPosts";
 import KeyIdeas from "@/components/KeyIdeas";
 import Resources from "@/components/Resources";
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <PeaceBook />
+        <ComicCarousel />
         <RecentPosts />
         <About />
         <Expertise />

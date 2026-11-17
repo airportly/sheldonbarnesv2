@@ -227,3 +227,37 @@ body::before {
     opacity: 0;
   }
 }
+
+/* Comic carousel: the rows are real horizontal scrollers (driven by an rAF
+   auto-scroll and the left/right buttons), with the native scrollbar hidden. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Spotlight: concentric red / white / blue ring around a highlighted page. */
+.rwb-spotlight {
+  box-shadow:
+    0 0 0 3px var(--rwb-red),
+    0 0 0 6px #ffffff,
+    0 0 0 9px var(--rwb-blue),
+    0 0 26px 6px rgba(215, 38, 61, 0.45);
+}
+
+/* Thought bubble pop-in. */
+@keyframes rwbPop {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(6px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+.rwb-bubble {
+  animation: rwbPop 0.28s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
