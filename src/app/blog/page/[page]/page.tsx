@@ -87,7 +87,7 @@ export default async function BlogPaginatedPage({
               return isCurrent ? (
                 <span
                   key={p}
-                  className="px-4 py-2 rounded-lg bg-primary text-background text-sm font-semibold"
+                  className="px-4 py-2 rounded-lg bg-secondary text-white text-sm font-semibold"
                 >
                   {p}
                 </span>

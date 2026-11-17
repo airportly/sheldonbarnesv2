@@ -517,7 +517,7 @@ export default function ThirdCountryRoutes() {
           onClick={() => pickRegion("all")}
           aria-pressed={region === "all"}
           className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
-            region === "all" ? "bg-primary text-background" : "border border-surface-light text-muted hover:text-foreground"
+            region === "all" ? "bg-secondary text-white" : "border border-surface-light text-muted hover:text-foreground"
           }`}
         >
           Whole world
@@ -533,7 +533,7 @@ export default function ThirdCountryRoutes() {
               aria-pressed={region === rg.id}
               title={n ? `${rg.label}: ${n} routes` : `${rg.label}: none in this view`}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors disabled:opacity-30 ${
-                region === rg.id ? "bg-primary text-background" : "border border-surface-light text-muted enabled:hover:text-foreground"
+                region === rg.id ? "bg-secondary text-white" : "border border-surface-light text-muted enabled:hover:text-foreground"
               }`}
             >
               {rg.short}

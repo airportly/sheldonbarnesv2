@@ -29,7 +29,7 @@ export default function Hero() {
           className="absolute inset-0 opacity-[0.07]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(232,112,26,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(232,112,26,0.5) 1px, transparent 1px)",
+              "linear-gradient(rgba(239,68,68,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(239,68,68,0.5) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -104,7 +104,7 @@ export default function Hero() {
         >
           <a
             href="#books"
-            className="px-8 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all glow-orange"
+            className="px-8 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all glow-blue"
           >
             View My Work
           </a>

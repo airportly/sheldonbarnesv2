@@ -5,6 +5,8 @@ import About from "@/components/About";
 import Expertise from "@/components/Expertise";
 import Author from "@/components/Author";
 import Books from "@/components/Books";
+import PeaceBook from "@/components/PeaceBook";
+import RecentPosts from "@/components/RecentPosts";
 import KeyIdeas from "@/components/KeyIdeas";
 import Resources from "@/components/Resources";
 import AiAssistant from "@/components/AiAssistant";
@@ -18,6 +20,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <PeaceBook />
+        <RecentPosts />
         <About />
         <Expertise />
         <Author />

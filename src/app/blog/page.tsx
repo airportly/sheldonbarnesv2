@@ -72,7 +72,7 @@ export default function BlogIndexPage() {
 
           {pageCount > 1 && (
             <div className="flex justify-center gap-2 mt-12">
-              <span className="px-4 py-2 rounded-lg bg-primary text-background text-sm font-semibold">
+              <span className="px-4 py-2 rounded-lg bg-secondary text-white text-sm font-semibold">
                 1
               </span>
               {Array.from({ length: pageCount - 1 }, (_, i) => i + 2).map((p) => (

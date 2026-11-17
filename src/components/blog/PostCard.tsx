@@ -11,11 +11,22 @@ function formatDate(iso: string): string {
   });
 }
 
-export default function PostCard({ post }: { post: BlogPost }) {
+export default function PostCard({
+  post,
+  variant = "solid",
+}: {
+  post: BlogPost;
+  /** "glass" uses the frosted iOS surface (home page); "solid" is the default blog look. */
+  variant?: "solid" | "glass";
+}) {
   const category = getCategoryBySlug(post.category);
+  const shell =
+    variant === "glass"
+      ? "rounded-2xl glass overflow-hidden transition-all group"
+      : "rounded-2xl bg-surface border border-surface-light overflow-hidden hover:border-primary/40 transition-all group";
 
   return (
-    <article className="rounded-2xl bg-surface border border-surface-light overflow-hidden hover:border-primary/40 transition-all group">
+    <article className={shell}>
       <Link href={`/blog/${post.slug}`} className="block">
         {post.hero ? (
           <div className="aspect-[16/9] relative bg-background">

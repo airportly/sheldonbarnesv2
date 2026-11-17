@@ -430,7 +430,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-4 justify-center">
               <a
                 href="/books"
-                className="px-8 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all"
+                className="px-8 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all"
               >
                 Read My Books
               </a>

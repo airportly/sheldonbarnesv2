@@ -268,7 +268,7 @@ export default async function BlogPostPage({
                 <div className="my-8 flex justify-center">
                   <Link
                     href="/tools/ai-voice-guided-molecule-viewer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-colors shadow-lg shadow-black/30"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-colors shadow-lg shadow-black/30"
                   >
                     Try AI Voice-Guided Molecule Viewer
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">

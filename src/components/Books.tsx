@@ -53,7 +53,7 @@ function BookFeature({ bookIndex, reverse }: { bookIndex: number; reverse?: bool
         <div className="flex flex-wrap gap-3">
           <Link
             href={`/books/${book.slug}`}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all"
           >
             Learn More
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

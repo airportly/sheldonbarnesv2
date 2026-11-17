@@ -59,7 +59,7 @@ export default function Author() {
                 href="https://amazon.com/author/sheldonbarnes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M.045 18.02c.07-.116.36-.236.89-.36C3.46 17.02 6.09 16.61 8.78 16.61c2.78 0 5.45.55 8.01 1.65.31.13.58.2.79.2.34 0 .53-.15.53-.47 0-.19-.08-.42-.22-.69-1.5-2.78-3.56-4.94-6.17-6.49-2.6-1.56-5.47-2.34-8.6-2.34-.93 0-1.83.08-2.69.24-.55.1-.86.04-.93-.19-.07-.22.08-.39.45-.49.96-.26 2.05-.39 3.27-.39 3.34 0 6.39.87 9.17 2.6 2.78 1.73 4.87 4.07 6.28 7.01.19.39.29.7.29.93 0 .67-.38 1-1.15 1-.29 0-.67-.08-1.15-.24-2.73-1.04-5.52-1.56-8.38-1.56-2.85 0-5.59.45-8.24 1.36-.36.13-.63.19-.82.19-.36 0-.53-.13-.53-.39l.03-.11z"/>

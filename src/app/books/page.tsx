@@ -89,7 +89,7 @@ export default function BooksPage() {
                   <div className="flex flex-wrap gap-3">
                     <Link
                       href={`/books/${book.slug}`}
-                      className="px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all"
+                      className="px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all"
                     >
                       Learn More
                     </Link>

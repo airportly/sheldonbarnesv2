@@ -3,8 +3,8 @@
 @theme inline {
   --color-background: #1a1d1e;
   --color-foreground: #ededed;
-  --color-primary: #e8701a;
-  --color-primary-light: #f59e4b;
+  --color-primary: #ef4444;
+  --color-primary-light: #f87171;
   --color-secondary: #3b82c6;
   --color-secondary-light: #60a5fa;
   --color-surface: #2a2d2e;
@@ -49,7 +49,7 @@ body {
 
 /* Glow effect */
 .glow-orange {
-  box-shadow: 0 0 20px rgba(232, 112, 26, 0.3), 0 0 60px rgba(232, 112, 26, 0.1);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3), 0 0 60px rgba(239, 68, 68, 0.1);
 }
 .glow-blue {
   box-shadow: 0 0 20px rgba(59, 130, 198, 0.3), 0 0 60px rgba(59, 130, 198, 0.1);
@@ -58,4 +58,172 @@ body {
 /* Section spacing */
 section {
   scroll-margin-top: 80px;
+}
+
+/* ---------------------------------------------------------------------------
+   iOS / macOS "frosted glass" surfaces.
+   A soft, fixed ambient backdrop gives the blur something to pick up; the
+   .glass utilities are translucent panels with a backdrop blur, a hairline
+   light border, and an inner top highlight — the Apple vibrancy look.
+--------------------------------------------------------------------------- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(55rem 55rem at 12% 8%, rgba(239, 68, 68, 0.12), transparent 60%),
+    radial-gradient(48rem 48rem at 88% 22%, rgba(59, 130, 198, 0.12), transparent 60%),
+    radial-gradient(42rem 42rem at 50% 95%, rgba(239, 68, 68, 0.07), transparent 60%);
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-surface) 48%, transparent);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Lighter, more see-through panel for chips and nested cards. */
+.glass-soft {
+  background: color-mix(in srgb, var(--color-surface) 30%, transparent);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass:hover,
+.glass-soft:hover {
+  border-color: color-mix(in srgb, var(--color-primary) 45%, transparent);
+}
+
+/* Respect users who ask for less motion/effects: drop the blur gracefully. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .glass-soft {
+    background: color-mix(in srgb, var(--color-surface) 92%, transparent);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Red / white / blue accents — twinkling stars and soft drifting flares,
+   placed amongst the glass. Pure SVG + CSS so they stay crisp and tiny.
+--------------------------------------------------------------------------- */
+@keyframes rwbTwinkle {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1) rotate(8deg);
+  }
+}
+
+@keyframes rwbFlare {
+  0%,
+  100% {
+    opacity: 0.18;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.42;
+    transform: translate3d(8px, -12px, 0) scale(1.1);
+  }
+}
+
+.rwb-star {
+  animation: rwbTwinkle 4s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.rwb-flare {
+  animation: rwbFlare 10s ease-in-out infinite;
+  filter: blur(16px);
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rwb-star {
+    animation: none;
+    opacity: 0.55;
+  }
+  .rwb-flare {
+    animation: none;
+  }
+}
+
+/* Patriotic palette (scoped use — does not replace the site theme tokens). */
+:root {
+  --rwb-red: #d7263d;
+  --rwb-white: #ffffff;
+  --rwb-blue: #2458e6;
+  --rwb-navy: #0a2a66;
+}
+
+/* Red → white → blue title fill. */
+.rwb-text {
+  background: linear-gradient(
+    120deg,
+    var(--rwb-red) 0%,
+    #ffffff 50%,
+    var(--rwb-blue) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.glow-red {
+  box-shadow:
+    0 0 20px rgba(215, 38, 61, 0.35),
+    0 0 60px rgba(215, 38, 61, 0.12);
+}
+
+/* Red hover border for the language chips (overrides the glass orange hover). */
+.rwb-hover:hover {
+  border-color: color-mix(in srgb, var(--rwb-red) 55%, transparent);
+}
+
+/* Stars-and-stripes banner: navy canton + red/white stripes, with a slow sheen. */
+.rwb-banner-stripes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--rwb-red) 0,
+    var(--rwb-red) 2.5px,
+    #ffffff 2.5px,
+    #ffffff 5px
+  );
+}
+.rwb-banner-sheen {
+  background: linear-gradient(
+    100deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 80%
+  );
+  background-size: 250% 100%;
+  animation: rwbSheen 6s ease-in-out infinite;
+}
+@keyframes rwbSheen {
+  0%,
+  100% {
+    background-position: 150% 0;
+  }
+  50% {
+    background-position: -50% 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rwb-banner-sheen {
+    animation: none;
+    opacity: 0;
+  }
 }

@@ -54,7 +54,7 @@ export default function Navbar() {
           ))}
           <a
             href="/contact"
-            className="px-4 py-2 bg-primary text-background text-sm font-semibold rounded-lg hover:bg-primary-light transition-colors"
+            className="px-4 py-2 bg-secondary text-white text-sm font-semibold rounded-lg hover:bg-secondary-light transition-colors"
           >
             Let&apos;s Connect
           </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
               <a
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="px-4 py-2 bg-primary text-background text-sm font-semibold rounded-lg text-center"
+                className="px-4 py-2 bg-secondary text-white text-sm font-semibold rounded-lg text-center"
               >
                 Let&apos;s Connect
               </a>

@@ -101,7 +101,7 @@ export default async function BookDetailPage({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all"
                   >
                     {link.icon === "amazon" && (
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -215,7 +215,7 @@ export default async function BookDetailPage({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-background font-semibold rounded-lg hover:bg-primary-light transition-all text-lg"
+                  className="inline-flex items-center gap-2 px-8 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-light transition-all text-lg"
                 >
                   {link.label}
                 </a>

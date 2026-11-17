@@ -77,7 +77,7 @@ export default function ChatWidget() {
       {/* Floating button */}
       <motion.button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary text-background flex items-center justify-center shadow-lg hover:bg-primary-light transition-colors glow-orange"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg hover:bg-secondary-light transition-colors glow-blue"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Toggle chat"
@@ -129,7 +129,7 @@ export default function ChatWidget() {
                   <div
                     className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                       msg.role === "user"
-                        ? "bg-primary text-background rounded-br-md"
+                        ? "bg-secondary text-white rounded-br-md"
                         : "bg-surface text-foreground rounded-bl-md"
                     }`}
                   >
@@ -172,7 +172,7 @@ export default function ChatWidget() {
                 <button
                   type="submit"
                   disabled={loading || !input.trim()}
-                  className="px-4 py-2.5 rounded-xl bg-primary text-background text-sm font-semibold disabled:opacity-50 hover:bg-primary-light transition-colors"
+                  className="px-4 py-2.5 rounded-xl bg-secondary text-white text-sm font-semibold disabled:opacity-50 hover:bg-secondary-light transition-colors"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M22 2L11 13M22 2l-7 20-4-9-9-4z" />
