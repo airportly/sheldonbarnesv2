@@ -14,7 +14,11 @@ export async function GET(_request: Request, { params }: { params: Promise<{ lan
   const dataUrl = `data:image/jpeg;base64,${bytes.toString("base64")}`;
 
   return new ImageResponse(
-    <div style={{ width: 1200, height: 630, display: "flex", backgroundImage: `url(${dataUrl})`, backgroundSize: "cover", backgroundPosition: "center bottom" }} />,
+    <div style={{ display: "flex", position: "relative", width: 1200, height: 630, overflow: "hidden" }}>
+      {/* The last comic panel begins near the lower third of each 800×1200 page. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={dataUrl} width={1375} height={2063} style={{ position: "absolute", top: -1433, left: -87, width: 1375, height: 2063 }} alt="" />
+    </div>,
     { width: 1200, height: 630 },
   );
 }
