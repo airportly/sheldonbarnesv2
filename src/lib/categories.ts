@@ -6,6 +6,11 @@ export interface Category {
 
 export const categories: Category[] = [
   {
+    slug: "books-and-peace",
+    name: "Books & Peace",
+    description: "Stories and reflections from Peace in the Middle East and its comic adaptation.",
+  },
+  {
     slug: "ai-drug-discovery",
     name: "AI Drug Discovery",
     description:

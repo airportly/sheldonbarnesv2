@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { books } from "@/lib/books";
 import { getAllPosts, getAllTagsWithCount, POSTS_PER_PAGE } from "@/lib/blog";
 import { categories } from "@/lib/categories";
+import { languages as journeyLanguages, journeyPath } from "@/components/blog/JourneyToSchool";
 
 const BASE_URL = "https://www.sheldonbarnes.com";
 const NOINDEX_THRESHOLD = 3;
@@ -75,6 +76,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return entry;
   });
 
+  const journeyTranslations: MetadataRoute.Sitemap = journeyLanguages
+    .filter(({ code }) => code !== "en")
+    .map(({ code }) => ({
+      url: `${BASE_URL}${journeyPath(code)}`,
+      lastModified: new Date("2026-11-18T12:00:00Z"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
   // Pagination pages — noindex but still in sitemap is fine; they redirect to /blog if empty
   const paginationPages: MetadataRoute.Sitemap = [];
   const pageCount = Math.ceil(posts.length / POSTS_PER_PAGE);
@@ -112,6 +122,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...bookPages,
     ...blogIndex,
     ...blogPages,
+    ...journeyTranslations,
     ...paginationPages,
     ...categoryPages,
     ...tagPages,
